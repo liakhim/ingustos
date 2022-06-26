@@ -20,7 +20,7 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'ingustos_bd' );
+define( 'DB_NAME', 'aim' );
 
 /** Database username */
 define( 'DB_USER', 'root' );
