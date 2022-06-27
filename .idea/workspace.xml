@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="804387ab-2946-4802-b79c-9cdf53181d2d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-config.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,15 +14,9 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2AzUKEg0giqVD5nb05IKILbeLfr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,6 +26,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SvnConfiguration">
@@ -52,33 +41,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1656011841621</updated>
-      <workItem from="1656011843619" duration="1630000" />
+      <workItem from="1656011843619" duration="1263000" />
+      <workItem from="1656270323611" duration="7521000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="WindowStateProjectService">
-    <state x="323" y="155" key="Vcs.Push.Dialog.v2" timestamp="1656020004819">
-      <screen x="0" y="25" width="1440" height="787" />
+    <state x="676" y="260" width="567" height="520" key="find.popup" timestamp="1656281260496">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="323" y="155" key="Vcs.Push.Dialog.v2/0.25.1440.787@0.25.1440.787" timestamp="1656020004819" />
-    <state x="323" y="155" key="Vcs.Push.Dialog.v2/0.25.1440.788@0.25.1440.788" timestamp="1656019908565" />
-    <state x="438" y="211" key="git4idea.merge.GitPullDialog" timestamp="1656356370650">
-      <screen x="0" y="25" width="1440" height="787" />
+    <state x="676" y="260" width="567" height="520" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1656281260496" />
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1656281232942">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="438" y="211" key="git4idea.merge.GitPullDialog/0.25.1440.787@0.25.1440.787" timestamp="1656356370650" />
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1656281232942" />
   </component>
 </project>
