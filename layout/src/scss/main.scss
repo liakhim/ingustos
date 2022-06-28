@@ -1,0 +1,15 @@
+@import "colors";
+@import "normalize";
+h1 {
+  color: $main-red;
+}
+
+.orange-link {
+  &:hover {
+    color: $main-orange;
+  }
+}
+.label-item {
+  background: $main-red;
+  color: #ffffff
+}

@@ -21,6 +21,5 @@ function styles(method=null) {
 }
 function startwatch() {
     watch('src/scss/**/*').on('change', styles);
-    watch('src/documentation/**/*').on('change', docStyles);
 }
 exports.default = parallel(styles, startwatch);
