@@ -11,29 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="804387ab-2946-4802-b79c-9cdf53181d2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/layout/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/buy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/cards/applepay.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/cards/googlepay.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/cards/mastercard.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/cards/mir.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/cards/visa.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/close.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/menu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/profile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/socials/facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/socials/instagram.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/socials/vkontakte.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/veget.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/logo-footer.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/scss/_colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/scss/_normalize.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/scss/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layout/src/img/background-first.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layout/src/scss/_card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layout/src/scss/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layout/src/scss/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/layout/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/node_modules/gulp-sass/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/layout/node_modules/gulp-sass/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/layout/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/dist/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/layout/dist/css/app.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/layout/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/src/img/icons/buy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/layout/src/img/buy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/src/scss/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layout/src/scss/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/src/scss/_normalize.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layout/src/scss/_normalize.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layout/src/scss/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,8 +54,12 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/layout/src/img" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/layout/src/img/icons" />
       <recent name="$PROJECT_DIR$/layout/src/img/icons/socials" />
@@ -87,7 +79,7 @@
       <updated>1656011841621</updated>
       <workItem from="1656011843619" duration="1263000" />
       <workItem from="1656270323611" duration="7521000" />
-      <workItem from="1656446756740" duration="4976000" />
+      <workItem from="1656446756740" duration="10015000" />
     </task>
     <servers />
   </component>
@@ -111,14 +103,23 @@
       <screen x="0" y="25" width="1440" height="787" />
     </state>
     <state x="474" y="224" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.787@0.25.1440.787" timestamp="1656360639822" />
-    <state x="323" y="155" key="Vcs.Push.Dialog.v2" timestamp="1656363116822">
+    <state x="469" y="277" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1656538391162">
       <screen x="0" y="25" width="1440" height="787" />
     </state>
-    <state x="323" y="155" key="Vcs.Push.Dialog.v2/0.25.1440.787@0.25.1440.787" timestamp="1656363116822" />
-    <state x="676" y="260" width="567" height="520" key="find.popup" timestamp="1656281260496">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="469" y="277" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.25.1440.787@0.25.1440.787" timestamp="1656538391162" />
+    <state x="323" y="155" key="Vcs.Push.Dialog.v2" timestamp="1656454471122">
+      <screen x="0" y="25" width="1440" height="787" />
+    </state>
+    <state x="323" y="155" key="Vcs.Push.Dialog.v2/0.25.1440.787@0.25.1440.787" timestamp="1656454471122" />
+    <state x="507" y="222" width="572" height="548" key="find.popup" timestamp="1656537926584">
+      <screen x="0" y="25" width="1440" height="787" />
     </state>
     <state x="676" y="260" width="567" height="520" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1656281260496" />
+    <state x="507" y="222" width="572" height="548" key="find.popup/0.25.1440.787@0.25.1440.787" timestamp="1656537926584" />
+    <state x="385" y="188" key="run.anything.popup" timestamp="1656539039607">
+      <screen x="0" y="25" width="1440" height="787" />
+    </state>
+    <state x="385" y="188" key="run.anything.popup/0.25.1440.787@0.25.1440.787" timestamp="1656539039607" />
     <state x="462" y="156" width="670" height="512" key="search.everywhere.popup" timestamp="1656361341446">
       <screen x="0" y="25" width="1440" height="787" />
     </state>

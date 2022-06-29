@@ -12,7 +12,7 @@ body {
   position: relative;
   line-height: 1.2568;
   overflow-x: hidden;
-  color: #000;
+  color: $main-black;
   animation: fade-in 1s linear;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -240,4 +240,7 @@ p {
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
+}
+.container-fluid {
+  padding: 0 100px;
 }

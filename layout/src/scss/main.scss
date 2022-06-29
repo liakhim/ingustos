@@ -1,5 +1,8 @@
 @import "colors";
 @import "normalize";
+@import "header";
+@import "card";
+@import "footer";
 h1 {
   color: $main-red;
 }
@@ -9,7 +12,76 @@ h1 {
     color: $main-orange;
   }
 }
+.link-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 20px;
+  .icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .text {
+    padding: 0 0 0 12px
+  }
+}
 .label-item {
   background: $main-red;
   color: #ffffff
+}
+.custom-action-button {
+  //width: 44px;
+  //height: 44px;
+  background: $main-orange;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 0 12px;
+  &:hover {
+    .burger-icon {
+      img {
+        transform: scale(1.05);
+      }
+    }
+  }
+  &-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .open-state-icon {}
+    .close-state-icon {
+      display: none;
+    }
+  }
+}
+
+.first-block {
+  border: 2px solid yellow;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1920/1100;
+  .background-image {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+  }
 }

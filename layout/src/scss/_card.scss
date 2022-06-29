@@ -1,0 +1,40 @@
+.card {
+  &-image-block {
+    .labels {
+      .label-item {}
+    }
+  }
+  &-content-block {
+    &-title {
+      p {}
+    }
+    &-description {
+      p {}
+    }
+    &-sizes {
+      .size-block {
+        span {}
+      }
+    }
+    &-sub-info {
+      .sub-info-block {}
+      .dot-delimiter {}
+    }
+    &-price {
+      .price-num {
+        .main-price {}
+        .discount-price {
+          .percent {
+            span {}
+          }
+          .value {
+            span {}
+          }
+        }
+      }
+      .price-action {
+        a {}
+      }
+    }
+  }
+}

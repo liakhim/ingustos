@@ -10,42 +10,49 @@
     <link rel="stylesheet" href="dist/css/app.min.css">
 </head>
 <body>
+<div id="app">
     <header>
-        <div class="container">
+        <div class="container-fluid">
             <div class="contact-block">
                 <a href="#">+7 (495) 111-22-33</a>
                 <p>Ежедневно 08:00 - 23:00</p>
             </div>
             <div class="logo-block">
-                <div class="header-link"></div>
-                <div class="logo">
-                    <img src="src/img/logo.svg" alt="">
+                <div class="header-link">
+                    <a href="#">Гастробоксы</a>
                 </div>
-                <div class="header-link"></div>
-            </div>
-            <div class="actions-block">
-                <a href="#" class="cart-link">
-                    <div class="cart-link-icon">
-                        <img src="src/img/icons/buy.svg" alt="">
-                    </div>
-                    <div class="cart-link-text">
-                        <p>Корзина</p>
-                    </div>
+                <a href="#" class="logo">
+                    <img src="src/img/logo.svg" alt="">
                 </a>
-                <a href="#" class="auth-link">
-                    <div class="auth-link-icon">
-                        <img src="src/img/icons/profile.svg" alt="">
-                    </div>
-                    <div class="auth-link-text">
-                        <p>Войти</p>
-                    </div>
-                </a>
+                <div class="header-link">
+                    <a href="#">Кейтеринг</a>
+                </div>
             </div>
-            <div class="burger-block" style="background: orange">
-                <div class="burger">
-                    <div class="burger-icon">
-                        <img src="src/img/icons/menu.svg" alt="">
-                        <img src="src/img/icons/close.svg" alt="">
+            <div class="action-burger-group">
+                <div class="actions-block">
+                    <a href="#" class="link-block cart-link">
+                        <div class="icon">
+                            <img src="src/img/buy.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <p>Корзина</p>
+                        </div>
+                    </a>
+                    <a href="#" class="link-block auth-link">
+                        <div class="icon">
+                            <img src="src/img/icons/profile.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <p>Войти</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="burger-block">
+                    <div class="burger custom-action-button">
+                        <div class="burger-icon">
+                            <img class="open-state-icon" src="src/img/icons/menu.svg" alt="">
+                            <img class="close-state-icon" src="src/img/icons/close.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,6 +85,11 @@
         </div>
     </header>
     <main>
+        <div class="first-block">
+            <div class="background-image">
+                <img src="src/img/background-first.png" alt="">
+            </div>
+        </div>
         <div class="container">
             <div class="card">
                 <a href="#" class="card-image-block">
@@ -129,14 +141,14 @@
                                 <div class="percent">
                                     <span>50%</span>
                                 </div>
-                                <div class="discount-price-value">
+                                <div class="value">
                                     <span>4398 р.</span>
                                 </div>
                             </div>
                         </div>
                         <div class="price-action">
-                            <a href="#">
-                                <img src="src/img/icons/buy.svg" alt="">
+                            <a role="button" class="btn btn-success" href="#">
+                                <img src="src/img/buy.svg" alt="">
                             </a>
                         </div>
                     </div>
@@ -145,18 +157,16 @@
         </div>
     </main>
     <footer>
-        <div class="container">
+        <div class="container-fluid">
             <div class="footer-logo-block">
                 <img src="src/img/logo-footer.svg" alt="">
             </div>
             <div class="footer-menu-block">
-                <div class="footer-menu-block-list">
-                    <ul>
-                        <li><a class="orange-link" href="#">Гастробоксы</a></li>
-                        <li><a href="#">Кейтеринг</a></li>
-                        <li><a href="#">Договор оферты</a></li>
-                    </ul>
-                </div>
+                <ul class="footer-menu-block-list">
+                    <li><a class="orange-link" href="#">Гастробоксы</a></li>
+                    <li><a href="#">Кейтеринг</a></li>
+                    <li><a href="#">Договор оферты</a></li>
+                </ul>
                 <div class="footer-menu-block-copyright">
                     <p>Copyright © Ingustos 2021. All Rights Reserved.  </p>
                 </div>
@@ -219,5 +229,18 @@
             </div>
         </div>
     </footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+        let vm = new Vue({
+            el: '#app',
+            data: {
+                message: 'qwerty'
+            },
+            mounted () {
+                // alert(this.message)
+            }
+        })
+    </script>
 </body>
 </html>
