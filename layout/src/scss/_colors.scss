@@ -1,7 +1,20 @@
-$desktop: 1440;
-$tablet: 1024;
+@font-face {
+  font-family: 'Bradobrei';
+  src: url('../fonts/Bradobrei/Bradobrei.eot');
+  src: local('Bradobrei'),
+  url('../fonts/Bradobrei/Bradobrei.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Bradobrei/Bradobrei.woff2') format('woff2'),
+  url('../fonts/Bradobrei/Bradobrei.woff') format('woff'),
+  url('../fonts/Bradobrei/Bradobrei.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$desktop: 1441;
+$tablet: 1025;
 
 $main-orange: #F6A800;
 $main-red: #B6282D;
 $main-black: #2E2926;
 $main-gray: #A6AEB1;
+$text-gray: #A7AEB8;

@@ -47,39 +47,29 @@
                         </div>
                     </a>
                 </div>
-                <div class="burger-block">
+                <div class="burger-block" @click="openModal = !openModal">
                     <div class="burger custom-action-button">
                         <div class="burger-icon">
-                            <img class="open-state-icon" src="src/img/icons/menu.svg" alt="">
-                            <img class="close-state-icon" src="src/img/icons/close.svg" alt="">
+                            <img v-if="!openModal" class="open-state-icon" src="src/img/icons/menu.svg" alt="">
+                            <img v-if="openModal" class="close-state-icon" src="src/img/icons/close.svg" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="mobile-menu">
-            <div class="container-fluid">
-                <div class="mobile-actions-block">
-                    <div class="mobile-actions-block-icon">
-                        <img src="src/img/icons/profile.svg" alt="">
-                    </div>
-                    <div class="mobile-actions-block-text">
-                        <p>Войти</p>
-                    </div>
-                    <div class="mobile-menu">
-                        <ul>
-                            <li>
-                                <a href="#">Гастробоксы</a>
-                            </li>
-                            <li>
-                                <a href="#">Кейтеринг</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="mobile-contact-block">
-                        <a href="#">+7 (495) 111-22-33</a>
-                        <p>Ежедневно 08:00 - 23:00</p>
-                    </div>
+        <div class="mobile-menu" :class="{active: openModal}">
+            <ul>
+                <li>
+                    <a href="#">Гастробоксы</a>
+                </li>
+                <li>
+                    <a href="#">Кейтеринг</a>
+                </li>
+            </ul>
+            <div class="mobile-actions-block">
+                <div class="mobile-contact-block">
+                    <a href="#">+7 (495) 111-22-33</a>
+                    <p>Ежедневно 08:00 - 23:00</p>
                 </div>
             </div>
         </div>
@@ -90,9 +80,12 @@
                 <img src="src/img/background-first.png" alt="">
             </div>
         </div>
-        <div class="container">
+        <div class="container-fluid">
             <div class="card">
                 <a href="#" class="card-image-block">
+                    <div class="image">
+                        <img src="src/img/image.png" alt="">
+                    </div>
                     <div class="labels">
                         <div class="label-item">
                             <span>ХИТ!</span>
@@ -164,8 +157,8 @@
             <div class="footer-menu-block">
                 <ul class="footer-menu-block-list">
                     <li><a class="orange-link" href="#">Гастробоксы</a></li>
-                    <li><a href="#">Кейтеринг</a></li>
-                    <li><a href="#">Договор оферты</a></li>
+                    <li><a class="orange-link" href="#">Кейтеринг</a></li>
+                    <li><a class="orange-link" href="#">Договор оферты</a></li>
                 </ul>
                 <div class="footer-menu-block-copyright">
                     <p>Copyright © Ingustos 2021. All Rights Reserved.  </p>
@@ -235,6 +228,7 @@
         let vm = new Vue({
             el: '#app',
             data: {
+                openModal: false,
                 message: 'qwerty'
             },
             mounted () {

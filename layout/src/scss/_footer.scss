@@ -2,10 +2,18 @@ footer {
   height: 140px;
   display: flex;
   align-items: center;
+  border-top: 1px solid $main-gray;
+  @media (max-width: 769px) {
+    height: auto;
+    padding: 28px 0 24px;
+  }
   .container-fluid {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 769px) {
+      flex-direction: column;
+    }
     .footer-logo-block {
       border: 1px solid red;
       width: 108px;
@@ -17,13 +25,37 @@ footer {
     .footer-menu-block {
       border: 1px solid green;
       margin-right: auto;
+      @media (max-width: 769px) {
+        margin: auto;
+      }
       &-list {
-        border: 1px solid red;
         display: flex;
         align-items: center;
+        li:not(:last-child) {
+          margin-right: 60px;
+        }
+        li {
+          a {
+            white-space: nowrap;
+          }
+        }
+        @media (max-width: 769px) {
+          flex-direction: column;
+          li {
+            margin-right: 0!important;
+          }
+        }
       }
       &-copyright {
         border: 1px solid #000;
+        margin-top: 20px;
+        @media (max-width: 769px) {
+          display: none;
+        }
+        p {
+          color: $text-gray;
+          font-size: 18px ;
+        }
       }
     }
     .footer-info-block {
@@ -31,10 +63,18 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+      @media (max-width: 769px) {
+        align-items: center;
+        width: 100%;
+      }
       .cards-social-block {
         border: 1px solid red;
         display: flex;
         align-items: center;
+        @media (max-width: 769px) {
+          flex-direction: column-reverse;
+          width: 100%;
+        }
         .cards-icons {
           &-list {
             display: flex;
@@ -48,6 +88,15 @@ footer {
             align-items: center;
             justify-content: flex-start;
           }
+        }
+      }
+      .contacts {
+        border: 1px solid red;
+        display: flex;
+        justify-content: flex-end;
+        @media (max-width: 769px) {
+          width: 100%;
+          align-items: center;
         }
       }
     }

@@ -29,7 +29,8 @@ h1 {
     }
   }
   .text {
-    padding: 0 0 0 12px
+    padding: 0 0 0 12px;
+    white-space: nowrap;
   }
 }
 .label-item {
@@ -37,8 +38,6 @@ h1 {
   color: #ffffff
 }
 .custom-action-button {
-  //width: 44px;
-  //height: 44px;
   background: $main-orange;
   display: block;
   align-items: center;
@@ -65,7 +64,6 @@ h1 {
 }
 
 .first-block {
-  border: 2px solid yellow;
   max-width: 100%;
   overflow: hidden;
   position: relative;
@@ -73,9 +71,26 @@ h1 {
   align-items: center;
   justify-content: center;
   aspect-ratio: 1920/1100;
+  height: 100vh;
+  @media (max-width: 769px) {
+    aspect-ratio: unset;
+    height: 542px;
+  }
   .background-image {
     position: absolute;
     width: 100%;
+    // background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    @media (max-width: 769px) {
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      img {
+        width: auto!important;
+        height: 100%;
+      }
+    }
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -84,4 +99,18 @@ h1 {
       width: 100%;
     }
   }
+}
+.logo {
+  width: 108px;
+  max-width: 108px;
+  img {
+    width: 100%;
+  }
+}
+.burger {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

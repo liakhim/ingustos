@@ -1,5 +1,4 @@
 header {
-  border: 1px solid red;
   position: fixed;
   height: 106px;
   top: 0;
@@ -11,13 +10,20 @@ header {
   justify-content: space-between;
   background: #ffffff10;
   backdrop-filter: blur(10px);
+  @media (max-width: 769px) {
+    height: 70px;
+  }
   .container-fluid {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1000;
     .contact-block {
       flex: 1;
-      border: 2px solid #ffffff;
+      white-space: nowrap;
+      @media (max-width: 769px) {
+        display: none;
+      }
       a {
         line-height: 1.16;
       }
@@ -34,6 +40,9 @@ header {
         width: 230px;
         display: flex;
         justify-content: center;
+        @media (max-width: 769px) {
+          display: none;
+        }
         a {
           font-weight: 600;
           font-size: 28px;
@@ -53,7 +62,6 @@ header {
       }
     }
     .action-burger-group {
-      border: 2px solid #ffffff;
       flex: 1;
       display: flex;
       align-items: center;
@@ -62,16 +70,76 @@ header {
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        @media (max-width: 769px) {
+          display: none;
+        }
         .auth-link {
           border-left: 1px solid $main-gray;
         }
       }
       .burger-block {
         display: none;
+        @media (max-width: 769px) {
+          display: block;
+        }
       }
     }
   }
   .mobile-menu {
-    display: none;
+    width: 100%;
+    background: #fff;
+    transition: 0.6s;
+    transform: translateY(-100%);
+    position: absolute;
+    top: 0;
+    padding: 90px 20px 20px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0 12px 40px rgba(156, 163, 175, 0.25);
+    ul {
+      border-top: 1px solid #A6AEB1;
+      border-bottom: 1px solid #A6AEB1;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 32px 0 20px;
+      li {
+        text-align: center;
+        padding-bottom: 12px;
+        a {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 28px;
+        }
+      }
+    }
+    .mobile-actions-block {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0 0 0;
+      .mobile-contact-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & > * {
+          text-align: center;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 20px;
+        }
+        a {
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+  .mobile-menu.active {
+    transform: translateY(0);
   }
 }
