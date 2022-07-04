@@ -3,7 +3,7 @@ footer {
   display: flex;
   align-items: center;
   border-top: 1px solid $main-gray;
-  @media (max-width: 769px) {
+  @media (max-width: 1366px) {
     height: auto;
     padding: 28px 0 24px;
   }
@@ -11,33 +11,46 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media (max-width: 769px) {
+    @media (max-width: 1366px) {
       flex-direction: column;
     }
     .footer-logo-block {
-      border: 1px solid red;
       width: 108px;
       max-width: 108px;
+      min-width: 108px;
+      margin-right: 40px;
+      @media (max-width: 1366px) {
+        margin-right: 0;
+      }
       img {
         width: 100%;
       }
     }
     .footer-menu-block {
-      border: 1px solid green;
       margin-right: auto;
-      @media (max-width: 769px) {
+      @media (max-width: 1366px) {
         margin: auto;
+        width: 100%;
       }
       &-list {
         display: flex;
+        flex-direction: row;
         align-items: center;
+        width: 100%;
         li:not(:last-child) {
           margin-right: 60px;
+          @media (max-width: 1441px) {
+            margin-right: 32px;
+          }
         }
         li {
           a {
             white-space: nowrap;
+            font-size: 24px;
           }
+        }
+        @media (max-width: 1366px) {
+          justify-content: center;
         }
         @media (max-width: 769px) {
           flex-direction: column;
@@ -47,9 +60,8 @@ footer {
         }
       }
       &-copyright {
-        border: 1px solid #000;
         margin-top: 20px;
-        @media (max-width: 769px) {
+        @media (max-width: 1366px) {
           display: none;
         }
         p {
@@ -59,27 +71,45 @@ footer {
       }
     }
     .footer-info-block {
-      border: 1px solid orange;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      @media (max-width: 769px) {
+      @media (max-width: 1366px) {
         align-items: center;
         width: 100%;
       }
       .cards-social-block {
-        border: 1px solid red;
         display: flex;
         align-items: center;
-        @media (max-width: 769px) {
-          flex-direction: column-reverse;
+        margin: auto;
+        @media (max-width: 1366px) {
+          // flex-direction: column-reverse;
+          justify-content: center;
           width: 100%;
+        }
+        @media (max-width: 768px) {
+          flex-direction: column-reverse;
         }
         .cards-icons {
           &-list {
             display: flex;
             align-items: center;
             justify-content: flex-start;
+            padding: 0 20px;
+            border-right: 1px solid $main-gray;
+            &-item {
+              width: 32px;
+              height: 32px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              &:not(:last-child) {
+                margin-right: 20px;
+              }
+              img {
+                width: 100%;
+              }
+            }
           }
         }
         .social-icons {
@@ -87,16 +117,46 @@ footer {
             display: flex;
             align-items: center;
             justify-content: flex-start;
+            padding: 0 0 0 20px;
+            &-item {
+              width: 28px;
+              height: 28px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              &:not(:last-child) {
+                margin-right: 20px;
+              }
+            }
           }
         }
       }
       .contacts {
-        border: 1px solid red;
         display: flex;
         justify-content: flex-end;
-        @media (max-width: 769px) {
+        margin-top: 20px;
+        a {
+          padding: 0 20px 0 0;
+          border-right: 1px solid red;
+          font-size: 20px;
+        }
+        p {
+          padding: 0 0 0 20px;
+          font-size: 20px;
+        }
+        @media (max-width: 1366px) {
           width: 100%;
           align-items: center;
+          justify-content: center;
+        }
+        @media (max-width: 769px) {
+          a {
+            font-size: 16px;
+            padding: 0 12px 0 0;
+          }
+          p {
+            padding: 0 0 0 12px;
+          }
         }
       }
     }

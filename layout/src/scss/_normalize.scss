@@ -247,6 +247,9 @@ p {
 .container-fluid {
   padding: 0 100px;
   max-width: 1820px;
+  @media (max-width: 1025px) {
+    padding: 0 40px;
+  }
   @media (max-width: 769px) {
     padding: 0 20px;
   }

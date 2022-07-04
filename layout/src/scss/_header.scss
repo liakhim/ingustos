@@ -10,7 +10,7 @@ header {
   justify-content: space-between;
   background: #ffffff10;
   backdrop-filter: blur(10px);
-  @media (max-width: 769px) {
+  @media (max-width: 1025px) {
     height: 70px;
   }
   .container-fluid {
@@ -21,7 +21,15 @@ header {
     .contact-block {
       flex: 1;
       white-space: nowrap;
-      @media (max-width: 769px) {
+      @media (max-width: 1440px) {
+        a {
+          font-size: 20px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      @media (max-width: 1025px) {
         display: none;
       }
       a {
@@ -40,13 +48,26 @@ header {
         width: 230px;
         display: flex;
         justify-content: center;
-        @media (max-width: 769px) {
+        &:hover {
+          a {
+            border-bottom: 4px solid $main-orange;
+            color: $main-black;
+          }
+        }
+        @media (max-width: 1366px) {
+          width: 180px;
+        }
+        @media (max-width: 1025px) {
           display: none;
         }
         a {
+          border-bottom: 4px solid transparent;
+          padding-bottom: 12px;
+          margin-top: 12px;
           font-weight: 600;
           font-size: 28px;
           line-height: 36px;
+          color: $main-black;
           @media (max-width: $desktop + 'px') {
             font-size: 20px;
             line-height: 24px;
@@ -56,6 +77,12 @@ header {
       .logo {
         width: 108px;
         max-width: 108px;
+        min-width: 108px;
+        @media (max-width: 1025px) {
+          width: 75px;
+          max-width: 75px;
+          min-width: 75px;
+        }
         img {
           width: 100%;
         }
@@ -70,16 +97,13 @@ header {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        @media (max-width: 769px) {
-          display: none;
-        }
         .auth-link {
           border-left: 1px solid $main-gray;
         }
       }
       .burger-block {
         display: none;
-        @media (max-width: 769px) {
+        @media (max-width: 1025px) {
           display: block;
         }
       }
