@@ -2,6 +2,8 @@
 @import "normalize";
 @import "header";
 @import "card";
+@import "cart-modal";
+@import "faq";
 @import "footer";
 h1 {
   color: $main-red;
@@ -11,6 +13,10 @@ h1 {
   &:hover {
     color: $main-orange;
   }
+}
+.orange-button {
+  background: $main-orange;
+  color: #ffffff;
 }
 .link-block {
   display: flex;

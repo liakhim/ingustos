@@ -1,0 +1,24 @@
+.faq {
+  margin-bottom: 100px;
+  .container-fluid {
+    .faq-title {
+      border: 1px solid red;
+      text-align: center;
+      font-family: 'Bradobrei', sans-serif;
+      font-size: 48px;
+      line-height: 64px;
+    }
+    .faq-content {
+      margin-top: 60px;
+      .accordion-item {
+        border: 1px solid #ffffff;
+        .accordion-header {
+          background: #ffffff;
+          .accordion-button {
+            background: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
