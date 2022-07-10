@@ -1,8 +1,12 @@
 @import "colors";
+@import "fonts";
 @import "normalize";
 @import "header";
+@import "cart_not_empty";
 @import "card";
+@import "filters";
 @import "cart-modal";
+@import "steps";
 @import "faq";
 @import "footer";
 h1 {
@@ -14,9 +18,41 @@ h1 {
     color: $main-orange;
   }
 }
+.general-title {
+  h2 {
+    text-align: center;
+    font-family: 'Bradobrei', sans-serif;
+    font-size: 48px;
+    line-height: 64px;
+  }
+}
 .orange-button {
   background: $main-orange;
   color: #ffffff;
+  border-radius: 12px;
+  height: 44px;
+  font-size: 22px;
+  line-height: 28px;
+  img {
+    filter: brightness(10);
+  }
+}
+.red-button {
+  display: flex;
+  align-items: center;
+  background: $main-red;
+  color: #ffffff;
+  border-radius: 12px;
+  height: 44px;
+  img {
+    filter: brightness(10);
+  }
+  span {
+    margin-left: 12px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+  }
 }
 .link-block {
   display: flex;
@@ -29,13 +65,13 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 12px;
     img {
       width: 20px;
       height: 20px;
     }
   }
   .text {
-    padding: 0 0 0 12px;
     white-space: nowrap;
     p {
       font-size: 24px;

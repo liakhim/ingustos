@@ -21,6 +21,7 @@ footer {
       margin-right: 40px;
       @media (max-width: 1366px) {
         margin-right: 0;
+        margin-bottom: 32px;
       }
       img {
         width: 100%;
@@ -137,7 +138,7 @@ footer {
         margin-top: 20px;
         a {
           padding: 0 20px 0 0;
-          border-right: 1px solid red;
+          border-right: 1px solid $main-gray;
           font-size: 20px;
         }
         p {
