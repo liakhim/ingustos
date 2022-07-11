@@ -1,0 +1,27 @@
+2022-07-11T19:29:45+00:00 CRITICAL Uncaught Error: Class 'Client' not found in /Applications/MAMP/htdocs/ingustos/index.php:18
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/ingustos/index.php on line 18
+
+2022-07-11T19:56:30+00:00 CRITICAL require(): Failed opening required '/Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/vendor/autoload.php' (include_path='.:/Applications/MAMP/bin/php/php7.4.2/lib/php') in /Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/index.php on line 19
+
+2022-07-11T20:01:52+00:00 CRITICAL require(): Failed opening required '/Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/vendor/autoload.php' (include_path='.:/Applications/MAMP/bin/php/php7.4.2/lib/php') in /Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/index.php on line 23
+
+2022-07-11T20:02:32+00:00 CRITICAL require(): Failed opening required '/Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/vendor/autoload.php' (include_path='.:/Applications/MAMP/bin/php/php7.4.2/lib/php') in /Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/index.php on line 23
+
+2022-07-11T20:24:23+00:00 CRITICAL require(): Failed opening required '/Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/vendor/autoload.php' (include_path='.:/Applications/MAMP/bin/php/php7.4.2/lib/php') in /Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/index.php on line 23
+
+2022-07-11T20:24:42+00:00 CRITICAL require(): Failed opening required '/Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/vendor/autoload.php' (include_path='.:/Applications/MAMP/bin/php/php7.4.2/lib/php') in /Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/index.php on line 23
+
+2022-07-11T20:25:07+00:00 CRITICAL require(): Failed opening required '/Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/vendor/autoload.php' (include_path='.:/Applications/MAMP/bin/php/php7.4.2/lib/php') in /Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/index.php on line 7
+
+2022-07-11T20:25:23+00:00 CRITICAL require(): Failed opening required '/Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/vendor/autoload.php' (include_path='.:/Applications/MAMP/bin/php/php7.4.2/lib/php') in /Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/index.php on line 23
+
+2022-07-11T20:25:41+00:00 CRITICAL require(): Failed opening required '/Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/vendor/autoload.php' (include_path='.:/Applications/MAMP/bin/php/php7.4.2/lib/php') in /Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/index.php on line 7
+
+2022-07-11T20:25:56+00:00 CRITICAL require(): Failed opening required '/Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/vendor/autoload.php' (include_path='.:/Applications/MAMP/bin/php/php7.4.2/lib/php') in /Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/index.php on line 23
+
+2022-07-11T20:26:11+00:00 CRITICAL require(): Failed opening required '/Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/vendor/autoload.php' (include_path='.:/Applications/MAMP/bin/php/php7.4.2/lib/php') in /Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/index.php on line 23
+
+2022-07-11T20:33:11+00:00 CRITICAL require(): Failed opening required '/Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/vendor/autoload.php' (include_path='.:/Applications/MAMP/bin/php/php7.4.2/lib/php') in /Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/index.php on line 23
+

@@ -80,7 +80,7 @@
         </div>
     </header>
     <pre>
-        {{results}}
+        {{typeof results}}
     </pre>
     <main>
 <!--        <div class="first-block">-->
@@ -155,8 +155,8 @@
             </div>
         </div>
         <div class="container-fluid">
-            <div class="cards-content">
-                <div class="card">
+            <div class="cards-content" v-if="results">
+                <div v-for="product in results" :key="product.id" class="card">
                     <a href="#" class="card-image-block">
                         <div class="image">
                             <img src="src/img/image.png" alt="">
@@ -172,205 +172,7 @@
                     </a>
                     <div class="card-content-block">
                         <div class="card-content-block-title">
-                            <p>Рыбный праздник</p>
-                        </div>
-                        <div class="card-content-block-description">
-                            <p>Ассорти тарталеток: риет из лосося с мидией, икра палтуса с огурцом, икра лососевая,
-                                икра щучья, тигровая креветка, лосось с творожным сыром  </p>
-                        </div>
-                        <div class="card-content-block-sizes">
-                            <div class="size-block">
-                                <span>S</span>
-                            </div>
-                            <div class="size-block">
-                                <span>M</span>
-                            </div>
-                            <div class="size-block">
-                                <span>L</span>
-                            </div>
-                        </div>
-                        <div class="card-content-block-sub-info">
-                            <div class="sub-info-block">
-                                <p>5 человек</p>
-                            </div>
-                            <div class="dot-delimiter">
-                                <div class="marker"></div>
-                            </div>
-                            <div class="sub-info-block">
-                                <p>1230 г.</p>
-                            </div>
-                        </div>
-                        <div class="card-content-block-price">
-                            <div class="price-num">
-                                <div class="main-price">
-                                    <p>2199 р.</p>
-                                </div>
-                                <div class="discount-price">
-                                    <div class="percent">
-                                        <span>50%</span>
-                                    </div>
-                                    <div class="value">
-                                        <span>4398 р.</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="price-action">
-                                <a role="button" class="btn orange-button" href="#">
-                                    <img src="src/img/buy.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="#" class="card-image-block">
-                        <div class="image">
-                            <img src="src/img/image.png" alt="">
-                        </div>
-                        <div class="labels">
-                            <div class="label-item">
-                                <span>ХИТ!</span>
-                            </div>
-                            <div class="label-item">
-                                <img src="src/img/icons/veget.svg" alt="">
-                            </div>
-                        </div>
-                    </a>
-                    <div class="card-content-block">
-                        <div class="card-content-block-title">
-                            <p>Рыбный праздник</p>
-                        </div>
-                        <div class="card-content-block-description">
-                            <p>Ассорти тарталеток: риет из лосося с мидией, икра палтуса с огурцом, икра лососевая,
-                                икра щучья, тигровая креветка, лосось с творожным сыром  </p>
-                        </div>
-                        <div class="card-content-block-sizes">
-                            <div class="size-block">
-                                <span>S</span>
-                            </div>
-                            <div class="size-block">
-                                <span>M</span>
-                            </div>
-                            <div class="size-block">
-                                <span>L</span>
-                            </div>
-                        </div>
-                        <div class="card-content-block-sub-info">
-                            <div class="sub-info-block">
-                                <p>5 человек</p>
-                            </div>
-                            <div class="dot-delimiter">
-                                <div class="marker"></div>
-                            </div>
-                            <div class="sub-info-block">
-                                <p>1230 г.</p>
-                            </div>
-                        </div>
-                        <div class="card-content-block-price">
-                            <div class="price-num">
-                                <div class="main-price">
-                                    <p>2199 р.</p>
-                                </div>
-                                <div class="discount-price">
-                                    <div class="percent">
-                                        <span>50%</span>
-                                    </div>
-                                    <div class="value">
-                                        <span>4398 р.</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="price-action">
-                                <a role="button" class="btn orange-button" href="#">
-                                    <img src="src/img/buy.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="#" class="card-image-block">
-                        <div class="image">
-                            <img src="src/img/image.png" alt="">
-                        </div>
-                        <div class="labels">
-                            <div class="label-item">
-                                <span>ХИТ!</span>
-                            </div>
-                            <div class="label-item">
-                                <img src="src/img/icons/veget.svg" alt="">
-                            </div>
-                        </div>
-                    </a>
-                    <div class="card-content-block">
-                        <div class="card-content-block-title">
-                            <p>Рыбный праздник</p>
-                        </div>
-                        <div class="card-content-block-description">
-                            <p>Ассорти тарталеток: риет из лосося с мидией, икра палтуса с огурцом, икра лососевая,
-                                икра щучья, тигровая креветка, лосось с творожным сыром  </p>
-                        </div>
-                        <div class="card-content-block-sizes">
-                            <div class="size-block active">
-                                <span>S</span>
-                            </div>
-                            <div class="size-block">
-                                <span>M</span>
-                            </div>
-                            <div class="size-block">
-                                <span>L</span>
-                            </div>
-                        </div>
-                        <div class="card-content-block-sub-info">
-                            <div class="sub-info-block">
-                                <p>5 человек</p>
-                            </div>
-                            <div class="dot-delimiter">
-                                <div class="marker"></div>
-                            </div>
-                            <div class="sub-info-block">
-                                <p>1230 г.</p>
-                            </div>
-                        </div>
-                        <div class="card-content-block-price">
-                            <div class="price-num">
-                                <div class="main-price">
-                                    <p>2199 р.</p>
-                                </div>
-                                <div class="discount-price">
-                                    <div class="percent">
-                                        <span>50%</span>
-                                    </div>
-                                    <div class="value">
-                                        <span>4398 р.</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="price-action">
-                                <a role="button" class="btn orange-button" href="#">
-                                    <img src="src/img/buy.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="#" class="card-image-block">
-                        <div class="image">
-                            <img src="src/img/image.png" alt="">
-                        </div>
-                        <div class="labels">
-                            <div class="label-item">
-                                <span>ХИТ!</span>
-                            </div>
-                            <div class="label-item">
-                                <img src="src/img/icons/veget.svg" alt="">
-                            </div>
-                        </div>
-                    </a>
-                    <div class="card-content-block">
-                        <div class="card-content-block-title">
-                            <p>Рыбный праздник</p>
+                            <p>{{product.name}}</p>
                         </div>
                         <div class="card-content-block-description">
                             <p>Ассорти тарталеток: риет из лосося с мидией, икра палтуса с огурцом, икра лососевая,
@@ -403,23 +205,23 @@
                                 <div class="main-price">
                                     <p>2199 р.</p>
                                 </div>
-<!--                                <div class="discount-price">-->
-<!--                                    <div class="percent">-->
-<!--                                        <span>50%</span>-->
-<!--                                    </div>-->
-<!--                                    <div class="value">-->
-<!--                                        <span>4398 р.</span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
+                                <div class="discount-price">
+                                    <div class="percent">
+                                        <span>50%</span>
+                                    </div>
+                                    <div class="value">
+                                        <span>4398 р.</span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="price-action">
                                 <a role="button" class="btn red-button" href="#">
                                     <img src="src/img/icons/mark.svg" alt="">
                                     <span>Добавлено</span>
                                 </a>
-<!--                                <a role="button" class="btn orange-button" href="#">-->
-<!--                                    <img src="src/img/buy.svg" alt="">-->
-<!--                                </a>-->
+                                <a role="button" class="btn orange-button" href="#">
+                                    <img src="src/img/buy.svg" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -746,16 +548,17 @@
 </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
     <script>
-        const uuu = '\'https://localhost/mywebsite/wp-json/wc/v2/orders/12345?oauth_consumer_key=ck_my_key123&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1531881865&oauth_nonce=CxWcdh&oauth_version=1.0&oauth_signature=fjfjosl12='
-        const url = 'http://ingustos/wp-json/wc/v3/products?oauth_consumer_key=ck_7a17a4a518bb86eb86f520720f3e9e79fbde9749&oauth_signature_method=HMAC-SHA1';
+        const url = 'server.php';
         let vm = new Vue({
             el: '#app',
             data: {
                 openModal: false,
                 message: 'qwerty',
                 openCartModal: false,
-                results: []
+                results: [],
+                tags: []
             },
             mounted () {
                 axios.get(url, {

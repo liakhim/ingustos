@@ -11,37 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="804387ab-2946-4802-b79c-9cdf53181d2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/layout/src/fonts/FuturaDemiC/futurademic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/fonts/FuturaDemiC/futurademic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/fonts/FuturaDemiC/futurademic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/fonts/FuturaDemiC/futurademic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/fonts/FuturaDemiC/futurademic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/chevron.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/delete.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/filters/beer.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/filters/candy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/filters/goblet.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/filters/heart.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/filters/liquer.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/filters/nektie.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/filters/people.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/filters/sun.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/img/icons/mark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/scss/_cart_not_empty.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/scss/_filters.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/scss/_fonts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/src/scss/_steps.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layout/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layout/server.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layout/dist/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/layout/dist/css/app.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layout/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/layout/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/src/scss/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layout/src/scss/_card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/src/scss/_cart-modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layout/src/scss/_cart-modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/src/scss/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layout/src/scss/_colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/src/scss/_faq.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layout/src/scss/_faq.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/src/scss/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layout/src/scss/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/src/scss/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layout/src/scss/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/src/scss/_normalize.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layout/src/scss/_normalize.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layout/src/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/layout/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/layout/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/src/scss/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layout/src/scss/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/languages/ru_RU.po" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/languages/ru_RU.po" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +80,7 @@
       <updated>1656011841621</updated>
       <workItem from="1656011843619" duration="1263000" />
       <workItem from="1656270323611" duration="7521000" />
-      <workItem from="1656446756740" duration="40865000" />
+      <workItem from="1656446756740" duration="48146000" />
     </task>
     <servers />
   </component>
@@ -129,24 +108,25 @@
       <screen x="0" y="25" width="1440" height="787" />
     </state>
     <state x="469" y="277" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.25.1440.787@0.25.1440.787" timestamp="1656538391162" />
-    <state x="323" y="155" key="Vcs.Push.Dialog.v2" timestamp="1657231162575">
+    <state x="323" y="155" key="Vcs.Push.Dialog.v2" timestamp="1657497311781">
       <screen x="0" y="25" width="1440" height="787" />
     </state>
-    <state x="323" y="155" key="Vcs.Push.Dialog.v2/0.25.1440.787@0.25.1440.787" timestamp="1657231162575" />
-    <state x="507" y="222" width="862" height="548" key="find.popup" timestamp="1657470115455">
-      <screen x="0" y="25" width="1440" height="787" />
+    <state x="323" y="155" key="Vcs.Push.Dialog.v2/0.25.1440.787@0.25.1440.787" timestamp="1657497311781" />
+    <state x="507" y="222" width="862" height="549" key="find.popup" timestamp="1657569690901">
+      <screen x="0" y="25" width="1440" height="788" />
     </state>
     <state x="676" y="260" width="567" height="520" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1656281260496" />
     <state x="507" y="222" width="862" height="548" key="find.popup/0.25.1440.787@0.25.1440.787" timestamp="1657470115455" />
+    <state x="507" y="222" width="862" height="549" key="find.popup/0.25.1440.788@0.25.1440.788" timestamp="1657569690901" />
     <state x="385" y="188" key="run.anything.popup" timestamp="1656798666545">
       <screen x="0" y="25" width="1440" height="787" />
     </state>
     <state x="385" y="188" key="run.anything.popup/0.25.1440.787@0.25.1440.787" timestamp="1656798666545" />
-    <state x="462" y="156" width="670" height="513" key="search.everywhere.popup" timestamp="1657491158440">
-      <screen x="0" y="25" width="1440" height="788" />
+    <state x="462" y="156" width="670" height="512" key="search.everywhere.popup" timestamp="1657571860797">
+      <screen x="0" y="25" width="1440" height="787" />
     </state>
     <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1656281232942" />
-    <state x="462" y="156" width="670" height="512" key="search.everywhere.popup/0.25.1440.787@0.25.1440.787" timestamp="1657480628916" />
-    <state x="462" y="156" width="670" height="513" key="search.everywhere.popup/0.25.1440.788@0.25.1440.788" timestamp="1657491158440" />
+    <state x="462" y="156" width="670" height="512" key="search.everywhere.popup/0.25.1440.787@0.25.1440.787" timestamp="1657571860797" />
+    <state x="462" y="156" width="670" height="513" key="search.everywhere.popup/0.25.1440.788@0.25.1440.788" timestamp="1657569678390" />
   </component>
 </project>
