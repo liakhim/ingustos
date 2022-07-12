@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '3317b164d8e4b26f2f6eb0bdcf542b9b9ee78c43',
+        'reference' => 'ad8cd7e33a8cbe1cfbec26e597d64611fec45955',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '3317b164d8e4b26f2f6eb0bdcf542b9b9ee78c43',
+            'reference' => 'ad8cd7e33a8cbe1cfbec26e597d64611fec45955',
             'dev_requirement' => false,
         ),
         'automattic/woocommerce' => array(

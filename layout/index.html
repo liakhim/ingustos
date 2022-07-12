@@ -80,8 +80,12 @@
         </div>
     </header>
     <pre>
-        {{typeof results}}
+        {{tags.map(v => v.name)}}
     </pre>
+    <button @click="createOrder()" class="btn btn-success">
+        send test
+    </button>
+    <button @click="postSend()" class="btn btn-danger">TEST SER</button>
     <main>
 <!--        <div class="first-block">-->
 <!--            <div class="background-image">-->
@@ -155,11 +159,12 @@
             </div>
         </div>
         <div class="container-fluid">
-            <div class="cards-content" v-if="results">
+            <div class="cards-content" v-if="results.length > 0">
                 <div v-for="product in results" :key="product.id" class="card">
                     <a href="#" class="card-image-block">
                         <div class="image">
-                            <img src="src/img/image.png" alt="">
+                            <img :src="product?.images[0]?.src" alt="">
+<!--                            <img src="src/img/image.png" alt="">-->
                         </div>
                         <div class="labels">
                             <div class="label-item">
@@ -174,9 +179,9 @@
                         <div class="card-content-block-title">
                             <p>{{product.name}}</p>
                         </div>
-                        <div class="card-content-block-description">
-                            <p>Ассорти тарталеток: риет из лосося с мидией, икра палтуса с огурцом, икра лососевая,
-                                икра щучья, тигровая креветка, лосось с творожным сыром  </p>
+                        <div v-html="product.description" class="card-content-block-description">
+<!--                            <p>Ассорти тарталеток: риет из лосося с мидией, икра палтуса с огурцом, икра лососевая,-->
+<!--                                икра щучья, тигровая креветка, лосось с творожным сыром  </p>-->
                         </div>
                         <div class="card-content-block-sizes">
                             <div class="size-block">
@@ -550,7 +555,8 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
     <script>
-        const url = 'server.php';
+        const url = 'router/products.php';
+        const urlTags = 'router/tags.php';
         let vm = new Vue({
             el: '#app',
             data: {
@@ -560,7 +566,28 @@
                 results: [],
                 tags: []
             },
+            methods: {
+                createOrder () {
+                    axios.post('router/order.php', {
+                        withCredentials: true
+                    })
+                },
+                postSend () {
+                    axios.post('router/test.php', JSON.stringify({
+                        params: '1'
+                    }), {
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    })
+                }
+            },
             mounted () {
+                axios.get(urlTags, {
+                    withCredentials: true
+                }).then(response => {
+                    this.tags = response.data
+                })
                 axios.get(url, {
                     withCredentials: true
                 }).then(response => {

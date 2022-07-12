@@ -1,0 +1,2 @@
+2022-07-12T21:03:14+00:00 CRITICAL require(): Failed opening required '/Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/vendor/autoload.php' (include_path='.:/Applications/MAMP/bin/php/php7.4.2/lib/php') in /Applications/MAMP/htdocs/ingustos/wp-content/themes/storely/index.php on line 23
+
