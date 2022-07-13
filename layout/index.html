@@ -80,12 +80,12 @@
         </div>
     </header>
     <pre>
-        {{tags.map(v => v.name)}}
+        {{cartArr}}
     </pre>
-    <button @click="createOrder()" class="btn btn-success">
-        send test
-    </button>
-    <button @click="postSend()" class="btn btn-danger">TEST SER</button>
+<!--    <button @click="createOrder()" class="btn btn-success">-->
+<!--        send test-->
+<!--    </button>-->
+<!--    <button @click="postSend()" class="btn btn-danger">TEST SER</button>-->
     <main>
 <!--        <div class="first-block">-->
 <!--            <div class="background-image">-->
@@ -183,16 +183,20 @@
 <!--                            <p>Ассорти тарталеток: риет из лосося с мидией, икра палтуса с огурцом, икра лососевая,-->
 <!--                                икра щучья, тигровая креветка, лосось с творожным сыром  </p>-->
                         </div>
-                        <div class="card-content-block-sizes">
-                            <div class="size-block">
-                                <span>S</span>
+                        <div v-if="product.vars" class="card-content-block-sizes">
+                            <div class="size-block"
+                                 v-for="(size, index) in product.vars"
+                                 :key="product.id"
+                                 @click="changeVariation(product.id, index)"
+                                 :class="{active: size.active}">
+                                <span>{{size.attributes.find(v => v.name.toLowerCase() === 'size').option}}</span>
                             </div>
-                            <div class="size-block active">
-                                <span>M</span>
-                            </div>
-                            <div class="size-block">
-                                <span>L</span>
-                            </div>
+<!--                            <div class="size-block active">-->
+<!--                                <span>M</span>-->
+<!--                            </div>-->
+<!--                            <div class="size-block">-->
+<!--                                <span>L</span>-->
+<!--                            </div>-->
                         </div>
                         <div class="card-content-block-sub-info">
                             <div class="sub-info-block">
@@ -208,7 +212,7 @@
                         <div class="card-content-block-price">
                             <div class="price-num">
                                 <div class="main-price">
-                                    <p>2199 р.</p>
+                                    <p>{{product.price}} р.</p>
                                 </div>
                                 <div class="discount-price">
                                     <div class="percent">
@@ -220,11 +224,14 @@
                                 </div>
                             </div>
                             <div class="price-action">
-                                <a role="button" class="btn red-button" href="#">
+                                <a v-if="cartArr.find(v => v.id === product.id)" role="button" class="btn red-button" href="#">
                                     <img src="src/img/icons/mark.svg" alt="">
                                     <span>Добавлено</span>
                                 </a>
-                                <a role="button" class="btn orange-button" href="#">
+                                <a v-if="!cartArr.find(v => v.id === product.id)"
+                                   @click.prevent="addToCart(product)"
+                                   role="button"
+                                   class="btn orange-button">
                                     <img src="src/img/buy.svg" alt="">
                                 </a>
                             </div>
@@ -353,14 +360,14 @@
                     <div class="cart-title-text">
                         <h2>Корзина</h2>
                         <div class="quantity">
-                            <p>10</p>
+                            <p>{{cartArr.length}}</p>
                         </div>
                     </div>
                     <div class="cart-title-close-modal" @click="openCartModal = false">
                         <img src="src/img/icons/close-black.svg" alt="">
                     </div>
                 </div>
-                <div class="cart-list-empty" :class="{show: false}">
+                <div class="cart-list-empty" v-if="cartArr.length === 0" :class="{show: cartArr.length === 0}">
                     <div class="image">
                         <img src="src/img/empty-cart.png" alt="">
                     </div>
@@ -368,11 +375,11 @@
                         <h3>Корзина пока пуста!</h3>
                     </div>
                 </div>
-                <div class="cart-list" v-if="true">
+                <div class="cart-list" v-if="cartArr.length > 0">
                     <div class="cart-list-start">
                         <span>****</span>
                     </div>
-                    <div class="cart-list-item">
+                    <div class="cart-list-item" v-for="item in cartArr">
                         <div class="cart-list-item-image">
                             <img src="src/img/order.png" alt="">
                         </div>
@@ -381,7 +388,7 @@
                                 <div class="quantity-block-chevron up">
                                     <img src="src/img/icons/chevron.svg" alt="">
                                 </div>
-                                <p>1 шт.</p>
+                                <p>{{item.quantity}} шт.</p>
                                 <div class="quantity-block-chevron down">
                                     <img src="src/img/icons/chevron.svg" alt="">
                                 </div>
@@ -390,51 +397,7 @@
                                 <img src="src/img/icons/close-gray.svg" alt="">
                             </div>
                             <div class="name-block">
-                                <p>Рыбный праздник <span>(М)</span></p>
-                            </div>
-                            <div class="price-block">
-                                <p>9 998 р.</p>
-                            </div>
-                            <div class="delete-block">
-                                <img src="src/img/icons/delete.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cart-list-item">
-                        <div class="cart-list-item-image">
-                            <img src="src/img/order.png" alt="">
-                        </div>
-                        <div class="cart-list-item-name">
-                            <div class="quantity-block">
-                                <p>1 шт.</p>
-                            </div>
-                            <div class="x-icon-block">
-                                <img src="src/img/icons/close-gray.svg" alt="">
-                            </div>
-                            <div class="name-block">
-                                <p>Рыбный праздник <span>(М)</span></p>
-                            </div>
-                            <div class="price-block">
-                                <p>9 998 р.</p>
-                            </div>
-                            <div class="delete-block">
-                                <img src="src/img/icons/delete.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cart-list-item">
-                        <div class="cart-list-item-image">
-                            <img src="src/img/order.png" alt="">
-                        </div>
-                        <div class="cart-list-item-name">
-                            <div class="quantity-block">
-                                <p>1 шт.</p>
-                            </div>
-                            <div class="x-icon-block">
-                                <img src="src/img/icons/close-gray.svg" alt="">
-                            </div>
-                            <div class="name-block">
-                                <p>Рыбный праздник <span>(М)</span></p>
+                                <p>{{item.name}} <span>(М)({{item.id}})</span></p>
                             </div>
                             <div class="price-block">
                                 <p>9 998 р.</p>
@@ -564,9 +527,29 @@
                 message: 'qwerty',
                 openCartModal: false,
                 results: [],
-                tags: []
+                tags: [],
+                cartArr: []
             },
             methods: {
+                addToCart (product) {
+                    console.log(product)
+                    this.cartArr.push({
+                        ...product,
+                        quantity: 2
+                    })
+                },
+                changeVariation (id, variation_id) {
+                  const prod = this.results.find(v => +v.id === +id)
+                    console.log(prod)
+                    alert(variation_id)
+                    prod.vars.map(v => {
+                        v.active = false
+                    })
+                    prod.vars[+variation_id].active = true
+                    let init = this.results
+                    this.results = []
+                    this.results = init
+                },
                 createOrder () {
                     axios.post('router/order.php', {
                         withCredentials: true
@@ -591,7 +574,12 @@
                 axios.get(url, {
                     withCredentials: true
                 }).then(response => {
-                    this.results = response.data
+                    this.results = response.data.map(v => {
+                        if (!!v.vars) {
+                            v.vars[1].active = true
+                        }
+                        return v
+                    })
                 })
             }
         })

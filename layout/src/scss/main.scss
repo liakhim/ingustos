@@ -44,6 +44,9 @@ h1 {
   color: #ffffff;
   border-radius: 12px;
   height: 44px;
+  &:hover {
+    color: #fff;
+  }
   img {
     filter: brightness(10);
   }
@@ -52,6 +55,7 @@ h1 {
     font-size: 18px;
     line-height: 24px;
     font-weight: 600;
+    color: #fff;
   }
 }
 .link-block {

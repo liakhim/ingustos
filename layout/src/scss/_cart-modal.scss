@@ -42,6 +42,12 @@
           border-radius: 50%;
           background: $main-orange;
           margin-left: 12px;
+          height: 30px;
+          min-width: 44px;
+          min-height: 44px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           p {
             color: #fff;
             line-height: 1;
