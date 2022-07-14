@@ -12,12 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="804387ab-2946-4802-b79c-9cdf53181d2d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/dist/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/layout/dist/css/app.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layout/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/layout/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/router/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/router/products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/src/scss/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layout/src/scss/_card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/src/scss/_cart-modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layout/src/scss/_cart-modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layout/src/scss/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +73,7 @@
       <updated>1656011841621</updated>
       <workItem from="1656011843619" duration="1263000" />
       <workItem from="1656270323611" duration="7521000" />
-      <workItem from="1656446756740" duration="65558000" />
+      <workItem from="1656446756740" duration="76692000" />
     </task>
     <servers />
   </component>
@@ -106,10 +101,10 @@
       <screen x="0" y="25" width="1440" height="787" />
     </state>
     <state x="469" y="277" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.25.1440.787@0.25.1440.787" timestamp="1656538391162" />
-    <state x="323" y="155" key="Vcs.Push.Dialog.v2" timestamp="1657666002795">
+    <state x="323" y="155" key="Vcs.Push.Dialog.v2" timestamp="1657753316958">
       <screen x="0" y="25" width="1440" height="787" />
     </state>
-    <state x="323" y="155" key="Vcs.Push.Dialog.v2/0.25.1440.787@0.25.1440.787" timestamp="1657666002795" />
+    <state x="323" y="155" key="Vcs.Push.Dialog.v2/0.25.1440.787@0.25.1440.787" timestamp="1657753316958" />
     <state x="507" y="223" width="862" height="551" key="find.popup" timestamp="1657745332158">
       <screen x="0" y="25" width="1440" height="791" />
     </state>
@@ -121,11 +116,11 @@
       <screen x="0" y="25" width="1440" height="787" />
     </state>
     <state x="385" y="188" key="run.anything.popup/0.25.1440.787@0.25.1440.787" timestamp="1656798666545" />
-    <state x="462" y="156" width="670" height="512" key="search.everywhere.popup" timestamp="1657655507085">
+    <state x="462" y="156" width="670" height="512" key="search.everywhere.popup" timestamp="1657834884718">
       <screen x="0" y="25" width="1440" height="787" />
     </state>
     <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1656281232942" />
-    <state x="462" y="156" width="670" height="512" key="search.everywhere.popup/0.25.1440.787@0.25.1440.787" timestamp="1657655507085" />
+    <state x="462" y="156" width="670" height="512" key="search.everywhere.popup/0.25.1440.787@0.25.1440.787" timestamp="1657834884718" />
     <state x="462" y="156" width="670" height="513" key="search.everywhere.popup/0.25.1440.788@0.25.1440.788" timestamp="1657569678390" />
   </component>
 </project>
