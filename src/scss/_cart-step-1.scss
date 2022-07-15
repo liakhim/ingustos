@@ -1,0 +1,28 @@
+.cart-step-1 {
+  border: 1px solid red;
+  .name-row {
+    border: 1px solid blue;
+    display: flex;
+    flex-wrap: nowrap;
+    label {
+      width: 50%;
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+  .phone-row {
+    width: 100%;
+    margin-top: 32px;
+    label {
+      width: 100%;
+    }
+  }
+  .email-row {
+    width: 100%;
+    margin-top: 32px;
+    label {
+      width: 100%;
+    }
+  }
+}

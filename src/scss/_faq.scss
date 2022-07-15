@@ -1,0 +1,45 @@
+.faq {
+  margin-bottom: 100px;
+  .container-fluid {
+    .faq-title {}
+    .faq-content {
+      margin-top: 60px;
+      .accordion-item {
+        border: 1px solid #ffffff;
+        .accordion-header {
+          background: #ffffff;
+          .accordion-button {
+            background: #ffffff;
+            &:after {
+              width: 24px;
+              background-size: 24px;
+            }
+            span {
+              font-size: 32px;
+              line-height: 44px;
+              font-family: 'Bradobrei', sans-serif;
+              @media (max-width: 1025px) {
+                font-size: 20px;
+                line-height: 24px;
+              }
+            }
+          }
+          .accordion-button:not(.collapsed) {
+            color: $main-black;
+            box-shadow: none;
+          }
+          .accordion-button:focus {
+            border: none;
+            outline: none;
+            box-shadow: none;
+          }
+        }
+        .accordion-collapse {
+          .accordion-body {
+            padding: 24px 20px 32px;
+          }
+        }
+      }
+    }
+  }
+}

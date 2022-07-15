@@ -1,0 +1,32 @@
+.cart-not-empty {
+  background: $main-orange;
+  padding: 4px 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  white-space: nowrap;
+  &-quantity {
+    color: $main-orange;
+    width: 20px;
+    min-width: 20px;
+    max-width: 20px;
+    height: 20px;
+    min-height: 20px;
+    max-height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    font-size: 14px;
+    line-height: 1;
+  }
+  &-sum {
+    margin-left: 8px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+  }
+}
