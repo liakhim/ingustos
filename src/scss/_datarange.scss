@@ -1,0 +1,33 @@
+.input-daterange {
+  width: 100%;
+  background: #fff;
+}
+.datepicker {
+  padding: 32px!important;
+  border-radius: 16px;
+  .datepicker-days {
+    table {
+      thead {
+        tr {
+          &:nth-child(2) {
+            height: 50px!important;
+          }
+        }
+      }
+    }
+    .day {
+      padding: 10px!important;
+      border-radius: 12px !important;
+    }
+    .day.today {
+      color: $main-red!important;
+      background: none!important;
+    }
+    .day.active {
+      background: $main-orange!important;
+    }
+  }
+}
+.datepicker-switch {
+  font-family: 'Bradobrei', sans-serif;
+}

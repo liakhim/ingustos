@@ -1,0 +1,36 @@
+.cart-step-2 {
+  margin-top: 40px;
+  .street-row {
+    display: flex;
+    flex-wrap: nowrap;
+    label {
+      width: 50%;
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+  .house-row {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 32px;
+    label {
+      width: 25%;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+  .elevator-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-top: 32px;
+    label {
+      width: 25%;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}

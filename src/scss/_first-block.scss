@@ -1,11 +1,11 @@
 .desktop-back {
-  @media (max-width: 690px) {
+  @media (max-width: 768px) {
     display: none;
   }
 }
 .mobile-back {
   display: none;
-  @media (max-width: 690px) {
+  @media (max-width: 768px) {
     display: block;
   }
 }
@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (max-width: 690px) {
+  @media (max-width: 768px) {
     align-items: flex-start;
   }
   .background-image {
@@ -35,7 +35,7 @@
         height: 100%;
       }
     }
-    @media (max-width: 690px) {
+    @media (max-width: 768px) {
       img {
         width: 100%;
       }
@@ -58,8 +58,9 @@
         padding: 67px 0 230px;
         width: 410px;
       }
-      @media (max-width: 690px) {
+      @media (max-width: 768px) {
         padding: 320px 0 80px;
+        margin: auto;
         width: 100%;
       }
       &-pre-title {
@@ -73,7 +74,7 @@
             line-height: 20px;
           }
         }
-        @media (max-width: 690px) {
+        @media (max-width: 768px) {
           p {
             text-align: center;
           }
@@ -110,7 +111,7 @@
             line-height: 24px;
           }
         }
-        @media (max-width: 690px) {
+        @media (max-width: 768px) {
           p {
             text-align: center;
           }
@@ -151,7 +152,7 @@
             }
           }
         }
-        @media (max-width: 690px) {
+        @media (max-width: 768px) {
           .btn {
             padding: 12px 70px;
             span {

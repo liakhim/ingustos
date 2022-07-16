@@ -8,22 +8,26 @@
     <title>Test page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="dist/css/app.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
 </head>
 <body>
 <div id="app">
     <header>
         <div class="container-fluid">
             <div class="contact-block">
-                <a href="#">+7 (495) 111-22-33</a>
-                <p>Ежедневно 08:00 - 23:00</p>
+                <a href="#">+7 (925) 477-06-07 </a>
+                <p>ПН - СБ 10:00 - 19:00</p>
             </div>
             <div class="logo-block">
                 <div class="header-link">
                     <a href="#">Гастробоксы</a>
                 </div>
                 <a href="#" class="logo">
-                    <img src="src/img/logo.svg" alt="">
+                    <img src="src/img/logo-2.svg" alt="">
                 </a>
                 <div class="header-link">
                     <a href="#">Кейтеринг</a>
@@ -39,7 +43,7 @@
                             <p>Корзина</p>
                         </div>
                         <div v-if="true" class="cart-not-empty">
-                            <span class="cart-not-empty-quantity">5</span>
+                            <span class="cart-not-empty-quantity">{{cartArr.length}}</span>
                             <span class="cart-not-empty-sum">{{orderSum || '0'}} р.</span>
                         </div>
                     </a>
@@ -183,7 +187,7 @@
         </div>
         <div class="container-fluid">
             <div class="cards-content" v-if="results.length > 0">
-                <div v-for="product in results" :key="product.id" class="card">
+                <div v-for="product in filteredProducts" :key="product.id" class="card">
                     <a href="#" class="card-image-block">
                         <div class="image">
                             <img :src="product?.images[0]?.src" alt="">
@@ -385,8 +389,9 @@
             <div class="cart-modal-wrapper">
                 <div class="cart-title">
                     <div class="cart-title-text">
-                        <h2>Корзина</h2>
-                        <div class="quantity">
+                        <h2 v-if="currentStep === 0">Корзина</h2>
+                        <h2 v-if="currentStep !== 0">Оформление заказа</h2>
+                        <div v-if="currentStep === 0" class="quantity">
                             <p>{{cartArr.length}}</p>
                         </div>
                     </div>
@@ -394,7 +399,12 @@
                         <img src="src/img/icons/close-black.svg" alt="">
                     </div>
                 </div>
-                <div class="cart-list-empty" v-if="cartArr.length === 0" :class="{show: cartArr.length === 0}">
+                <div class="cart-subtitle">
+                    <span v-if="currentStep === 1">Шаг 1/4 - Заполнение личных данных</span>
+                    <span v-if="currentStep === 2">Шаг 2/4 - Адрес доставки</span>
+                    <span v-if="currentStep === 3">Шаг 3/4 - Время и дата доставки</span>
+                </div>
+                <div class="cart-list-empty" v-if="currentStep === 0 && cartArr.length === 0" :class="{show: cartArr.length === 0}">
                     <div class="image">
                         <img src="src/img/empty-cart.png" alt="">
                     </div>
@@ -402,10 +412,10 @@
                         <h3>Корзина пока пуста!</h3>
                     </div>
                 </div>
-                <div class="cart-list" v-if="cartArr.length > 0">
-                    <div class="cart-list-start">
-                        <span>****</span>
-                    </div>
+                <div class="cart-list" v-if="currentStep === 0 && cartArr.length > 0">
+<!--                    <div class="cart-list-start">-->
+<!--                        <span>****</span>-->
+<!--                    </div>-->
                     <div class="cart-list-item" v-for="item in cartArr">
                         <div class="cart-list-item-image">
                             <img src="src/img/order.png" alt="">
@@ -434,45 +444,119 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cart-list-finish">
-                        <span>****</span>
-                    </div>
+<!--                    <div class="cart-list-finish">-->
+<!--                        <span>****</span>-->
+<!--                    </div>-->
                 </div>
                 <div class="cart-steps">
-                    <div class="cart-step-1">
+                    <div v-if="currentStep === 1" class="cart-step-1">
                         <div class="name-row">
                             <label>
-                                <input class="main-input" type="text" placeholder="Имя">
+                                <input v-model="userName" class="main-input" type="text" placeholder="Имя">
                             </label>
                             <label>
-                                <input disabled class="main-input" type="text" placeholder="Фамилия">
+                                <input v-model="userSecondName" disabled class="main-input" type="text" placeholder="Фамилия">
                                 <span class="input-error"></span>
                             </label>
                         </div>
                         <div class="phone-row">
                             <label>
-                                <input class="main-input" type="tel" placeholder="Имя">
+                                <input v-model="userPhone" class="main-input" type="tel" placeholder="Телефон">
                             </label>
                         </div>
                         <div class="email-row">
                             <label>
-                                <input class="main-input" type="email" placeholder="hello@gmail.com">
+                                <input v-model="userEmail" class="main-input" type="email" placeholder="hello@gmail.com">
                             </label>
                         </div>
                     </div>
+                    <div v-if="currentStep === 2" class="cart-step-2">
+                        <div class="street-row">
+                            <label>
+                                <input class="main-input" type="text" required placeholder="Улица*">
+                            </label>
+                            <label>
+                                <input class="main-input" type="number" required placeholder="Дом*">
+                            </label>
+                        </div>
+                        <div class="house-row">
+                            <label>
+                                <input class="main-input" type="number" required placeholder="Корпус">
+                            </label>
+                            <label>
+                                <input class="main-input" type="number" required placeholder="Офис">
+                            </label>
+                            <label>
+                                <input class="main-input" type="number" required placeholder="Квартира">
+                            </label>
+                            <label>
+                                <input class="main-input" type="number" required placeholder="Этаж">
+                            </label>
+                        </div>
+                        <div class="elevator-row">
+                            <label>
+                                <input class="main-input" type="number" required placeholder="Подъезд">
+                            </label>
+                            <label>
+                                <input class="main-input" type="number" required placeholder="Домофон">
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <span>Есть лифт</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div :class="{'hide' : currentStep !== 3}" class="cart-step-3">
+                        <div class="date-block">
+                            <pre>
+                                {{date}}
+                            </pre>
+                            <label class="input-daterange">
+                                <input id="date" @change="test()" v-model="userOrderDate" type="text" class="main-input" placeholder="Arriving Date">
+                                <img src="src/img/icons/calendar.svg" alt="">
+                            </label>
+                        </div>
+                        <div class="time-block">
+                            <label>
+                                <input type="text" class="main-input">
+                            </label>
+                        </div>
+                        <div class="comment-block">
+                            <label>
+                                <textarea name="comment" id="comment" cols="30" rows="10" class="main-input"></textarea>
+                            </label>
+                        </div>
+                        <div class="person-block">
+                            <div class="person-block-text">
+                                <p>Количество персон</p>
+                                <span>Мы подготовим необходимое вам количество приборов к заказу</span>
+                            </div>
+                            <div class="person-block-counter">
+                                <div class="minus">
+                                    <img src="src/img/icons/minus.svg" alt="">
+                                </div>
+                                <div class="result">
+                                    <span>1</span>
+                                </div>
+                                <div class="plus">
+                                    <img src="src/img/icons/plus.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cart-sum">
+                <div v-if="currentStep === 0" class="cart-sum">
                     <ul class="cart-sum-list">
                         <li class="cart-sum-list-item">
                             <p>Общая сумма</p>
-                            <b>19 475 р.</b>
+                            <b>{{orderSum}} р.</b>
                         </li>
                         <li class="cart-sum-list-item">
                             <p>
                                 <span>Доставка</span>
-                                <span class="place-span">ул. Ленина, 156, кв.34 25.08.2021   13:30</span>
+<!--                                <span class="place-span">ул. Ленина, 156, кв.34 25.08.2021   13:30</span>-->
                             </p>
-                            <b>500 р.</b>
+                            <b>400 р.</b>
                         </li>
                         <li class="cart-sum-list-item">
                             <p>Скидка</p>
@@ -480,12 +564,16 @@
                         </li>
                         <li class="cart-sum-list-item total">
                             <p>Итого</p>
-                            <b>20 425 р.</b>
+                            <b>{{orderSum + 400}} р.</b>
                         </li>
                     </ul>
                 </div>
-                <div class="cart-button">
-                    <button class="btn orange-button">Перейти к оформлению</button>
+                <div v-if="currentStep === 0" class="cart-button">
+                    <button @click="currentStep = 1" class="btn orange-button">Перейти к оформлению</button>
+                </div>
+                <div v-else class="order-button">
+                    <button class="btn outline orange-button">Отмена</button>
+                    <button @click="currentStep += 1" class="btn orange-button">Далее</button>
                 </div>
             </div>
         </div>
@@ -493,7 +581,7 @@
     <footer>
         <div class="container-fluid">
             <div class="footer-logo-block">
-                <img src="src/img/logo-footer.svg" alt="">
+                <img src="src/img/logo-2.svg" alt="">
             </div>
             <div class="footer-menu-block">
                 <ul class="footer-menu-block-list">
@@ -567,142 +655,15 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
-    <script>
-        const url = 'router/products.php';
-        const urlTags = 'router/tags.php';
-        let vm = new Vue({
-            el: '#app',
-            data: {
-                openModal: false,
-                message: 'qwerty',
-                openCartModal: false,
-                results: [],
-                tags: [],
-                cartArr: [],
-                // localProducts: []
-            },
-            methods: {
-                addToCart (product) {
-                    console.log(product)
-                    const k = this.localProducts.find(v => v.id === product.id)
-                    this.cartArr.push({
-                        ...k,
-                        quantity: 2
-                    })
-                },
-                deleteFromCart (id) {
-                    const ind = this.cartArr.indexOf(this.cartArr.find(v => v.id === id))
-                    this.cartArr.splice(ind, 1)
-                },
-                changeVariation (id, variation_id) {
-                  const prod = this.results.find(v => +v.id === +id)
-                    console.log(prod)
-                    prod.vars.map(v => {
-                        v.active = false
-                    })
-                    prod.vars[+variation_id].active = true
-                    let init = this.results
-                    this.results = []
-                    this.results = init
-                },
-                createOrder () {
-                    axios.post('router/order.php', {
-                        withCredentials: true
-                    })
-                },
-                postSend () {
-                    axios.post('router/test.php', JSON.stringify({
-                        params: '1'
-                    }), {
-                        headers: {
-                            'Content-Type': 'application/json'
-                        }
-                    })
-                },
-                activeVariable (product) {
-                    return product.vars.find(v => v.active)
-                },
-                countPercent (product) {
-                    return Math.floor(((this.choosePrice(product) - this.chooseMainPrice(product))/this.choosePrice(product))*100)
-                },
-                choosePrice (product) {
-                    let price
-                    if (product.vars) {
-                        let activeVariable = this.activeVariable(product)
-                        if (activeVariable.regular_price) {
-                            price = activeVariable.regular_price
-                        } else {
-                            price = activeVariable.price
-                        }
-                    } else {
-                        price = product.price
-                    }
-                    return price
-                },
-                chooseMainPrice (product) {
-                    let price
-                    if (product.vars) {
-                        let activeVariable = this.activeVariable(product)
-                        if (activeVariable.sale_price) {
-                            price = activeVariable.sale_price
-                        } else {
-                            price = activeVariable.price
-                        }
-                    } else {
-                        price = product.price
-                    }
-                    return price
-                }
-            },
-            computed: {
-              localProducts () {
-                  const arr = []
-                  this.results.forEach(v => {
-                      arr.push({
-                          id: v.id,
-                          active_variation_id: (v.vars && v.vars.length) ? v.vars.find(v => v.active).id : null,
-                          active_variation_size: (v.vars && v.vars.length) ? v.vars.find(v => v.active).attributes[0].option : null ,
-                          price: this.chooseMainPrice(v),
-                          name: v.name,
-                          attributes: v.attributes,
-                      })
-                  })
-                  return arr
-              },
-                orderSum () {
-                  let counter = 0
-                   this.cartArr.forEach(v => {
-                       counter += +v.price
-                   })
-                   return counter
-               }
-            },
-            mounted () {
-                axios.get(urlTags, {
-                    withCredentials: true
-                }).then(response => {
-                    this.tags = response.data
-                })
-                let t = []
-                this.results = t.map(v => {
-                    if (!!v.vars) {
-                        v.vars[1].active = true
-                    }
-                    return v
-                })
-                axios.get(url, {
-                    withCredentials: true
-                }).then(response => {
-                    console.log(response)
-                    this.results = response.data.map(v => {
-                        if (!!v.vars) {
-                            v.vars[1].active = true
-                        }
-                        return v
-                    })
-                })
-            }
-        })
-    </script>
+<script>
+    $(document).ready(function(){
+        $('.input-daterange').datepicker({
+            format: 'dd-mm-yyyy',
+            todayHighlight: true,
+            startDate: '0d'
+        });
+
+    });
+</script>
 </body>
 </html>

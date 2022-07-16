@@ -92,6 +92,9 @@ footer {
           flex-direction: column-reverse;
         }
         .cards-icons {
+          @media (max-width: 769px) {
+            margin-top: 20px;
+          }
           &-list {
             display: flex;
             align-items: center;
@@ -114,11 +117,17 @@ footer {
           }
         }
         .social-icons {
+          @media (max-width: 769px) {
+            margin-top: 20px;
+          }
           &-list {
             display: flex;
             align-items: center;
             justify-content: flex-start;
             padding: 0 0 0 20px;
+            @media (max-width: 769px) {
+              padding: 0;
+            }
             &-item {
               width: 28px;
               height: 28px;
@@ -153,10 +162,13 @@ footer {
         @media (max-width: 769px) {
           a {
             font-size: 16px;
+            line-height: 20px;
             padding: 0 12px 0 0;
           }
           p {
             padding: 0 0 0 12px;
+            font-size: 16px;
+            line-height: 20px;
           }
         }
       }

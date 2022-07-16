@@ -5,11 +5,14 @@
 @import "first-block";
 @import "cart_not_empty";
 @import "cart-step-1";
+@import "cart-step-2";
+@import "cart-step-3";
 @import "card";
 @import "filters";
 @import "cart-modal";
 @import "steps";
 @import "faq";
+@import "datarange";
 @import "footer";
 h1 {
   font-family: 'Bradobrei', sans-serif;
@@ -55,6 +58,12 @@ h1 {
     line-height: 64px;
   }
 }
+.btn {
+  &:focus {
+    outline: none!important;
+    box-shadow: none!important;
+  }
+}
 .orange-button {
   background: $main-orange;
   color: #ffffff;
@@ -62,8 +71,25 @@ h1 {
   height: 44px;
   font-size: 22px;
   line-height: 28px;
+  &:hover {
+    background: $main-orange-hover;
+    color: #ffffff;
+  }
+  &:disabled {
+    background: #A6AEB1;
+    color: #ffffff;
+  }
   img {
     filter: brightness(10);
+  }
+}
+.orange-button.outline {
+  background: #fff;
+  color: $main-orange;
+  border: 1px solid $main-orange;
+  &:hover {
+    color: $main-orange-hover;
+    border: 1px solid $main-orange-hover;
   }
 }
 .red-button {

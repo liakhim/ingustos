@@ -1,7 +1,16 @@
 .faq {
   margin-bottom: 100px;
   .container-fluid {
-    .faq-title {}
+    .faq-title {
+      h2 {
+        font-size: 48px;
+        line-height: 64px;
+        @media (max-width: 1441px) {
+          font-size: 32px;
+          line-height: 44px;
+        }
+      }
+    }
     .faq-content {
       margin-top: 60px;
       .accordion-item {

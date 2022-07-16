@@ -11,7 +11,8 @@ header {
   justify-content: space-between;
   // background: #ffffff10;
   // backdrop-filter: blur(10px);
-  @media (max-width: 1025px) {
+  background: #fff;
+  @media (max-width: 1024px) {
     height: 70px;
   }
   .container-fluid {
@@ -19,6 +20,7 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+    background: #fff;
     .contact-block {
       flex: 1;
       white-space: nowrap;
@@ -30,7 +32,7 @@ header {
           font-size: 16px;
         }
       }
-      @media (max-width: 1025px) {
+      @media (max-width: 1024px) {
         display: none;
       }
       a {
@@ -58,7 +60,7 @@ header {
         @media (max-width: 1366px) {
           width: 180px;
         }
-        @media (max-width: 1025px) {
+        @media (max-width: 1024px) {
           display: none;
         }
         a {
@@ -79,7 +81,7 @@ header {
         width: 108px;
         max-width: 108px;
         min-width: 108px;
-        @media (max-width: 1025px) {
+        @media (max-width: 1024px) {
           width: 75px;
           max-width: 75px;
           min-width: 75px;
@@ -104,7 +106,7 @@ header {
       }
       .burger-block {
         display: none;
-        @media (max-width: 1025px) {
+        @media (max-width: 1024px) {
           display: block;
         }
       }

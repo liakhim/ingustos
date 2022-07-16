@@ -21,13 +21,18 @@
   overflow: hidden;
   margin-bottom: 10px;
   @media (max-width: 1025px) {
-    width: 50%;
+    width: calc(50% - 10px);
+    &:nth-child(2n + 1) {
+      margin-right: 10px;
+    }
   }
   @media (max-width: 769px) {
-    width: 335px;
+    // width: 335px;
+    margin-right: 0;
   }
   @media (max-width: 712px) {
     width: 100%;
+    margin-right: 0;
   }
   &-image-block {
     width: 100%;
