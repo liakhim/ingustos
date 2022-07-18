@@ -101,6 +101,9 @@ footer {
             justify-content: flex-start;
             padding: 0 20px;
             border-right: 1px solid $main-gray;
+            @media (max-width: 768px) {
+              border-right: 0;
+            }
             &-item {
               width: 32px;
               height: 32px;
@@ -149,6 +152,13 @@ footer {
           padding: 0 20px 0 0;
           border-right: 1px solid $main-gray;
           font-size: 20px;
+        }
+        .info {
+          p {
+            @media (max-width: 768px) {
+              font-size: 12px;
+            }
+          }
         }
         p {
           padding: 0 0 0 20px;

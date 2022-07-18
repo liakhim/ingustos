@@ -1,7 +1,8 @@
 .cards-content {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 10px;
   flex-wrap: wrap;
   padding: 0 0 30px 0;
   @media (max-width: 769px) {
@@ -22,9 +23,9 @@
   margin-bottom: 10px;
   @media (max-width: 1025px) {
     width: calc(50% - 10px);
-    &:nth-child(2n + 1) {
-      margin-right: 10px;
-    }
+    //&:nth-child(2n + 1) {
+    //  margin-right: 10px;
+    //}
   }
   @media (max-width: 769px) {
     // width: 335px;
@@ -131,9 +132,10 @@
         }
         span {
           font-weight: 500;
-          font-size: 28px;
-          line-height: 36px;
+          font-size: 18px;
+          line-height: 24px;
           color: $main-gray;
+          white-space: nowrap;
         }
       }
       .size-block.active {
@@ -192,6 +194,7 @@
           }
           .value {
             span {
+              text-decoration: line-through;
               color: $main-gray;
               font-size: 18px;
               line-height: 24px;

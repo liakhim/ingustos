@@ -1,0 +1,20 @@
+.block-dev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
+  .title {
+    margin-bottom: 40px;
+    h2 {
+      font-family: 'Bradobrei', sans-serif;
+      text-align: center;
+    }
+  }
+  .image {
+    width: 300px;
+  }
+}

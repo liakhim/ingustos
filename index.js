@@ -3,44 +3,183 @@ const urlTags = 'router/tags.php';
 let vm = new Vue({
     el: '#app',
     data: {
+        ru: vdp_translation_ru.js,
+        disabledDates: {
+            ranges: [{ // Disable dates in given ranges (exclusive).
+                from: new Date(2010, 9, 16),
+                to: new Date(Date.now() - 86400000)
+            }]
+        },
         currentStep: 0,
         openModal: false,
         message: 'qwerty',
         openCartModal: false,
         results: [],
         tags: [],
-        cartArr: [],
+        cartArr: [
+            // {
+            //     "id": 32,
+            //     "active_variation_id": 34,
+            //     "active_variation_size": "M",
+            //     "price": "1000",
+            //     "name": "Гастробокс 35",
+            //     "attributes": [
+            //         {
+            //             "id": 0,
+            //             "name": "Size",
+            //             "position": 0,
+            //             "visible": true,
+            //             "variation": true,
+            //             "options": [
+            //                 "S",
+            //                 "M",
+            //                 "L"
+            //             ]
+            //         }
+            //     ],
+            //     "quantity": 2
+            // }
+        ],
         userName: '',
         userSecondName: '',
         userPhone: '',
         userEmail: '',
-        userOrderDate: ''
+        // ********* Step 2
+        userStreet: '',
+        userHouse: '',
+        userCorp: '',
+        userOffice: '',
+        userFlat: '',
+        userArea: '',
+        userPod: '',
+        userHousePhone: '',
+        userHaveElevator: false,
+        // ******** Step 3
+        userOrderDate: '',
+        // userOrderTime: '',
+        userOrderTimeHour: 16,
+        userOrderTimeMinute: 0,
+        userOrderComment: '',
+        userOrderPersonQuantity: 1,
+        timeDropdownShow: false,
+        preloadingOrder: false,
+        userComment: '',
+        orderId: ''
+    },
+    components: {
+        vuejsDatepicker
     },
     watch: {
         openCartModal (v) {
-            document.body.style.overflowY = v ? "hidden" : "scroll"
-        },
-      currentStep (v) {
-          if (v === 3) {
-              $('.input-daterange').datepicker({
-                  format: 'dd-mm-yyyy',
-                  todayHighlight: true,
-                  startDate: '0d'
-              });
-          }
-      }
+            if (window.screen.width < 769) {
+                document.body.style.overflowY = v ? "hidden" : "scroll"
+            }
+        }
     },
     methods: {
+        closeOrder () {
+          this.openCartModal = false
+            this.userName = ''
+                this.userSecondName = ''
+                this.userPhone = ''
+                this.userEmail = ''
+                this.userStreet = ''
+                this.userHouse = ''
+                this.userCorp = ''
+                this.userOffice = ''
+                this.userFlat = ''
+                this.userArea = ''
+                this.userPod = ''
+                this.userHousePhone = ''
+                this.userHaveElevator = false
+                this.userOrderDate = ''
+                this.userOrderTimeHour = 16
+                this.userOrderTimeMinute = 0
+                this.userOrderComment = ''
+                this.userOrderPersonQuantity = 1
+                this.timeDropdownShow = false
+                this.preloadingOrder = false
+                this.userComment = ''
+        },
+        dropdown(e){
+            let el = this.$refs.dropdown;
+            let target = e.target;
+            if (el !== target && !el.contains(target)){
+                this.timeDropdownShow = false
+            }
+        },
+        incCurrentStep () {
+          if (this.currentStep <= 3) {
+              this.currentStep += 1
+          }
+          if (this.currentStep === 4) {
+              this.createOrder()
+          }
+        },
+        close () {
+            this.timeDropdownShow = false
+        },
+        userOrderTimeMinuteForShow (min) {
+            if (min >= 0 && min <=9) {
+                return '0' + min
+            } else {
+                return min
+            }
+        },
+        incHour () {
+          this.userOrderTimeHour += 1
+        },
+        decHour () {
+          if (this.userOrderTimeHour >= 2) {
+              this.userOrderTimeHour -= 1
+          }
+        },
+        incMinute () {
+            if (this.userOrderTimeMinute <= 54) {
+                this.userOrderTimeMinute += 5
+            }
+        },
+        decMinute () {
+            if (this.userOrderTimeMinute >= 5) {
+                this.userOrderTimeMinute -= 5
+            }
+        },
+        incPersons () {
+            this.userOrderPersonQuantity += 1
+        },
+        decPersons () {
+            if (this.userOrderPersonQuantity >= 2) {
+                this.userOrderPersonQuantity -= 1
+            }
+        },
         test () {
           alert('change')
+        },
+        testBlur () {
+          alert('blur')
+        },
+        customFormatter(date) {
+            return moment(date).format('MMMM Do YYYY, h:mm:ss a');
         },
         addToCart (product) {
             console.log(product)
             const k = this.localProducts.find(v => v.id === product.id)
             this.cartArr.push({
                 ...k,
-                quantity: 2
+                quantity: 1
             })
+        },
+        incCartProductQuantity (id) {
+            const ind = this.cartArr.indexOf(this.cartArr.find(v => v.id === id))
+            this.cartArr[ind].quantity += 1
+        },
+        decCartProductQuantity (id) {
+            const ind = this.cartArr.indexOf(this.cartArr.find(v => v.id === id))
+            if (this.cartArr[ind].quantity > 1) {
+                this.cartArr[ind].quantity -= 1
+            } else {
+                this.deleteFromCart(id)
+            }
         },
         deleteFromCart (id) {
             const ind = this.cartArr.indexOf(this.cartArr.find(v => v.id === id))
@@ -58,8 +197,49 @@ let vm = new Vue({
             this.results = init
         },
         createOrder () {
-            axios.post('router/order.php', {
-                withCredentials: true
+            return new Promise((resolve, reject) => {
+                axios.post('router/order.php', {
+                    "billing": {
+                        "first_name": this.userName,
+                        "last_name": this.userSecondName,
+                        "address_1": this.address,
+                        "address_2": "",
+                        "city": "Москва",
+                        "state": "MSC",
+                        "postcode": "127000",
+                        "country": "RU",
+                        "email": this.userEmail,
+                        "phone": this.userPhone
+                    },
+                    "shipping": {
+                        "first_name": this.userName,
+                        "last_name": this.userSecondName,
+                        "address_1": this.address,
+                        "address_2": "",
+                        "city": "Москва",
+                        "state": "MSC",
+                        "postcode": "127000",
+                        "country": "RU",
+                    },
+                    "line_items": this.sendProducts,
+                    "shipping_lines": [
+                        {
+                            "method_id": "flat_rate",
+                            "method_title": "Flat Rate",
+                            "total": "400.00"
+                        }
+                    ]
+                }).then((response) => {
+                    this.orderId = response.data.id
+                    console.log('-------')
+                    console.log(response.data.id)
+                    axios.post('router/order_note.php', {
+                        id: response.data.id,
+                        note: this.note
+                    }).then(() => {
+                        this.currentStep = 5
+                    })
+                })
             })
         },
         postSend () {
@@ -107,9 +287,82 @@ let vm = new Vue({
         }
     },
     computed: {
+        address () {
+            let address = this.userStreet + ', дом:' + this.userHouse
+            if (this.userCorp.length) {
+                address += 'Корпус: ' + this.userCorp
+            }
+            if (this.userOffice.length) {
+                address += 'Офис: ' + this.userOffice
+            }
+            if (this.userFlat.length) {
+                address += 'Офис: ' + this.userFlat
+            }
+            if (this.userArea.length) {
+                address += 'Этаж: ' + this.userArea
+            }
+            if (this.userPod.length) {
+                address += 'Подъезд: ' + this.userPod
+            }
+            if (this.userHousePhone.length) {
+                address += 'Домофон: ' + this.userHousePhone
+            }
+            if (this.userHaveElevator.length) {
+                address += 'Лифт: есть'
+            }
+          return address
+        },
+        note () {
+            let note = 'Дата доставки: ' + this.userOrderDate + 'Время доставки: ' + this.userOrderTime
+            if (this.userComment.length > 0) {
+                note += ';' + this.userComment
+            }
+            note += '; Количество персон: ' + this.userOrderPersonQuantity
+            return note
+        },
+        sendProducts () {
+            const products = []
+            this.cartArr.forEach(v => {
+                products.push({
+                    product_id: v.id,
+                    variation_id: v.active_variation_id,
+                    quantity: v.quantity
+                })
+            })
+            return products
+        },
+        today () {
+          return 'Сегодня (' + moment().format('DD.MM.YYYY') + ')'
+        },
+        tomorrow () {
+          return 'Завтра (' + moment().add(1, 'days').format('DD.MM.YYYY') + ')'
+        },
+        userOrderTime () {
+          return this.userOrderTimeHour + ':' + this.userOrderTimeMinuteForShow(this.userOrderTimeMinute)
+        },
         date () {
-            console.log(document.getElementById('date'))
+          console.log(document.getElementById('date'))
           return document.getElementById('date')
+        },
+        activeNextStepButton () {
+            if (this.currentStep === 1
+                && this.userName.length > 0
+                && this.userSecondName.length > 0
+                && this.userEmail.length > 0
+                && this.userPhone.length > 0)
+            {
+                return false
+            }
+            if (this.currentStep === 2
+                && this.userStreet.length > 0
+                && this.userHouse.length > 0 )
+            {
+                return false
+            }
+            if (this.currentStep === 3 && !!this.userOrderDate && !!this.userOrderTime) {
+                return false
+            }
+            return true
         },
         localProducts () {
             const arr = []
@@ -131,17 +384,12 @@ let vm = new Vue({
         orderSum () {
             let counter = 0
             this.cartArr.forEach(v => {
-                counter += +v.price
+                counter += +v.price * v.quantity
             })
             return counter
         }
     },
     mounted () {
-        axios.get(urlTags, {
-            withCredentials: true
-        }).then(response => {
-            this.tags = response.data
-        })
         let t = []
         this.results = t.map(v => {
             if (!!v.vars) {
@@ -160,5 +408,11 @@ let vm = new Vue({
                 return v
             })
         })
-    }
+    },
+    created(){
+        document.addEventListener('click', this.dropdown)
+    },
+    destroyed () {
+        document.removeEventListener('click', this.dropdown)
+    },
 })

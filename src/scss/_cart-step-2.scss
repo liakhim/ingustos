@@ -5,19 +5,42 @@
     flex-wrap: nowrap;
     label {
       width: 50%;
+      @media (max-width: 768px) {
+        width: 100%;
+        &:first-child {
+          margin-right: 0;
+          margin-bottom: 32px;
+        }
+      }
       &:first-child {
         margin-right: 20px;
       }
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
     }
   }
   .house-row {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: space-between;
     margin-top: 32px;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      margin-top: 0;
+    }
     label {
       width: 25%;
       &:not(:last-child) {
         margin-right: 20px;
+      }
+      @media (max-width: 768px) {
+        width: calc(50% - 10px);
+        margin-right: 0;
+        margin-top: 32px;
+        &:not(:last-child) {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -26,10 +49,22 @@
     flex-wrap: nowrap;
     justify-content: flex-start;
     margin-top: 32px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
     label {
       width: 25%;
       &:not(:last-child) {
         margin-right: 20px;
+      }
+      &:last-child {
+        width: 50%;
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+        &:not(:last-child) {
+          margin-bottom: 32px;
+        }
       }
     }
   }

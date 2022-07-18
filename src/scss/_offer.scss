@@ -1,0 +1,35 @@
+.offer {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  .offer-title {
+    h2 {
+      font-family: Bradobrei, sans-serif;
+      margin-bottom: 30px;
+    }
+    h3 {
+      font-family: Bradobrei, sans-serif;
+      margin-bottom: 12px;
+    }
+  }
+  .offer-text-block {
+    margin: 0 0 12px 0;
+    p {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  .offer-list-block {
+    margin: 0 0 12px 0;
+    ul {
+      li {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 12px;
+        span {
+          color: $main-red;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
