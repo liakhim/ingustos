@@ -11,24 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="804387ab-2946-4802-b79c-9cdf53181d2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/img/icons/minus.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/plus.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/_cart-step-2.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/_cart-step-3.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/_datarange.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/app.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_cart-modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_cart-modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_cart-step-1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_cart-step-1.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_faq.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_faq.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_first-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_first-block.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +49,12 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\ingustos\dist\src" />
+      <recent name="$PROJECT_DIR$/layout/router" />
+      <recent name="$PROJECT_DIR$/layout/src/img" />
+      <recent name="$PROJECT_DIR$/layout/src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\OpenServer\domains\ingustos\src\img" />
       <recent name="C:\OpenServer\domains\ingustos\src\img\icons" />
@@ -73,12 +62,12 @@
       <recent name="C:\OpenServer\domains\ingustos\dist\src\fonts" />
       <recent name="$PROJECT_DIR$/layout/proxy" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\ingustos\dist\src" />
-      <recent name="$PROJECT_DIR$/layout/router" />
-      <recent name="$PROJECT_DIR$/layout/src/img" />
-      <recent name="$PROJECT_DIR$/layout/src" />
-    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
+      <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
