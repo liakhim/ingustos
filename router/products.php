@@ -5,8 +5,8 @@ use Automattic\WooCommerce\Client;
 
 $woocommerce = new Client(
     'http://ingustos/wp',
-    'ck_19d1708a280b226b07138e2ab9a62e5a2920e697',
-    'cs_de3b4b17b2bccb83cc75a5acc98479837f646ccc',
+    'ck_49f30f3d18b3c535862f892b78ed4e58045f153a',
+    'cs_599361e58c888ef761404b3b42d0ed40f9ff5e7a',
     [
         'wp_api' => true,
         'version' => 'wc/v3'

@@ -6,7 +6,7 @@
   z-index: 10001;
   width: 0;
   transition: 0.6s;
-  overflow-y: auto;
+  overflow: auto;
   display: block;
   &-overlay {
     position: fixed;
@@ -23,19 +23,26 @@
     width: 750px;
     padding: 40px 48px;
     position: relative;
-    height: 100%;
     background: #ffffff;
-    min-height: 765px;
+    min-height: max(765px, 100vh);
     box-shadow: 0 12px 40px rgba(156, 163, 175, 0.25);
     border-radius: 60px 0 0 60px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    min-width: 390px;
     @media (max-width: 769px) {
-      padding: 20px;
+      padding: 20px 20px 20px 20px;
       border-radius: 0;
       transform: translateX(100%);
       width: 100%;
+      min-height: 100vh;
+    }
+    @media (max-width: 400px) {
+      min-width: 375px;
+    }
+    @media (max-width: 321px) {
+      min-width: 320px;
     }
     .cart-title {
       display: flex;
@@ -67,6 +74,12 @@
             line-height: 1;
           }
         }
+        @media (max-width: 768px) {
+          h2 {
+            font-size: 24px;
+            line-height: 36px;
+          }
+        }
       }
       &-close-modal {
         cursor: pointer;
@@ -79,6 +92,12 @@
         font-size: 20px;
         line-height: 24px;
         color: #A6AEB1;
+      }
+      @media (max-width: 768px) {
+        span {
+          font-size: 18px;
+          line-height: 20px;
+        }
       }
     }
     .cart-list-empty {
@@ -119,10 +138,15 @@
         align-items: center;
         padding: 8px 20px;
         height: 100px;
+        @media (max-width: 768px) {
+          height: 80px;
+          padding: 8px;
+        }
         &:hover {
           background: $light-gray;
           .cart-list-item-name {
             .quantity-block {
+              white-space: nowrap;
               &-chevron {
                 display: flex;
                 cursor: pointer;
@@ -145,21 +169,49 @@
           overflow: hidden;
           display: flex;
           align-items: center;
+          @media (max-width: 768px) {
+            display: none;
+          }
         }
         &-name {
           display: flex;
           align-items: center;
           width: 100%;
+          .quantity-block-wrap {
+            display: flex;
+            align-items: center;
+            @media (max-width: 768px) {
+              flex-direction: column-reverse;
+              align-items: flex-start;
+            }
+          }
           .quantity-block {
+            @media (max-width: 768px) {
+              display: flex;
+              flex-direction: row-reverse;
+              align-items: center;
+              justify-content: center;
+              margin-top: 8px;
+              p {
+                margin: 0 12px;
+              }
+            }
             p {
               font-size: 22px;
               line-height: 28px;
               font-weight: 600;
+              white-space: nowrap;
             }
             &-chevron {
               display: none;
               align-items: center;
               justify-content: center;
+              @media (max-width: 768px) {
+                display: flex;
+                img {
+                  transform: rotate(90deg);
+                }
+              }
               img {}
             }
             .down {
@@ -171,10 +223,16 @@
             align-items: center;
             justify-content: center;
             margin: 0 16px;
+            @media (max-width: 768px) {
+              display: none;
+            }
           }
           .name-block {
             p {
               font-size: 20px;
+              @media (max-width: 768px) {
+                font-size: 20px;
+              }
               span {
                 color: $main-red
               }
@@ -185,19 +243,30 @@
             p {
               color: $main-orange;
               font-weight: 600;
+              white-space: nowrap;
             }
           }
           .delete-block {
             display: none;
             cursor: pointer;
             margin-left: 20px;
+            @media (max-width: 768px) {
+              display: flex;
+            }
+          }
+          @media (max-width: 768px) {
+            // border: 1px solid red;
           }
         }
       }
     }
     .cart-steps {
       width: 100%;
-      border: 1px solid red;
+      height: 100%;
+      @media (max-width: 768px) {
+        padding: 0 0 20px 0
+      }
+      // border: 1px solid red;
     }
     .cart-sum {
       margin: 24px 0 30px;
@@ -248,6 +317,9 @@
     .cart-button {
       margin: auto 0 0;
       width: 100%;
+      @media (max-width: 469px) {
+        margin: auto 0 80px 0;
+      }
       button {
         width: 100%;
         height: 52px;
@@ -260,6 +332,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @media (max-width: 469px) {
+        margin: auto 0 80px 0;
+      }
       button {
         width: 50%;
         &:not(:last-child) {

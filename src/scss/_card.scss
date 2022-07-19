@@ -1,11 +1,23 @@
 .cards-content {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  //align-items: flex-start;
+  //justify-content: center;
+  //gap: 10px;
+  //flex-wrap: wrap;
   padding: 0 0 30px 0;
-  @media (max-width: 769px) {
-    justify-content: space-between;
+  @media (max-width: 1700px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (max-width: 1441px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (max-width: 1365px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 768px) {
+    // justify-content: space-between;
+    grid-template-columns: 1fr;
   }
   @media (max-width: 712px) {
     justify-content: center;
@@ -17,18 +29,29 @@
   flex-direction: column;
   align-items: center;
   border-radius: 32px;
+  margin: auto;
   border: 1px solid rgba(169, 176, 180, 0.5);
   overflow: hidden;
   margin-bottom: 10px;
-  @media (max-width: 1025px) {
-    width: calc(50% - 10px);
-    &:nth-child(2n + 1) {
-      margin-right: 10px;
-    }
+  @media (max-width: 1825px) {
+    width: calc(100% - 20px);
   }
-  @media (max-width: 769px) {
+  @media (max-width: 1440px) {
+    width: calc(100% - 20px);
+  }
+  @media (max-width: 1366px) {
+    width: calc(100% - 20px);
+  }
+  @media (max-width: 1024px) {
+    width: calc(100% - 20px);
+    max-width: 420px;
+    //&:nth-child(2n + 1) {
+    //  margin-right: 10px;
+    //}
+  }
+  @media (max-width: 768px) {
     // width: 335px;
-    margin-right: 0;
+    // margin-right: 0;
   }
   @media (max-width: 712px) {
     width: 100%;
@@ -73,6 +96,7 @@
   }
   &-content-block {
     padding: 28px 24px 24px;
+    width: 100%;
     &-title {
       & > * {
         font-family: 'Bradobrei', sans-serif;
@@ -131,9 +155,10 @@
         }
         span {
           font-weight: 500;
-          font-size: 28px;
-          line-height: 36px;
+          font-size: 18px;
+          line-height: 24px;
           color: $main-gray;
+          white-space: nowrap;
         }
       }
       .size-block.active {
@@ -192,6 +217,7 @@
           }
           .value {
             span {
+              text-decoration: line-through;
               color: $main-gray;
               font-size: 18px;
               line-height: 24px;
