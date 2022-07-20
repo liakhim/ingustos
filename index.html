@@ -95,9 +95,9 @@
                 </div>
             </div>
         </header>
-    <!--    <pre>-->
-    <!--        {{cartArr}}-->
-    <!--    </pre>-->
+<!--        <pre>-->
+<!--            {{localProducts}}-->
+<!--        </pre>-->
     <!--    <button @click="createOrder()" class="btn btn-success">-->
     <!--        send test-->
     <!--    </button>-->
@@ -218,7 +218,8 @@
                     <div v-for="product in filteredProducts" :key="product.id" class="card">
                         <a href="#" class="card-image-block">
                             <div class="image">
-                                <img :src="product?.images[0]?.src" alt="">
+<!--                                <img :src="product?.images[0]?.src" alt="">-->
+                                <img :src="(activeVariable(product).image) ? activeVariable(product).image.src : product?.images[0]?.src" alt="">
     <!--                            <img src="src/img/image.png" alt="">-->
                             </div>
                             <div class="labels">
@@ -238,7 +239,8 @@
                             <div class="card-content-block-title">
                                 <p>{{product.name}}</p>
                             </div>
-                            <div v-html="product.description" class="card-content-block-description">
+                            <div v-html="activeVariable(product).description.length > 0 ? activeVariable(product).description : product.description"
+                                 class="card-content-block-description">
     <!--                            <p>Ассорти тарталеток: риет из лосося с мидией, икра палтуса с огурцом, икра лососевая,-->
     <!--                                икра щучья, тигровая креветка, лосось с творожным сыром  </p>-->
                             </div>
@@ -248,6 +250,11 @@
                                      :key="index"
                                      @click="changeVariation(product.id, index)"
                                      :class="{active: size.active}">
+                                    <div v-if="cartArr.find(v => v.active_variation_id === size.id)" class="size-block-quantity-label">
+                                        <span class="size-block-quantity-label-number">
+                                            {{cartArr.find(v => v.id === product.id).quantity}}
+                                        </span>
+                                    </div>
                                     <span>{{size.attributes.find(v => v.name.toLowerCase() === 'size').option}} гр.</span>
                                 </div>
     <!--                            <div class="size-block active">-->
@@ -264,10 +271,12 @@
                                         <span v-else>персон</span>
                                     </p>
                                 </div>
-                                <div v-if="activeVariable(product).dimensions.length && activeVariable(product).weight" class="dot-delimiter">
+                                <!-- Убрать && false если появятся новые параметры -->
+                                <div v-if="activeVariable(product).dimensions.length && activeVariable(product).weight && false" class="dot-delimiter">
                                     <div class="marker"></div>
                                 </div>
-                                <div v-if="activeVariable(product).weight" class="sub-info-block">
+                                <!-- Вес временно не отображаем -->
+                                <div v-if="activeVariable(product).weight && false" class="sub-info-block">
                                     <p>{{activeVariable(product).weight}} г.</p>
                                 </div>
                             </div>
@@ -460,7 +469,7 @@
     <!--                    </div>-->
                         <div class="cart-list-item" v-for="item in cartArr">
                             <div class="cart-list-item-image">
-                                <img src="src/img/order.png" alt="">
+                                <img :src="item.active_variation_image.src" alt="">
                             </div>
                             <div class="cart-list-item-name">
                                 <div class="quantity-block-wrap">
@@ -492,7 +501,7 @@
     <!--                        <span>****</span>-->
     <!--                    </div>-->
                     </div>
-                    <div class="cart-steps" v-if="cartArr.length > 0 || currentStep === 5">
+                    <div class="cart-steps" v-if="cartArr.length > 0 || currentStep === 5 || true   ">
                         <div v-if="currentStep === 1" class="cart-step-1">
                             <div class="name-row">
                                 <label>

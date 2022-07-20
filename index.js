@@ -384,7 +384,8 @@ let vm = new Vue({
                 arr.push({
                     id: v.id,
                     active_variation_id: (v.vars && v.vars.length) ? v.vars.find(v => v.active).id : null,
-                    active_variation_size: (v.vars && v.vars.length) ? v.vars.find(v => v.active).attributes[0].option : null ,
+                    active_variation_size: (v.vars && v.vars.length) ? v.vars.find(v => v.active).attributes[0].option : null,
+                    active_variation_image: (v.vars && v.vars.length) ? v.vars.find(v => v.active).image : v.images,
                     price: this.chooseMainPrice(v),
                     name: v.name,
                     attributes: v.attributes,
@@ -393,7 +394,7 @@ let vm = new Vue({
             return arr
         },
         filteredProducts () {
-            return this.results.filter(v => v.id) || []
+            return this.results.filter(v => v.id && v.catalog_visibility !== 'hidden') || []
         },
         orderSum () {
             let counter = 0

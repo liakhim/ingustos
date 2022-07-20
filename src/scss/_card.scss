@@ -146,6 +146,23 @@
         text-align: center;
         background: #F3F6F7;
         border: 1px solid transparent;
+        position: relative;
+        &-quantity-label {
+          width: 24px;
+          height: 24px;
+          position: absolute;
+          top: -6px;
+          right: -6px;
+          border: 1px solid $main-orange;
+          border-radius: 50%;
+          overflow: hidden;
+          background: #fff;
+          &-number {
+            margin: 1px 0 0 0;
+            font-size: 14px!important;
+            color: $main-orange;
+          }
+        }
         &:hover {
           background: #ffffff;
           border: 1px solid $main-orange;
