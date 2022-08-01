@@ -1,0 +1,802 @@
+<template>
+  <div id="app">
+    <header>
+      <div class="container-fluid">
+        <div class="contact-block">
+          <a href="tel:89254770607">+7 (925) 477-06-07 </a>
+          <div class="info">
+            <p>Производство 10.00 - 18.00</p>
+            <p>Доставка ПН - СБ 11.00 - 23.00</p>
+          </div>
+        </div>
+        <div class="logo-block">
+          <div class="header-link">
+            <a href="#filter">Pasta Fresca</a>
+          </div>
+          <a href="/" class="logo">
+            <img src="src/img/logo-2.svg" alt="">
+          </a>
+          <div class="header-link">
+            <a href="/recipes">Наши рецепты</a>
+          </div>
+        </div>
+        <div class="action-burger-group">
+          <div class="actions-block">
+            <a @click="openCartModal = !openCartModal" class="link-block cart-link">
+              <div class="icon">
+                <img src="src/img/buy.svg" alt="">
+              </div>
+              <div v-if="false" class="text">
+                <p>Корзина</p>
+              </div>
+              <div v-if="true" class="cart-not-empty">
+                <span class="cart-not-empty-quantity">{{productsInCartArrSum}}</span>
+                <span class="cart-not-empty-sum">{{orderSum || '0'}} р.</span>
+              </div>
+            </a>
+            <!--                    <a href="#" class="link-block auth-link">-->
+            <!--                        <div class="icon">-->
+            <!--                            <img src="src/img/icons/profile.svg" alt="">-->
+            <!--                        </div>-->
+            <!--                        <div class="text">-->
+            <!--                            <p>Войти</p>-->
+            <!--                        </div>-->
+            <!--                    </a>-->
+          </div>
+          <div class="burger-block" @click="openModal = !openModal">
+            <div class="burger custom-action-button">
+              <div class="burger-icon">
+                <img v-if="!openModal" class="open-state-icon" src="src/img/icons/menu.svg" alt="">
+                <img v-if="openModal" class="close-state-icon" src="src/img/icons/close.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu" :class="{active: openModal}">
+        <ul>
+          <li>
+            <a class="orange-link" href="#filters">Pasta Fresca</a>
+          </li>
+          <li>
+            <a class="orange-link" href="/recipes">Наши рецепты</a>
+          </li>
+        </ul>
+        <div class="mobile-actions-block">
+          <div class="mobile-contact-block">
+            <a href="tel:89254770607">+7 (925) 477-06-07</a>
+            <div class="info">
+              <p>Производство 10.00 - 18.00</p>
+              <p>Доставка ПН - СБ 11.00 - 23.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--        <pre>-->
+    <!--            {{localProducts}}-->
+    <!--        </pre>-->
+    <!--    <button @click="createOrder()" class="btn btn-success">-->
+    <!--        send test-->
+    <!--    </button>-->
+    <!--    <button @click="postSend()" class="btn btn-danger">TEST SER</button>-->
+    <main>
+      <div class="first-block">
+        <div class="background-image">
+          <img class="desktop-back" src="src/img/background-first.jpg" alt="">
+          <img class="mobile-back" src="src/img/background-first.jpg" alt="">
+        </div>
+        <div class="container-fluid">
+          <div class="text">
+            <div class="text-pre-title">
+              <p>ВКУСНО. СЫТНО. КРАСИВО.</p>
+            </div>
+            <div class="text-title">
+              <h1>Изысканные блюда к Вашему столу</h1>
+            </div>
+            <div class="text-subtitle">
+              <!--                            <p>-->
+              <!--                                Секрет вкуса наших гастробоксов заключается в экологически чистых фермерских продуктах и-->
+              <!--                                профессионализме повара. Нежный сыр, наисвежайшие морепродукты или ароматные фрукты - найди-->
+              <!--                                гастробокс на свой вкус для любого повода.-->
+              <!--                            </p>-->
+              <div class="filters" id="filters">
+                <div class="container-filters">
+                  <div class="filter-block">
+                    <!--                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                    <!--                            <path d="M4.50004 8.02441L4.5 8L4.50004 8.02441Z" fill="#2E2926"/>-->
+                    <!--                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.69127 1.41182C6.87945 1.15308 7.18007 1 7.5 1H15.5C15.8199 1 16.1206 1.15308 16.3087 1.41183L16.3111 1.41515L16.3149 1.42032L16.3262 1.43615C16.3354 1.44912 16.3478 1.46691 16.3633 1.48935C16.3943 1.5342 16.4372 1.59771 16.4897 1.67853C16.5946 1.84002 16.7381 2.07141 16.9006 2.36179C17.2243 2.94054 17.6291 3.76443 17.9503 4.74468C18.259 5.68697 18.4967 6.79239 18.5 7.97506L18.5 8.0001L18.5 8.02414C18.4966 8.996 18.2879 9.92852 17.9157 10.7765C16.9667 12.9386 14.9414 14.5725 12.5 14.9278V21H16.5C17.0523 21 17.5 21.4477 17.5 22C17.5 22.5523 17.0523 23 16.5 23H6.5C5.94772 23 5.5 22.5523 5.5 22C5.5 21.4477 5.94772 21 6.5 21H10.5V14.9291C8.16484 14.595 6.20277 13.1085 5.20637 11.0675C4.75701 10.1469 4.50377 9.11363 4.50004 8.02441L4.5 8L4.50003 7.97736C4.50338 6.65344 4.80056 5.42498 5.16371 4.41241C5.48212 3.52465 5.85812 2.78378 6.15467 2.26397C6.30339 2.00327 6.43336 1.79602 6.52803 1.65134C6.5754 1.57894 6.61404 1.52205 6.64191 1.48179C6.65584 1.46165 6.66709 1.44566 6.6754 1.43396L6.68563 1.41963L6.68903 1.4149L6.6903 1.41316L6.69127 1.41182ZM7.71847 8.42536C7.26617 8.49678 6.8622 8.59906 6.54754 8.69314C6.51621 8.46679 6.5 8.23541 6.5 8C6.5 7.52294 6.54933 7.05373 6.63281 6.60169C6.87127 6.54587 7.13101 6.49334 7.40655 6.44984C8.68639 6.24776 10.4685 6.21502 12.0145 7.14261C12.9685 7.71502 14.1864 7.74776 15.2815 7.57484C15.7404 7.50239 16.1494 7.39819 16.466 7.303C16.4881 7.53278 16.5 7.76552 16.5 8.0001C16.5 8.48899 16.4268 8.96466 16.29 9.4163C16.073 9.46546 15.8395 9.51151 15.5935 9.55036C14.3136 9.75244 12.5315 9.78518 10.9855 8.85759C10.0315 8.28518 8.81364 8.25244 7.71847 8.42536Z"/>-->
+                    <!--                        </svg>-->
+                    <p>Классическая паста</p>
+                  </div>
+                  <div class="filter-block">
+                    <!--                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                    <!--                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0332 9.27273H9.19018V18.0188C9.19018 19.2602 10.099 20.1348 13.3435 20.18L13.6117 20.1818C17.0746 20.1818 18.0332 19.2938 18.0332 18.0188V9.27273ZM13.1636 11.4394C13.1125 10.9873 12.7387 10.6364 12.2852 10.6364C11.7968 10.6364 11.4009 11.0434 11.4009 11.5455V17.9091L11.4069 18.0151C11.458 18.4672 11.8317 18.8182 12.2852 18.8182C12.7736 18.8182 13.1695 18.4112 13.1695 17.9091V11.5455L13.1636 11.4394ZM15.8165 11.4394C15.7654 10.9873 15.3916 10.6364 14.9381 10.6364C14.4497 10.6364 14.0538 11.0434 14.0538 11.5455V17.9091L14.0598 18.0151C14.1109 18.4672 14.4846 18.8182 14.9381 18.8182C15.4265 18.8182 15.8224 18.4112 15.8224 17.9091V11.5455L15.8165 11.4394Z" fill="#2E2926"/>-->
+                    <!--                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6113 2C14.6836 2 15.5156 2.48875 16.0874 3.27285C16.1699 3.38599 16.2431 3.49877 16.3078 3.60953L16.3327 3.65545L16.5204 3.63119C16.9369 3.58811 17.363 3.61619 17.7858 3.74116L17.9969 3.81183C18.4033 3.96419 18.776 4.20526 19.1006 4.53899C19.552 5.00306 19.82 5.58627 19.9345 6.24248C20.0452 6.8773 20.0077 7.52709 19.8815 8.15175L19.828 8.39181L19.8017 8.48818L19.8018 18.0188C19.8018 20.2921 18.0896 21.9276 13.895 21.9977L13.6117 22C9.21064 22 7.42158 20.3426 7.42158 18.0188L7.42205 17.5248C7.08814 17.5335 6.75195 17.524 6.42399 17.4907C5.24118 17.3705 4.35217 16.972 3.98552 16.0773L3.92775 15.9188L3.88809 15.7892L3.8092 15.4917C3.79609 15.4379 3.78299 15.3821 3.76991 15.3242L3.69156 14.9524L3.61334 14.5328L3.53507 14.0666L3.41718 13.283C3.40403 13.1904 3.39086 13.0961 3.37766 13C3.30589 12.4771 3.23712 11.9273 3.17247 11.3709L3.05577 10.3186L3.00447 9.81773C2.95589 9.31824 3.30876 8.88041 3.78138 8.82426L3.88438 8.81818L7.42149 8.81727L7.42223 8.54043C7.38618 8.43881 7.34737 8.31667 7.30928 8.17674C7.13656 7.54229 7.07312 6.88349 7.1918 6.23486C7.30434 5.61974 7.57691 5.06929 8.02532 4.62689L8.18133 4.48348C9.04935 3.74076 9.98374 3.51827 10.8597 3.63979L10.8942 3.64545L10.9147 3.60944C10.947 3.55406 10.9815 3.49818 11.0182 3.442L11.1351 3.27277C11.707 2.48872 12.539 2 13.6113 2ZM18.0332 9.27273H9.19018V18.0188C9.19018 19.2602 10.099 20.1348 13.3435 20.18L13.6117 20.1818C17.0746 20.1818 18.0332 19.2938 18.0332 18.0188V9.27273ZM7.42149 10.6355L4.86949 10.6364L4.92845 11.1541C4.97065 11.5173 5.0146 11.8773 5.05993 12.2279L5.16279 12.9888L5.23022 13.4489L5.32986 14.0697L5.39475 14.4333L5.45798 14.7535L5.5192 15.0277L5.57803 15.253L5.60728 15.3491C5.64304 15.4595 5.9779 15.6183 6.59796 15.6813C6.86064 15.708 7.14099 15.7146 7.42231 15.7057L7.42149 10.6355ZM13.6113 3.81818C13.1357 3.81818 12.807 4.01128 12.55 4.36359C12.4106 4.55467 12.3213 4.74971 12.2785 4.87869L12.2585 4.94759C12.1299 5.47661 11.5856 5.76333 11.1011 5.58283L10.9714 5.52723L10.8855 5.4991C10.4301 5.36359 9.94232 5.40867 9.44945 5.77199L9.31493 5.87908C9.10215 6.06138 8.98202 6.28615 8.92992 6.57095C8.88096 6.8385 8.89556 7.14432 8.95768 7.45507L18.203 7.45474C18.2408 7.14559 18.2417 6.83918 18.1936 6.56333C18.1392 6.25128 18.0265 6.00609 17.85 5.82464C17.7103 5.68101 17.5584 5.58273 17.391 5.52C17.0752 5.40159 16.7049 5.41075 16.3491 5.50574L16.2304 5.54087L16.17 5.56291C15.7006 5.76961 15.1671 5.52527 14.9936 5.04631L14.9638 4.94745C14.9347 4.82776 14.8396 4.59278 14.6724 4.36351C14.4155 4.01125 14.0868 3.81818 13.6113 3.81818Z" fill="#2E2926"/>-->
+                    <!--                        </svg>-->
+                    <p>Паста со шпинатом</p>
+                  </div>
+                  <div class="filter-block">
+                    <!--                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                    <!--                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.198 10.2381L14.6916 12.0125C14.6272 12.1387 14.5345 12.2474 14.422 12.33L11.6808 15.5589C11.6849 15.5942 11.687 15.6302 11.687 15.6667V20.1905H13.4609C13.9508 20.1905 14.3479 20.5956 14.3479 21.0952C14.3479 21.5949 13.9508 22 13.4609 22H8.13924C7.64939 22 7.25229 21.5949 7.25229 21.0952C7.25229 20.5956 7.64939 20.1905 8.13924 20.1905H9.91314V15.6667C9.91314 15.6302 9.91525 15.5943 9.91935 15.559L7.17791 12.3299C7.06564 12.2474 6.97305 12.1387 6.90869 12.0127L3.21649 7.66373C2.9892 7.39601 2.93594 7.01761 3.08022 6.69546C3.22449 6.37332 3.53976 6.16667 3.88696 6.16667H13.9319C14.1501 4.38143 15.643 3 17.4522 3C19.4116 3 21 4.6203 21 6.61905C21 8.61779 19.4116 10.2381 17.4522 10.2381H16.198ZM14.8114 7.97619H5.8284L6.13294 8.3349C6.13831 8.34089 6.14362 8.34698 6.14886 8.35316L8.13319 10.6905H13.467L15.4513 8.35316C15.4561 8.34754 15.4609 8.34199 15.4658 8.33651L15.7717 7.97619H14.8428C14.8323 7.97638 14.8218 7.97638 14.8114 7.97619ZM11.9308 12.5L11.5534 12.9445C11.5489 12.9498 11.5444 12.9552 11.54 12.9606L10.8 13.8322L9.94988 12.8308C9.94479 12.8245 9.9396 12.8182 9.93432 12.812L9.66943 12.5H11.9308ZM15.7342 6.16667H17.7131C18.0603 6.16667 18.3756 6.37332 18.5199 6.69546C18.6642 7.01761 18.6109 7.39601 18.3836 7.66373L17.7569 8.40199C18.5914 8.25464 19.2261 7.51245 19.2261 6.61905C19.2261 5.61968 18.4319 4.80952 17.4522 4.80952C16.6256 4.80952 15.9311 5.38621 15.7342 6.16667Z" fill="#2E2926"/>-->
+                    <!--                            <path d="M5.8284 7.97619H14.8114C14.8218 7.97638 14.8323 7.97638 14.8428 7.97619H15.7717L15.4658 8.33651L15.4513 8.35316L13.467 10.6905H8.13319L6.14886 8.35316C6.14362 8.34698 6.13831 8.34089 6.13294 8.3349L5.8284 7.97619Z" fill="#2E2926"/>-->
+                    <!--                        </svg>-->
+                    <p>Паста с томатом</p>
+                  </div>
+                  <div class="filter-block">
+                    <!--                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                    <!--                            <path d="M11.9998 20C-5.34439 10.0908 6.79675 -0.666248 11.9998 6.13586C17.2035 -0.666251 29.3446 10.0908 11.9998 20Z" fill="#2E2926"/>-->
+                    <!--                        </svg>-->
+                    <p>Паста с чернилами</p>
+                  </div>
+                  <div class="filter-block">
+                    <!--                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                    <!--                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6364 2C10.4569 2 10.2814 2.05313 10.1321 2.15268L8.76847 3.06177C8.40384 3.30486 8.26453 3.77349 8.43716 4.17629L9.67811 7.07187L7.02947 17.2251C6.94319 17.5558 7.0497 17.9069 7.30515 18.134L11.396 21.7704C11.7405 22.0765 12.2595 22.0765 12.604 21.7704L16.6948 18.134C16.9503 17.9069 17.0568 17.5558 16.9705 17.2251L14.3219 7.07186L15.5628 4.17629C15.7355 3.77349 15.5962 3.30486 15.2315 3.06177L13.8679 2.15268C13.7186 2.05313 13.5431 2 13.3636 2H10.6364ZM12.6613 7.90909H11.3387L8.92935 17.1451L12 19.8746L15.0707 17.1451L12.6613 7.90909ZM12.7642 6.09091L13.5938 4.15513L13.0884 3.81818H10.9116L10.4062 4.15513L11.2358 6.09091H12.7642Z" fill="#2E2926"/>-->
+                    <!--                            <path d="M12.7642 6.09091L13.5938 4.15513L13.0884 3.81818H10.9116L10.4062 4.15513L11.2358 6.09091H12.7642Z" fill="#2E2926"/>-->
+                    <!--                            <path d="M12.6613 7.90909H11.3387L8.92935 17.1451L12 19.8746L15.0707 17.1451L12.6613 7.90909Z" fill="#2E2926"/>-->
+                    <!--                        </svg>-->
+                    <p>Равиоли</p>
+                  </div>
+                  <div class="filter-block">
+                    <!--                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                    <!--                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1583 8.23285C16.1583 10.5825 14.2851 12.4666 11.949 12.4666C9.61292 12.4666 7.73974 10.5825 7.73974 8.23285C7.73974 5.88227 9.61292 4 11.949 4C14.2851 4 16.1583 5.88227 16.1583 8.23285ZM11.949 20C8.51785 20 5.58809 19.456 5.58809 17.2802C5.58809 15.1034 8.49904 14.5396 11.949 14.5396C15.3802 14.5396 18.31 15.0836 18.31 17.2604C18.31 19.4362 15.399 20 11.949 20ZM17.9571 8.30922C17.9571 9.50703 17.5998 10.6229 16.973 11.5505C16.9086 11.646 16.9659 11.7748 17.0796 11.7946C17.2363 11.8216 17.3984 11.8369 17.5631 11.8414C19.2062 11.8846 20.6809 10.821 21.0883 9.21974C21.6918 6.84123 19.9198 4.7059 17.6634 4.7059C17.4181 4.7059 17.1835 4.73201 16.9551 4.77884C16.9238 4.78605 16.8907 4.80046 16.8728 4.82838C16.8513 4.8626 16.8674 4.90853 16.8889 4.93825C17.5667 5.8938 17.9571 7.05918 17.9571 8.30922ZM20.6782 13.5126C21.7823 13.7296 22.5084 14.1727 22.8093 14.8166C23.0636 15.3453 23.0636 15.9586 22.8093 16.4864C22.349 17.4851 20.8654 17.8058 20.2887 17.8886C20.1696 17.9066 20.0738 17.8031 20.0864 17.6833C20.3809 14.9157 18.0377 13.6035 17.4315 13.3018C17.4055 13.2883 17.4002 13.2676 17.4028 13.255C17.4046 13.246 17.4154 13.2316 17.4351 13.2289C18.7468 13.2046 20.1571 13.3847 20.6782 13.5126ZM6.43711 11.8413C6.60186 11.8368 6.76304 11.8224 6.92063 11.7945C7.03434 11.7747 7.09165 11.6459 7.02718 11.5504C6.4004 10.6228 6.04313 9.50694 6.04313 8.30913C6.04313 7.05909 6.43353 5.89371 7.11135 4.93816C7.13284 4.90844 7.14806 4.86251 7.12746 4.82829C7.10956 4.80127 7.07553 4.78596 7.04509 4.77875C6.81586 4.73192 6.58127 4.70581 6.33593 4.70581C4.07951 4.70581 2.30751 6.84114 2.91191 9.21965C3.31932 10.8209 4.79405 11.8845 6.43711 11.8413ZM6.59694 13.2545C6.59962 13.268 6.59425 13.2878 6.56918 13.3022C5.9621 13.6039 3.61883 14.9161 3.91342 17.6827C3.92595 17.8034 3.83104 17.9061 3.71195 17.889C3.13531 17.8061 1.65163 17.4855 1.19139 16.4867C0.936203 15.9581 0.936203 15.3457 1.19139 14.817C1.49225 14.1731 2.21752 13.73 3.32156 13.512C3.84358 13.385 5.25294 13.2049 6.5656 13.2292C6.5853 13.2319 6.59515 13.2464 6.59694 13.2545Z" fill="#2E2926"/>-->
+                    <!--                        </svg>-->
+                    <p>Лазанья</p>
+                  </div>
+                  <div class="filter-block">
+                    <!--                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                    <!--                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73641 1.06673C8.09557 1.18614 8.35653 1.4981 8.41064 1.87271L9.11343 6.73872C9.96985 6.26785 10.9537 6 12 6C15.3137 6 18 8.68629 18 12C18 13.043 17.7339 14.0239 17.2658 14.8783L22.1889 15.5894C22.5635 15.6435 22.8754 15.9044 22.9948 16.2636C23.1143 16.6228 23.0207 17.0186 22.753 17.2862L17.2862 22.753C17.0186 23.0207 16.6228 23.1143 16.2636 22.9948C15.9044 22.8754 15.6435 22.5635 15.5894 22.1889L14.8783 17.2658C14.0239 17.7339 13.043 18 12 18C8.6863 18 6.00001 15.3137 6.00001 12C6.00001 10.9801 6.25446 10.0197 6.70334 9.17873L1.81118 8.47216C1.43657 8.41806 1.12462 8.15709 1.0052 7.79793C0.885788 7.43877 0.979386 7.04296 1.24702 6.77533L6.7138 1.30855C6.98144 1.04091 7.37724 0.947312 7.73641 1.06673ZM4.07273 6.77804L7.16282 7.22434L6.71652 4.13425L4.07273 6.77804ZM8.00001 12C8.00001 9.79086 9.79087 8 12 8C14.2092 8 16 9.79086 16 12C16 14.2091 14.2092 16 12 16C9.79087 16 8.00001 14.2091 8.00001 12ZM17.2835 19.9273L16.8372 16.8372L19.9273 17.2835L17.2835 19.9273Z" fill="#F6A800"/>-->
+                    <!--                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 8C9.79087 8 8.00001 9.79086 8.00001 12C8.00001 14.2091 9.79087 16 12 16C14.2092 16 16 14.2091 16 12C16 9.79086 14.2092 8 12 8ZM11 12C11 11.4477 10.5523 11 10 11C9.44773 11 9.00001 11.4477 9.00001 12C9.00001 13.6568 10.3432 15 12 15C12.5523 15 13 14.5523 13 14C13 13.4477 12.5523 13 12 13C11.4477 13 11 12.5523 11 12Z" fill="#F6A800"/>-->
+                    <!--                        </svg>-->
+                    <p>Соусы</p>
+                  </div>
+                  <div class="filter-block">
+                    <!--                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                    <!--                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73641 1.06673C8.09557 1.18614 8.35653 1.4981 8.41064 1.87271L9.11343 6.73872C9.96985 6.26785 10.9537 6 12 6C15.3137 6 18 8.68629 18 12C18 13.043 17.7339 14.0239 17.2658 14.8783L22.1889 15.5894C22.5635 15.6435 22.8754 15.9044 22.9948 16.2636C23.1143 16.6228 23.0207 17.0186 22.753 17.2862L17.2862 22.753C17.0186 23.0207 16.6228 23.1143 16.2636 22.9948C15.9044 22.8754 15.6435 22.5635 15.5894 22.1889L14.8783 17.2658C14.0239 17.7339 13.043 18 12 18C8.6863 18 6.00001 15.3137 6.00001 12C6.00001 10.9801 6.25446 10.0197 6.70334 9.17873L1.81118 8.47216C1.43657 8.41806 1.12462 8.15709 1.0052 7.79793C0.885788 7.43877 0.979386 7.04296 1.24702 6.77533L6.7138 1.30855C6.98144 1.04091 7.37724 0.947312 7.73641 1.06673ZM4.07273 6.77804L7.16282 7.22434L6.71652 4.13425L4.07273 6.77804ZM8.00001 12C8.00001 9.79086 9.79087 8 12 8C14.2092 8 16 9.79086 16 12C16 14.2091 14.2092 16 12 16C9.79087 16 8.00001 14.2091 8.00001 12ZM17.2835 19.9273L16.8372 16.8372L19.9273 17.2835L17.2835 19.9273Z" fill="#F6A800"/>-->
+                    <!--                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 8C9.79087 8 8.00001 9.79086 8.00001 12C8.00001 14.2091 9.79087 16 12 16C14.2092 16 16 14.2091 16 12C16 9.79086 14.2092 8 12 8ZM11 12C11 11.4477 10.5523 11 10 11C9.44773 11 9.00001 11.4477 9.00001 12C9.00001 13.6568 10.3432 15 12 15C12.5523 15 13 14.5523 13 14C13 13.4477 12.5523 13 12 13C11.4477 13 11 12.5523 11 12Z" fill="#F6A800"/>-->
+                    <!--                        </svg>-->
+                    <p>Грассини</p>
+                  </div>
+                  <div class="filter-block">
+                    <!--                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                    <!--                            <path d="M12 2C12.4802 2 12.8695 2.38932 12.8695 2.86957V4.23913C12.8695 4.71938 12.4802 5.1087 12 5.1087C11.5197 5.1087 11.1304 4.71938 11.1304 4.23913V2.86957C11.1304 2.38932 11.5197 2 12 2Z" fill="#2E2926"/>-->
+                    <!--                            <path d="M19.071 4.92893C19.4106 5.26851 19.4106 5.81909 19.071 6.15868L18.1026 7.12709C17.763 7.46668 17.2124 7.46668 16.8728 7.1271C16.5333 6.78752 16.5333 6.23694 16.8728 5.89735L17.8412 4.92894C18.1808 4.58935 18.7314 4.58934 19.071 4.92893Z" fill="#2E2926"/>-->
+                    <!--                            <path d="M19.7609 11.1304C19.2806 11.1304 18.8913 11.5198 18.8913 12C18.8913 12.4803 19.2806 12.8696 19.7609 12.8696H21.1304C21.6107 12.8696 22 12.4803 22 12C22 11.5198 21.6107 11.1304 21.1304 11.1304H19.7609Z" fill="#2E2926"/>-->
+                    <!--                            <path d="M16.8728 16.8729C17.2124 16.5333 17.763 16.5333 18.1026 16.8729L19.071 17.8413C19.4106 18.1809 19.4106 18.7315 19.071 19.0711C18.7314 19.4107 18.1808 19.4107 17.8412 19.0711L16.8728 18.1027C16.5333 17.7631 16.5333 17.2125 16.8728 16.8729Z" fill="#2E2926"/>-->
+                    <!--                            <path d="M12.8695 19.7609C12.8695 19.2806 12.4802 18.8913 12 18.8913C11.5197 18.8913 11.1304 19.2806 11.1304 19.7609V21.1304C11.1304 21.6107 11.5197 22 12 22C12.4802 22 12.8695 21.6107 12.8695 21.1304V19.7609Z" fill="#2E2926"/>-->
+                    <!--                            <path d="M7.12714 16.8729C7.46672 17.2125 7.46672 17.7631 7.12713 18.1027L6.15872 19.0711C5.81913 19.4107 5.26856 19.4107 4.92897 19.0711C4.58939 18.7315 4.5894 18.1809 4.92898 17.8413L5.89739 16.8729C6.23698 16.5333 6.78756 16.5334 7.12714 16.8729Z" fill="#2E2926"/>-->
+                    <!--                            <path d="M2.86956 11.1304C2.38932 11.1304 2 11.5198 2 12C2 12.4803 2.38932 12.8696 2.86956 12.8696H4.23913C4.71937 12.8696 5.10869 12.4803 5.10869 12C5.10869 11.5198 4.71937 11.1304 4.23913 11.1304H2.86956Z" fill="#2E2926"/>-->
+                    <!--                            <path d="M4.92898 4.92893C5.26856 4.58935 5.81914 4.58935 6.15873 4.92893L7.12713 5.89734C7.46672 6.23693 7.46672 6.78751 7.12713 7.12709C6.78755 7.46668 6.23697 7.46668 5.89739 7.12709L4.92898 6.15868C4.58939 5.8191 4.58939 5.26852 4.92898 4.92893Z" fill="#2E2926"/>-->
+                    <!--                            <path d="M5.91304 12C5.91304 8.63828 8.63826 5.91305 12 5.91305C15.3617 5.91305 18.0869 8.63828 18.0869 12C18.0869 15.3617 15.3617 18.087 12 18.087C8.63826 18.087 5.91304 15.3617 5.91304 12Z" fill="#2E2926"/>-->
+                    <!--                        </svg>-->
+                    <p>Веган паста</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-button">
+              <a href="#filters" class="btn orange-button">
+                <span>Выбрать Pasta Fresca</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="preloader-block" v-if="results.length === 0">
+          <div class="preloader-wrap col-10 m-auto" :class="{ show: results.length === 0 }">
+            <div class="preloader">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="cards-content" v-if="results.length > 0">
+          <div v-for="product in filteredProducts" :key="product.id" class="card">
+            <a href="#" class="card-image-block">
+              <div class="image">
+                <!--                                <img :src="product?.images[0]?.src" alt="">-->
+                <img :src="(activeVariable(product).image) ? activeVariable(product).image.src : product?.images[0]?.src" alt="">
+                <!--                            <img src="src/img/image.png" alt="">-->
+              </div>
+              <div class="labels">
+                <div class="label-item" v-for="tag in product.tags" :key="tag.id">
+                                    <span v-if="tag.name.toLowerCase() !== 'vegan'">
+                                        {{ tag.name }}
+                                    </span>
+                  <img v-if="tag.name.toLowerCase() === 'vegan'"
+                       src="src/img/icons/veget.svg" alt="">
+                </div>
+                <!--                            <div class="label-item">-->
+                <!--                                <img src="src/img/icons/veget.svg" alt="">-->
+                <!--                            </div>-->
+              </div>
+            </a>
+            <div class="card-content-block">
+              <div class="card-content-block-title">
+                <p>{{product.name}}</p>
+              </div>
+              <div v-html="activeVariable(product).description.length > 0 ? activeVariable(product).description : product.description"
+                   class="card-content-block-description">
+                <!--                            <p>Ассорти тарталеток: риет из лосося с мидией, икра палтуса с огурцом, икра лососевая,-->
+                <!--                                икра щучья, тигровая креветка, лосось с творожным сыром  </p>-->
+              </div>
+              <div v-if="product.vars" class="card-content-block-sizes">
+                <div class="size-block"
+                     v-for="(size, index) in product.vars"
+                     :key="index"
+                     @click="changeVariation(product.id, index)"
+                     :class="{active: size.active}">
+                  <div v-if="cartArr.find(v => v.active_variation_id === size.id)" class="size-block-quantity-label">
+                                        <span class="size-block-quantity-label-number">
+                                            {{cartArr.find(v => v.active_variation_id === size.id).quantity}}
+                                        </span>
+                  </div>
+                  <span>{{size.attributes.find(v => v.name.toLowerCase() === 'size').option}} гр.</span>
+                </div>
+                <!--                            <div class="size-block active">-->
+                <!--                                <span>M</span>-->
+                <!--                            </div>-->
+                <!--                            <div class="size-block">-->
+                <!--                                <span>L</span>-->
+                <!--                            </div>-->
+              </div>
+              <div class="card-content-block-sub-info" v-if="activeVariable(product).dimensions.length || activeVariable(product).weight">
+                <div v-if="activeVariable(product).dimensions.length" class="sub-info-block">
+                  <p>{{activeVariable(product).dimensions.length}}
+                    <span v-if="activeVariable(product).dimensions.length < 5">персоны</span>
+                    <span v-else>персон</span>
+                  </p>
+                </div>
+                <!-- Убрать && false если появятся новые параметры -->
+                <div v-if="activeVariable(product).dimensions.length && activeVariable(product).weight && false" class="dot-delimiter">
+                  <div class="marker"></div>
+                </div>
+                <!-- Вес временно не отображаем -->
+                <div v-if="activeVariable(product).weight && false" class="sub-info-block">
+                  <p>{{activeVariable(product).weight}} г.</p>
+                </div>
+              </div>
+              <div class="card-content-block-price">
+                <div class="price-num">
+                  <div class="main-price">
+                    <p>{{chooseMainPrice(product)}} р.</p>
+                  </div>
+                  <div v-if="chooseMainPrice(product) !== choosePrice(product)" class="discount-price">
+                    <div class="percent">
+                      <span>{{countPercent(product)}}%</span>
+                    </div>
+                    <div class="value">
+                      <span>{{choosePrice(product)}} р.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="price-action">
+                  <a v-if="cartArr.find(v => v.id === product.id && v.active_variation_id === product.vars.find(c => c.active).id)" role="button" class="btn red-button" href="#">
+                    <img src="src/img/icons/mark.svg" alt="">
+                    <span>Добавлено</span>
+                  </a>
+                  <a v-else
+                     @click.prevent="addToCart(product)"
+                     role="button"
+                     class="btn orange-button">
+                    <img src="src/img/buy.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--                    <div v-if="results && results.length % 4" class="card">-->
+          <!--                        test-->
+          <!--                    </div>-->
+          <!--                    <div class="card">-->
+          <!--                        test2-->
+          <!--                    </div>-->
+        </div>
+      </div>
+      <div id="steps" class="steps" v-if="false">
+        <div class="container-fluid">
+          <div class="steps-title general-title">
+            <h2>Как это работает?</h2>
+          </div>
+          <div class="steps-content">
+            <div class="steps-block">
+              <div class="number">
+                <b>1</b>
+              </div>
+              <div class="text">
+                <p>
+                  <span>Оформляете заказ на сайте</span>
+                  <span>не менее чем за 4 часа</span>
+                </p>
+              </div>
+            </div>
+            <div class="steps-block">
+              <div class="number">
+                <b>2</b>
+              </div>
+              <div class="text">
+                <p>
+                  <span>Звоним и </span>
+                  <span>подтверждаем</span>
+                </p>
+              </div>
+            </div>
+            <div class="steps-block">
+              <div class="number">
+                <b>3</b>
+              </div>
+              <div class="text">
+                <p>
+                  <span>Доставляем свежайшие</span>
+                  <span>блюда к вам на стол</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="container-fluid">
+          <div class="faq-title general-title">
+            <h2>Часто задаваемые вопросы</h2>
+          </div>
+          <div class="faq-content accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <span>Как производится доставка?</span>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p style="max-width: 840px"> Доставка осуществляется по Москве и области. В пределах МКАД 400₽,
+                    при заказе от 3500₽-бесплатно. За МКАД до 15 км-800₽, при заказе от 5000₽-бесплатно.</p>
+                  <p>Доставка осуществляется на следующий день после оформления заказа:</p>
+                  <p>Экспресс-доставка осуществляется при заказе до 14.00</p>
+                  <p>Самовывоз бесплатно пн-сб с 11.00-16.00 при заказе за сутки</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <span>Как я могу оплатить заказ?</span>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Заказ может быть оплачен картой на сайте во время оформления. Второй способ оплаты -
+                    наличными или картой курьеру при получении заказа. Мы принимаем к оплате карты Visa,
+                    Master Card, Мир.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <span>Как сделать заказ?</span>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Через сайт</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                  <span>Какая зона доставки?</span>
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Доставка осуществляется по Москве и области. В пределах МКАД 400₽ , при заказе от
+                    3500₽-бесплатно. За МКАД до 15 км-800₽, при заказе от 5000₽-бесплатно.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                  <span>Какой минимальный заказ?</span>
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Для частных лиц от 1 пачки, для юридических лиц от 5 кг</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart-modal" :class="{show: openCartModal}">
+        <div class="cart-modal-overlay" @click="openCartModal = false"></div>
+        <div class="cart-modal-wrapper">
+          <div class="cart-title">
+            <div class="cart-title-text">
+              <h2 v-if="currentStep === 0">Корзина</h2>
+              <h2 v-if="currentStep !== 0">Оформление заказа</h2>
+              <div v-if="currentStep === 0" class="quantity">
+                <p>{{productsInCartArrSum}}</p>
+              </div>
+            </div>
+            <div class="cart-title-close-modal" @click="openCartModal = false">
+              <img src="src/img/icons/close-black.svg" alt="">
+            </div>
+          </div>
+          <div class="cart-subtitle">
+            <span v-if="currentStep === 1">Шаг 1/4 - Заполнение личных данных</span>
+            <span v-if="currentStep === 2">Шаг 2/4 - Адрес доставки</span>
+            <span v-if="currentStep === 3">Шаг 3/4 - Время и дата доставки</span>
+          </div>
+          <div class="cart-list-empty" v-if="currentStep === 0 && cartArr.length === 0" :class="{show: cartArr.length === 0}">
+            <div class="image">
+              <img src="src/img/empty-cart.png" alt="">
+            </div>
+            <div class="text">
+              <h3>Корзина пока пуста!</h3>
+            </div>
+          </div>
+          <div class="cart-list" v-if="currentStep === 0 && cartArr.length > 0">
+            <!--                    <div class="cart-list-start">-->
+            <!--                        <span>****</span>-->
+            <!--                    </div>-->
+            <div class="cart-list-item" v-for="item in cartArr" :key="item.id">
+              <div class="cart-list-item-image">
+                <img :src="item.active_variation_image.src" alt="">
+              </div>
+              <div class="cart-list-item-name">
+                <div class="quantity-block-wrap">
+                  <div class="quantity-block">
+                    <div @click="incCartProductQuantity(item)" class="quantity-block-chevron up">
+                      <img src="src/img/icons/chevron.svg" alt="">
+                    </div>
+                    <p>{{item.quantity}} шт.</p>
+                    <div @click="decCartProductQuantity(item)" class="quantity-block-chevron down">
+                      <img src="src/img/icons/chevron.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="x-icon-block">
+                    <img src="src/img/icons/close-gray.svg" alt="">
+                  </div>
+                  <div class="name-block">
+                    <p>{{item.name}} <span>({{item.active_variation_size}})</span></p>
+                  </div>
+                </div>
+                <div class="price-block">
+                  <p>{{item.price}} р.</p>
+                </div>
+                <div class="delete-block" @click="deleteFromCart(item.id)">
+                  <img src="src/img/icons/delete.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <!--                    <div class="cart-list-finish">-->
+            <!--                        <span>****</span>-->
+            <!--                    </div>-->
+          </div>
+          <div class="cart-steps" v-if="cartArr.length > 0 || currentStep === 5 || true   ">
+            <div v-if="currentStep === 1" class="cart-step-1">
+              <div class="name-row">
+                <label>
+                  <input v-model="userName" class="main-input" type="text" placeholder="Имя">
+                </label>
+                <label>
+                  <input v-model="userSecondName" class="main-input" type="text" placeholder="Фамилия">
+                  <span class="input-error"></span>
+                </label>
+              </div>
+              <div class="phone-row">
+                <label>
+                  <input v-model="userPhone" class="main-input" type="tel" placeholder="Телефон">
+                </label>
+              </div>
+              <div class="email-row">
+                <label>
+                  <span v-if="!showEmailError" class="text-success d-block mb-2">Email должен быть корректным - это важно</span>
+                  <input v-model="userEmail"
+                         @blur="showEmailError = true"
+                         :class="{error: showEmailError && !validEmail(userEmail)}"
+                         class="main-input"
+                         type="email"
+                         placeholder="hello@gmail.com">
+                  <span v-if="showEmailError && !validEmail(userEmail)"
+                        class="input-error mt-2 d-block">Неверный формат Вашего email!</span>
+                </label>
+              </div>
+            </div>
+            <div v-if="currentStep === 2" class="cart-step-2">
+              <div class="street-row">
+                <label>
+                  <input v-model="userStreet" class="main-input" type="text" required placeholder="Улица*">
+                </label>
+                <label>
+                  <input v-model="userHouse" class="main-input" type="number" required placeholder="Дом*">
+                </label>
+              </div>
+              <div class="house-row">
+                <label>
+                  <input v-model="userCorp" class="main-input" type="number" required placeholder="Корпус">
+                </label>
+                <label>
+                  <input v-model="userOffice" class="main-input" type="number" required placeholder="Офис">
+                </label>
+                <label>
+                  <input v-model="userFlat" class="main-input" type="number" required placeholder="Квартира">
+                </label>
+                <label>
+                  <input v-model="userArea" class="main-input" type="number" required placeholder="Этаж">
+                </label>
+              </div>
+              <div class="elevator-row">
+                <label>
+                  <input v-model="userPod" class="main-input" type="number" required placeholder="Подъезд">
+                </label>
+                <label>
+                  <input v-model="userHousePhone" class="main-input" type="number" required placeholder="Домофон">
+                </label>
+                <label>
+                  <input v-model="userHaveElevator" type="checkbox">
+                  <span>Есть лифт</span>
+                </label>
+              </div>
+            </div>
+            <div :class="{'hide' : currentStep !== 3}" class="cart-step-3">
+              <div class="date-block">
+                <vuejs-datepicker
+                        v-model="userOrderDate"
+                        placeholder="Введите или выберите дату доставки"
+                        :language="ru"
+                        format="(D)dd.MM.yyyy"
+                        :disabled-dates="disabledDates"
+                        :monday-first="true"></vuejs-datepicker>
+                <div class="date-block-fast">
+                  <div @click="userOrderDate = new Date()" class="date-block-fast-button">
+                    <div class="icon">
+                      <img src="src/img/icons/calendar.svg" alt="">
+                    </div>
+                    <span>{{today}}</span>
+                  </div>
+                  <div @click="userOrderDate = new Date(Date.now() + 86400000)" class="date-block-fast-button">
+                    <div class="icon">
+                      <img src="src/img/icons/calendar.svg" alt="">
+                    </div>
+                    <span>{{tomorrow}}</span>
+                  </div>
+                </div>
+              </div>
+              <div class="time-block" ref="dropdown">
+                <label>
+                  <input @focus="timeDropdownShow = true" v-model="userOrderTime" readonly type="text" placeholder="Введите или выберите время доставки*" class="main-input">
+                  <img src="src/img/icons/time.svg" alt="">
+                </label>
+                <div class="time-block-dropdown" v-if="timeDropdownShow">
+                  <div class="time-block-dropdown-title">
+                    <p>Время доставки</p>
+                  </div>
+                  <div class="time-block-dropdown-content">
+                    <div class="counter counter-hour">
+                      <div @click="incHour()" class="icon-plus">
+                        <img src="src/img/icons/chevron.svg" alt="">
+                      </div>
+                      <div class="value">
+                        <p>{{userOrderTimeHour}}</p>
+                      </div>
+                      <div @click="decHour()"  class="icon-minus">
+                        <img src="src/img/icons/chevron.svg" alt="">
+                      </div>
+                    </div>
+                    <div class="delimiter">
+                      <p>:</p>
+                    </div>
+                    <div class="counter counter-minute">
+                      <div @click="incMinute()" class="icon-plus">
+                        <img src="src/img/icons/chevron.svg" alt="">
+                      </div>
+                      <div class="value">
+                        <p>{{userOrderTimeMinuteForShow(userOrderTimeMinute)}}</p>
+                      </div>
+                      <div @click="decMinute" class="icon-minus">
+                        <img src="src/img/icons/chevron.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-block">
+                <label>
+                                    <textarea name="comment"
+                                              id="comment"
+                                              v-model="userComment"
+                                              cols="30"
+                                              rows="10"
+                                              placeholder="Комментарий к заказу"
+                                              class="main-input"></textarea>
+                </label>
+              </div>
+              <div class="person-block">
+                <div class="person-block-text">
+                  <p>Количество персон</p>
+                  <span>Мы подготовим необходимое вам количество приборов к заказу</span>
+                </div>
+                <div class="person-block-counter">
+                  <div @click="decPersons" class="minus">
+                    <img src="src/img/icons/minus.svg" alt="">
+                  </div>
+                  <div class="result">
+                    <span>{{userOrderPersonQuantity}}</span>
+                  </div>
+                  <div @click="incPersons" class="plus">
+                    <img src="src/img/icons/plus.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="mobile-sub">
+                <span>Мы подготовим необходимое вам количество приборов к заказу</span>
+              </div>
+            </div>
+            <div class="cart-step-4" v-if="currentStep === 4">
+              <div class="preloader-wrap col-10 m-auto" :class="{ show: currentStep === 4 }" style="margin-top: 200px!important">
+                <div class="preloader">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="cart-step-5" v-if="currentStep === 5">
+              <div class="image">
+                <img src="src/img/scooter.png" alt="">
+              </div>
+              <div class="text">
+                <h3>Ваш заказ #{{orderId}}</h3>
+              </div>
+            </div>
+          </div>
+          <div v-if="currentStep === 0" class="cart-sum">
+            <ul class="cart-sum-list">
+              <li class="cart-sum-list-item">
+                <p>Общая сумма</p>
+                <b>{{orderSum}} р.</b>
+              </li>
+              <li class="cart-sum-list-item">
+                <p>
+                  <span>Доставка</span>
+                  <!--                                <span class="place-span">ул. Ленина, 156, кв.34 25.08.2021   13:30</span>-->
+                </p>
+                <b>{{shipping}} р.</b>
+              </li>
+              <li class="cart-sum-list-item">
+                <p>Скидка</p>
+                <b>0</b>
+              </li>
+              <li class="cart-sum-list-item total">
+                <p>Итого</p>
+                <b>{{orderSum + shipping}} р.</b>
+              </li>
+            </ul>
+          </div>
+          <div v-if="currentStep === 0" class="cart-button">
+            <button :disabled="cartArr.length === 0"
+                    @click="currentStep = 1"
+                    class="btn orange-button">
+              <span>Перейти к оформлению</span>
+            </button>
+          </div>
+          <div v-if="currentStep > 0 && currentStep < 4" class="order-button">
+            <button @click="currentStep = 0" class="btn outline orange-button">Отмена</button>
+            <button :disabled="activeNextStepButton" @click="incCurrentStep()" class="btn orange-button">Далее</button>
+          </div>
+          <div class="cart-button" v-if="currentStep === 5">
+            <button @click="closeOrder()"
+                    class="btn orange-button">
+              <span>Вернуться на сайт</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-fluid">
+        <div class="footer-logo-block">
+          <img src="src/img/logo-2.svg" alt="">
+        </div>
+        <div class="footer-menu-block">
+          <ul class="footer-menu-block-list">
+            <li><a class="orange-link" href="#filters">Pasta Fresca</a></li>
+            <li><a class="orange-link" href="/recipes">Наши рецепты</a></li>
+            <li><a class="orange-link" href="/offer">Договор оферты</a></li>
+          </ul>
+          <div class="footer-menu-block-copyright">
+            <p>Copyright © Ingustos 2021. All Rights Reserved.  </p>
+          </div>
+        </div>
+        <div class="footer-info-block">
+          <div class="cards-social-block">
+            <div class="cards-icons">
+              <ul class="cards-icons-list">
+                <li class="cards-icons-list-item">
+                  <a href="#">
+                    <img src="src/img/icons/cards/visa.svg" alt="">
+                  </a>
+                </li>
+                <li class="cards-icons-list-item">
+                  <a href="#">
+                    <img src="src/img/icons/cards/mir.svg" alt="">
+                  </a>
+                </li>
+                <li class="cards-icons-list-item">
+                  <a href="#">
+                    <img src="src/img/icons/cards/mastercard.svg" alt="">
+                  </a>
+                </li>
+                <li class="cards-icons-list-item">
+                  <a href="#">
+                    <img src="src/img/icons/cards/googlepay.svg" alt="">
+                  </a>
+                </li>
+                <li class="cards-icons-list-item">
+                  <a href="#">
+                    <img src="src/img/icons/cards/applepay.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="social-icons">
+              <ul class="social-icons-list">
+                <li class="social-icons-list-item">
+                  <a href="https://instagram.com/lamiapasta_ru?igshid=YmMyMTA2M2Y=" target="_blank">
+                    <img src="src/img/icons/socials/instagram.svg" alt="">
+                  </a>
+                </li>
+                <li class="social-icons-list-item">
+                  <a href="#">
+                    <img src="src/img/icons/socials/vkontakte.svg" alt="">
+                  </a>
+                </li>
+                <li class="social-icons-list-item">
+                  <a href="https://www.facebook.com/lamiapastamsk/" target="_blank">
+                    <img src="src/img/icons/socials/facebook.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contacts">
+            <a class="orange-link" href="tel:89254770607">+7 (925) 477-06-07</a>
+            <div class="info">
+              <p>Производство 10.00 - 18.00</p>
+              <p>Доставка ПН - СБ 11.00 - 23.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</template>
+
+<script>
+// import HelloWorld from './components/HelloWorld.vue'
+
+export default {
+  name: 'App',
+  components: {
+    // HelloWorld
+  }
+}
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>

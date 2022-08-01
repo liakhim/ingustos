@@ -12,16 +12,10 @@
   <component name="ChangeListManager">
     <list default="true" id="804387ab-2946-4802-b79c-9cdf53181d2d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/app.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/offer/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_cart-modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_cart-modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_cart_not_empty.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_cart_not_empty.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_filters.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_filters.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_first-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_first-block.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
