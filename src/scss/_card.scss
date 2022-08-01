@@ -5,7 +5,7 @@
   //justify-content: center;
   //gap: 10px;
   //flex-wrap: wrap;
-  padding: 0 0 30px 0;
+  padding: 30px 0;
   @media (max-width: 1700px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -98,6 +98,8 @@
     padding: 28px 24px 24px;
     width: 100%;
     &-title {
+      min-height: 72px;
+      max-height: 72px;
       & > * {
         font-family: 'Bradobrei', sans-serif;
       }
@@ -110,6 +112,9 @@
     }
     &-description {
       margin-top: 16px;
+      max-height: 48px;
+      min-height: 48px;
+      overflow: hidden;
       p {
         font-weight: 400;
         font-size: 24px;
@@ -158,9 +163,10 @@
           overflow: hidden;
           background: #fff;
           &-number {
+            display: block;
             margin: 1px 0 0 0;
             font-size: 14px!important;
-            color: $main-orange;
+            color: $main-orange!important;
           }
         }
         &:hover {

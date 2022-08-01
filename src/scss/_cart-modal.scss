@@ -70,8 +70,10 @@
           align-items: center;
           justify-content: center;
           p {
+            display: block;
             color: #fff;
             line-height: 1;
+            margin-top: 5px;
           }
         }
         @media (max-width: 768px) {

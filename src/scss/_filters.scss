@@ -1,11 +1,14 @@
 .filters {
   margin-bottom: 30px;
   margin-top: 30px;
-  .container-fluid {
+  .container-filters {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
   }
   .filter-block {
     display: flex;

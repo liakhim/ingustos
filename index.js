@@ -175,12 +175,12 @@ let vm = new Vue({
                 quantity: 1
             })
         },
-        incCartProductQuantity (id) {
-            const ind = this.cartArr.indexOf(this.cartArr.find(v => v.id === id))
+        incCartProductQuantity (item) {
+            const ind = this.cartArr.indexOf(this.cartArr.find(v => v.active_variation_id === item.active_variation_id))
             this.cartArr[ind].quantity += 1
         },
-        decCartProductQuantity (id) {
-            const ind = this.cartArr.indexOf(this.cartArr.find(v => v.id === id))
+        decCartProductQuantity (item) {
+            const ind = this.cartArr.indexOf(this.cartArr.find(v => v.active_variation_id === item.active_variation_id))
             if (this.cartArr[ind].quantity > 1) {
                 this.cartArr[ind].quantity -= 1
             } else {
@@ -400,6 +400,13 @@ let vm = new Vue({
             let counter = 0
             this.cartArr.forEach(v => {
                 counter += +v.price * v.quantity
+            })
+            return counter
+        },
+        productsInCartArrSum () {
+            let counter = 0
+            this.cartArr.forEach(v => {
+                counter += v.quantity
             })
             return counter
         }

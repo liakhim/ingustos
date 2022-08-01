@@ -11,19 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="804387ab-2946-4802-b79c-9cdf53181d2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp/wp-content/uploads/2022/07/empty-cart-100x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp/wp-content/uploads/2022/07/empty-cart-150x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp/wp-content/uploads/2022/07/empty-cart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp/wp-content/uploads/2022/07/logo.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/app.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/offer/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_card.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/_cart-modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_cart-modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-variation-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-variation-admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Архив.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Архив.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_cart_not_empty.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_cart_not_empty.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_filters.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_filters.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_first-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_first-block.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,12 +73,6 @@
       <recent name="C:\OpenServer\domains\ingustos\dist\src\fonts" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
-      <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
-      <method v="2" />
-    </configuration>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -96,6 +88,7 @@
       <workItem from="1656446756740" duration="76692000" />
       <workItem from="1657917142523" duration="206000" />
       <workItem from="1657917886903" duration="89053000" />
+      <workItem from="1659383215004" duration="439000" />
     </task>
     <servers />
   </component>
@@ -124,11 +117,12 @@
       <screen x="0" y="25" width="1440" height="787" />
     </state>
     <state x="469" y="277" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.25.1440.787@0.25.1440.787" timestamp="1656538391162" />
-    <state x="323" y="156" key="Vcs.Push.Dialog.v2" timestamp="1658261163705">
-      <screen x="0" y="25" width="1440" height="794" />
+    <state x="323" y="156" key="Vcs.Push.Dialog.v2" timestamp="1658357552688">
+      <screen x="0" y="25" width="1440" height="791" />
     </state>
     <state x="431" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1657989464496" />
     <state x="323" y="155" key="Vcs.Push.Dialog.v2/0.25.1440.787@0.25.1440.787" timestamp="1657753316958" />
+    <state x="323" y="156" key="Vcs.Push.Dialog.v2/0.25.1440.791@0.25.1440.791" timestamp="1658357552688" />
     <state x="323" y="156" key="Vcs.Push.Dialog.v2/0.25.1440.794@0.25.1440.794" timestamp="1658261163705" />
     <state x="507" y="222" width="862" height="549" key="find.popup" timestamp="1658346221853">
       <screen x="0" y="25" width="1440" height="788" />
@@ -142,13 +136,14 @@
     </state>
     <state x="513" y="215" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1658105379192" />
     <state x="385" y="188" key="run.anything.popup/0.25.1440.787@0.25.1440.787" timestamp="1656798666545" />
-    <state x="462" y="157" width="670" height="515" key="search.everywhere.popup" timestamp="1658356285427">
+    <state x="462" y="157" width="670" height="515" key="search.everywhere.popup" timestamp="1658445493668">
       <screen x="0" y="25" width="1440" height="791" />
     </state>
     <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1658104850955" />
     <state x="462" y="156" width="670" height="512" key="search.everywhere.popup/0.25.1440.787@0.25.1440.787" timestamp="1657834884718" />
     <state x="462" y="156" width="670" height="513" key="search.everywhere.popup/0.25.1440.788@0.25.1440.788" timestamp="1658354200995" />
-    <state x="462" y="157" width="670" height="515" key="search.everywhere.popup/0.25.1440.791@0.25.1440.791" timestamp="1658356285427" />
-    <state x="462" y="157" width="670" height="517" key="search.everywhere.popup/0.25.1440.794@0.25.1440.794" timestamp="1658261358399" />
+    <state x="462" y="157" width="670" height="515" key="search.everywhere.popup/0.25.1440.791@0.25.1440.791" timestamp="1658445493668" />
+    <state x="462" y="157" width="670" height="517" key="search.everywhere.popup/0.25.1440.794@0.25.1440.794" timestamp="1658440165270" />
+    <state x="462" y="158" width="670" height="519" key="search.everywhere.popup/0.25.1440.797@0.25.1440.797" timestamp="1658436119588" />
   </component>
 </project>
