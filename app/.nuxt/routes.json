@@ -1,0 +1,9 @@
+[
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Applications/MAMP/htdocs/ingustos/app/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_675b669d"
+  }
+]

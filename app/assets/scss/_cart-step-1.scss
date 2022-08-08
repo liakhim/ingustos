@@ -1,0 +1,36 @@
+.cart-step-1 {
+  margin-top: 40px;
+  .name-row {
+    display: flex;
+    flex-wrap: nowrap;
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+    label {
+      width: 50%;
+      &:first-child {
+        margin-right: 20px;
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+        &:first-child {
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+  .phone-row {
+    width: 100%;
+    margin-top: 32px;
+    label {
+      width: 100%;
+    }
+  }
+  .email-row {
+    width: 100%;
+    margin-top: 32px;
+    label {
+      width: 100%;
+    }
+  }
+}
