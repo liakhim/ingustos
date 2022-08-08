@@ -35,7 +35,7 @@ class ConfirmInterestBeforeDeactivation {
         'columnLayout' => false,
         'orientation' => 'vertical',
         'image' => [
-          'src' => null,
+          'assets' => null,
           'display' => 'scale',
         ],
         'styles' => [
@@ -49,7 +49,7 @@ class ConfirmInterestBeforeDeactivation {
             'columnLayout' => false,
             'orientation' => 'horizontal',
             'image' => [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
             ],
             'styles' => [
@@ -63,7 +63,7 @@ class ConfirmInterestBeforeDeactivation {
                 'columnLayout' => false,
                 'orientation' => 'vertical',
                 'image' => [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                 ],
                 'styles' => [
@@ -84,7 +84,7 @@ class ConfirmInterestBeforeDeactivation {
                   [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/fake-logo.png',
+                    'assets' => $this->template_image_url . '/fake-logo.png',
                     'alt' => __('Fake logo', 'mailpoet'),
                     'fullWidth' => false,
                     'width' => '598px',
@@ -134,7 +134,7 @@ class ConfirmInterestBeforeDeactivation {
             'columnLayout' => false,
             'orientation' => 'horizontal',
             'image' => [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
             ],
             'styles' => [
@@ -148,7 +148,7 @@ class ConfirmInterestBeforeDeactivation {
                 'columnLayout' => false,
                 'orientation' => 'vertical',
                 'image' => [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                 ],
                 'styles' => [

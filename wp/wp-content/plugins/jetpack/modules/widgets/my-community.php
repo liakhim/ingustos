@@ -235,7 +235,7 @@ class Jetpack_My_Community_Widget extends WP_Widget {
 
 			foreach ( $members as $member ) {
 				$my_community .= sprintf(
-					'<li><a href="%s" title="%s"><img alt="%s" src="%s" class="avatar avatar-48" height="48" width="48"></a></li>',
+					'<li><a href="%s" title="%s"><img alt="%s" assets="%s" class="avatar avatar-48" height="48" width="48"></a></li>',
 					esc_url( $member->profile_URL ), // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 					esc_attr( $member->name ),
 					esc_attr( $member->name ),

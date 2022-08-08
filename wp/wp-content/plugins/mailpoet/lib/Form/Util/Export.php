@@ -35,7 +35,7 @@ class Export {
           'height="100%"',
           'scrolling="no"',
           'frameborder="0"',
-          'src="' . esc_url($iframeUrl) . '"',
+          'assets="' . esc_url($iframeUrl) . '"',
           'class="mailpoet_form_iframe"',
           'id="mailpoet_form_iframe"',
           'vspace="0"',
@@ -72,15 +72,15 @@ class Export {
         '" />';
 
         // jQuery
-        $output[] = '<script type="text/javascript" src="' .
+        $output[] = '<script type="text/javascript" assets="' .
           WPFunctions::get()->includesUrl() . 'js/jquery/jquery.js?mp_ver' . MAILPOET_VERSION .
         '"></script>';
 
         // JS
-        $output[] = '<script type="text/javascript" src="' .
+        $output[] = '<script type="text/javascript" assets="' .
           Env::$assetsUrl . '/dist/js/vendor.js?mp_ver=' . MAILPOET_VERSION .
         '"></script>';
-        $output[] = '<script type="text/javascript" src="' .
+        $output[] = '<script type="text/javascript" assets="' .
           Env::$assetsUrl . '/dist/js/public.js?mp_ver=' . MAILPOET_VERSION .
         '"></script>';
 

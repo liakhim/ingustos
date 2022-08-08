@@ -40,7 +40,7 @@ class NotSoMedium {
           'orientation' => 'vertical',
           'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
           'styles' =>
@@ -59,7 +59,7 @@ class NotSoMedium {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -78,7 +78,7 @@ class NotSoMedium {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -113,7 +113,7 @@ class NotSoMedium {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -132,7 +132,7 @@ class NotSoMedium {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -148,7 +148,7 @@ class NotSoMedium {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Not-So-Medium-Logo.png',
+                                  'assets' => $this->template_image_url . '/Not-So-Medium-Logo.png',
                                   'alt' => 'Not-So-Medium-Logo',
                                   'fullWidth' => false,
                                   'width' => '210px',
@@ -170,7 +170,7 @@ class NotSoMedium {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -203,7 +203,7 @@ class NotSoMedium {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -276,7 +276,7 @@ class NotSoMedium {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -295,7 +295,7 @@ class NotSoMedium {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -428,7 +428,7 @@ class NotSoMedium {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -447,7 +447,7 @@ class NotSoMedium {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -558,7 +558,7 @@ class NotSoMedium {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -577,7 +577,7 @@ class NotSoMedium {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -831,7 +831,7 @@ class NotSoMedium {
              [
               'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
               'styles' =>

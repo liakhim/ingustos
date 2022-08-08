@@ -29,7 +29,7 @@ function insert_tracking_id() {
 		printf(
 			"<!-- Jetpack Cloudflare Web Analytics -->
 <script defer
-	src='https://static.cloudflareinsights.com/beacon.min.js'
+	assets='https://static.cloudflareinsights.com/beacon.min.js'
 	data-cf-beacon='{\"token\": \"%s\"}'>
 </script>
 <!-- End Jetpack Cloudflare Web Analytics -->\r\n",

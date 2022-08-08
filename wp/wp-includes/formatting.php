@@ -3390,7 +3390,7 @@ function translate_smiley( $matches ) {
 	 */
 	$src_url = apply_filters( 'smilies_src', includes_url( "images/smilies/$img" ), $img, site_url() );
 
-	return sprintf( '<img src="%s" alt="%s" class="wp-smiley" style="height: 1em; max-height: 1em;" />', esc_url( $src_url ), esc_attr( $smiley ) );
+	return sprintf( '<img assets="%s" alt="%s" class="wp-smiley" style="height: 1em; max-height: 1em;" />', esc_url( $src_url ), esc_attr( $smiley ) );
 }
 
 /**
@@ -5282,7 +5282,7 @@ function wp_html_excerpt( $str, $count, $more = null ) {
  * @param array  $attrs   The attributes which should be processed.
  * @return string The processed content.
  */
-function links_add_base_url( $content, $base, $attrs = array( 'src', 'href' ) ) {
+function links_add_base_url( $content, $base, $attrs = array( 'assets', 'href' ) ) {
 	global $_links_add_base;
 	$_links_add_base = $base;
 	$attrs           = implode( '|', (array) $attrs );
@@ -5903,7 +5903,7 @@ function wp_staticize_emoji( $text ) {
 				$file = str_replace( ';&#x', '-', $emojum );
 				$file = str_replace( array( '&#x', ';' ), '', $file );
 
-				$entity = sprintf( '<img src="%s" alt="%s" class="wp-smiley" style="height: 1em; max-height: 1em;" />', $cdn_url . $file . $ext, $emoji_char );
+				$entity = sprintf( '<img assets="%s" alt="%s" class="wp-smiley" style="height: 1em; max-height: 1em;" />', $cdn_url . $file . $ext, $emoji_char );
 
 				$content = str_replace( $emojum, $entity, $content );
 			}

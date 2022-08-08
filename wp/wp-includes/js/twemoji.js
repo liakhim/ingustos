@@ -445,7 +445,7 @@ var twemoji = (function (
           'alt="',
           rawText,
           '"',
-          ' src="',
+          ' assets="',
           src,
           '"'
         );

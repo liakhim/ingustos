@@ -73,7 +73,7 @@ class Assets extends AbstractExtension {
 
     foreach ($scripts as $script) {
       $output[] = sprintf(
-        '<script type="text/javascript" src="%s"></script>',
+        '<script type="text/javascript" assets="%s"></script>',
         $this->getJavascriptScriptUrl($script)
       );
     }

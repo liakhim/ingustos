@@ -92,7 +92,7 @@ class WC_Twenty_Twenty {
 		unset( $styles['woocommerce-general'] );
 
 		$styles['woocommerce-general'] = array(
-			'src'     => str_replace( array( 'http:', 'https:' ), '', WC()->plugin_url() ) . '/assets/css/twenty-twenty.css',
+			'assets'     => str_replace( array( 'http:', 'https:' ), '', WC()->plugin_url() ) . '/assets/css/twenty-twenty.css',
 			'deps'    => '',
 			'version' => Constants::get_constant( 'WC_VERSION' ),
 			'media'   => 'all',

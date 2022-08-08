@@ -29,7 +29,7 @@ function flickr_embed_to_shortcode( $content ) {
 
 	if ( false !== strpos( $content, '<div class="flickr_video"' ) && false !== strpos( $content, '<video' ) ) {
 		return jetpack_flickr_video_to_shortcode( $content );
-	} elseif ( preg_match( '/<iframe src="(https?:)?\/\/([\da-z\-]+\.)*?((static)?flickr\.com|flic\.kr)\/[^\"]+\"/', $content ) ) {
+	} elseif ( preg_match( '/<iframe assets="(https?:)?\/\/([\da-z\-]+\.)*?((static)?flickr\.com|flic\.kr)\/[^\"]+\"/', $content ) ) {
 		return jetpack_flickr_photo_to_shortcode( $content );
 	}
 
@@ -46,7 +46,7 @@ function flickr_embed_to_shortcode( $content ) {
  * @return string Shortcode or the embed content.
  */
 function jetpack_flickr_photo_to_shortcode( $content ) {
-	preg_match( '/<iframe src=\"([^\"]+)\"(\s+height=\"([^\"]*)\")?(\s+width=\"([^\"]*)\")?/', $content, $matches );
+	preg_match( '/<iframe assets=\"([^\"]+)\"(\s+height=\"([^\"]*)\")?(\s+width=\"([^\"]*)\")?/', $content, $matches );
 
 	if ( empty( $matches[1] ) ) {
 		return $content;
@@ -73,7 +73,7 @@ function jetpack_flickr_photo_to_shortcode( $content ) {
  */
 function jetpack_flickr_video_to_shortcode( $content ) {
 	// Get video src.
-	preg_match( '/<video src=\"([^\"]+)\"/', $content, $matches );
+	preg_match( '/<video assets=\"([^\"]+)\"/', $content, $matches );
 
 	if ( empty( $matches[1] ) ) {
 		return $content;
@@ -162,7 +162,7 @@ function flickr_shortcode_handler( $atts ) {
 			$allow_full_screen = str_replace( ' oallowfullscreen msallowfullscreen', '', $allow_full_screen );
 		}
 
-		return sprintf( '<iframe src="%s" height="%s" width="%s"  frameborder="0" %s></iframe>', esc_url( $src ), $height, esc_attr( $atts['w'] ), $allow_full_screen );
+		return sprintf( '<iframe assets="%s" height="%s" width="%s"  frameborder="0" %s></iframe>', esc_url( $src ), $height, esc_attr( $atts['w'] ), $allow_full_screen );
 	}
 
 	return false;
@@ -211,7 +211,7 @@ function flickr_shortcode_video_markup( $atts, $id, $video_param ) {
 		}
 
 		// Get the embed url.
-		preg_match( '/src=\"([^\"]+)\"/', $data['html'], $matches );
+		preg_match( '/assets=\"([^\"]+)\"/', $data['html'], $matches );
 
 		$embed_url = $matches[1];
 
@@ -219,7 +219,7 @@ function flickr_shortcode_video_markup( $atts, $id, $video_param ) {
 
 		// Get the video url from embed html markup.
 
-		preg_match( '/video.+src=\"([^\"]+)\"/', $embed_page['body'], $matches );
+		preg_match( '/video.+assets=\"([^\"]+)\"/', $embed_page['body'], $matches );
 
 		$video_src = $matches[1];
 
@@ -240,7 +240,7 @@ function flickr_shortcode_video_markup( $atts, $id, $video_param ) {
 	$autoplay = 'yes' === $atts['autoplay'] ? 'autoplay' : '';
 
 	return sprintf(
-		'<div class="flick_video" style="%s"><video src="%s" %s %s /></div>',
+		'<div class="flick_video" style="%s"><video assets="%s" %s %s /></div>',
 		esc_attr( $style ),
 		esc_attr( $video_src ),
 		$controls,

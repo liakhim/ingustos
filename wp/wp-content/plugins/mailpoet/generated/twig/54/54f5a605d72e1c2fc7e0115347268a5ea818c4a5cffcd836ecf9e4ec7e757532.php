@@ -72,11 +72,11 @@ class __TwigTemplate_414e57f5d39be30b7212208368ba358fb4ae1c2f2d02bf5028ce033882d
   \"
 >
   <div class=\"mailpoet_browser_preview_border\">
-    <iframe id=\"mailpoet_browser_preview_iframe\" class=\"mailpoet_browser_preview_iframe\" src=\"{{ previewUrl }}\" width=\"{{ width }}\" height=\"{{ height }}\"></iframe>
+    <iframe id=\"mailpoet_browser_preview_iframe\" class=\"mailpoet_browser_preview_iframe\" assets=\"{{ previewUrl }}\" width=\"{{ width }}\" height=\"{{ height }}\"></iframe>
   </div>
 
   <div class=\"mailpoet_preview_send_to_email\">
-    <iframe name=\"mailpoet_save_preview_email_for_autocomplete\" style=\"display:none\" src=\"about:blank\"></iframe>
+    <iframe name=\"mailpoet_save_preview_email_for_autocomplete\" style=\"display:none\" assets=\"about:blank\"></iframe>
     <form target=\"mailpoet_save_preview_email_for_autocomplete\">
       <div class=\"mailpoet_form_field\">
         <label>

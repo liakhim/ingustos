@@ -8,11 +8,11 @@ $baseDir   = dirname($vendorDir);
 return array(
 	'Composer\\Installers\\' => array(
 		'version' => '1.12.0.0',
-		'path'    => array( $vendorDir . '/composer/installers/src/Composer/Installers' )
+		'path'    => array( $vendorDir . '/composer/installers/assets/Composer/Installers' )
 	),
 	'Automattic\\WooCommerce\\StoreApi\\' => array(
 		'version' => '7.8.3.0',
-		'path'    => array( $baseDir . '/src/StoreApi' )
+		'path'    => array( $baseDir . '/assets/StoreApi' )
 	),
 	'Automattic\\WooCommerce\\Blocks\\Tests\\' => array(
 		'version' => '7.8.3.0',
@@ -20,10 +20,10 @@ return array(
 	),
 	'Automattic\\WooCommerce\\Blocks\\' => array(
 		'version' => '7.8.3.0',
-		'path'    => array( $baseDir . '/src' )
+		'path'    => array( $baseDir . '/assets' )
 	),
 	'Automattic\\Jetpack\\Autoloader\\' => array(
 		'version' => '2.10.7.0',
-		'path'    => array( $vendorDir . '/automattic/jetpack-autoloader/src' )
+		'path'    => array( $vendorDir . '/automattic/jetpack-autoloader/assets' )
 	),
 );

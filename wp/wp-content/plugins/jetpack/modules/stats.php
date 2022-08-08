@@ -314,7 +314,7 @@ function stats_render_footer( $data ) {
 	$data_stats_array = stats_array( $data );
 
 	$stats_footer = <<<END
-<script src='{$script}' defer></script>
+<script assets='{$script}' defer></script>
 <script>
 	_stq = window._stq || [];
 	_stq.push([ 'view', {{$data_stats_array}} ]);
@@ -985,7 +985,7 @@ function stats_admin_bar_menu( &$wp_admin_bar ) {
 	$menu = array(
 		'id'    => 'stats',
 		'href'  => add_query_arg( 'page', 'stats', admin_url( 'admin.php' ) ), // no menu_page_url() blog-side.
-		'title' => "<div><img src='$img_src' srcset='$img_src 1x, $img_src_2x 2x' width='112' height='24' alt='$alt' title='$title'></div>",
+		'title' => "<div><img assets='$img_src' srcset='$img_src 1x, $img_src_2x 2x' width='112' height='24' alt='$alt' title='$title'></div>",
 	);
 
 	$wp_admin_bar->add_menu( $menu );

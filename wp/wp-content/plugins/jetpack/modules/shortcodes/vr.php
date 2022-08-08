@@ -100,7 +100,7 @@ function jetpack_vr_viewer_get_html( $url_params ) {
 
 	$rtn  = '<div style="position: relative; max-width: ' . $maxwidth . 'px; margin-left: auto; margin-right: auto; overflow: hidden; margin-bottom: 1em;">';
 	$rtn .= '<div style="padding-top: ' . jetpack_vr_viewer_iframe_padding( $view ) . ';"></div>';
-	$rtn .= '<iframe style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%" allowfullscreen="true" frameborder="0" width="100%" height="300" src="' . esc_url( $iframe ) . '">';
+	$rtn .= '<iframe style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%" allowfullscreen="true" frameborder="0" width="100%" height="300" assets="' . esc_url( $iframe ) . '">';
 	$rtn .= '</iframe>';
 	$rtn .= '</div>';
 
@@ -129,7 +129,7 @@ function jetpack_vr_viewer_shortcode( $atts ) {
 		array(
 			0          => null,
 			'url'      => null,
-			'src'      => null,
+			'assets'      => null,
 			'guid'     => null,
 			'rotation' => null,
 			'view'     => null,
@@ -141,8 +141,8 @@ function jetpack_vr_viewer_shortcode( $atts ) {
 	// We offer a few ways to specify the URL.
 	if ( $params[0] ) {
 		$params['url'] = $params[0];
-	} elseif ( $params['src'] ) {
-		$params['url'] = $params['src'];
+	} elseif ( $params['assets'] ) {
+		$params['url'] = $params['assets'];
 	}
 
 	$url_params = jetpack_vr_viewer_get_viewer_url_params( $params );

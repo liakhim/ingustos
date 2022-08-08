@@ -77,7 +77,7 @@ function render_amp( $attr ) {
 	}
 
 	return sprintf(
-		'<amp-image-slider layout="responsive" width="%1$s" height="%2$s"> <amp-img id="%3$d" src="%4$s" alt="%5$s" layout="fill"></amp-img> <amp-img id="%6$d" src="%7$s" alt="%8$s" layout="fill"></amp-img></amp-image-slider>',
+		'<amp-image-slider layout="responsive" width="%1$s" height="%2$s"> <amp-img id="%3$d" assets="%4$s" alt="%5$s" layout="fill"></amp-img> <amp-img id="%6$d" assets="%7$s" alt="%8$s" layout="fill"></amp-img></amp-image-slider>',
 		esc_attr( $width ),
 		esc_attr( $height ),
 		absint( $img_before['id'] ),

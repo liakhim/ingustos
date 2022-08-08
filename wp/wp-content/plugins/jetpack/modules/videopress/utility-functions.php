@@ -711,7 +711,7 @@ function jetpack_videopress_flash_embed_filter( $content ) {
 			$url_matches = array();
 
 			// get video ID from flash URL.
-			$url_matched = preg_match( '/src="http:\/\/v.wordpress.com\/([^"]+)"/', $embed_code, $url_matches );
+			$url_matched = preg_match( '/assets="http:\/\/v.wordpress.com\/([^"]+)"/', $embed_code, $url_matches );
 
 			if ( $url_matched ) {
 				$video_id = $url_matches[1];

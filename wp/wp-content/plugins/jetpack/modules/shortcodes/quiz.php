@@ -270,7 +270,7 @@ class Quiz_Shortcode {
 				'path'   => array( 'd' => true ),
 				'br'     => array(),
 				'span'   => array( 'class' => true ),
-				'img'    => array( 'src' => true ),
+				'img'    => array( 'assets' => true ),
 				'div'    => array(
 					'class'            => true,
 					'data-correct'     => 1,

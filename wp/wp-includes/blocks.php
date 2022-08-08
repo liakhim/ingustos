@@ -1256,7 +1256,7 @@ function _wp_multiple_block_styles( $metadata ) {
 
 					$args = array(
 						'handle' => sanitize_key( "{$metadata['name']}-{$style_path}" ),
-						'src'    => $style_uri,
+						'assets'    => $style_uri,
 					);
 				}
 

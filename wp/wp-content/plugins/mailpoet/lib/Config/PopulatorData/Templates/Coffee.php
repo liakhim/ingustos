@@ -183,7 +183,7 @@ class Coffee {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Coffee-Logo-1.png',
+                                  'assets' => $this->template_image_url . '/Coffee-Logo-1.png',
                                   'alt' => 'Coffee-Logo-1',
                                   'fullWidth' => false,
                                   'width' => '120px',
@@ -281,7 +281,7 @@ class Coffee {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Coffee-Header.jpg',
+                                  'assets' => $this->template_image_url . '/Coffee-Header.jpg',
                                   'alt' => 'Coffee-Header',
                                   'fullWidth' => false,
                                   'width' => '1280px',
@@ -298,7 +298,7 @@ class Coffee {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/coffee.gif',
+                                  'assets' => $this->template_image_url . '/coffee.gif',
                                   'alt' => 'coffee',
                                   'fullWidth' => true,
                                   'width' => '660px',
@@ -432,7 +432,7 @@ class Coffee {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Coffee-Mid.jpg',
+                                  'assets' => $this->template_image_url . '/Coffee-Mid.jpg',
                                   'alt' => 'Coffee-Mid',
                                   'fullWidth' => true,
                                   'width' => '1280px',
@@ -685,7 +685,7 @@ class Coffee {
                                  [
                                   'type' => 'image',
                                   'link' => 'http://mailpoet.info/cutting-through-the-smog-what-to-do-to-fight-air-pollution/',
-                                  'src' => $this->template_image_url . '/Coffee-Cup.jpg',
+                                  'assets' => $this->template_image_url . '/Coffee-Cup.jpg',
                                   'alt' => 'Coffee-Cup',
                                   'fullWidth' => false,
                                   'width' => '400px',
@@ -726,7 +726,7 @@ class Coffee {
                                  [
                                   'type' => 'image',
                                   'link' => 'http://mailpoet.info/cutting-through-the-smog-what-to-do-to-fight-air-pollution/',
-                                  'src' => $this->template_image_url . '/Coffee-Cup.jpg',
+                                  'assets' => $this->template_image_url . '/Coffee-Cup.jpg',
                                   'alt' => 'Coffee-Cup',
                                   'fullWidth' => false,
                                   'width' => '400px',
@@ -767,7 +767,7 @@ class Coffee {
                                  [
                                   'type' => 'image',
                                   'link' => 'http://mailpoet.info/cutting-through-the-smog-what-to-do-to-fight-air-pollution/',
-                                  'src' => $this->template_image_url . '/Coffee-Cup.jpg',
+                                  'assets' => $this->template_image_url . '/Coffee-Cup.jpg',
                                   'alt' => 'Coffee-Cup',
                                   'fullWidth' => false,
                                   'width' => '400px',
@@ -880,7 +880,7 @@ class Coffee {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Coffee-Logo-1.png',
+                                  'assets' => $this->template_image_url . '/Coffee-Logo-1.png',
                                   'alt' => 'Coffee-Logo-1',
                                   'fullWidth' => false,
                                   'width' => '120px',

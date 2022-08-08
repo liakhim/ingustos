@@ -1330,7 +1330,7 @@
 			// If the startIndex is not 0 then preload the clicked image first.
 			if ( startIndex !== 0 ) {
 				var img = new Image();
-				img.src = items[ startIndex ].getAttribute( 'data-gallery-src' );
+				img.src = items[ startIndex ].getAttribute( 'data-gallery-assets' );
 			}
 
 			var useInPageThumbnails = !! domUtil.closest( items[ 0 ], '.tiled-gallery.type-rectangular' );
@@ -1338,7 +1338,7 @@
 			// create the 'slide'
 			Array.prototype.forEach.call( items, function ( item, i ) {
 				var permalinkEl = domUtil.closest( item, 'a' );
-				var origFile = item.getAttribute( 'data-orig-file' ) || item.getAttribute( 'src-orig' );
+				var origFile = item.getAttribute( 'data-orig-file' ) || item.getAttribute( 'assets-orig' );
 				var attrID =
 					item.getAttribute( 'data-attachment-id' ) || item.getAttribute( 'data-id' ) || '0';
 				var caption = document.querySelector(
@@ -1395,7 +1395,7 @@
 				}
 
 				// Set the final src.
-				item.setAttribute( 'data-gallery-src', attrs.src );
+				item.setAttribute( 'data-gallery-assets', attrs.src );
 
 				if ( attrs.attachmentId !== '0' ) {
 					attrs.title = util.texturize( attrs.title );

@@ -15,23 +15,23 @@ class ComposerStaticInitf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ11_0
     );
 
     public static $prefixLengthsPsr4 = array (
-        'A' => 
+        'A' =>
         array (
             'Automattic\\Jetpack\\Autoloader\\' => 30,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Automattic\\Jetpack\\Autoloader\\' => 
+        'Automattic\\Jetpack\\Autoloader\\' =>
         array (
-            0 => __DIR__ . '/..' . '/automattic/jetpack-autoloader/src',
+            0 => __DIR__ . '/..' . '/automattic/jetpack-autoloader/assets',
         ),
     );
 
     public static $prefixesPsr0 = array (
-        'T' => 
+        'T' =>
         array (
-            'Twitter\\Text\\' => 
+            'Twitter\\Text\\' =>
             array (
                 0 => __DIR__ . '/..' . '/nojimage/twitter-text-php/lib',
             ),
@@ -47,11 +47,11 @@ class ComposerStaticInitf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ11_0
         'Automattic\\Jetpack\\Assets' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php',
         'Automattic\\Jetpack\\Assets\\Logo' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-logo/src/class-logo.php',
         'Automattic\\Jetpack\\Assets\\Semver' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-assets/src/class-semver.php',
-        'Automattic\\Jetpack\\Autoloader\\AutoloadFileWriter' => __DIR__ . '/..' . '/automattic/jetpack-autoloader/src/AutoloadFileWriter.php',
-        'Automattic\\Jetpack\\Autoloader\\AutoloadGenerator' => __DIR__ . '/..' . '/automattic/jetpack-autoloader/src/AutoloadGenerator.php',
-        'Automattic\\Jetpack\\Autoloader\\AutoloadProcessor' => __DIR__ . '/..' . '/automattic/jetpack-autoloader/src/AutoloadProcessor.php',
-        'Automattic\\Jetpack\\Autoloader\\CustomAutoloaderPlugin' => __DIR__ . '/..' . '/automattic/jetpack-autoloader/src/CustomAutoloaderPlugin.php',
-        'Automattic\\Jetpack\\Autoloader\\ManifestGenerator' => __DIR__ . '/..' . '/automattic/jetpack-autoloader/src/ManifestGenerator.php',
+        'Automattic\\Jetpack\\Autoloader\\AutoloadFileWriter' => __DIR__ . '/..' . '/automattic/jetpack-autoloader/assets/AutoloadFileWriter.php',
+        'Automattic\\Jetpack\\Autoloader\\AutoloadGenerator' => __DIR__ . '/..' . '/automattic/jetpack-autoloader/assets/AutoloadGenerator.php',
+        'Automattic\\Jetpack\\Autoloader\\AutoloadProcessor' => __DIR__ . '/..' . '/automattic/jetpack-autoloader/assets/AutoloadProcessor.php',
+        'Automattic\\Jetpack\\Autoloader\\CustomAutoloaderPlugin' => __DIR__ . '/..' . '/automattic/jetpack-autoloader/assets/CustomAutoloaderPlugin.php',
+        'Automattic\\Jetpack\\Autoloader\\ManifestGenerator' => __DIR__ . '/..' . '/automattic/jetpack-autoloader/assets/ManifestGenerator.php',
         'Automattic\\Jetpack\\Automatic_Install_Skin' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-plugins-installer/src/class-automatic-install-skin.php',
         'Automattic\\Jetpack\\Backup\\Helper_Script_Manager' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-backup/src/class-helper-script-manager.php',
         'Automattic\\Jetpack\\Backup\\Initial_State' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-backup/src/class-initial-state.php',
@@ -59,8 +59,8 @@ class ComposerStaticInitf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ11_0
         'Automattic\\Jetpack\\Backup\\Package_Version' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-backup/src/class-package-version.php',
         'Automattic\\Jetpack\\Backup\\REST_Controller' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-backup/src/class-rest-controller.php',
         'Automattic\\Jetpack\\Blocks' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-blocks/src/class-blocks.php',
-        'Automattic\\Jetpack\\Composer\\Manager' => __DIR__ . '/..' . '/automattic/jetpack-composer-plugin/src/class-manager.php',
-        'Automattic\\Jetpack\\Composer\\Plugin' => __DIR__ . '/..' . '/automattic/jetpack-composer-plugin/src/class-plugin.php',
+        'Automattic\\Jetpack\\Composer\\Manager' => __DIR__ . '/..' . '/automattic/jetpack-composer-plugin/assets/class-manager.php',
+        'Automattic\\Jetpack\\Composer\\Plugin' => __DIR__ . '/..' . '/automattic/jetpack-composer-plugin/assets/class-plugin.php',
         'Automattic\\Jetpack\\Config' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-config/src/class-config.php',
         'Automattic\\Jetpack\\ConnectionUI\\Admin' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-connection-ui/src/class-admin.php',
         'Automattic\\Jetpack\\ConnectionUI\\Initial_State' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-connection-ui/src/class-initial-state.php',

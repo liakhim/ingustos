@@ -41,11 +41,11 @@ function youtube_embed_to_short_code( $content ) {
 	// older codes.
 	$regexp         = '!<object(.*?)>.*?<param\s+name=[\'"]movie[\'"]\s+value=[\'"](https?:)?//www\.youtube\.com/v/([^\'"]+)[\'"].*?>.*?</object>!i';
 	$regexp_ent     = htmlspecialchars( $regexp, ENT_NOQUOTES );
-	$old_regexp     = '!<embed(?:\s+\w+="[^"]*")*\s+src="https?(?:\:|&#0*58;)//www\.youtube\.com/v/([^"]+)"(?:\s+\w+="[^"]*")*\s*(?:/>|>\s*</embed>)!';
+	$old_regexp     = '!<embed(?:\s+\w+="[^"]*")*\s+assets="https?(?:\:|&#0*58;)//www\.youtube\.com/v/([^"]+)"(?:\s+\w+="[^"]*")*\s*(?:/>|>\s*</embed>)!';
 	$old_regexp_ent = str_replace( '&amp;#0*58;', '&amp;#0*58;|&#0*58;', htmlspecialchars( $old_regexp, ENT_NOQUOTES ) );
 
 	// new code.
-	$ifr_regexp     = '!<iframe((?:\s+\w+="[^"]*")*?)\s+src="(https?:)?//(?:www\.)*youtube.com/embed/([^"]+)".*?</iframe>!i';
+	$ifr_regexp     = '!<iframe((?:\s+\w+="[^"]*")*?)\s+assets="(https?:)?//(?:www\.)*youtube.com/embed/([^"]+)".*?</iframe>!i';
 	$ifr_regexp_ent = str_replace( '&amp;#0*58;', '&amp;#0*58;|&#0*58;', htmlspecialchars( $ifr_regexp, ENT_NOQUOTES ) );
 
 	foreach ( compact( 'regexp', 'regexp_ent', 'old_regexp', 'old_regexp_ent', 'ifr_regexp', 'ifr_regexp_ent' ) as $reg => $regexp ) {
@@ -302,7 +302,7 @@ function youtube_id( $url ) {
 	if ( $is_amp && $id ) {
 		// Note that <amp-youtube> currently is not well suited for playlists that don't have an individual video selected, hence the $id check above.
 		$placeholder = sprintf(
-			'<a href="%1$s" placeholder><amp-img src="%2$s" alt="%3$s" layout="fill" object-fit="cover"><noscript><img src="%2$s" loading="lazy" decoding="async" alt="%3$s"></noscript></amp-img></a>',
+			'<a href="%1$s" placeholder><amp-img assets="%2$s" alt="%3$s" layout="fill" object-fit="cover"><noscript><img assets="%2$s" loading="lazy" decoding="async" alt="%3$s"></noscript></amp-img></a>',
 			esc_url( $video_url ),
 			esc_url( $thumbnail ),
 			esc_attr__( 'YouTube Poster', 'jetpack' ) // Would be preferable to provide YouTube video title, but not available in this non-oEmbed context.
@@ -380,7 +380,7 @@ function youtube_id( $url ) {
 		$context = A8C\Display_Context\get_current_context();
 		if ( A8C\Display_Context\NOTIFICATIONS === $context ) {
 			return sprintf(
-				'<a href="%1$s" target="_blank" rel="noopener noreferrer"><img src="%2$s" alt="%3$s" /></a>',
+				'<a href="%1$s" target="_blank" rel="noopener noreferrer"><img assets="%2$s" alt="%3$s" /></a>',
 				esc_url( $video_url ),
 				esc_url( $thumbnail ),
 				esc_html__( 'YouTube video', 'jetpack' )

@@ -6,6 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'fcd5d7d87e03ff4f5b5a66c2b8968671' => $baseDir . '/src/StoreApi/deprecated.php',
-    'd0f16a186498c2ba04f1d0064fecf9cf' => $baseDir . '/src/StoreApi/functions.php',
+    'fcd5d7d87e03ff4f5b5a66c2b8968671' => $baseDir . '/assets/StoreApi/deprecated.php',
+    'd0f16a186498c2ba04f1d0064fecf9cf' => $baseDir . '/assets/StoreApi/functions.php',
 );

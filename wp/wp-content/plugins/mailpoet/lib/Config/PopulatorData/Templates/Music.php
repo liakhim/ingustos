@@ -38,7 +38,7 @@ class Music {
           'orientation' => 'vertical',
           'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
           'styles' =>
@@ -56,7 +56,7 @@ class Music {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -74,7 +74,7 @@ class Music {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -102,7 +102,7 @@ class Music {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Music-Logo.png',
+                                  'assets' => $this->template_image_url . '/Music-Logo.png',
                                   'alt' => 'Music-Logo',
                                   'fullWidth' => false,
                                   'width' => '496px',
@@ -125,7 +125,7 @@ class Music {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => $this->template_image_url . '/music-header.jpg',
+                      'assets' => $this->template_image_url . '/music-header.jpg',
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -143,7 +143,7 @@ class Music {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -201,7 +201,7 @@ class Music {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -219,7 +219,7 @@ class Music {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -258,7 +258,7 @@ class Music {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -276,7 +276,7 @@ class Music {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -320,7 +320,7 @@ class Music {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -364,7 +364,7 @@ class Music {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -410,7 +410,7 @@ class Music {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -428,7 +428,7 @@ class Music {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -472,7 +472,7 @@ class Music {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -516,7 +516,7 @@ class Music {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -562,7 +562,7 @@ class Music {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -580,7 +580,7 @@ class Music {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -624,7 +624,7 @@ class Music {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -668,7 +668,7 @@ class Music {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -714,7 +714,7 @@ class Music {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -732,7 +732,7 @@ class Music {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -776,7 +776,7 @@ class Music {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -820,7 +820,7 @@ class Music {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -866,7 +866,7 @@ class Music {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -884,7 +884,7 @@ class Music {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -918,7 +918,7 @@ class Music {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -936,7 +936,7 @@ class Music {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -970,7 +970,7 @@ class Music {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -988,7 +988,7 @@ class Music {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -1020,7 +1020,7 @@ class Music {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -1036,7 +1036,7 @@ class Music {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Music-Logo.png',
+                                  'assets' => $this->template_image_url . '/Music-Logo.png',
                                   'alt' => 'Music-Logo',
                                   'fullWidth' => false,
                                   'width' => '496px',
@@ -1101,7 +1101,7 @@ class Music {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>

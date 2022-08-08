@@ -51,9 +51,9 @@ class MailChimp_Subscriber_Popup {
 	 */
 	private static $reversal_regexes = array(
 		/* raw examplejs */
-		'/<script type="text\/javascript" src="(https?:)?\/\/downloads\.mailchimp\.com\/js\/signup-forms\/popup\/unique-methods\/embed\.js" data-dojo-config="([^"]*?)"><\/script><script type="text\/javascript">window.dojoRequire\(\["mojo\/signup-forms\/Loader"\]\, function\(L\) { L\.start\({([^}]*?)}\) }\)<\/script>/s', //phpcs:ignore
+		'/<script type="text\/javascript" assets="(https?:)?\/\/downloads\.mailchimp\.com\/js\/signup-forms\/popup\/unique-methods\/embed\.js" data-dojo-config="([^"]*?)"><\/script><script type="text\/javascript">window.dojoRequire\(\["mojo\/signup-forms\/Loader"\]\, function\(L\) { L\.start\({([^}]*?)}\) }\)<\/script>/s', //phpcs:ignore
 		/* visual editor */
-		'/&lt;script type="text\/javascript" src="(https?:)?\/\/downloads\.mailchimp\.com\/js\/signup-forms\/popup\/unique-methods\/embed\.js" data-dojo-config="([^"]*?)"&gt;&lt;\/script&gt;&lt;script type="text\/javascript"&gt;window.dojoRequire\(\["mojo\/signup-forms\/Loader"]\, function\(L\) { L\.start\({([^}]*?)}\) }\)&lt;\/script&gt;/s',
+		'/&lt;script type="text\/javascript" assets="(https?:)?\/\/downloads\.mailchimp\.com\/js\/signup-forms\/popup\/unique-methods\/embed\.js" data-dojo-config="([^"]*?)"&gt;&lt;\/script&gt;&lt;script type="text\/javascript"&gt;window.dojoRequire\(\["mojo\/signup-forms\/Loader"]\, function\(L\) { L\.start\({([^}]*?)}\) }\)&lt;\/script&gt;/s',
 	);
 
 	/**

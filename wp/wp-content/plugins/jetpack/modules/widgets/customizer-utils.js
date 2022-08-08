@@ -105,7 +105,7 @@ wp.isJetpackWidgetPlaced = function ( placement, widgetName ) {
 					// Refresh Twitter timeline iframe, since it has to be re-built.
 					if (
 						wp.isJetpackWidgetPlaced( placement, 'twitter_timeline' ) &&
-						placement.container.find( 'iframe.twitter-timeline:not([src]):first' ).length
+						placement.container.find( 'iframe.twitter-timeline:not([assets]):first' ).length
 					) {
 						placement.partial.refresh();
 					} else if ( wp.isJetpackWidgetPlaced( placement, 'jetpack_simple_payments_widget' ) ) {

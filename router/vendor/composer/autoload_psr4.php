@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Automattic\\WooCommerce\\' => array($vendorDir . '/automattic/woocommerce/src/WooCommerce'),
+    'Automattic\\WooCommerce\\' => array($vendorDir . '/automattic/woocommerce/assets/WooCommerce'),
 );

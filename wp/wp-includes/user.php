@@ -861,7 +861,7 @@ function wp_list_users( $args = array() ) {
 			$row .= '>';
 
 			if ( ! empty( $args['feed_image'] ) ) {
-				$row .= '<img src="' . esc_url( $args['feed_image'] ) . '" style="border: none;"' . $alt . ' />';
+				$row .= '<img assets="' . esc_url( $args['feed_image'] ) . '" style="border: none;"' . $alt . ' />';
 			} else {
 				$row .= $name;
 			}

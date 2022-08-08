@@ -296,7 +296,7 @@ class WC_REST_Products_V1_Controller extends WC_REST_Posts_Controller {
 				'id'            => (int) $attachment_id,
 				'date_created'  => wc_rest_prepare_date_response( $attachment_post->post_date_gmt ),
 				'date_modified' => wc_rest_prepare_date_response( $attachment_post->post_modified_gmt ),
-				'src'           => current( $attachment ),
+				'assets'           => current( $attachment ),
 				'name'          => get_the_title( $attachment_id ),
 				'alt'           => get_post_meta( $attachment_id, '_wp_attachment_image_alt', true ),
 				'position'      => (int) $position,
@@ -309,7 +309,7 @@ class WC_REST_Products_V1_Controller extends WC_REST_Posts_Controller {
 				'id'            => 0,
 				'date_created'  => wc_rest_prepare_date_response( current_time( 'mysql' ) ), // Default to now.
 				'date_modified' => wc_rest_prepare_date_response( current_time( 'mysql' ) ),
-				'src'           => wc_placeholder_img_src(),
+				'assets'           => wc_placeholder_img_src(),
 				'name'          => __( 'Placeholder', 'woocommerce' ),
 				'alt'           => __( 'Placeholder', 'woocommerce' ),
 				'position'      => 0,
@@ -849,8 +849,8 @@ class WC_REST_Products_V1_Controller extends WC_REST_Posts_Controller {
 			foreach ( $images as $image ) {
 				$attachment_id = isset( $image['id'] ) ? absint( $image['id'] ) : 0;
 
-				if ( 0 === $attachment_id && isset( $image['src'] ) ) {
-					$upload = wc_rest_upload_image_from_url( esc_url_raw( $image['src'] ) );
+				if ( 0 === $attachment_id && isset( $image['assets'] ) ) {
+					$upload = wc_rest_upload_image_from_url( esc_url_raw( $image['assets'] ) );
 
 					if ( is_wp_error( $upload ) ) {
 						if ( ! apply_filters( 'woocommerce_rest_suppress_image_upload_error', false, $upload, $product->get_id(), $images ) ) {
@@ -2168,7 +2168,7 @@ class WC_REST_Products_V1_Controller extends WC_REST_Posts_Controller {
 								'context'     => array( 'view', 'edit' ),
 								'readonly'    => true,
 							),
-							'src' => array(
+							'assets' => array(
 								'description' => __( 'Image URL.', 'woocommerce' ),
 								'type'        => 'string',
 								'format'      => 'uri',
@@ -2500,7 +2500,7 @@ class WC_REST_Products_V1_Controller extends WC_REST_Posts_Controller {
 										'context'     => array( 'view', 'edit' ),
 										'readonly'    => true,
 									),
-									'src' => array(
+									'assets' => array(
 										'description' => __( 'Image URL.', 'woocommerce' ),
 										'type'        => 'string',
 										'format'      => 'uri',

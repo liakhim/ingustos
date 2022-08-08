@@ -342,7 +342,7 @@ class VideoPress_Player {
 		if ( ! isset( $this->options['freedom'] ) || $this->options['freedom'] === false ) {
 			$mp4 = $this->video->videos->mp4->url;
 			if ( ! empty( $mp4 ) ) {
-				$html .= '<source src="' . esc_url( $mp4 ) . '" type="video/mp4; codecs=&quot;' . esc_attr( $this->video->videos->mp4->codecs ) . '&quot;" />';
+				$html .= '<source assets="' . esc_url( $mp4 ) . '" type="video/mp4; codecs=&quot;' . esc_attr( $this->video->videos->mp4->codecs ) . '&quot;" />';
 			}
 			unset( $mp4 );
 		}
@@ -350,7 +350,7 @@ class VideoPress_Player {
 		if ( isset( $this->video->videos->ogv ) ) {
 			$ogg = $this->video->videos->ogv->url;
 			if ( ! empty( $ogg ) ) {
-				$html .= '<source src="' . esc_url( $ogg ) . '" type="video/ogg; codecs=&quot;' . esc_attr( $this->video->videos->ogv->codecs ) . '&quot;" />';
+				$html .= '<source assets="' . esc_url( $ogg ) . '" type="video/ogg; codecs=&quot;' . esc_attr( $this->video->videos->ogv->codecs ) . '&quot;" />';
 			}
 
 			unset( $ogg );
@@ -360,7 +360,7 @@ class VideoPress_Player {
 		if ( isset( $this->video->title ) ) {
 			$html .= esc_attr( $this->video->title );
 		}
-		$html .= '" src="' . $thumbnail . '" width="' . $this->video->calculated_width . '" height="' . $this->video->calculated_height . '" /></div>';
+		$html .= '" assets="' . $thumbnail . '" width="' . $this->video->calculated_width . '" height="' . $this->video->calculated_height . '" /></div>';
 		if ( isset( $this->options['freedom'] ) && $this->options['freedom'] === true ) {
 			/* translators: %s url to the gnu.org website */
 			$html .= '<p class="robots-nocontent">' . sprintf( __( 'You do not have sufficient <a rel="nofollow noopener noreferrer" href="%s" target="_blank">freedom levels</a> to view this video. Support free software and upgrade.', 'jetpack' ), 'https://www.gnu.org/philosophy/free-sw.html' ) . '</p>';
@@ -452,7 +452,7 @@ class VideoPress_Player {
 				/* translators: %s is the video title */
 				$html .= esc_attr( $this->video->title ) . '" title="' . esc_attr( sprintf( _x( 'Watch: %s', 'watch a video title', 'jetpack' ), $this->video->title ) );
 			}
-			$html .= '" src="' . esc_url( $this->video->poster_frame_uri, array( 'http', 'https' ) ) . '" width="' . $width . '" height="' . $height . '" />' . PHP_EOL;
+			$html .= '" assets="' . esc_url( $this->video->poster_frame_uri, array( 'http', 'https' ) ) . '" width="' . $width . '" height="' . $height . '" />' . PHP_EOL;
 
 			// style a play button hovered over the poster frame
 			$html .= '<div class="play-button"><span style="z-index:2;display:block;position:absolute;top:50%;left:50%;text-align:center;vertical-align:middle;color:rgb(255,255,255);opacity:0.9;margin:0 0 0 -0.45em;padding:0;line-height:0;font-size:500%;text-shadow:0 0 40px rgba(0,0,0,0.5)">&#9654;</span></div>' . PHP_EOL;
@@ -466,7 +466,7 @@ class VideoPress_Player {
 					$html .= 'margin-right:20px;text-align:right;';
 				}
 				$html .= 'vertical-align:bottom;z-index:3">';
-				$html .= '<img alt="" src="' . esc_url( $this->video->skin->watermark, array( 'http', 'https' ) ) . '" width="90" height="13" style="background-color:transparent;background-image:none;background-repeat:no-repeat;border:none;margin:0;padding:0"/>';
+				$html .= '<img alt="" assets="' . esc_url( $this->video->skin->watermark, array( 'http', 'https' ) ) . '" width="90" height="13" style="background-color:transparent;background-image:none;background-repeat:no-repeat;border:none;margin:0;padding:0"/>';
 				$html .= '</div>' . PHP_EOL;
 			}
 		}
@@ -691,16 +691,16 @@ class VideoPress_Player {
 				. "' aria-label='" . __( 'VideoPress Video Player', 'jetpack' )
 				. "' width='" . esc_attr( $videopress_options['width'] )
 				. "' height='" . esc_attr( $videopress_options['height'] )
-				. "' src='" . esc_attr( $iframe_url )
+				. "' assets='" . esc_attr( $iframe_url )
 				. "' frameborder='0' allowfullscreen></iframe>"
-				. "<script src='" . esc_attr( $js_url ) . "'></script>";
+				. "<script assets='" . esc_attr( $js_url ) . "'></script>";
 
 		} else {
 			$videopress_options = wp_json_encode( $videopress_options );
 			$js_url             = 'https://s0.wp.com/wp-content/plugins/video/assets/js/next/videopress.js';
 
 			return "<div id='{$video_container_id}'></div>
-				<script src='{$js_url}'></script>
+				<script assets='{$js_url}'></script>
 				<script>
 					videopress('{$this->video->guid}', document.querySelector('#{$video_container_id}'), {$videopress_options});
 				</script>";
@@ -832,7 +832,7 @@ class VideoPress_Player {
 
 		$embed = array(
 			'id'     => $this->video_id,
-			'src'    => esc_url_raw( $this->video->players->swf->url . '&' . http_build_query( $this->get_flash_variables(), null, '&' ), array( 'http', 'https' ) ),
+			'assets'    => esc_url_raw( $this->video->players->swf->url . '&' . http_build_query( $this->get_flash_variables(), null, '&' ), array( 'http', 'https' ) ),
 			'type'   => 'application/x-shockwave-flash',
 			'width'  => $this->video->calculated_width,
 			'height' => $this->video->calculated_height,
@@ -867,7 +867,7 @@ class VideoPress_Player {
 		if ( isset( $this->video->title ) ) {
 			$thumbnail_html .= esc_attr( $this->video->title );
 		}
-		$thumbnail_html .= '" src="' . esc_url( $this->video->poster_frame_uri, array( 'http', 'https' ) ) . '" width="' . $this->video->calculated_width . '" height="' . $this->video->calculated_height . '" />';
+		$thumbnail_html .= '" assets="' . esc_url( $this->video->poster_frame_uri, array( 'http', 'https' ) ) . '" width="' . $this->video->calculated_width . '" height="' . $this->video->calculated_height . '" />';
 		$flash_vars      = esc_attr( http_build_query( $this->get_flash_variables(), null, '&' ) );
 		$flash_params    = '';
 		foreach ( $this->get_flash_parameters() as $attribute => $value ) {

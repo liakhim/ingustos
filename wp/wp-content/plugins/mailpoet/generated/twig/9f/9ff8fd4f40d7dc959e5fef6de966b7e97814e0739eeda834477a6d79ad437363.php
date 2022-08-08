@@ -49,7 +49,7 @@ class __TwigTemplate_22a77faa62e190779c8dce6c27d815339e592767581cf8e9672f667844f
         echo $this->extensions['MailPoet\Twig\I18n']->translate("Optional");
         echo ")</div>
         <div class=\"mailpoet_form_field_input_option\">
-            <input type=\"text\" name=\"src\" class=\"mailpoet_input mailpoet_field_image_link\" value=\"{{ model.link }}\" placeholder=\"http://\" />
+            <input type=\"text\" name=\"assets\" class=\"mailpoet_input mailpoet_field_image_link\" value=\"{{ model.link }}\" placeholder=\"http://\" />
         </div>
     </label>
 </div>
@@ -60,7 +60,7 @@ class __TwigTemplate_22a77faa62e190779c8dce6c27d815339e592767581cf8e9672f667844f
         echo $this->extensions['MailPoet\Twig\I18n']->translateWithContext("Image address", "input field for the image URL");
         echo "</div>
         <div class=\"mailpoet_form_field_input_option\">
-            <input type=\"text\" name=\"src\" class=\"mailpoet_input mailpoet_field_image_address\" value=\"{{ model.src }}\" placeholder=\"http://\" /><br />
+            <input type=\"text\" name=\"assets\" class=\"mailpoet_input mailpoet_field_image_address\" value=\"{{ model.assets }}\" placeholder=\"http://\" /><br />
         </div>
     </label>
 </div>

@@ -174,7 +174,7 @@ function jetpack_og_tags() {
 	// Get image info and build tags.
 	if ( ! post_password_required() ) {
 		$image_info       = jetpack_og_get_image( $image_width, $image_height );
-		$tags['og:image'] = $image_info['src'];
+		$tags['og:image'] = $image_info['assets'];
 
 		if ( ! empty( $image_info['width'] ) ) {
 			$tags['og:image:width'] = (int) $image_info['width'];
@@ -183,7 +183,7 @@ function jetpack_og_tags() {
 			$tags['og:image:height'] = (int) $image_info['height'];
 		}
 		// If we have an image, add the alt text even if it's empty.
-		if ( ! empty( $image_info['src'] ) && isset( $image_info['alt_text'] ) ) {
+		if ( ! empty( $image_info['assets'] ) && isset( $image_info['alt_text'] ) ) {
 			$tags['og:image:alt'] = esc_attr( $image_info['alt_text'] );
 		}
 	}
@@ -320,7 +320,7 @@ function jetpack_og_get_image( $width = 200, $height = 200, $deprecated = null )
 	if ( is_singular() && ! is_home() ) {
 		// Grab obvious image if post is an attachment page for an image.
 		if ( is_attachment( get_the_ID() ) && 'image' === substr( get_post_mime_type(), 0, 5 ) ) {
-			$image['src']      = wp_get_attachment_url( get_the_ID() );
+			$image['assets']      = wp_get_attachment_url( get_the_ID() );
 			$image['alt_text'] = Jetpack_PostImages::get_alt_text( get_the_ID() );
 		}
 
@@ -334,7 +334,7 @@ function jetpack_og_get_image( $width = 200, $height = 200, $deprecated = null )
 				)
 			);
 			if ( ! empty( $post_image ) && is_array( $post_image ) ) {
-				$image['src'] = $post_image['src'];
+				$image['assets'] = $post_image['assets'];
 				if ( isset( $post_image['src_width'], $post_image['src_height'] ) ) {
 					$image['width']  = $post_image['src_width'];
 					$image['height'] = $post_image['src_height'];
@@ -347,7 +347,7 @@ function jetpack_og_get_image( $width = 200, $height = 200, $deprecated = null )
 	} elseif ( is_author() ) {
 		$author = get_queried_object();
 		if ( is_a( $author, 'WP_User' ) ) {
-			$image['src']      = get_avatar_url(
+			$image['assets']      = get_avatar_url(
 				$author->user_email,
 				array(
 					'size' => $width,
@@ -361,7 +361,7 @@ function jetpack_og_get_image( $width = 200, $height = 200, $deprecated = null )
 	if ( empty( $image ) && function_exists( 'blavatar_domain' ) ) {
 		$blavatar_domain = blavatar_domain( site_url() );
 		if ( blavatar_exists( $blavatar_domain ) ) {
-			$image['src']    = blavatar_url( $blavatar_domain, 'img', $width, false, true );
+			$image['assets']    = blavatar_url( $blavatar_domain, 'img', $width, false, true );
 			$image['width']  = $width;
 			$image['height'] = $height;
 		}
@@ -375,7 +375,7 @@ function jetpack_og_get_image( $width = 200, $height = 200, $deprecated = null )
 			isset( $logo[0], $logo[1], $logo[2] )
 			&& ( _jetpack_og_get_image_validate_size( $logo[1], $logo[2], $width, $height ) )
 		) {
-			$image['src']      = $logo[0];
+			$image['assets']      = $logo[0];
 			$image['width']    = $logo[1];
 			$image['height']   = $logo[2];
 			$image['alt_text'] = Jetpack_PostImages::get_alt_text( $image_id );
@@ -390,7 +390,7 @@ function jetpack_og_get_image( $width = 200, $height = 200, $deprecated = null )
 			isset( $icon[0], $icon[1], $icon[2] )
 			&& ( _jetpack_og_get_image_validate_size( $icon[1], $icon[2], $width, $height ) )
 		) {
-			$image['src']      = $icon[0];
+			$image['assets']      = $icon[0];
 			$image['width']    = $icon[1];
 			$image['height']   = $icon[2];
 			$image['alt_text'] = Jetpack_PostImages::get_alt_text( $image_id );
@@ -406,7 +406,7 @@ function jetpack_og_get_image( $width = 200, $height = 200, $deprecated = null )
 		 *
 		 * @param string $str Default Image URL.
 		 */
-		$image['src'] = apply_filters( 'jetpack_open_graph_image_default', 'https://s0.wp.com/i/blank.jpg' );
+		$image['assets'] = apply_filters( 'jetpack_open_graph_image_default', 'https://s0.wp.com/i/blank.jpg' );
 	}
 
 	// If we didn't get an explicit alt tag from the image, set a default.

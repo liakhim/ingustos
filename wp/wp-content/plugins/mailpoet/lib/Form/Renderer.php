@@ -106,7 +106,7 @@ class Renderer {
         <div>
           <div class="mailpoet_recaptcha_noscript_container">
             <div>
-              <iframe src="https://www.google.com/recaptcha/api/fallback?k=' . $siteKey . '" frameborder="0" scrolling="no">
+              <iframe assets="https://www.google.com/recaptcha/api/fallback?k=' . $siteKey . '" frameborder="0" scrolling="no">
               </iframe>
             </div>
           </div>

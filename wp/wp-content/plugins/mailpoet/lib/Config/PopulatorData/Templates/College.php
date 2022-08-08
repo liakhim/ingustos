@@ -40,7 +40,7 @@ class College {
         'orientation' => 'vertical',
         'image' =>
          [
-          'src' => null,
+          'assets' => null,
           'display' => 'scale',
          ],
         'styles' =>
@@ -59,7 +59,7 @@ class College {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -78,7 +78,7 @@ class College {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -113,7 +113,7 @@ class College {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -132,7 +132,7 @@ class College {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -148,7 +148,7 @@ class College {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/College-Logo.png',
+                    'assets' => $this->template_image_url . '/College-Logo.png',
                     'alt' => 'College-Logo',
                     'fullWidth' => false,
                     'width' => '106px',
@@ -170,7 +170,7 @@ class College {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -251,7 +251,7 @@ class College {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -310,7 +310,7 @@ class College {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => $this->template_image_url . '/College-Header.jpg',
+              'assets' => $this->template_image_url . '/College-Header.jpg',
               'display' => 'scale',
              ],
             'styles' =>
@@ -329,7 +329,7 @@ class College {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -383,7 +383,7 @@ class College {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -402,7 +402,7 @@ class College {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -460,7 +460,7 @@ class College {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/College-Image.jpg',
+                    'assets' => $this->template_image_url . '/College-Image.jpg',
                     'alt' => 'College-Image',
                     'fullWidth' => false,
                     'width' => '1200px',
@@ -492,7 +492,7 @@ class College {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -508,7 +508,7 @@ class College {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/College-Avatar.jpg',
+                    'assets' => $this->template_image_url . '/College-Avatar.jpg',
                     'alt' => 'College-Avatar',
                     'fullWidth' => true,
                     'width' => '500px',
@@ -564,7 +564,7 @@ class College {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -583,7 +583,7 @@ class College {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -618,7 +618,7 @@ class College {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -637,7 +637,7 @@ class College {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -723,7 +723,7 @@ class College {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -751,7 +751,7 @@ class College {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/College-Logo.png',
+                    'assets' => $this->template_image_url . '/College-Logo.png',
                     'alt' => 'College-Logo',
                     'fullWidth' => false,
                     'width' => '106px',

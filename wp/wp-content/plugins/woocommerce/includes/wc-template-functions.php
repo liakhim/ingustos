@@ -1587,7 +1587,7 @@ function wc_get_gallery_image_html( $attachment_id, $main_image = false ) {
 			array(
 				'title'                   => _wp_specialchars( get_post_field( 'post_title', $attachment_id ), ENT_QUOTES, 'UTF-8', true ),
 				'data-caption'            => _wp_specialchars( get_post_field( 'post_excerpt', $attachment_id ), ENT_QUOTES, 'UTF-8', true ),
-				'data-src'                => esc_url( $full_src[0] ),
+				'data-assets'                => esc_url( $full_src[0] ),
 				'data-large_image'        => esc_url( $full_src[0] ),
 				'data-large_image_width'  => esc_attr( $full_src[1] ),
 				'data-large_image_height' => esc_attr( $full_src[2] ),
@@ -2651,9 +2651,9 @@ if ( ! function_exists( 'woocommerce_subcategory_thumbnail' ) ) {
 
 			// Add responsive image markup if available.
 			if ( $image_srcset && $image_sizes ) {
-				echo '<img src="' . esc_url( $image ) . '" alt="' . esc_attr( $category->name ) . '" width="' . esc_attr( $dimensions['width'] ) . '" height="' . esc_attr( $dimensions['height'] ) . '" srcset="' . esc_attr( $image_srcset ) . '" sizes="' . esc_attr( $image_sizes ) . '" />';
+				echo '<img assets="' . esc_url( $image ) . '" alt="' . esc_attr( $category->name ) . '" width="' . esc_attr( $dimensions['width'] ) . '" height="' . esc_attr( $dimensions['height'] ) . '" srcset="' . esc_attr( $image_srcset ) . '" sizes="' . esc_attr( $image_sizes ) . '" />';
 			} else {
-				echo '<img src="' . esc_url( $image ) . '" alt="' . esc_attr( $category->name ) . '" width="' . esc_attr( $dimensions['width'] ) . '" height="' . esc_attr( $dimensions['height'] ) . '" />';
+				echo '<img assets="' . esc_url( $image ) . '" alt="' . esc_attr( $category->name ) . '" width="' . esc_attr( $dimensions['width'] ) . '" height="' . esc_attr( $dimensions['height'] ) . '" />';
 			}
 		}
 	}

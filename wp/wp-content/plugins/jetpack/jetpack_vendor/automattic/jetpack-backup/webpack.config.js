@@ -7,7 +7,7 @@ const path = require( 'path' );
 module.exports = [
 	{
 		entry: {
-			index: './src/js/index.js',
+			index: './assets/js/index.js',
 		},
 		mode: jetpackWebpackConfig.mode,
 		devtool: jetpackWebpackConfig.isDevelopment ? 'source-map' : false,

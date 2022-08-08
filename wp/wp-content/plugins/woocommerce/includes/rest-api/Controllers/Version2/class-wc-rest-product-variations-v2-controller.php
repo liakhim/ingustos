@@ -909,7 +909,7 @@ class WC_REST_Product_Variations_V2_Controller extends WC_REST_Products_V2_Contr
 							'context'     => array( 'view', 'edit' ),
 							'readonly'    => true,
 						),
-						'src'               => array(
+						'assets'               => array(
 							'description' => __( 'Image URL.', 'woocommerce' ),
 							'type'        => 'string',
 							'format'      => 'uri',

@@ -86,7 +86,7 @@ class Jetpack_PostImages {
 					$images[] = array(
 						'type'       => 'image',
 						'from'       => 'slideshow',
-						'src'        => $url,
+						'assets'        => $url,
 						'src_width'  => $meta['width'],
 						'src_height' => $meta['height'],
 						'href'       => $permalink,
@@ -157,20 +157,20 @@ class Jetpack_PostImages {
 						$images[]        = array(
 							'type' => 'image',
 							'from' => 'gallery',
-							'src'  => $raw_src,
+							'assets'  => $raw_src,
 							'href' => $permalink,
 						);
 					}
 				}
-			} elseif ( ! empty( $gallery['src'] ) ) {
-				foreach ( $gallery['src'] as $src ) {
+			} elseif ( ! empty( $gallery['assets'] ) ) {
+				foreach ( $gallery['assets'] as $src ) {
 					list( $raw_src ) = explode( '?', $src ); // pull off any Query string (?w=250).
 					$raw_src         = wp_specialchars_decode( $raw_src ); // rawify it.
 					$raw_src         = esc_url_raw( $raw_src ); // clean it.
 					$images[]        = array(
 						'type' => 'image',
 						'from' => 'gallery',
-						'src'  => $raw_src,
+						'assets'  => $raw_src,
 						'href' => $permalink,
 					);
 				}
@@ -230,7 +230,7 @@ class Jetpack_PostImages {
 		$inserted_images = array();
 
 		foreach ( $html_images as $html_image ) {
-			$src = wp_parse_url( $html_image['src'] );
+			$src = wp_parse_url( $html_image['assets'] );
 			// strip off any query strings from src.
 			if ( ! empty( $src['scheme'] ) && ! empty( $src['host'] ) ) {
 				$inserted_images[] = $src['scheme'] . '://' . $src['host'] . $src['path'];
@@ -241,7 +241,7 @@ class Jetpack_PostImages {
 			}
 		}
 		foreach ( $images as $i => $image ) {
-			if ( ! in_array( $image['src'], $inserted_images, true ) ) {
+			if ( ! in_array( $image['assets'], $inserted_images, true ) ) {
 				unset( $images[ $i ] );
 			}
 		}
@@ -308,7 +308,7 @@ class Jetpack_PostImages {
 				array( // Other methods below all return an array of arrays.
 					'type'       => 'image',
 					'from'       => 'thumbnail',
-					'src'        => $url,
+					'assets'        => $url,
 					'src_width'  => $img_src[1],
 					'src_height' => $img_src[2],
 					'href'       => get_permalink( $thumb ),
@@ -333,7 +333,7 @@ class Jetpack_PostImages {
 					array( // Other methods below all return an array of arrays.
 						'type'       => 'image',
 						'from'       => 'thumbnail',
-						'src'        => $meta_thumbnail['URL'],
+						'assets'        => $meta_thumbnail['URL'],
 						'src_width'  => $meta_thumbnail['width'],
 						'src_height' => $meta_thumbnail['height'],
 						'href'       => $meta_thumbnail['URL'],
@@ -438,7 +438,7 @@ class Jetpack_PostImages {
 
 		// For each image Tag, make sure it can be added to the $images array, and add it.
 		foreach ( $image_tags as $image_tag ) {
-			$img_src = $image_tag->getAttribute( 'src' );
+			$img_src = $image_tag->getAttribute( 'assets' );
 
 			if ( empty( $img_src ) ) {
 				continue;
@@ -483,7 +483,7 @@ class Jetpack_PostImages {
 			$images[] = array(
 				'type'       => 'image',
 				'from'       => 'html',
-				'src'        => $img_src,
+				'assets'        => $img_src,
 				'src_width'  => $meta['width'],
 				'src_height' => $meta['height'],
 				'href'       => $html_info['post_url'],
@@ -523,7 +523,7 @@ class Jetpack_PostImages {
 			array(
 				'type'       => 'image',
 				'from'       => 'blavatar',
-				'src'        => $url,
+				'assets'        => $url,
 				'src_width'  => $size,
 				'src_height' => $size,
 				'href'       => $permalink,
@@ -563,7 +563,7 @@ class Jetpack_PostImages {
 			array(
 				'type'       => 'image',
 				'from'       => 'gravatar',
-				'src'        => $url,
+				'assets'        => $url,
 				'src_width'  => $size,
 				'src_height' => $size,
 				'href'       => $permalink,
@@ -847,7 +847,7 @@ class Jetpack_PostImages {
 		return array(
 			'type'       => 'image',
 			'from'       => 'attachment',
-			'src'        => $url,
+			'assets'        => $url,
 			'src_width'  => $meta_width,
 			'src_height' => $meta_height,
 			'href'       => $post_url,

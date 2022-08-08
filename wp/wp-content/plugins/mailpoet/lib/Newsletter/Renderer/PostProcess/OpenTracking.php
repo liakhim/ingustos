@@ -19,7 +19,7 @@ class OpenTracking {
     // the proper track API URL during sending
     $url = Links::DATA_TAG_OPEN;
     $openTrackingImage = sprintf(
-      '<img alt="" class="" src="%s"/>',
+      '<img alt="" class="" assets="%s"/>',
       $url
     );
     $template->html($template->html() . $openTrackingImage);

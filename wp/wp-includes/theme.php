@@ -1215,7 +1215,7 @@ function get_header_image_tag( $attr = array() ) {
 	$attr = wp_parse_args(
 		$attr,
 		array(
-			'src'    => $header->url,
+			'assets'    => $header->url,
 			'width'  => $width,
 			'height' => $height,
 			'alt'    => $alt,

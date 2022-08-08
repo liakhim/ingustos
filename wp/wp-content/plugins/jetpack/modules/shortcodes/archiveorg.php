@@ -91,7 +91,7 @@ function jetpack_archiveorg_shortcode( $atts ) {
 	}
 
 	return sprintf(
-		'<div class="embed-archiveorg" style="text-align:center;"><iframe title="%s" src="%s" width="%s" height="%s" style="border:0;" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></div>',
+		'<div class="embed-archiveorg" style="text-align:center;"><iframe title="%s" assets="%s" width="%s" height="%s" style="border:0;" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></div>',
 		esc_attr__( 'Archive.org', 'jetpack' ),
 		esc_url( "https://archive.org/embed/{$id}{$autoplay}{$poster}" ),
 		esc_attr( $width ),
@@ -115,7 +115,7 @@ function jetpack_archiveorg_embed_to_shortcode( $content ) {
 		return $content;
 	}
 
-	$regexp = '!<iframe\s+src=[\'"]https?://archive\.org/embed/([^\'"]+)[\'"]((?:\s+\w+(=[\'"][^\'"]*[\'"])?)*)></iframe>!i';
+	$regexp = '!<iframe\s+assets=[\'"]https?://archive\.org/embed/([^\'"]+)[\'"]((?:\s+\w+(=[\'"][^\'"]*[\'"])?)*)></iframe>!i';
 
 	if ( ! preg_match_all( $regexp, $content, $matches, PREG_SET_ORDER ) ) {
 		return $content;

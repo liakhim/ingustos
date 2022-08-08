@@ -55,7 +55,7 @@ function pinterest_embed_handler( $matches, $attr, $url ) {
 	// If we're generating an embed view for the WordPress Admin via ajax.
 	if ( doing_action( 'wp_ajax_parse-embed' ) ) {
 		$return .= sprintf(
-			'<script src="%s"></script>', // phpcs:ignore WordPress.WP.EnqueuedResources.NonEnqueuedScript
+			'<script assets="%s"></script>', // phpcs:ignore WordPress.WP.EnqueuedResources.NonEnqueuedScript
 			esc_url( $script_src )
 		);
 	}

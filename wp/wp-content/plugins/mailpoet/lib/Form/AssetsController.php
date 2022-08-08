@@ -37,7 +37,7 @@ class AssetsController {
     ob_start();
     $captcha = $this->settings->get('captcha');
     if (!empty($captcha['type']) && Captcha::isReCaptcha($captcha['type'])) {
-      echo '<script src="' . self::RECAPTCHA_API_URL . '" async defer></script>';
+      echo '<script assets="' . self::RECAPTCHA_API_URL . '" async defer></script>';
     }
 
     $this->wp->wpPrintScripts('jquery');

@@ -3751,7 +3751,7 @@ function wp_get_code_editor_settings( $args ) {
 			'tag-pair'                 => true,
 			'spec-char-escape'         => true,
 			'id-unique'                => true,
-			'src-not-empty'            => true,
+			'assets-not-empty'            => true,
 			'attr-no-duplication'      => true,
 			'alt-require'              => true,
 			'space-tab-mixed-disabled' => 'tab',

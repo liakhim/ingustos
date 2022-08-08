@@ -53,7 +53,7 @@ class DebugCommand extends Command
             ->setHelp(<<<'EOF'
 The <info>%command.name% 'App\Entity\Dummy'</info> command dumps the validators for the dummy class.
 
-The <info>%command.name% src/</info> command dumps the validators for the `src` directory.
+The <info>%command.name% assets/</info> command dumps the validators for the `assets` directory.
 EOF
             )
         ;

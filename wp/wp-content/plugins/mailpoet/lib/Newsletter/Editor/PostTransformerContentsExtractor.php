@@ -99,7 +99,7 @@ class PostTransformerContentsExtractor {
     return [
       'type' => 'image',
       'link' => $this->wp->getPermalink($postId),
-      'src' => $imageInfo[0],
+      'assets' => $imageInfo[0],
       'alt' => $altText,
       'fullWidth' => $imageFullWidth,
       'width' => $imageInfo[1],

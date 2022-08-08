@@ -6,8 +6,8 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src/Composer/Installers'),
-    'Automattic\\WooCommerce\\StoreApi\\' => array($baseDir . '/src/StoreApi'),
-    'Automattic\\WooCommerce\\Blocks\\' => array($baseDir . '/src'),
-    'Automattic\\Jetpack\\Autoloader\\' => array($vendorDir . '/automattic/jetpack-autoloader/src'),
+    'Composer\\Installers\\' => array($vendorDir . '/composer/installers/assets/Composer/Installers'),
+    'Automattic\\WooCommerce\\StoreApi\\' => array($baseDir . '/assets/StoreApi'),
+    'Automattic\\WooCommerce\\Blocks\\' => array($baseDir . '/assets'),
+    'Automattic\\Jetpack\\Autoloader\\' => array($vendorDir . '/automattic/jetpack-autoloader/assets'),
 );

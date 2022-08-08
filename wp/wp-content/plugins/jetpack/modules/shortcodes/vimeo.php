@@ -224,7 +224,7 @@ function vimeo_shortcode( $atts ) {
 		);
 	} else {
 		$html = sprintf(
-			'<div class="embed-vimeo" style="text-align: center;"><iframe src="%1$s" width="%2$u" height="%3$u" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>',
+			'<div class="embed-vimeo" style="text-align: center;"><iframe assets="%1$s" width="%2$u" height="%3$u" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>',
 			esc_url( $url ),
 			esc_attr( $width ),
 			esc_attr( $height )
@@ -303,7 +303,7 @@ function vimeo_embed_to_shortcode( $content ) {
 		return $content;
 	}
 
-	$regexp     = '!<iframe\s+src=[\'"](https?:)?//player\.vimeo\.com/video/(\d+)[\w=&;?]*[\'"]((?:\s+\w+=[\'"][^\'"]*[\'"])*)((?:[\s\w]*))></iframe>!i';
+	$regexp     = '!<iframe\s+assets=[\'"](https?:)?//player\.vimeo\.com/video/(\d+)[\w=&;?]*[\'"]((?:\s+\w+=[\'"][^\'"]*[\'"])*)((?:[\s\w]*))></iframe>!i';
 	$regexp_ent = str_replace( '&amp;#0*58;', '&amp;#0*58;|&#0*58;', htmlspecialchars( $regexp, ENT_NOQUOTES ) );
 
 	foreach ( compact( 'regexp', 'regexp_ent' ) as $reg => $regexp ) {

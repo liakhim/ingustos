@@ -7,7 +7,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleancss = require('gulp-clean-css');
 
 function styles(method=null) {
-    let b = src(['src/scss/main.scss']) // источник
+    let b = src(['assets/scss/main.scss']) // источник
         .pipe(eval(preprocessor)()) // преобразуем значение переменной "preprocessor" в функцию
         .pipe(concat('app.min.css')) // конкатенируем в файл app.min.js
         .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true })) // префиксы
@@ -20,6 +20,6 @@ function styles(method=null) {
     //     // .pipe(browserSync.stream()) // перезагружаем
 }
 function startwatch() {
-    watch('src/scss/**/*').on('change', styles);
+    watch('assets/scss/**/*').on('change', styles);
 }
 exports.default = parallel(styles, startwatch);

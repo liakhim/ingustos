@@ -39,7 +39,7 @@ class Retro {
           'orientation' => 'vertical',
           'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
           'styles' =>
@@ -57,7 +57,7 @@ class Retro {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -75,7 +75,7 @@ class Retro {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -91,7 +91,7 @@ class Retro {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/1980s-Header.jpg',
+                                  'assets' => $this->template_image_url . '/1980s-Header.jpg',
                                   'alt' => '1980s-Header',
                                   'fullWidth' => true,
                                   'width' => '1280px',
@@ -114,7 +114,7 @@ class Retro {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -132,7 +132,7 @@ class Retro {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -199,7 +199,7 @@ class Retro {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -217,7 +217,7 @@ class Retro {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -233,7 +233,7 @@ class Retro {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/1980s-Download-1.jpg',
+                                  'assets' => $this->template_image_url . '/1980s-Download-1.jpg',
                                   'alt' => '1980s-Download-1',
                                   'fullWidth' => false,
                                   'width' => '364px',
@@ -254,7 +254,7 @@ class Retro {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -306,7 +306,7 @@ class Retro {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -324,7 +324,7 @@ class Retro {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -358,7 +358,7 @@ class Retro {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -376,7 +376,7 @@ class Retro {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -392,7 +392,7 @@ class Retro {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/1980s-Download-2.jpg',
+                                  'assets' => $this->template_image_url . '/1980s-Download-2.jpg',
                                   'alt' => '1980s-Download-2',
                                   'fullWidth' => false,
                                   'width' => '364px',
@@ -413,7 +413,7 @@ class Retro {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -465,7 +465,7 @@ class Retro {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -483,7 +483,7 @@ class Retro {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -517,7 +517,7 @@ class Retro {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -535,7 +535,7 @@ class Retro {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -551,7 +551,7 @@ class Retro {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/1980s-Download-3.jpg',
+                                  'assets' => $this->template_image_url . '/1980s-Download-3.jpg',
                                   'alt' => '1980s-Download-3',
                                   'fullWidth' => false,
                                   'width' => '364px',
@@ -572,7 +572,7 @@ class Retro {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -624,7 +624,7 @@ class Retro {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -642,7 +642,7 @@ class Retro {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -676,7 +676,7 @@ class Retro {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => $this->template_image_url . '/1980s-Footer.jpg',
+                      'assets' => $this->template_image_url . '/1980s-Footer.jpg',
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -694,7 +694,7 @@ class Retro {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -747,7 +747,7 @@ class Retro {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -765,7 +765,7 @@ class Retro {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -799,7 +799,7 @@ class Retro {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -817,7 +817,7 @@ class Retro {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -861,7 +861,7 @@ class Retro {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -931,7 +931,7 @@ class Retro {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -949,7 +949,7 @@ class Retro {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>

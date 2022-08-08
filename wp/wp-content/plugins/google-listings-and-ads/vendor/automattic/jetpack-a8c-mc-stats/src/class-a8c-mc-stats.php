@@ -111,7 +111,7 @@ class A8c_Mc_Stats {
 	public function do_stats() {
 		$urls = $this->get_stats_urls();
 		foreach ( $urls as $url ) {
-			echo '<img src="' . esc_url( $url ) . '" width="1" height="1" style="display:none;" />';
+			echo '<img assets="' . esc_url( $url ) . '" width="1" height="1" style="display:none;" />';
 		}
 		$this->stats = array();
 	}

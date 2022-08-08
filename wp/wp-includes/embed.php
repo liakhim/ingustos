@@ -270,7 +270,7 @@ function wp_embed_handler_youtube( $matches, $attr, $url, $rawattr ) {
  * @return string The embed HTML.
  */
 function wp_embed_handler_audio( $matches, $attr, $url, $rawattr ) {
-	$audio = sprintf( '[audio src="%s" /]', esc_url( $url ) );
+	$audio = sprintf( '[audio assets="%s" /]', esc_url( $url ) );
 
 	/**
 	 * Filters the audio embed output.
@@ -302,7 +302,7 @@ function wp_embed_handler_video( $matches, $attr, $url, $rawattr ) {
 		$dimensions .= sprintf( 'width="%d" ', (int) $rawattr['width'] );
 		$dimensions .= sprintf( 'height="%d" ', (int) $rawattr['height'] );
 	}
-	$video = sprintf( '[video %s src="%s" /]', $dimensions, esc_url( $url ) );
+	$video = sprintf( '[video %s assets="%s" /]', $dimensions, esc_url( $url ) );
 
 	/**
 	 * Filters the video embed output.
@@ -495,7 +495,7 @@ function get_post_embed_html( $width, $height, $post = null ) {
 	);
 
 	$output .= sprintf(
-		'<iframe sandbox="allow-scripts" security="restricted" src="%1$s" width="%2$d" height="%3$d" title="%4$s" data-secret="%5$s" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"></iframe>',
+		'<iframe sandbox="allow-scripts" security="restricted" assets="%1$s" width="%2$d" height="%3$d" title="%4$s" data-secret="%5$s" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"></iframe>',
 		esc_url( $embed_url ),
 		absint( $width ),
 		absint( $height ),
@@ -924,7 +924,7 @@ function wp_filter_oembed_result( $result, $data, $url ) {
 		),
 		'blockquote' => array(),
 		'iframe'     => array(
-			'src'          => true,
+			'assets'          => true,
 			'width'        => true,
 			'height'       => true,
 			'frameborder'  => true,
@@ -944,7 +944,7 @@ function wp_filter_oembed_result( $result, $data, $url ) {
 	}
 	$html = $content[1] . $content[2];
 
-	preg_match( '/ src=([\'"])(.*?)\1/', $html, $results );
+	preg_match( '/ assets=([\'"])(.*?)\1/', $html, $results );
 
 	if ( ! empty( $results ) ) {
 		$secret = wp_generate_password( 10, false );
@@ -952,7 +952,7 @@ function wp_filter_oembed_result( $result, $data, $url ) {
 		$url = esc_url( "{$results[2]}#?secret=$secret" );
 		$q   = $results[1];
 
-		$html = str_replace( $results[0], ' src=' . $q . $url . $q . ' data-secret=' . $q . $secret . $q, $html );
+		$html = str_replace( $results[0], ' assets=' . $q . $url . $q . ' data-secret=' . $q . $secret . $q, $html );
 		$html = str_replace( '<blockquote', "<blockquote data-secret=\"$secret\"", $html );
 	}
 
@@ -1194,7 +1194,7 @@ function print_embed_sharing_dialog() {
  */
 function the_embed_site_title() {
 	$site_title = sprintf(
-		'<a href="%s" target="_top"><img src="%s" srcset="%s 2x" width="32" height="32" alt="" class="wp-embed-site-icon" /><span>%s</span></a>',
+		'<a href="%s" target="_top"><img assets="%s" srcset="%s 2x" width="32" height="32" alt="" class="wp-embed-site-icon" /><span>%s</span></a>',
 		esc_url( home_url() ),
 		esc_url( get_site_icon_url( 32, includes_url( 'images/w-logo-blue.png' ) ) ),
 		esc_url( get_site_icon_url( 64, includes_url( 'images/w-logo-blue.png' ) ) ),

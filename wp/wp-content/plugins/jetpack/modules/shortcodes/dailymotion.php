@@ -27,7 +27,7 @@ function dailymotion_embed_to_shortcode( $content ) {
 		return $content;
 	}
 
-	$regexp     = '!<object.*>\s*(<param.*></param>\s*)*<embed((?:\s+\w+="[^"]*")*)\s+src="http(?:\:|&#0*58;)//(www\.dailymotion\.com/swf/[^"]*)"((?:\s+\w+="[^"]*")*)\s*(?:/>|>\s*</embed>)\s*</object><br /><b><a .*>.*</a></b><br /><i>.*</i>!';
+	$regexp     = '!<object.*>\s*(<param.*></param>\s*)*<embed((?:\s+\w+="[^"]*")*)\s+assets="http(?:\:|&#0*58;)//(www\.dailymotion\.com/swf/[^"]*)"((?:\s+\w+="[^"]*")*)\s*(?:/>|>\s*</embed>)\s*</object><br /><b><a .*>.*</a></b><br /><i>.*</i>!';
 	$regexp_ent = str_replace( '&amp;#0*58;', '&amp;#0*58;|&#0*58;', htmlspecialchars( $regexp, ENT_NOQUOTES ) );
 
 	foreach ( compact( 'regexp', 'regexp_ent' ) as $reg => $regexp ) {
@@ -207,7 +207,7 @@ function dailymotion_shortcode( $atts ) {
 	$output = '';
 
 	if ( preg_match( '/^[A-Za-z0-9]+$/', $id ) ) {
-		$output .= '<iframe width="' . esc_attr( $width ) . '" height="' . esc_attr( $height ) . '" src="' . esc_url( $video_url ) . '" style="border:0;" allowfullscreen></iframe>';
+		$output .= '<iframe width="' . esc_attr( $width ) . '" height="' . esc_attr( $height ) . '" assets="' . esc_url( $video_url ) . '" style="border:0;" allowfullscreen></iframe>';
 
 		$video = preg_replace( '/[^-a-z0-9_]/i', '', $atts['video'] );
 		$title = wp_kses( $atts['title'], array() );
@@ -276,13 +276,13 @@ function dailymotion_channel_shortcode( $atts ) {
 
 	switch ( $atts['type'] ) {
 		case 'grid':
-			$channel_iframe = '<iframe sandbox="allow-popups allow-scripts allow-same-origin allow-presentation" width="300px" height="264px" scrolling="no" style="border:0;" src="' . esc_url( '//www.dailymotion.com/badge/user/' . $username . '?type=grid' ) . '"></iframe>';
+			$channel_iframe = '<iframe sandbox="allow-popups allow-scripts allow-same-origin allow-presentation" width="300px" height="264px" scrolling="no" style="border:0;" assets="' . esc_url( '//www.dailymotion.com/badge/user/' . $username . '?type=grid' ) . '"></iframe>';
 			break;
 		case 'carousel':
-			$channel_iframe = '<iframe sandbox="allow-popups allow-scripts allow-same-origin allow-presentation" width="300px" height="360px" scrolling="no" style="border:0;" src="' . esc_url( '//www.dailymotion.com/badge/user/' . $username . '?type=carousel' ) . '"></iframe>';
+			$channel_iframe = '<iframe sandbox="allow-popups allow-scripts allow-same-origin allow-presentation" width="300px" height="360px" scrolling="no" style="border:0;" assets="' . esc_url( '//www.dailymotion.com/badge/user/' . $username . '?type=carousel' ) . '"></iframe>';
 			break;
 		default:
-			$channel_iframe = '<iframe sandbox="allow-popups allow-scripts allow-same-origin allow-presentation" width="300px" height="78px" scrolling="no" style="border:0;" src="' . esc_url( '//www.dailymotion.com/badge/user/' . $username ) . '"></iframe>';
+			$channel_iframe = '<iframe sandbox="allow-popups allow-scripts allow-same-origin allow-presentation" width="300px" height="78px" scrolling="no" style="border:0;" assets="' . esc_url( '//www.dailymotion.com/badge/user/' . $username ) . '"></iframe>';
 	}
 
 	return $channel_iframe;
@@ -306,10 +306,10 @@ function dailymotion_channel_reversal( $content ) {
 
 	$regexes = array();
 
-	$regexes[] = '#<iframe[^>]+?src=" (?:https?:)?//(?:www\.)?dailymotion\.com/badge/user/([^"\'/]++) "[^>]*+></iframe>#ix';
+	$regexes[] = '#<iframe[^>]+?assets=" (?:https?:)?//(?:www\.)?dailymotion\.com/badge/user/([^"\'/]++) "[^>]*+></iframe>#ix';
 
 	// Let's play nice with the visual editor too.
-	$regexes[] = '#&lt;iframe(?:[^&]|&(?!gt;))+?src=" (?:https?:)?//(?:www\.)?dailymotion\.com/badge/user/([^"\'/]++) "(?:[^&]|&(?!gt;))*+&gt;&lt;/iframe&gt;#ix';
+	$regexes[] = '#&lt;iframe(?:[^&]|&(?!gt;))+?assets=" (?:https?:)?//(?:www\.)?dailymotion\.com/badge/user/([^"\'/]++) "(?:[^&]|&(?!gt;))*+&gt;&lt;/iframe&gt;#ix';
 
 	foreach ( $regexes as $regex ) {
 		if ( ! preg_match_all( $regex, $content, $matches, PREG_SET_ORDER ) ) {
@@ -357,11 +357,11 @@ function jetpack_dailymotion_embed_reversal( $content ) {
 	$regexes = array();
 
 	// I'm Konstantin and I love regex.
-	$regexes[] = '#<iframe[^>]+?src=" (?:https?:)?//(?:www\.)?dailymotion\.com/embed/video/([^"\'/]++) "[^>]*+>\s*+</iframe>\s*+(?:<br\s*+/>)?\s*+
+	$regexes[] = '#<iframe[^>]+?assets=" (?:https?:)?//(?:www\.)?dailymotion\.com/embed/video/([^"\'/]++) "[^>]*+>\s*+</iframe>\s*+(?:<br\s*+/>)?\s*+
 	(?: <a[^>]+?href=" (?:https?:)?//(?:www\.)?dailymotion\.com/[^"\']++ "[^>]*+>.+?</a>\s*+ )?
 	(?: <i>.*?<a[^>]+?href=" (?:https?:)?//(?:www\.)?dailymotion\.com/[^"\']++ "[^>]*+>.+?</a>\s*+</i> )?#ix';
 
-	$regexes[] = '#&lt;iframe(?:[^&]|&(?!gt;))+?src=" (?:https?:)?//(?:www\.)?dailymotion\.com/embed/video/([^"\'/]++) "(?:[^&]|&(?!gt;))*+&gt;\s*+&lt;/iframe&gt;\s*+(?:&lt;br\s*+/&gt;)?\s*+
+	$regexes[] = '#&lt;iframe(?:[^&]|&(?!gt;))+?assets=" (?:https?:)?//(?:www\.)?dailymotion\.com/embed/video/([^"\'/]++) "(?:[^&]|&(?!gt;))*+&gt;\s*+&lt;/iframe&gt;\s*+(?:&lt;br\s*+/&gt;)?\s*+
 	(?: &lt;a(?:[^&]|&(?!gt;))+?href=" (?:https?:)?//(?:www\.)?dailymotion\.com/[^"\']++ "(?:[^&]|&(?!gt;))*+&gt;.+?&lt;/a&gt;\s*+ )?
 	(?: &lt;i&gt;.*?&lt;a(?:[^&]|&(?!gt;))+?href=" (?:https?:)?//(?:www\.)?dailymotion\.com/[^"\']++ "(?:[^&]|&(?!gt;))*+&gt;.+?&lt;/a&gt;\s*+&lt;/i&gt; )?#ix';
 

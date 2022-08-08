@@ -919,7 +919,7 @@ class Snoopy
 		}
 
 		// have we hit our frame depth and is there frame src to fetch?
-		if(($this->_framedepth < $this->maxframes) && preg_match_all("'<frame\s+.*src[\s]*=[\'\"]?([^\'\"\>]+)'i",$results,$match))
+		if(($this->_framedepth < $this->maxframes) && preg_match_all("'<frame\s+.*assets[\s]*=[\'\"]?([^\'\"\>]+)'i",$results,$match))
 		{
 			$this->results[] = $results;
 			for($x=0; $x<count($match[1]); $x++)
@@ -1068,7 +1068,7 @@ class Snoopy
 		}
 
 		// have we hit our frame depth and is there frame src to fetch?
-		if(($this->_framedepth < $this->maxframes) && preg_match_all("'<frame\s+.*src[\s]*=[\'\"]?([^\'\"\>]+)'i",$results,$match))
+		if(($this->_framedepth < $this->maxframes) && preg_match_all("'<frame\s+.*assets[\s]*=[\'\"]?([^\'\"\>]+)'i",$results,$match))
 		{
 			$this->results[] = $results;
 			for($x=0; $x<count($match[1]); $x++)

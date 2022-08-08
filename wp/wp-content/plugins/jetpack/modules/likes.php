@@ -413,7 +413,7 @@ class Jetpack_Likes {
 		$date = $columns['date'];
 		unset( $columns['date'] );
 
-		$columns['likes'] = '<span class="vers"><img title="' . esc_attr__( 'Likes', 'jetpack' ) . '" alt="' . esc_attr__( 'Likes', 'jetpack' ) . '" src="//s0.wordpress.com/i/like-grey-icon.png" /><span class="screen-reader-text">' . __( 'Likes', 'jetpack' ) . '</span></span>';
+		$columns['likes'] = '<span class="vers"><img title="' . esc_attr__( 'Likes', 'jetpack' ) . '" alt="' . esc_attr__( 'Likes', 'jetpack' ) . '" assets="//s0.wordpress.com/i/like-grey-icon.png" /><span class="screen-reader-text">' . __( 'Likes', 'jetpack' ) . '</span></span>';
 		$columns['date']  = $date;
 
 		return $columns;
@@ -461,7 +461,7 @@ class Jetpack_Likes {
 
 		$title = esc_html__( 'Like or Reblog', 'jetpack' );
 
-		$html  = "<div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='$wrapper' data-src='$src' data-name='$name' data-title='$title'>";
+		$html  = "<div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='$wrapper' data-assets='$src' data-name='$name' data-title='$title'>";
 		$html .= $headline;
 		$html .= "<div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>" . esc_html__( 'Like', 'jetpack' ) . '</span></span> <span class="loading">' . esc_html__( 'Loading...', 'jetpack' ) . '</span></div>';
 		$html .= "<span class='sd-text-color'></span><a class='sd-link-color'></a>";
@@ -544,7 +544,7 @@ class Jetpack_Likes {
 
 		$src = sprintf( 'https://widgets.wp.com/likes/#blog_id=%2$d&amp;post_id=%3$d&amp;origin=%1$s://%4$s', $protocol, $blog_id, $post_id, $domain );
 
-		$html = "<iframe class='admin-bar-likes-widget jetpack-likes-widget' scrolling='no' frameBorder='0' name='admin-bar-likes-widget' src='$src'></iframe>";
+		$html = "<iframe class='admin-bar-likes-widget jetpack-likes-widget' scrolling='no' frameBorder='0' name='admin-bar-likes-widget' assets='$src'></iframe>";
 
 		$node = array(
 			'id'   => 'admin-bar-likes-widget',

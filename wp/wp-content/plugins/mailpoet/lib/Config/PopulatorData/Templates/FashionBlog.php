@@ -40,7 +40,7 @@ class FashionBlog {
         'orientation' => 'vertical',
         'image' =>
          [
-          'src' => null,
+          'assets' => null,
           'display' => 'scale',
          ],
         'styles' =>
@@ -59,7 +59,7 @@ class FashionBlog {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -78,7 +78,7 @@ class FashionBlog {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -142,7 +142,7 @@ class FashionBlog {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Fashion-Logo-1.png',
+                    'assets' => $this->template_image_url . '/Fashion-Logo-1.png',
                     'alt' => 'Fashion-Logo-1',
                     'fullWidth' => false,
                     'width' => '200px',
@@ -178,7 +178,7 @@ class FashionBlog {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => $this->template_image_url . '/Fashion-Header.jpg',
+              'assets' => $this->template_image_url . '/Fashion-Header.jpg',
               'display' => 'scale',
              ],
             'styles' =>
@@ -197,7 +197,7 @@ class FashionBlog {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -230,7 +230,7 @@ class FashionBlog {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -282,7 +282,7 @@ class FashionBlog {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -317,7 +317,7 @@ class FashionBlog {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -336,7 +336,7 @@ class FashionBlog {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -371,7 +371,7 @@ class FashionBlog {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => $this->template_image_url . '/Fashion-Gift.jpg',
+              'assets' => $this->template_image_url . '/Fashion-Gift.jpg',
               'display' => 'scale',
              ],
             'styles' =>
@@ -390,7 +390,7 @@ class FashionBlog {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -423,7 +423,7 @@ class FashionBlog {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -501,7 +501,7 @@ class FashionBlog {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -520,7 +520,7 @@ class FashionBlog {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -555,7 +555,7 @@ class FashionBlog {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -574,7 +574,7 @@ class FashionBlog {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -640,7 +640,7 @@ class FashionBlog {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Fashion-Logo-1.png',
+                    'assets' => $this->template_image_url . '/Fashion-Logo-1.png',
                     'alt' => 'Fashion-Logo-1',
                     'fullWidth' => true,
                     'width' => '142px',
@@ -688,7 +688,7 @@ class FashionBlog {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -707,7 +707,7 @@ class FashionBlog {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>

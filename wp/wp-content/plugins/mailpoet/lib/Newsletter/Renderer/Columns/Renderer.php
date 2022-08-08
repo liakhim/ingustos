@@ -113,13 +113,13 @@ class Renderer {
   }
 
   private function getBackgroundCss($styles, $image) {
-    if ($image !== null && $image['src'] !== null) {
+    if ($image !== null && $image['assets'] !== null) {
       $backgroundColor = isset($styles['backgroundColor']) && $styles['backgroundColor'] !== 'transparent' ? $styles['backgroundColor'] : '#ffffff';
       $repeat = $image['display'] === 'tile' ? 'repeat' : 'no-repeat';
       $size = $image['display'] === 'scale' ? 'cover' : 'contain';
       $style = sprintf(
         'background: %s url(%s) %s center/%s;background-color: %s;background-image: url(%s);background-repeat: %s;background-position: center;background-size: %s;',
-        $backgroundColor, $image['src'], $repeat, $size, $backgroundColor, $image['src'], $repeat, $size
+        $backgroundColor, $image['assets'], $repeat, $size, $backgroundColor, $image['assets'], $repeat, $size
       );
       return EHelper::escapeHtmlStyleAttr($style);
     } else {
@@ -133,7 +133,7 @@ class Renderer {
 
   private function getBgColorAttribute($styles, $image) {
     if (
-      ($image === null || $image['src'] === null)
+      ($image === null || $image['assets'] === null)
       && isset($styles['backgroundColor'])
       && $styles['backgroundColor'] !== 'transparent'
     ) {

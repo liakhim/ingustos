@@ -1,0 +1,93 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"BranchesTreeState\">\n    <expand>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </expand>\n    <select />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"804387ab-2946-4802-b79c-9cdf53181d2d\" name=\"Default Changelist\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/dist/css/app.min.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/dist/css/app.min.css\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/index.html\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/index.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/index.js\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/offer/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/offer/index.html\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/recipes/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/recipes/index.html\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/scss/_card.scss\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/scss/_card.scss\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/scss/_cart-modal.scss\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/scss/_cart-modal.scss\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/scss/_cart_not_empty.scss\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/scss/_cart_not_empty.scss\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/scss/_filters.scss\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/scss/_filters.scss\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/scss/_first-block.scss\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/scss/_first-block.scss\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ComposerSettings\" doNotAsk=\"true\" synchronizationState=\"SYNCHRONIZE\">\n    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>\n    <execution />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"develop_pros\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2AzUKEg0giqVD5nb05IKILbeLfr\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"TERMINAL_CUSTOM_COMMANDS_GOT_IT\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/src/img\" />\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"run.code.analysis.last.selected.profile\" value=\"pProject Default\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"C:\\OpenServer\\domains\\ingustos\\dist\\src\" />\n      <recent name=\"$PROJECT_DIR$/layout/router\" />\n      <recent name=\"$PROJECT_DIR$/layout/src/img\" />\n      <recent name=\"$PROJECT_DIR$/layout/src\" />\n    </key>\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"C:\\OpenServer\\domains\\ingustos\\src\\img\" />\n      <recent name=\"C:\\OpenServer\\domains\\ingustos\\favicon\" />\n      <recent name=\"C:\\OpenServer\\domains\\ingustos\\src\\img\\icons\" />\n      <recent name=\"C:\\OpenServer\\domains\\ingustos\\src\\scss\" />\n      <recent name=\"C:\\OpenServer\\domains\\ingustos\\dist\\src\\fonts\" />\n    </key>\n  </component>\n  <component name=\"SvnConfiguration\">\n    <configuration />\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"804387ab-2946-4802-b79c-9cdf53181d2d\" name=\"Default Changelist\" comment=\"\" />\n      <created>1656011841621</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1656011841621</updated>\n      <workItem from=\"1656011843619\" duration=\"1263000\" />\n      <workItem from=\"1656270323611\" duration=\"7521000\" />\n      <workItem from=\"1656446756740\" duration=\"76692000\" />\n      <workItem from=\"1657917142523\" duration=\"206000\" />\n      <workItem from=\"1657917886903\" duration=\"89053000\" />\n      <workItem from=\"1659383215004\" duration=\"439000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"2\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"632\" y=\"263\" key=\"#com.intellij.fileTypes.FileTypeChooser\" timestamp=\"1658014044546\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\n    </state>\n    <state x=\"632\" y=\"263\" key=\"#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1658014044546\" />\n    <state x=\"474\" y=\"224\" key=\"#com.intellij.fileTypes.FileTypeChooser/0.25.1440.787@0.25.1440.787\" timestamp=\"1656360639822\" />\n    <state x=\"469\" y=\"277\" key=\"ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1\" timestamp=\"1656538391162\">\n      <screen x=\"0\" y=\"25\" width=\"1440\" height=\"787\" />\n    </state>\n    <state x=\"469\" y=\"277\" key=\"ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.25.1440.787@0.25.1440.787\" timestamp=\"1656538391162\" />\n    <state x=\"323\" y=\"156\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1658357552688\">\n      <screen x=\"0\" y=\"25\" width=\"1440\" height=\"791\" />\n    </state>\n    <state x=\"431\" y=\"172\" key=\"Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1657989464496\" />\n    <state x=\"323\" y=\"155\" key=\"Vcs.Push.Dialog.v2/0.25.1440.787@0.25.1440.787\" timestamp=\"1657753316958\" />\n    <state x=\"323\" y=\"156\" key=\"Vcs.Push.Dialog.v2/0.25.1440.791@0.25.1440.791\" timestamp=\"1658357552688\" />\n    <state x=\"323\" y=\"156\" key=\"Vcs.Push.Dialog.v2/0.25.1440.794@0.25.1440.794\" timestamp=\"1658261163705\" />\n    <state x=\"507\" y=\"222\" width=\"862\" height=\"549\" key=\"find.popup\" timestamp=\"1658346221853\">\n      <screen x=\"0\" y=\"25\" width=\"1440\" height=\"788\" />\n    </state>\n    <state x=\"676\" y=\"260\" width=\"884\" height=\"520\" key=\"find.popup/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1658089088213\" />\n    <state x=\"507\" y=\"222\" width=\"862\" height=\"548\" key=\"find.popup/0.25.1440.787@0.25.1440.787\" timestamp=\"1657653635124\" />\n    <state x=\"507\" y=\"222\" width=\"862\" height=\"549\" key=\"find.popup/0.25.1440.788@0.25.1440.788\" timestamp=\"1658346221853\" />\n    <state x=\"507\" y=\"223\" width=\"862\" height=\"551\" key=\"find.popup/0.25.1440.791@0.25.1440.791\" timestamp=\"1657745332158\" />\n    <state x=\"513\" y=\"215\" key=\"run.anything.popup\" timestamp=\"1658105379192\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\n    </state>\n    <state x=\"513\" y=\"215\" key=\"run.anything.popup/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1658105379192\" />\n    <state x=\"385\" y=\"188\" key=\"run.anything.popup/0.25.1440.787@0.25.1440.787\" timestamp=\"1656798666545\" />\n    <state x=\"462\" y=\"157\" width=\"670\" height=\"515\" key=\"search.everywhere.popup\" timestamp=\"1658445493668\">\n      <screen x=\"0\" y=\"25\" width=\"1440\" height=\"791\" />\n    </state>\n    <state x=\"616\" y=\"173\" width=\"672\" height=\"676\" key=\"search.everywhere.popup/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1658104850955\" />\n    <state x=\"462\" y=\"156\" width=\"670\" height=\"512\" key=\"search.everywhere.popup/0.25.1440.787@0.25.1440.787\" timestamp=\"1657834884718\" />\n    <state x=\"462\" y=\"156\" width=\"670\" height=\"513\" key=\"search.everywhere.popup/0.25.1440.788@0.25.1440.788\" timestamp=\"1658354200995\" />\n    <state x=\"462\" y=\"157\" width=\"670\" height=\"515\" key=\"search.everywhere.popup/0.25.1440.791@0.25.1440.791\" timestamp=\"1658445493668\" />\n    <state x=\"462\" y=\"157\" width=\"670\" height=\"517\" key=\"search.everywhere.popup/0.25.1440.794@0.25.1440.794\" timestamp=\"1658440165270\" />\n    <state x=\"462\" y=\"158\" width=\"670\" height=\"519\" key=\"search.everywhere.popup/0.25.1440.797@0.25.1440.797\" timestamp=\"1658436119588\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 523970b4410871cc9dcffa3bbc9282933232aa84)
++++ .idea/workspace.xml	(date 1659391394922)
+@@ -12,16 +12,8 @@
+   <component name="ChangeListManager">
+     <list default="true" id="804387ab-2946-4802-b79c-9cdf53181d2d" name="Default Changelist" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/dist/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/app.min.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/offer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/offer/index.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/recipes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/index.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/scss/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_card.scss" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/scss/_cart-modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_cart-modal.scss" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/scss/_cart_not_empty.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_cart_not_empty.scss" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/scss/_filters.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_filters.scss" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/scss/_first-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_first-block.scss" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/recipes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index_recipes.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -51,7 +43,7 @@
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+     <property name="node.js.detected.package.eslint" value="true" />
+     <property name="node.js.path.for.package.eslint" value="project" />
+     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+@@ -59,18 +51,18 @@
+     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+   </component>
+   <component name="RecentsManager">
+-    <key name="MoveFile.RECENT_KEYS">
+-      <recent name="C:\OpenServer\domains\ingustos\dist\src" />
+-      <recent name="$PROJECT_DIR$/layout/router" />
+-      <recent name="$PROJECT_DIR$/layout/src/img" />
+-      <recent name="$PROJECT_DIR$/layout/src" />
+-    </key>
+     <key name="CopyFile.RECENT_KEYS">
++      <recent name="$PROJECT_DIR$" />
+       <recent name="C:\OpenServer\domains\ingustos\src\img" />
+       <recent name="C:\OpenServer\domains\ingustos\favicon" />
+       <recent name="C:\OpenServer\domains\ingustos\src\img\icons" />
+       <recent name="C:\OpenServer\domains\ingustos\src\scss" />
+-      <recent name="C:\OpenServer\domains\ingustos\dist\src\fonts" />
++    </key>
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="C:\OpenServer\domains\ingustos\dist\src" />
++      <recent name="$PROJECT_DIR$/layout/router" />
++      <recent name="$PROJECT_DIR$/layout/src/img" />
++      <recent name="$PROJECT_DIR$/layout/src" />
+     </key>
+   </component>
+   <component name="SvnConfiguration">
+@@ -117,9 +109,10 @@
+       <screen x="0" y="25" width="1440" height="787" />
+     </state>
+     <state x="469" y="277" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.25.1440.787@0.25.1440.787" timestamp="1656538391162" />
+-    <state x="323" y="156" key="Vcs.Push.Dialog.v2" timestamp="1658357552688">
+-      <screen x="0" y="25" width="1440" height="791" />
++    <state x="323" y="149" key="Vcs.Push.Dialog.v2" timestamp="1659389976922">
++      <screen x="0" y="0" width="1440" height="900" />
+     </state>
++    <state x="323" y="149" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1659389976922" />
+     <state x="431" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1657989464496" />
+     <state x="323" y="155" key="Vcs.Push.Dialog.v2/0.25.1440.787@0.25.1440.787" timestamp="1657753316958" />
+     <state x="323" y="156" key="Vcs.Push.Dialog.v2/0.25.1440.791@0.25.1440.791" timestamp="1658357552688" />
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"VcsDirectoryMappings\">\n    <mapping directory=\"$PROJECT_DIR$\" vcs=\"Git\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(revision 523970b4410871cc9dcffa3bbc9282933232aa84)
++++ .idea/vcs.xml	(date 1659391460526)
+@@ -2,5 +2,6 @@
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+     <mapping directory="$PROJECT_DIR$" vcs="Git" />
++    <mapping directory="$PROJECT_DIR$/recipes" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file

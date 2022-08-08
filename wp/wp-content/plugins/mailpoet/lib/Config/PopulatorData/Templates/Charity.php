@@ -39,7 +39,7 @@ class Charity {
           'orientation' => 'vertical',
           'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
           'styles' =>
@@ -57,7 +57,7 @@ class Charity {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -75,7 +75,7 @@ class Charity {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -109,7 +109,7 @@ class Charity {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => $this->template_image_url . '/header-bg.jpg',
+                      'assets' => $this->template_image_url . '/header-bg.jpg',
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -127,7 +127,7 @@ class Charity {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -155,7 +155,7 @@ class Charity {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/charity-logo.png',
+                                  'assets' => $this->template_image_url . '/charity-logo.png',
                                   'alt' => 'charity-logo',
                                   'fullWidth' => false,
                                   'width' => '240px',
@@ -176,7 +176,7 @@ class Charity {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -215,7 +215,7 @@ class Charity {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => $this->template_image_url . '/charity-header.jpg',
+                      'assets' => $this->template_image_url . '/charity-header.jpg',
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -233,7 +233,7 @@ class Charity {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -287,7 +287,7 @@ class Charity {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -318,7 +318,7 @@ class Charity {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -336,7 +336,7 @@ class Charity {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -412,7 +412,7 @@ class Charity {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -430,7 +430,7 @@ class Charity {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -469,7 +469,7 @@ class Charity {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -487,7 +487,7 @@ class Charity {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -503,7 +503,7 @@ class Charity {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Charity-Child.png',
+                                  'assets' => $this->template_image_url . '/Charity-Child.png',
                                   'alt' => 'Charity-Child',
                                   'fullWidth' => false,
                                   'width' => '200px',
@@ -524,7 +524,7 @@ class Charity {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -553,7 +553,7 @@ class Charity {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -571,7 +571,7 @@ class Charity {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -587,7 +587,7 @@ class Charity {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Charity-Video.jpg',
+                                  'assets' => $this->template_image_url . '/Charity-Video.jpg',
                                   'alt' => 'Charity-Video',
                                   'fullWidth' => false,
                                   'width' => '1280px',
@@ -610,7 +610,7 @@ class Charity {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -628,7 +628,7 @@ class Charity {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -656,7 +656,7 @@ class Charity {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Charity-Logo-Small.png',
+                                  'assets' => $this->template_image_url . '/Charity-Logo-Small.png',
                                   'alt' => 'Charity-Logo-Small',
                                   'fullWidth' => false,
                                   'width' => '407px',
@@ -677,7 +677,7 @@ class Charity {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -747,7 +747,7 @@ class Charity {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>

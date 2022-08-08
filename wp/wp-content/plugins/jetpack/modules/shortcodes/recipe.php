@@ -670,7 +670,7 @@ class Jetpack_Recipes {
 		}
 
 		return sprintf(
-			'<img%1$s src="%2$s" />',
+			'<img%1$s assets="%2$s" />',
 			$image_attrs_markup,
 			esc_url( $src )
 		);

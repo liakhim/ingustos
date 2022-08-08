@@ -82,7 +82,7 @@ class Tiled_Gallery {
 				if (
 					preg_match( '/data-width="([0-9]+)"/', $image_html, $img_width )
 					&& preg_match( '/data-height="([0-9]+)"/', $image_html, $img_height )
-					&& preg_match( '/src="([^"]+)"/', $image_html, $img_src )
+					&& preg_match( '/assets="([^"]+)"/', $image_html, $img_src )
 				) {
 					// Drop img src query string so it can be used as a base to add photon params
 					// for the srcset.

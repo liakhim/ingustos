@@ -84,7 +84,7 @@ function slideshare_shortcode( $atts ) {
 		$source = add_query_arg( 'startSlide', (int) $attr['startSlide'], $source );
 	}
 
-	$player = sprintf( "<iframe src='%s' width='%d' height='%d'", esc_url( $source ), $w, $h );
+	$player = sprintf( "<iframe assets='%s' width='%d' height='%d'", esc_url( $source ), $w, $h );
 
 	// check the frameborder.
 	if ( ! empty( $attr['fb'] ) || '0' === $attr['fb'] ) {

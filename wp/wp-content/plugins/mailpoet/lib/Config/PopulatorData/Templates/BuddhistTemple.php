@@ -40,7 +40,7 @@ class BuddhistTemple {
         'orientation' => 'vertical',
         'image' =>
          [
-          'src' => null,
+          'assets' => null,
           'display' => 'scale',
          ],
         'styles' =>
@@ -59,7 +59,7 @@ class BuddhistTemple {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -78,7 +78,7 @@ class BuddhistTemple {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -113,7 +113,7 @@ class BuddhistTemple {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => $this->template_image_url . '/Buddhist-Header.jpg',
+              'assets' => $this->template_image_url . '/Buddhist-Header.jpg',
               'display' => 'scale',
              ],
             'styles' =>
@@ -132,7 +132,7 @@ class BuddhistTemple {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -196,7 +196,7 @@ class BuddhistTemple {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Buddhist-Logo.png',
+                    'assets' => $this->template_image_url . '/Buddhist-Logo.png',
                     'alt' => 'Buddhist-Logo',
                     'fullWidth' => false,
                     'width' => '170px',
@@ -234,7 +234,7 @@ class BuddhistTemple {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Buddhist-Avatar.jpg',
+                    'assets' => $this->template_image_url . '/Buddhist-Avatar.jpg',
                     'alt' => 'Buddhist-Avatar',
                     'fullWidth' => false,
                     'width' => '70px',
@@ -302,7 +302,7 @@ class BuddhistTemple {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -337,7 +337,7 @@ class BuddhistTemple {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -356,7 +356,7 @@ class BuddhistTemple {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -396,7 +396,7 @@ class BuddhistTemple {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -412,7 +412,7 @@ class BuddhistTemple {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/5bafccfc554c7f08176ec084.png',
+                    'assets' => $this->template_image_url . '/5bafccfc554c7f08176ec084.png',
                     'alt' => '5bafccfc554c7f08176ec084',
                     'fullWidth' => false,
                     'width' => '280px',
@@ -436,7 +436,7 @@ class BuddhistTemple {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => $this->template_image_url . '/Buddhist-Social.jpg',
+              'assets' => $this->template_image_url . '/Buddhist-Social.jpg',
               'display' => 'scale',
              ],
             'styles' =>
@@ -455,7 +455,7 @@ class BuddhistTemple {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -488,7 +488,7 @@ class BuddhistTemple {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -596,7 +596,7 @@ class BuddhistTemple {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -615,7 +615,7 @@ class BuddhistTemple {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -650,7 +650,7 @@ class BuddhistTemple {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -669,7 +669,7 @@ class BuddhistTemple {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -685,7 +685,7 @@ class BuddhistTemple {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Buddhist-Images-1.jpg',
+                    'assets' => $this->template_image_url . '/Buddhist-Images-1.jpg',
                     'alt' => 'Buddhist-Images-1',
                     'fullWidth' => false,
                     'width' => '800px',
@@ -714,7 +714,7 @@ class BuddhistTemple {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -730,7 +730,7 @@ class BuddhistTemple {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Buddhist-Images-2.jpg',
+                    'assets' => $this->template_image_url . '/Buddhist-Images-2.jpg',
                     'alt' => 'Buddhist-Images-2',
                     'fullWidth' => false,
                     'width' => '800px',
@@ -759,7 +759,7 @@ class BuddhistTemple {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -775,7 +775,7 @@ class BuddhistTemple {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Buddhist-Images-3.jpg',
+                    'assets' => $this->template_image_url . '/Buddhist-Images-3.jpg',
                     'alt' => 'Buddhist-Images-3',
                     'fullWidth' => false,
                     'width' => '800px',
@@ -806,7 +806,7 @@ class BuddhistTemple {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -825,7 +825,7 @@ class BuddhistTemple {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -880,7 +880,7 @@ class BuddhistTemple {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Buddhist-Logo.png',
+                    'assets' => $this->template_image_url . '/Buddhist-Logo.png',
                     'alt' => 'Buddhist-Logo',
                     'fullWidth' => false,
                     'width' => '170px',

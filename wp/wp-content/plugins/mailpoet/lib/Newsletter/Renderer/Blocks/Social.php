@@ -19,7 +19,7 @@ class Social {
         $style = 'width:' . $icon['width'] . ';height:' . $icon['width'] . ';-ms-interpolation-mode:bicubic;border:0;display:inline;outline:none;';
         $iconsBlock .= '<a href="' . EHelper::escapeHtmlLinkAttr($icon['link']) . '" style="text-decoration:none!important;"
         ><img
-          src="' . EHelper::escapeHtmlLinkAttr($icon['image']) . '"
+          assets="' . EHelper::escapeHtmlLinkAttr($icon['image']) . '"
           width="' . (int)$icon['width'] . '"
           height="' . (int)$icon['height'] . '"
           style="' . EHelper::escapeHtmlStyleAttr($style) . '"

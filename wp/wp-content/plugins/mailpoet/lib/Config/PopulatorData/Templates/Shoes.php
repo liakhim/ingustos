@@ -58,7 +58,7 @@ class Shoes {
                   0 => [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Retail-Shoes-Logo.png',
+                    'assets' => $this->template_image_url . '/Retail-Shoes-Logo.png',
                     'alt' => 'Retail-Shoes-Logo',
                     'fullWidth' => true,
                     'width' => '1280px',
@@ -94,7 +94,7 @@ class Shoes {
                   0 => [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Retail-Shoes-Header.jpg',
+                    'assets' => $this->template_image_url . '/Retail-Shoes-Header.jpg',
                     'alt' => 'Retail-Shoes-Header',
                     'fullWidth' => true,
                     'width' => '1280px',
@@ -231,7 +231,7 @@ class Shoes {
                   0 => [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Retail-Shoes-Boxes-1.jpg',
+                    'assets' => $this->template_image_url . '/Retail-Shoes-Boxes-1.jpg',
                     'alt' => 'Retail-Shoes-Boxes-1',
                     'fullWidth' => true,
                     'width' => '700px',
@@ -267,7 +267,7 @@ class Shoes {
                   0 => [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Retail-Shoes-Boxes-2.jpg',
+                    'assets' => $this->template_image_url . '/Retail-Shoes-Boxes-2.jpg',
                     'alt' => 'Retail-Shoes-Boxes-2',
                     'fullWidth' => true,
                     'width' => '700px',
@@ -425,7 +425,7 @@ class Shoes {
                   0 => [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Retail-Shoes-Logo-Footer.png',
+                    'assets' => $this->template_image_url . '/Retail-Shoes-Logo-Footer.png',
                     'alt' => 'Retail-Shoes-Logo-Footer',
                     'fullWidth' => true,
                     'width' => '1280px',

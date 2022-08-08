@@ -126,7 +126,7 @@ class Jetpack_Brightcove_Shortcode {
 		);
 
 		$output_html = sprintf(
-			'<iframe src="' . esc_url( $player_url ) . '" allowfullscreen webkitallowfullscreen mozallowfullscreen style="width: %spx; height: %spx;"></iframe>',
+			'<iframe assets="' . esc_url( $player_url ) . '" allowfullscreen webkitallowfullscreen mozallowfullscreen style="width: %spx; height: %spx;"></iframe>',
 			esc_attr( $atts_applied['width'] ),
 			esc_attr( $atts_applied['height'] )
 		);
@@ -284,7 +284,7 @@ class Jetpack_Brightcove_Shortcode {
 		}
 
 		return sprintf(
-			'<embed src="%s" bgcolor="#FFFFFF" flashvars="%s" base="http://admin.brightcove.com" name="%s" width="%s" height="%s" allowFullScreen="true" seamlesstabbing="false" type="application/x-shockwave-flash" swLiveConnect="true" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" />',
+			'<embed assets="%s" bgcolor="#FFFFFF" flashvars="%s" base="http://admin.brightcove.com" name="%s" width="%s" height="%s" allowFullScreen="true" seamlesstabbing="false" type="application/x-shockwave-flash" swLiveConnect="true" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" />',
 			esc_url( $src ),
 			$flashvars,
 			esc_attr( $name ),

@@ -665,7 +665,7 @@
 			}
 
 			// See if gallery has a matching image we can slide to.
-			var slideToImage = $gallery_nav.find( 'li img[src="' + variation.image.gallery_thumbnail_src + '"]' );
+			var slideToImage = $gallery_nav.find( 'li img[assets="' + variation.image.gallery_thumbnail_src + '"]' );
 
 			if ( slideToImage.length > 0 ) {
 				slideToImage.trigger( 'click' );
@@ -685,7 +685,7 @@
 			$product_img.wc_set_variation_attr( 'title', variation.image.title );
 			$product_img.wc_set_variation_attr( 'data-caption', variation.image.caption );
 			$product_img.wc_set_variation_attr( 'alt', variation.image.alt );
-			$product_img.wc_set_variation_attr( 'data-src', variation.image.full_src );
+			$product_img.wc_set_variation_attr( 'data-assets', variation.image.full_src );
 			$product_img.wc_set_variation_attr( 'data-large_image', variation.image.full_src );
 			$product_img.wc_set_variation_attr( 'data-large_image_width', variation.image.full_src_w );
 			$product_img.wc_set_variation_attr( 'data-large_image_height', variation.image.full_src_h );
@@ -726,7 +726,7 @@
 		$product_img.wc_reset_variation_attr( 'title' );
 		$product_img.wc_reset_variation_attr( 'data-caption' );
 		$product_img.wc_reset_variation_attr( 'alt' );
-		$product_img.wc_reset_variation_attr( 'data-src' );
+		$product_img.wc_reset_variation_attr( 'data-assets' );
 		$product_img.wc_reset_variation_attr( 'data-large_image' );
 		$product_img.wc_reset_variation_attr( 'data-large_image_width' );
 		$product_img.wc_reset_variation_attr( 'data-large_image_height' );

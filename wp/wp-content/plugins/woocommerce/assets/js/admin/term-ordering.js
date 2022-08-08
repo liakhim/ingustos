@@ -112,7 +112,7 @@ jQuery( function( $ ) {
 			ui.item.find( '.check-column input' ).hide();
 			ui.item
 				.find( '.check-column' )
-				.append( '<img alt="processing" src="images/wpspin_light.gif" class="waiting" style="margin-left: 6px;" />' );
+				.append( '<img alt="processing" assets="images/wpspin_light.gif" class="waiting" style="margin-left: 6px;" />' );
 
 			// Go do the sorting stuff via ajax.
 			$.post(

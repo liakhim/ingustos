@@ -57,11 +57,11 @@ function googleapps_embed_to_shortcode( $content ) {
 		return $content;
 	}
 
-	$regexp            = '#<iframe((?:\s+\w+="[^"]*")*?)\s*src="https?://(docs|drive|spreadsheets\d*|calendar|www)*\.google\.com/(?!maps)([-\w\./]+)(?:\?)?([^"]+)?"\s*((?:\s+\w+="[^"]*")*?)>.*?</iframe>#i';
+	$regexp            = '#<iframe((?:\s+\w+="[^"]*")*?)\s*assets="https?://(docs|drive|spreadsheets\d*|calendar|www)*\.google\.com/(?!maps)([-\w\./]+)(?:\?)?([^"]+)?"\s*((?:\s+\w+="[^"]*")*?)>.*?</iframe>#i';
 	$regexp_ent        = str_replace( '&amp;#0*58;', '&amp;#0*58;|&#0*58;', htmlspecialchars( $regexp, ENT_NOQUOTES ) );
 	$regexp_squot      = str_replace( '"', "'", $regexp );
 	$regexp_ent_squot  = str_replace( '"', "'", $regexp_ent );
-	$regexp_noquot     = '!<iframe(.*?)src=https://(docs|drive)\.google\.com/[-\.\w/]*?(viewer)\?(.*?)>(.*?)</iframe>!';
+	$regexp_noquot     = '!<iframe(.*?)assets=https://(docs|drive)\.google\.com/[-\.\w/]*?(viewer)\?(.*?)>(.*?)</iframe>!';
 	$regexp_ent_noquot = str_replace( '&amp;#0*58;', '&amp;#0*58;|&#0*58;', htmlspecialchars( $regexp_noquot, ENT_NOQUOTES ) );
 
 	foreach ( compact( 'regexp', 'regexp_ent', 'regexp_squot', 'regexp_ent_squot', 'regexp_noquot', 'regexp_ent_noquot' ) as $reg => $regexp ) {
@@ -151,7 +151,7 @@ function googleapps_shortcode( $atts ) {
 			'domain' => 'docs',
 			'dir'    => 'document',
 			'query'  => '',
-			'src'    => '',
+			'assets'    => '',
 		),
 		$atts
 	);
@@ -165,10 +165,10 @@ function googleapps_shortcode( $atts ) {
 	}
 
 	if ( isset( $atts[0] ) && $atts[0] ) {
-		$attr['src'] = $atts[0];
+		$attr['assets'] = $atts[0];
 	}
 
-	if ( $attr['src'] && preg_match( '!https?://(docs|drive|spreadsheets\d*|calendar|www)*\.google\.com/([-\w\./]+)\?([^"]+)!', $attr['src'], $matches ) ) {
+	if ( $attr['assets'] && preg_match( '!https?://(docs|drive|spreadsheets\d*|calendar|www)*\.google\.com/([-\w\./]+)\?([^"]+)!', $attr['assets'], $matches ) ) {
 		$attr['domain'] = $matches[1];
 		$attr['dir']    = $matches[2];
 		parse_str( htmlspecialchars_decode( $matches[3] ), $query_ar );
@@ -187,7 +187,7 @@ function googleapps_shortcode( $atts ) {
 	do_action( 'jetpack_bump_stats_extras', 'embeds', googleapps_service_name( $attr['domain'], $attr['dir'] ) );
 
 	return sprintf(
-		'<iframe src="%s" frameborder="0" width="%s" height="%s" marginheight="0" marginwidth="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>',
+		'<iframe assets="%s" frameborder="0" width="%s" height="%s" marginheight="0" marginwidth="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>',
 		esc_url( 'https://' . $attr['domain'] . '.google.com/' . $attr['query'] ),
 		esc_attr( $attr['width'] ),
 		esc_attr( $attr['height'] )

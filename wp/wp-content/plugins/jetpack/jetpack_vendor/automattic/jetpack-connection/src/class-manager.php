@@ -2083,7 +2083,7 @@ class Manager {
 			'127.0.0.1',
 			'local.wordpress.test',         // VVV pattern.
 			'local.wordpress-trunk.test',   // VVV pattern.
-			'src.wordpress-develop.test',   // VVV pattern.
+			'assets.wordpress-develop.test',   // VVV pattern.
 			'build.wordpress-develop.test', // VVV pattern.
 		);
 		if ( in_array( $domain, $forbidden_domains, true ) ) {

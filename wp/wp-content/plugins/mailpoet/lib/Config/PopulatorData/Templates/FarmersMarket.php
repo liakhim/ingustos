@@ -39,7 +39,7 @@ class FarmersMarket {
         'orientation' => 'vertical',
         'image' =>
          [
-          'src' => null,
+          'assets' => null,
           'display' => 'scale',
          ],
         'styles' =>
@@ -58,7 +58,7 @@ class FarmersMarket {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -77,7 +77,7 @@ class FarmersMarket {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -136,7 +136,7 @@ class FarmersMarket {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -155,7 +155,7 @@ class FarmersMarket {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -171,7 +171,7 @@ class FarmersMarket {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/FarmersMarket-Top-2.jpg',
+                    'assets' => $this->template_image_url . '/FarmersMarket-Top-2.jpg',
                     'alt' => 'FarmersMarket-Top',
                     'fullWidth' => true,
                     'width' => '1200px',
@@ -195,7 +195,7 @@ class FarmersMarket {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => $this->template_image_url . '/FarmersMarket-Middle.jpg',
+              'assets' => $this->template_image_url . '/FarmersMarket-Middle.jpg',
               'display' => 'tile',
              ],
             'styles' =>
@@ -214,7 +214,7 @@ class FarmersMarket {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -247,7 +247,7 @@ class FarmersMarket {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -263,7 +263,7 @@ class FarmersMarket {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/FarmersMarket-Logo.png',
+                    'assets' => $this->template_image_url . '/FarmersMarket-Logo.png',
                     'alt' => 'FarmersMarket-Logo',
                     'fullWidth' => true,
                     'width' => '200px',
@@ -285,7 +285,7 @@ class FarmersMarket {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -320,7 +320,7 @@ class FarmersMarket {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => $this->template_image_url . '/FarmersMarket-Middle.jpg',
+              'assets' => $this->template_image_url . '/FarmersMarket-Middle.jpg',
               'display' => 'tile',
              ],
             'styles' =>
@@ -339,7 +339,7 @@ class FarmersMarket {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -374,7 +374,7 @@ class FarmersMarket {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -393,7 +393,7 @@ class FarmersMarket {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -434,7 +434,7 @@ class FarmersMarket {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -462,7 +462,7 @@ class FarmersMarket {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/FarmersMarket-Header.jpg',
+                    'assets' => $this->template_image_url . '/FarmersMarket-Header.jpg',
                     'alt' => 'FarmersMarket-Header',
                     'fullWidth' => false,
                     'width' => '1000px',
@@ -486,7 +486,7 @@ class FarmersMarket {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => $this->template_image_url . '/FarmersMarket-Middle.jpg',
+              'assets' => $this->template_image_url . '/FarmersMarket-Middle.jpg',
               'display' => 'tile',
              ],
             'styles' =>
@@ -505,7 +505,7 @@ class FarmersMarket {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -540,7 +540,7 @@ class FarmersMarket {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => $this->template_image_url . '/FarmersMarket-Middle.jpg',
+              'assets' => $this->template_image_url . '/FarmersMarket-Middle.jpg',
               'display' => 'tile',
              ],
             'styles' =>
@@ -559,7 +559,7 @@ class FarmersMarket {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -575,7 +575,7 @@ class FarmersMarket {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/FarmersMarket-Images-1.jpg',
+                    'assets' => $this->template_image_url . '/FarmersMarket-Images-1.jpg',
                     'alt' => 'FarmersMarket-Images-1',
                     'fullWidth' => false,
                     'width' => '500px',
@@ -626,7 +626,7 @@ class FarmersMarket {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -642,7 +642,7 @@ class FarmersMarket {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/FarmersMarket-Images-2.jpg',
+                    'assets' => $this->template_image_url . '/FarmersMarket-Images-2.jpg',
                     'alt' => 'FarmersMarket-Images-2',
                     'fullWidth' => false,
                     'width' => '500px',
@@ -693,7 +693,7 @@ class FarmersMarket {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -709,7 +709,7 @@ class FarmersMarket {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/FarmersMarket-Images-3.jpg',
+                    'assets' => $this->template_image_url . '/FarmersMarket-Images-3.jpg',
                     'alt' => 'FarmersMarket-Images-3',
                     'fullWidth' => false,
                     'width' => '500px',
@@ -762,7 +762,7 @@ class FarmersMarket {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => $this->template_image_url . '/FarmersMarket-Middle.jpg',
+              'assets' => $this->template_image_url . '/FarmersMarket-Middle.jpg',
               'display' => 'tile',
              ],
             'styles' =>
@@ -781,7 +781,7 @@ class FarmersMarket {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -816,7 +816,7 @@ class FarmersMarket {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => $this->template_image_url . '/FarmersMarket-Video.jpg',
+              'assets' => $this->template_image_url . '/FarmersMarket-Video.jpg',
               'display' => 'scale',
              ],
             'styles' =>
@@ -835,7 +835,7 @@ class FarmersMarket {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -863,7 +863,7 @@ class FarmersMarket {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/FarmersMarket-PlayButton.png',
+                    'assets' => $this->template_image_url . '/FarmersMarket-PlayButton.png',
                     'alt' => 'FarmersMarket-PlayButton',
                     'fullWidth' => true,
                     'width' => '100px',
@@ -885,7 +885,7 @@ class FarmersMarket {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -939,7 +939,7 @@ class FarmersMarket {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => $this->template_image_url . '/FarmersMarket-Middle.jpg',
+              'assets' => $this->template_image_url . '/FarmersMarket-Middle.jpg',
               'display' => 'tile',
              ],
             'styles' =>
@@ -958,7 +958,7 @@ class FarmersMarket {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -993,7 +993,7 @@ class FarmersMarket {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => $this->template_image_url . '/FarmersMarket-Middle.jpg',
+              'assets' => $this->template_image_url . '/FarmersMarket-Middle.jpg',
               'display' => 'tile',
              ],
             'styles' =>
@@ -1012,7 +1012,7 @@ class FarmersMarket {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -1028,7 +1028,7 @@ class FarmersMarket {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/FarmersMarket-Logo.png',
+                    'assets' => $this->template_image_url . '/FarmersMarket-Logo.png',
                     'alt' => 'FarmersMarket-Logo',
                     'fullWidth' => true,
                     'width' => '112px',
@@ -1050,7 +1050,7 @@ class FarmersMarket {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -1135,7 +1135,7 @@ class FarmersMarket {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -1154,7 +1154,7 @@ class FarmersMarket {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -1170,7 +1170,7 @@ class FarmersMarket {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/FarmersMarket-Bottom-2.jpg',
+                    'assets' => $this->template_image_url . '/FarmersMarket-Bottom-2.jpg',
                     'alt' => 'FarmersMarket-Bottom',
                     'fullWidth' => true,
                     'width' => '660px',

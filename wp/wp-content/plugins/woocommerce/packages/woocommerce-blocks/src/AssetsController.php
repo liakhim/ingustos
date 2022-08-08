@@ -148,7 +148,7 @@ final class AssetsController {
 		$script_data = $this->api->get_script_data(
 			$this->api->get_block_asset_build_path( $filename )
 		);
-		return array_merge( [ add_query_arg( 'ver', $script_data['version'], $script_data['src'] ) ], $this->get_script_dependency_src_array( $script_data['dependencies'] ) );
+		return array_merge( [ add_query_arg( 'ver', $script_data['version'], $script_data['assets'] ) ], $this->get_script_dependency_src_array( $script_data['dependencies'] ) );
 	}
 
 	/**

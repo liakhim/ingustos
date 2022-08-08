@@ -59,7 +59,7 @@ class Faith {
                   0 => [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/church-header.jpg',
+                    'assets' => $this->template_image_url . '/church-header.jpg',
                     'alt' => 'church-header',
                     'fullWidth' => true,
                     'width' => '1036px',
@@ -130,7 +130,7 @@ class Faith {
                   2 => [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/family.jpg',
+                    'assets' => $this->template_image_url . '/family.jpg',
                     'alt' => 'family',
                     'fullWidth' => false,
                     'width' => '660px',
@@ -181,7 +181,7 @@ class Faith {
                   2 => [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/pray.jpg',
+                    'assets' => $this->template_image_url . '/pray.jpg',
                     'alt' => 'pray',
                     'fullWidth' => false,
                     'width' => '660px',

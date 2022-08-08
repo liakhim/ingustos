@@ -178,7 +178,7 @@ class MiniCart extends AbstractBlock {
 		}
 
 		$this->scripts_to_lazy_load['wc-block-mini-cart-component-frontend'] = array(
-			'src'          => $script_data['src'],
+			'assets'          => $script_data['assets'],
 			'version'      => $script_data['version'],
 			'translations' => $this->get_inner_blocks_translations(),
 		);
@@ -277,7 +277,7 @@ class MiniCart extends AbstractBlock {
 			return;
 		}
 		$this->scripts_to_lazy_load[ $script->handle ] = array(
-			'src'          => $script->src,
+			'assets'          => $script->src,
 			'version'      => $script->ver,
 			'before'       => $wp_scripts->print_inline_script( $script->handle, 'before', false ),
 			'after'        => $wp_scripts->print_inline_script( $script->handle, 'after', false ),

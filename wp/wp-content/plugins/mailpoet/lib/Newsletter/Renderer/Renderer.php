@@ -257,7 +257,7 @@ class Renderer {
             [
               'type' => 'image',
               'link' => 'http://www.mailpoet.com',
-              'src' => Env::$assetsUrl . '/img/mailpoet_logo_newsletter.png',
+              'assets' => Env::$assetsUrl . '/img/mailpoet_logo_newsletter.png',
               'fullWidth' => false,
               'alt' => 'Email Marketing Powered by MailPoet',
               'width' => '108px',

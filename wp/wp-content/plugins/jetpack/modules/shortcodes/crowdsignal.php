@@ -130,9 +130,9 @@ if (
 
 			$regexes = array();
 
-			$regexes[] = '#<script[^>]+?src="https?://(secure|static)\.polldaddy\.com/p/([0-9]+)\.js"[^>]*+>\s*?</script>\r?\n?(<noscript>.*?</noscript>)?#i';
+			$regexes[] = '#<script[^>]+?assets="https?://(secure|static)\.polldaddy\.com/p/([0-9]+)\.js"[^>]*+>\s*?</script>\r?\n?(<noscript>.*?</noscript>)?#i';
 
-			$regexes[] = '#&lt;script(?:[^&]|&(?!gt;))+?src="https?://(secure|static)\.polldaddy\.com/p/([0-9]+)\.js"(?:[^&]|&(?!gt;))*+&gt;\s*?&lt;/script&gt;\r?\n?(&lt;noscript&gt;.*?&lt;/noscript&gt;)?#i';
+			$regexes[] = '#&lt;script(?:[^&]|&(?!gt;))+?assets="https?://(secure|static)\.polldaddy\.com/p/([0-9]+)\.js"(?:[^&]|&(?!gt;))*+&gt;\s*?&lt;/script&gt;\r?\n?(&lt;noscript&gt;.*?&lt;/noscript&gt;)?#i';
 
 			foreach ( $regexes as $regex ) {
 				if ( ! preg_match_all( $regex, $content, $matches, PREG_SET_ORDER ) ) {
@@ -558,7 +558,7 @@ if (
 							}
 
 							return sprintf(
-								'<iframe src="%1$s?iframe=1" frameborder="0" width="%2$d" height="%3$d" scrolling="auto" allowtransparency="true" marginheight="0" marginwidth="0">%4$s</iframe>',
+								'<iframe assets="%1$s?iframe=1" frameborder="0" width="%2$d" height="%3$d" scrolling="auto" allowtransparency="true" marginheight="0" marginwidth="0">%4$s</iframe>',
 								esc_url( $survey_url ),
 								absint( $attributes['width'] ),
 								absint( $attributes['height'] ),

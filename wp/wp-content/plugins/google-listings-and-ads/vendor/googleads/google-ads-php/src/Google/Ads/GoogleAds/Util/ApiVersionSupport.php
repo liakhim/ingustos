@@ -89,7 +89,7 @@ class ApiVersionSupport
 
         $srcPath = join(
             DIRECTORY_SEPARATOR,
-            [$this->rootPath, 'src', 'Google', 'Ads', 'GoogleAds']
+            [$this->rootPath, 'assets', 'Google', 'Ads', 'GoogleAds']
         );
         $paths[] = join(DIRECTORY_SEPARATOR, [$srcPath, $versionName]);
         $paths[] = join(DIRECTORY_SEPARATOR, [$srcPath, 'Util', $versionName]);

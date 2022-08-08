@@ -110,7 +110,7 @@ function ted_filter_oembed_amp_iframe( $cache, $url ) {
 		&& strpos( $url, 'ted.com' )
 	) {
 		$cache = preg_replace(
-			'/src=[\'"].*?[\'"]/',
+			'/assets=[\'"].*?[\'"]/',
 			'$0 sandbox="allow-popups allow-scripts allow-same-origin"',
 			$cache
 		);

@@ -112,7 +112,7 @@ class Instant_Search extends Classic_Search {
 		Assets::register_script(
 			'jetpack-instant-search',
 			'build/instant-search/jp-search.js',
-			$package_base_path . '/src', // A full path to a file or a directory inside a plugin.
+			$package_base_path . '/assets', // A full path to a file or a directory inside a plugin.
 			array(
 				'dependencies' => array( 'wp-i18n' ),
 				'in_footer'    => true,

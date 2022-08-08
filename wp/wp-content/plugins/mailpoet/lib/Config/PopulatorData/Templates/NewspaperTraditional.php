@@ -40,7 +40,7 @@ class NewspaperTraditional {
         'orientation' => 'vertical',
         'image' =>
          [
-          'src' => null,
+          'assets' => null,
           'display' => 'scale',
          ],
         'styles' =>
@@ -59,7 +59,7 @@ class NewspaperTraditional {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -78,7 +78,7 @@ class NewspaperTraditional {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -116,7 +116,7 @@ class NewspaperTraditional {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -175,7 +175,7 @@ class NewspaperTraditional {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -194,7 +194,7 @@ class NewspaperTraditional {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -210,7 +210,7 @@ class NewspaperTraditional {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/News-Logo.png',
+                    'assets' => $this->template_image_url . '/News-Logo.png',
                     'alt' => 'News-Logo',
                     'fullWidth' => false,
                     'width' => '200px',
@@ -232,7 +232,7 @@ class NewspaperTraditional {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -303,7 +303,7 @@ class NewspaperTraditional {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -322,7 +322,7 @@ class NewspaperTraditional {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -360,7 +360,7 @@ class NewspaperTraditional {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -398,7 +398,7 @@ class NewspaperTraditional {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -438,7 +438,7 @@ class NewspaperTraditional {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -457,7 +457,7 @@ class NewspaperTraditional {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -584,7 +584,7 @@ class NewspaperTraditional {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -603,7 +603,7 @@ class NewspaperTraditional {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -638,7 +638,7 @@ class NewspaperTraditional {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -657,7 +657,7 @@ class NewspaperTraditional {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -685,7 +685,7 @@ class NewspaperTraditional {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/News-Logo.png',
+                    'assets' => $this->template_image_url . '/News-Logo.png',
                     'alt' => 'News-Logo',
                     'fullWidth' => false,
                     'width' => '200px',
@@ -707,7 +707,7 @@ class NewspaperTraditional {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -802,7 +802,7 @@ class NewspaperTraditional {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -821,7 +821,7 @@ class NewspaperTraditional {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>

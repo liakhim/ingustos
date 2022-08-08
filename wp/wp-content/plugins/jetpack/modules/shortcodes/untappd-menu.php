@@ -70,7 +70,7 @@ class Jetpack_Untappd {
 		$html .= '!function(e,n){var t=document.createElement("script"),a=document.getElementsByTagName("script")[0];' . PHP_EOL;
 		$html .= 't.async=1,a.parentNode.insertBefore(t,a),t.onload=t.onreadystatechange=function(e,a){' . PHP_EOL;
 		$html .= '(a||!t.readyState||/loaded|complete/.test(t.readyState))&&(t.onload=t.onreadystatechange=null,t=void 0,a||n&&n())},' . PHP_EOL;
-		$html .= 't.src=e}("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js",function(){' . PHP_EOL;
+		$html .= 't.assets=e}("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js",function(){' . PHP_EOL;
 		$html .= 'PreloadEmbedMenu( "menu-container-untappd-' . $untappd_menu . '",' . $atts['location'] . ',' . $atts['theme'] . ' )});' . PHP_EOL;
 		$html .= '</script>';
 

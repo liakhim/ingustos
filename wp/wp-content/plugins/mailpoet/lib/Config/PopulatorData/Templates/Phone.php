@@ -39,7 +39,7 @@ class Phone {
           'orientation' => 'vertical',
           'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
           'styles' =>
@@ -57,7 +57,7 @@ class Phone {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -75,7 +75,7 @@ class Phone {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -103,7 +103,7 @@ class Phone {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Phone-Logo.png',
+                                  'assets' => $this->template_image_url . '/Phone-Logo.png',
                                   'alt' => 'Phone-Logo',
                                   'fullWidth' => true,
                                   'width' => '122px',
@@ -126,7 +126,7 @@ class Phone {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -144,7 +144,7 @@ class Phone {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -160,7 +160,7 @@ class Phone {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Phone-Title.png',
+                                  'assets' => $this->template_image_url . '/Phone-Title.png',
                                   'alt' => 'Phone-Title',
                                   'fullWidth' => true,
                                   'width' => '1280px',
@@ -177,7 +177,7 @@ class Phone {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Phone-Header.jpg',
+                                  'assets' => $this->template_image_url . '/Phone-Header.jpg',
                                   'alt' => 'Phone-Header',
                                   'fullWidth' => true,
                                   'width' => '1280px',
@@ -270,7 +270,7 @@ class Phone {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -288,7 +288,7 @@ class Phone {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -316,7 +316,7 @@ class Phone {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -332,7 +332,7 @@ class Phone {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Phone-Logo.png',
+                                  'assets' => $this->template_image_url . '/Phone-Logo.png',
                                   'alt' => 'Phone-Logo',
                                   'fullWidth' => false,
                                   'width' => '122px',
@@ -401,7 +401,7 @@ class Phone {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>

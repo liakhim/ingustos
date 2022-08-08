@@ -926,7 +926,7 @@ abstract class WC_Settings_API {
 			array_merge(
 				array(
 					'iframe' => array(
-						'src'   => true,
+						'assets'   => true,
 						'style' => true,
 						'id'    => true,
 						'class' => true,

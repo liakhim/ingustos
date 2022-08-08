@@ -252,5 +252,5 @@ function github_gist_shortcode( $atts, $content = '' ) {
  */
 function github_gist_simple_embed( $id, $tab_size = 8 ) {
 	$id = str_replace( 'json', 'js', $id );
-	return '<script src="' . esc_url( "https://gist.github.com/$id?ts=$tab_size" ) . '"></script>'; // phpcs:ignore WordPress.WP.EnqueuedResources.NonEnqueuedScript
+	return '<script assets="' . esc_url( "https://gist.github.com/$id?ts=$tab_size" ) . '"></script>'; // phpcs:ignore WordPress.WP.EnqueuedResources.NonEnqueuedScript
 }

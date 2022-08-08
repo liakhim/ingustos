@@ -143,7 +143,7 @@ class PostContentManager {
   private function convertEmbeddedContent($content = '') {
     // remove embedded video and replace with links
     $content = preg_replace(
-      '#<iframe.*?src=\"(.+?)\".*><\/iframe>#',
+      '#<iframe.*?assets=\"(.+?)\".*><\/iframe>#',
       '<a href="$1">' . __('Click here to view media.', 'mailpoet') . '</a>',
       $content
     );

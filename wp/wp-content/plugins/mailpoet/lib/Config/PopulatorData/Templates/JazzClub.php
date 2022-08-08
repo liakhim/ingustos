@@ -40,7 +40,7 @@ class JazzClub {
         'orientation' => 'vertical',
         'image' =>
          [
-          'src' => null,
+          'assets' => null,
           'display' => 'scale',
          ],
         'styles' =>
@@ -59,7 +59,7 @@ class JazzClub {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => $this->template_image_url . '/Jazz-Header.jpg',
+              'assets' => $this->template_image_url . '/Jazz-Header.jpg',
               'display' => 'scale',
              ],
             'styles' =>
@@ -78,7 +78,7 @@ class JazzClub {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -142,7 +142,7 @@ class JazzClub {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Jazz-logo.png',
+                    'assets' => $this->template_image_url . '/Jazz-logo.png',
                     'alt' => 'Jazz-logo',
                     'fullWidth' => false,
                     'width' => '324px',
@@ -178,7 +178,7 @@ class JazzClub {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -197,7 +197,7 @@ class JazzClub {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -287,7 +287,7 @@ class JazzClub {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -306,7 +306,7 @@ class JazzClub {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -322,7 +322,7 @@ class JazzClub {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Jazz-Images-1.jpg',
+                    'assets' => $this->template_image_url . '/Jazz-Images-1.jpg',
                     'alt' => 'Jazz-Images-1',
                     'fullWidth' => false,
                     'width' => '800px',
@@ -344,7 +344,7 @@ class JazzClub {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -410,7 +410,7 @@ class JazzClub {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -429,7 +429,7 @@ class JazzClub {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -493,7 +493,7 @@ class JazzClub {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -509,7 +509,7 @@ class JazzClub {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Jazz-Images-2.jpg',
+                    'assets' => $this->template_image_url . '/Jazz-Images-2.jpg',
                     'alt' => 'Jazz-Images-2',
                     'fullWidth' => false,
                     'width' => '800px',
@@ -533,7 +533,7 @@ class JazzClub {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -552,7 +552,7 @@ class JazzClub {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -568,7 +568,7 @@ class JazzClub {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Jazz-Images-3.jpg',
+                    'assets' => $this->template_image_url . '/Jazz-Images-3.jpg',
                     'alt' => 'Jazz-Images-3',
                     'fullWidth' => false,
                     'width' => '800px',
@@ -590,7 +590,7 @@ class JazzClub {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -656,7 +656,7 @@ class JazzClub {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -675,7 +675,7 @@ class JazzClub {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -710,7 +710,7 @@ class JazzClub {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -729,7 +729,7 @@ class JazzClub {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -766,7 +766,7 @@ class JazzClub {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Jazz-Social.jpg',
+                    'assets' => $this->template_image_url . '/Jazz-Social.jpg',
                     'alt' => 'Jazz-Social',
                     'fullWidth' => true,
                     'width' => '1200px',
@@ -790,7 +790,7 @@ class JazzClub {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -809,7 +809,7 @@ class JazzClub {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -837,7 +837,7 @@ class JazzClub {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Jazz-logo.png',
+                    'assets' => $this->template_image_url . '/Jazz-logo.png',
                     'alt' => 'Jazz-logo',
                     'fullWidth' => false,
                     'width' => '144px',

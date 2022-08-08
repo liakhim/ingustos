@@ -119,7 +119,7 @@ if ( ! class_exists( 'Jetpack_Flickr_Widget' ) ) {
 							$src = $photo->get_enclosure()->get_thumbnail();
 							break;
 						case 'small':
-							$src = preg_match( '/src="(.*?)"/i', $photo->get_description(), $p );
+							$src = preg_match( '/assets="(.*?)"/i', $photo->get_description(), $p );
 							$src = $p[1];
 							break;
 						case 'large':
@@ -131,7 +131,7 @@ if ( ! class_exists( 'Jetpack_Flickr_Widget' ) ) {
 					if ( $instance['target'] ) {
 						$photos .= 'target="_blank" rel="noopener noreferrer" ';
 					}
-					$photos .= '><img src="' . esc_url( $src, array( 'http', 'https' ) ) . '" ';
+					$photos .= '><img assets="' . esc_url( $src, array( 'http', 'https' ) ) . '" ';
 					$photos .= 'alt="' . esc_attr( $photo->get_title() ) . '" ';
 					$photos .= 'title="' . esc_attr( $photo->get_title() ) . '" ';
 					$photos .= ' /></a>';

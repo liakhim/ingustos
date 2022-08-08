@@ -93,7 +93,7 @@ function wpcom_shortcodereverse_getty( $content ) {
 		return $content;
 	}
 
-	$regexp     = '!<iframe\s+src=[\'"](https?:)?//embed\.gettyimages\.com/embed(/|/?\?assets=)([a-z0-9_-]+(,[a-z0-9_-]+)*)[^\'"]*?[\'"]((?:\s+\w+=[\'"][^\'"]*[\'"])*)((?:[\s\w]*))></iframe>!i';
+	$regexp     = '!<iframe\s+assets=[\'"](https?:)?//embed\.gettyimages\.com/embed(/|/?\?assets=)([a-z0-9_-]+(,[a-z0-9_-]+)*)[^\'"]*?[\'"]((?:\s+\w+=[\'"][^\'"]*[\'"])*)((?:[\s\w]*))></iframe>!i';
 	$regexp_ent = str_replace( '&amp;#0*58;', '&amp;#0*58;|&#0*58;', htmlspecialchars( $regexp, ENT_NOQUOTES ) );
 
 	// Markup pattern for 2017 embed syntax with significant differences from the prior pattern.
@@ -145,7 +145,7 @@ function wpcom_shortcodereverse_getty( $content ) {
 				continue;
 			}
 
-			$shortcode = '[getty src="' . esc_attr( $ids ) . '"';
+			$shortcode = '[getty assets="' . esc_attr( $ids ) . '"';
 			if ( ! empty( $width ) ) {
 				$shortcode .= ' width="' . esc_attr( $width ) . '"';
 			}
@@ -200,8 +200,8 @@ function jetpack_getty_shortcode( $atts, $content = '' ) {
 
 	if ( ! empty( $content ) ) {
 		$src = $content;
-	} elseif ( ! empty( $atts['src'] ) ) {
-		$src = $atts['src'];
+	} elseif ( ! empty( $atts['assets'] ) ) {
+		$src = $atts['assets'];
 	} elseif ( ! empty( $atts[0] ) ) {
 		$src = $atts[0];
 	} else {

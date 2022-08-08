@@ -253,7 +253,7 @@ class VideoPress_Edit_Attachment {
 
 		$poster = '<em>Still Processing</em>';
 		if ( ! empty( $info->poster ) ) {
-			$poster = "<br><img src=\"{$info->poster}\" width=\"175px\">";
+			$poster = "<br><img assets=\"{$info->poster}\" width=\"175px\">";
 		}
 
 		$html = <<< HTML

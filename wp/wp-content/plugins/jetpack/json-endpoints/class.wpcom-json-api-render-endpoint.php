@@ -82,7 +82,7 @@ abstract class WPCOM_JSON_API_Render_Endpoint extends WPCOM_JSON_API_Endpoint {
 
 				// add to an aray so we can return all this info
 				$scripts[ $handle ] = array(
-					'src' => $src,
+					'assets' => $src,
 				);
 				$extra              = $wp_scripts->print_extra_script( $handle, false );
 				if ( ! empty( $extra ) ) {
@@ -116,7 +116,7 @@ abstract class WPCOM_JSON_API_Render_Endpoint extends WPCOM_JSON_API_Endpoint {
 
 				// add to an array so we can return all this info
 				$styles[ $handle ] = array(
-					'src'   => $src,
+					'assets'   => $src,
 					'media' => $media,
 				);
 			}

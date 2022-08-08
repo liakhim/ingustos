@@ -40,7 +40,7 @@ class Painter {
         'orientation' => 'vertical',
         'image' =>
          [
-          'src' => null,
+          'assets' => null,
           'display' => 'scale',
          ],
         'styles' =>
@@ -59,7 +59,7 @@ class Painter {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -78,7 +78,7 @@ class Painter {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -137,7 +137,7 @@ class Painter {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -156,7 +156,7 @@ class Painter {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -191,7 +191,7 @@ class Painter {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => $this->template_image_url . '/Painter-Logo-bg.jpg',
+              'assets' => $this->template_image_url . '/Painter-Logo-bg.jpg',
               'display' => 'scale',
              ],
             'styles' =>
@@ -210,7 +210,7 @@ class Painter {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -238,7 +238,7 @@ class Painter {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Painter-Logo.png',
+                    'assets' => $this->template_image_url . '/Painter-Logo.png',
                     'alt' => 'Painter-Logo',
                     'fullWidth' => false,
                     'width' => '305.9375px',
@@ -274,7 +274,7 @@ class Painter {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -293,7 +293,7 @@ class Painter {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -328,7 +328,7 @@ class Painter {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -347,7 +347,7 @@ class Painter {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -373,7 +373,7 @@ class Painter {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -399,7 +399,7 @@ class Painter {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -427,7 +427,7 @@ class Painter {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => $this->template_image_url . '/Painter-Header.jpg',
+              'assets' => $this->template_image_url . '/Painter-Header.jpg',
               'display' => 'scale',
              ],
             'styles' =>
@@ -446,7 +446,7 @@ class Painter {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -492,7 +492,7 @@ class Painter {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/186018-sktchy-2-nh-gutenCRALTBRBLOG.jpg',
+                    'assets' => $this->template_image_url . '/186018-sktchy-2-nh-gutenCRALTBRBLOG.jpg',
                     'alt' => '186018-sktchy-2-nh-gutenCRALTBRBLOG',
                     'fullWidth' => false,
                     'width' => '520px',
@@ -514,7 +514,7 @@ class Painter {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -542,7 +542,7 @@ class Painter {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/181215_2-laura-anderson-dog-fab-artistico-cpCRAltBRCRBlog.jpg',
+                    'assets' => $this->template_image_url . '/181215_2-laura-anderson-dog-fab-artistico-cpCRAltBRCRBlog.jpg',
                     'alt' => '181215_2-laura-anderson-dog-fab-artistico-cpCRAltBRCRBlog',
                     'fullWidth' => false,
                     'width' => '180px',
@@ -571,7 +571,7 @@ class Painter {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/170204_sktchy_BlackChickenBrushPen2CRBR.jpg',
+                    'assets' => $this->template_image_url . '/170204_sktchy_BlackChickenBrushPen2CRBR.jpg',
                     'alt' => '170204_sktchy_BlackChickenBrushPen2CRBR',
                     'fullWidth' => false,
                     'width' => '328px',
@@ -595,7 +595,7 @@ class Painter {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -614,7 +614,7 @@ class Painter {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -654,7 +654,7 @@ class Painter {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -673,7 +673,7 @@ class Painter {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -689,7 +689,7 @@ class Painter {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/1812231-sktchy-1-jon-coxwell-fabriano-cpCRFeat-394x252.jpg',
+                    'assets' => $this->template_image_url . '/1812231-sktchy-1-jon-coxwell-fabriano-cpCRFeat-394x252.jpg',
                     'alt' => '1812231-sktchy-1-jon-coxwell-fabriano-cpCRFeat-394x252',
                     'fullWidth' => false,
                     'width' => '394px',
@@ -717,7 +717,7 @@ class Painter {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -733,7 +733,7 @@ class Painter {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/180830-2018-fair-32-pigeon-fabri-300-hpCRAltBRFeat-394x252.jpg',
+                    'assets' => $this->template_image_url . '/180830-2018-fair-32-pigeon-fabri-300-hpCRAltBRFeat-394x252.jpg',
                     'alt' => '180830-2018-fair-32-pigeon-fabri-300-hpCRAltBRFeat-394x252',
                     'fullWidth' => false,
                     'width' => '394px',
@@ -761,7 +761,7 @@ class Painter {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -777,7 +777,7 @@ class Painter {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/180828-sktchy-t-c-c-hahn-expressions-cpCRAltBRCRFeat-394x252.jpg',
+                    'assets' => $this->template_image_url . '/180828-sktchy-t-c-c-hahn-expressions-cpCRAltBRCRFeat-394x252.jpg',
                     'alt' => '180828-sktchy-t-c-c-hahn-expressions-cpCRAltBRCRFeat-394x252',
                     'fullWidth' => false,
                     'width' => '394px',
@@ -807,7 +807,7 @@ class Painter {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -826,7 +826,7 @@ class Painter {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -861,7 +861,7 @@ class Painter {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => $this->template_image_url . '/Painter-SocialBack.jpg',
+              'assets' => $this->template_image_url . '/Painter-SocialBack.jpg',
               'display' => 'scale',
              ],
             'styles' =>
@@ -880,7 +880,7 @@ class Painter {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -988,7 +988,7 @@ class Painter {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -1007,7 +1007,7 @@ class Painter {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>

@@ -34,7 +34,7 @@ class ScienceWeekly {
           'orientation' => 'vertical',
           'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
           'styles' =>
@@ -52,7 +52,7 @@ class ScienceWeekly {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -70,7 +70,7 @@ class ScienceWeekly {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -86,7 +86,7 @@ class ScienceWeekly {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Science-Logo.png',
+                                  'assets' => $this->template_image_url . '/Science-Logo.png',
                                   'alt' => 'Science-Logo',
                                   'fullWidth' => true,
                                   'width' => '1280px',
@@ -103,7 +103,7 @@ class ScienceWeekly {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Health-Mag-Title-22.png',
+                                  'assets' => $this->template_image_url . '/Health-Mag-Title-22.png',
                                   'alt' => 'Health-Mag-Title-2',
                                   'fullWidth' => true,
                                   'width' => '1280px',
@@ -126,7 +126,7 @@ class ScienceWeekly {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -144,7 +144,7 @@ class ScienceWeekly {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -251,7 +251,7 @@ class ScienceWeekly {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -269,7 +269,7 @@ class ScienceWeekly {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -297,7 +297,7 @@ class ScienceWeekly {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Health-Mag-End-1.png',
+                                  'assets' => $this->template_image_url . '/Health-Mag-End-1.png',
                                   'alt' => 'Health-Mag-End',
                                   'fullWidth' => true,
                                   'width' => '1280px',
@@ -332,7 +332,7 @@ class ScienceWeekly {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -350,7 +350,7 @@ class ScienceWeekly {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -366,7 +366,7 @@ class ScienceWeekly {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Health-Mag-Promo-Start.png',
+                                  'assets' => $this->template_image_url . '/Health-Mag-Promo-Start.png',
                                   'alt' => 'Health-Mag-Promo-Start',
                                   'fullWidth' => true,
                                   'width' => '1280px',
@@ -389,7 +389,7 @@ class ScienceWeekly {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -407,7 +407,7 @@ class ScienceWeekly {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -472,7 +472,7 @@ class ScienceWeekly {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -488,7 +488,7 @@ class ScienceWeekly {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Health-Mag-Phone.png',
+                                  'assets' => $this->template_image_url . '/Health-Mag-Phone.png',
                                   'alt' => 'Health-Mag-Phone',
                                   'fullWidth' => false,
                                   'width' => '400px',
@@ -511,7 +511,7 @@ class ScienceWeekly {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -529,7 +529,7 @@ class ScienceWeekly {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -545,7 +545,7 @@ class ScienceWeekly {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Health-Mag-Promo-End.png',
+                                  'assets' => $this->template_image_url . '/Health-Mag-Promo-End.png',
                                   'alt' => 'Health-Mag-Promo-End',
                                   'fullWidth' => true,
                                   'width' => '1280px',
@@ -568,7 +568,7 @@ class ScienceWeekly {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -586,7 +586,7 @@ class ScienceWeekly {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -614,7 +614,7 @@ class ScienceWeekly {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Health-Mag-Promo-Start.png',
+                                  'assets' => $this->template_image_url . '/Health-Mag-Promo-Start.png',
                                   'alt' => 'Health-Mag-Promo-Start',
                                   'fullWidth' => true,
                                   'width' => '1280px',
@@ -637,7 +637,7 @@ class ScienceWeekly {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -655,7 +655,7 @@ class ScienceWeekly {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -710,7 +710,7 @@ class ScienceWeekly {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -728,7 +728,7 @@ class ScienceWeekly {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -744,7 +744,7 @@ class ScienceWeekly {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Health-Mag-Promo-End.png',
+                                  'assets' => $this->template_image_url . '/Health-Mag-Promo-End.png',
                                   'alt' => 'Health-Mag-Promo-End',
                                   'fullWidth' => true,
                                   'width' => '1280px',
@@ -1011,7 +1011,7 @@ class ScienceWeekly {
              [
               'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
               'styles' =>

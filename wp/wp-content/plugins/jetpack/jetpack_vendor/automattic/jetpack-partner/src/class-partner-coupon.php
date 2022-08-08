@@ -69,7 +69,7 @@ class Partner_Coupon {
 		'IONOS' => array(
 			'name' => 'IONOS',
 			'logo' => array(
-				'src'    => '/images/ionos-logo.jpg',
+				'assets'    => '/images/ionos-logo.jpg',
 				'width'  => 119,
 				'height' => 32,
 			),

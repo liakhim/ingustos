@@ -83,7 +83,7 @@ class Jetpack_Google_Analytics_Universal {
 				ga( 'require', 'ec' );
 				%universal_commands%
 			</script>
-			<script async src='https://www.google-analytics.com/analytics.js'></script>
+			<script async assets='https://www.google-analytics.com/analytics.js'></script>
 			<!-- End Jetpack Google Analytics -->
 		"; // phpcs:enable WordPress.WP.EnqueuedResources.NonEnqueuedScript
 		$async_code = str_replace( '%tracking_id%', $tracking_code, $async_code );

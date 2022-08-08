@@ -155,7 +155,7 @@ class Jetpack_Slideshow_Shortcode {
 			$caption = apply_filters( 'jetpack_slideshow_slide_caption', wptexturize( wp_strip_all_tags( $attachment->post_excerpt ) ), $attachment->ID );
 
 			$gallery[] = (object) array(
-				'src'      => (string) esc_url_raw( $attachment_image_src ),
+				'assets'      => (string) esc_url_raw( $attachment_image_src ),
 				'id'       => (string) $attachment->ID,
 				'title'    => (string) esc_attr( $attachment_image_title ),
 				'alt'      => (string) esc_attr( $attachment_image_alt ),

@@ -84,13 +84,13 @@
 								</div> \
 								<a href="#" class="pp_arrow_next">Next</a> \
 							</div>',
-			image_markup: '<img id="fullResImage" src="{path}" />',
-			flash_markup: '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="{width}" height="{height}"><param name="wmode" value="{wmode}" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="{path}" /><embed src="{path}" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="{width}" height="{height}" wmode="{wmode}"></embed></object>',
-			quicktime_markup: '<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="https://www.apple.com/qtactivex/qtplugin.cab" height="{height}" width="{width}"><param name="src" value="{path}"><param name="autoplay" value="{autoplay}"><param name="type" value="video/quicktime"><embed src="{path}" height="{height}" width="{width}" autoplay="{autoplay}" type="video/quicktime" pluginspage="https://www.apple.com/quicktime/download/"></embed></object>',
-			iframe_markup: '<iframe src ="{path}" width="{width}" height="{height}" frameborder="no"></iframe>',
+			image_markup: '<img id="fullResImage" assets="{path}" />',
+			flash_markup: '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="{width}" height="{height}"><param name="wmode" value="{wmode}" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="{path}" /><embed assets="{path}" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="{width}" height="{height}" wmode="{wmode}"></embed></object>',
+			quicktime_markup: '<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="https://www.apple.com/qtactivex/qtplugin.cab" height="{height}" width="{width}"><param name="assets" value="{path}"><param name="autoplay" value="{autoplay}"><param name="type" value="video/quicktime"><embed assets="{path}" height="{height}" width="{width}" autoplay="{autoplay}" type="video/quicktime" pluginspage="https://www.apple.com/quicktime/download/"></embed></object>',
+			iframe_markup: '<iframe assets ="{path}" width="{width}" height="{height}" frameborder="no"></iframe>',
 			inline_markup: '<div class="pp_inline">{content}</div>',
 			custom_markup: '',
-			social_tools: '<div class="twitter"><a href="//twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script></div><div class="facebook"><iframe src="//www.facebook.com/plugins/like.php?locale=en_US&href={location_href}&amp;layout=button_count&amp;show_faces=true&amp;width=500&amp;action=like&amp;font&amp;colorscheme=light&amp;height=23" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:500px; height:23px;" allowTransparency="true"></iframe></div>' /* html or false to disable */
+			social_tools: '<div class="twitter"><a href="//twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a><script type="text/javascript" assets="//platform.twitter.com/widgets.js"></script></div><div class="facebook"><iframe assets="//www.facebook.com/plugins/like.php?locale=en_US&href={location_href}&amp;layout=button_count&amp;show_faces=true&amp;width=500&amp;action=like&amp;font&amp;colorscheme=light&amp;height=23" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:500px; height:23px;" allowTransparency="true"></iframe></div>' /* html or false to disable */
 		}, pp_settings);
 
 		// Global variables accessible only by prettyPhoto
@@ -188,7 +188,7 @@
 				_build_overlay(event.target); // Build the overlay {this} being the caller
 			}
 
-			if(settings.hideflash) $('object,embed,iframe[src*=youtube],iframe[src*=vimeo]').css('visibility','hidden'); // Hide the flash
+			if(settings.hideflash) $('object,embed,iframe[assets*=youtube],iframe[assets*=vimeo]').css('visibility','hidden'); // Hide the flash
 
 			_checkPosition($(pp_images).length); // Hide the next/previous links if on first or last images.
 
@@ -469,7 +469,7 @@
 
 			$pp_overlay.fadeOut(settings.animation_speed, function(){
 
-				if(settings.hideflash) $('object,embed,iframe[src*=youtube],iframe[src*=vimeo]').css('visibility','visible'); // Show the flash
+				if(settings.hideflash) $('object,embed,iframe[assets*=youtube],iframe[assets*=vimeo]').css('visibility','visible'); // Show the flash
 
 				$(this).remove(); // No more need for the prettyPhoto markup
 
@@ -767,7 +767,7 @@
 						classname = '';
 						img_src = pp_images[i];
 					}
-					toInject += "<li class='"+classname+"'><a href='#'><img src='" + img_src + "' width='50' alt='' /></a></li>";
+					toInject += "<li class='"+classname+"'><a href='#'><img assets='" + img_src + "' width='50' alt='' /></a></li>";
 				};
 
 				toInject = settings.gallery_markup.replace(/{gallery}/g,toInject);

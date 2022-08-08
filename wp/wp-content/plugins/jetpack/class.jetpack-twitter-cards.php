@@ -114,9 +114,9 @@ class Jetpack_Twitter_Cards {
 					// 300x157 is the minimum size for a summary_large_image per https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary-card-with-large-image .
 					if ( (int) $post_image['src_width'] >= 300 && (int) $post_image['src_height'] >= 157 ) {
 						$card_type                = 'summary_large_image';
-						$og_tags['twitter:image'] = esc_url( add_query_arg( 'w', 640, $post_image['src'] ) );
+						$og_tags['twitter:image'] = esc_url( add_query_arg( 'w', 640, $post_image['assets'] ) );
 					} else {
-						$og_tags['twitter:image'] = esc_url( add_query_arg( 'w', 144, $post_image['src'] ) );
+						$og_tags['twitter:image'] = esc_url( add_query_arg( 'w', 144, $post_image['assets'] ) );
 					}
 
 					// Add the alt tag if we have one.
@@ -133,7 +133,7 @@ class Jetpack_Twitter_Cards {
 		}
 
 		// Only proceed with media analysis if a featured image has not superseded it already.
-		if ( empty( $og_tags['twitter:image'] ) && empty( $og_tags['twitter:image:src'] ) ) {
+		if ( empty( $og_tags['twitter:image'] ) && empty( $og_tags['twitter:image:assets'] ) ) {
 			if ( ! class_exists( 'Jetpack_Media_Summary' ) && defined( 'IS_WPCOM' ) && IS_WPCOM ) {
 				include WP_CONTENT_DIR . '/lib/class.wpcom-media-summary.php';
 			}
@@ -173,7 +173,7 @@ class Jetpack_Twitter_Cards {
 			}
 		}
 
-		if ( empty( $og_tags['twitter:image'] ) && empty( $og_tags['twitter:image:src'] ) ) {
+		if ( empty( $og_tags['twitter:image'] ) && empty( $og_tags['twitter:image:assets'] ) ) {
 			/** This action is documented in class.jetpack-twitter-cards.php */
 			$image = apply_filters( 'jetpack_twitter_cards_image_default', '' );
 			if ( ! empty( $image ) ) {

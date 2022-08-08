@@ -12,10 +12,10 @@ return array(
 	),
 	'fcd5d7d87e03ff4f5b5a66c2b8968671' => array(
 		'version' => '7.8.3.0',
-		'path'    => $baseDir . '/packages/woocommerce-blocks/src/StoreApi/deprecated.php'
+		'path'    => $baseDir . '/packages/woocommerce-blocks/assets/StoreApi/deprecated.php'
 	),
 	'd0f16a186498c2ba04f1d0064fecf9cf' => array(
 		'version' => '7.8.3.0',
-		'path'    => $baseDir . '/packages/woocommerce-blocks/src/StoreApi/functions.php'
+		'path'    => $baseDir . '/packages/woocommerce-blocks/assets/StoreApi/functions.php'
 	),
 );

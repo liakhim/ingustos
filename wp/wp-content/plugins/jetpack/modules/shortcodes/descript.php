@@ -44,7 +44,7 @@ function jetpack_shortcodereverse_descript( $content ) {
 		return $content;
 	}
 
-	$regexp = '/<iframe (?:loading="lazy" )?src="https:\/\/share.descript.com\/embed\/(\w+)" width="(\d+)" height="(\d+)" frameborder="0" allowfullscreen(?:="")?><\/iframe>/i';
+	$regexp = '/<iframe (?:loading="lazy" )?assets="https:\/\/share.descript.com\/embed\/(\w+)" width="(\d+)" height="(\d+)" frameborder="0" allowfullscreen(?:="")?><\/iframe>/i';
 
 	if ( preg_match_all( $regexp, $content, $matches, PREG_SET_ORDER ) ) {
 		foreach ( $matches as $match ) {

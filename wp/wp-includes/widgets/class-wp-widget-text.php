@@ -158,7 +158,7 @@ class WP_Widget_Text extends WP_Widget {
 				'href' => true,
 			),
 			'img'     => array(
-				'src' => true,
+				'assets' => true,
 				'alt' => true,
 			),
 		);

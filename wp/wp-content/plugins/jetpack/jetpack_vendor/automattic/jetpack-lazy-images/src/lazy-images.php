@@ -181,7 +181,7 @@ class Jetpack_Lazy_Images {
 		$img_attributes = array_merge(
 			$allowed_tags['img'],
 			array(
-				'data-lazy-src'    => 1,
+				'data-lazy-assets'    => 1,
 				'data-lazy-srcset' => 1,
 				'data-lazy-sizes'  => 1,
 			)
@@ -208,7 +208,7 @@ class Jetpack_Lazy_Images {
 		}
 
 		// Don't lazy-load if the content has already been run through previously.
-		if ( false !== strpos( $content, 'data-lazy-src' ) ) {
+		if ( false !== strpos( $content, 'data-lazy-assets' ) ) {
 			return $content;
 		}
 
@@ -273,7 +273,7 @@ class Jetpack_Lazy_Images {
 		$old_attributes_str       = $matches[2];
 		$old_attributes_kses_hair = wp_kses_hair( $old_attributes_str, wp_allowed_protocols() );
 
-		if ( empty( $old_attributes_kses_hair['src'] ) ) {
+		if ( empty( $old_attributes_kses_hair['assets'] ) ) {
 			return $matches[0];
 		}
 
@@ -302,7 +302,7 @@ class Jetpack_Lazy_Images {
 	 * @return array The updated image attributes array with lazy load attributes.
 	 */
 	public static function process_image_attributes( $attributes ) {
-		if ( empty( $attributes['src'] ) ) {
+		if ( empty( $attributes['assets'] ) ) {
 			return $attributes;
 		}
 
@@ -358,7 +358,7 @@ class Jetpack_Lazy_Images {
 
 		// We set this, adding the query arg so that it doesn't exactly equal the src attribute, so that photon JavaScript
 		// will hold off on processing this image.
-		$attributes['data-lazy-src'] = esc_url_raw( add_query_arg( 'is-pending-load', true, $attributes['src'] ) );
+		$attributes['data-lazy-assets'] = esc_url_raw( add_query_arg( 'is-pending-load', true, $attributes['assets'] ) );
 
 		$attributes['srcset'] = self::get_placeholder_image();
 		$attributes['class']  = sprintf(
@@ -495,7 +495,7 @@ class Jetpack_Lazy_Images {
 			'../dist/intersection-observer.js',
 			__FILE__,
 			array(
-				'nonmin_path' => '../dist/intersection-observer.src.js',
+				'nonmin_path' => '../dist/intersection-observer.assets.js',
 				'in_footer'   => true,
 			)
 		);

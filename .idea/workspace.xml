@@ -11,17 +11,328 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="804387ab-2946-4802-b79c-9cdf53181d2d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/app.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/offer/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_cart-modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_cart-modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_cart_not_empty.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_cart_not_empty.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_filters.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_filters.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_first-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_first-block.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/app.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Bradobrei/Bradobrei.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Bradobrei/Bradobrei.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Bradobrei/Bradobrei.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Bradobrei/Bradobrei.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Bradobrei/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Bradobrei/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaBookC-Italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaBookC-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaBookC-Italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaBookC.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaBookC.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaBookC.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaDemiC-Italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaDemiC-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaDemiC-Italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaDemiC.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaDemiC.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaDemiC.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaLightC-Italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaLightC-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaLightC-Italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaLightC.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaLightC.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaLightC.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaMediumC-Italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaMediumC-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaMediumC-Italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaMediumC.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaMediumC.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/FuturaMediumC.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/Futura/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/FuturaDemiC/futurademic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/FuturaDemiC/futurademic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/FuturaDemiC/futurademic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/FuturaDemiC/futurademic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/fonts/FuturaDemiC/futurademic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipes/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/router/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-admin/includes/ajax-actions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-admin/includes/ajax-actions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-admin/includes/class-custom-image-header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-admin/includes/class-custom-image-header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-admin/includes/class-plugin-upgrader-skin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-admin/includes/class-plugin-upgrader-skin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-admin/includes/credits.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-admin/includes/credits.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-admin/includes/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-admin/includes/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-admin/includes/media.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-admin/includes/media.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-admin/includes/theme-install.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-admin/includes/theme-install.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-admin/js/customize-controls.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-admin/js/customize-controls.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-admin/js/farbtastic.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-admin/js/farbtastic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/languages/ru_RU.po" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/languages/ru_RU.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/google-listings-and-ads/vendor/automattic/jetpack-a8c-mc-stats/src/class-a8c-mc-stats.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/google-listings-and-ads/vendor/automattic/jetpack-a8c-mc-stats/src/class-a8c-mc-stats.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/google-listings-and-ads/vendor/automattic/jetpack-connection/src/class-manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/google-listings-and-ads/vendor/automattic/jetpack-connection/src/class-manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/google-listings-and-ads/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/google-listings-and-ads/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/google-listings-and-ads/vendor/composer/jetpack_autoload_filemap.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/google-listings-and-ads/vendor/composer/jetpack_autoload_filemap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/google-listings-and-ads/vendor/google/auth/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/google-listings-and-ads/vendor/google/auth/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/google-listings-and-ads/vendor/googleads/google-ads-php/src/Google/Ads/GoogleAds/Util/ApiVersionSupport.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/google-listings-and-ads/vendor/googleads/google-ads-php/src/Google/Ads/GoogleAds/Util/ApiVersionSupport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/google-listings-and-ads/vendor/symfony/validator/Command/DebugCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/google-listings-and-ads/vendor/symfony/validator/Command/DebugCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/_inc/blocks/302.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/_inc/blocks/302.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/_inc/blocks/editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/_inc/blocks/editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/_inc/build/photon/photon.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/_inc/build/photon/photon.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/_inc/lib/admin-pages/class-jetpack-about-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/_inc/lib/admin-pages/class-jetpack-about-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/_inc/lib/admin-pages/class-jetpack-redux-state-helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/_inc/lib/admin-pages/class-jetpack-redux-state-helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/_inc/lib/class-jetpack-tweetstorm-helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/_inc/lib/class-jetpack-tweetstorm-helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/_inc/lib/debugger/class-jetpack-cxn-tests.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/_inc/lib/debugger/class-jetpack-cxn-tests.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/_inc/lib/markdown/extra.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/_inc/lib/markdown/extra.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/class.jetpack-gutenberg.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/class.jetpack-gutenberg.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/class.jetpack-post-images.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/class.jetpack-post-images.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/class.jetpack-twitter-cards.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/class.jetpack-twitter-cards.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/class.jetpack.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/class.jetpack.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/extensions/blocks/eventbrite/eventbrite.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/extensions/blocks/eventbrite/eventbrite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/extensions/blocks/google-calendar/google-calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/extensions/blocks/google-calendar/google-calendar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/extensions/blocks/image-compare/image-compare.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/extensions/blocks/image-compare/image-compare.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/extensions/blocks/opentable/opentable.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/extensions/blocks/opentable/opentable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/extensions/blocks/pinterest/pinterest.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/extensions/blocks/pinterest/pinterest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/extensions/blocks/story/story.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/extensions/blocks/story/story.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/extensions/blocks/tiled-gallery/tiled-gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/extensions/blocks/tiled-gallery/tiled-gallery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/functions.opengraph.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/functions.opengraph.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-a8c-mc-stats/src/class-a8c-mc-stats.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-a8c-mc-stats/src/class-a8c-mc-stats.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-backup/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-backup/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-connection/src/class-manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-connection/src/class-manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-lazy-images/dist/lazy-images.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-lazy-images/dist/lazy-images.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-lazy-images/src/js/lazy-images.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-lazy-images/src/js/lazy-images.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-lazy-images/src/lazy-images.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-lazy-images/src/lazy-images.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-partner/src/class-partner-coupon.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-partner/src/class-partner-coupon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-search/src/customberg/class-customberg.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-search/src/customberg/class-customberg.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-search/src/instant-search/class-instant-search.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-search/src/instant-search/class-instant-search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-wordads/build/dashboard/jp-wordads-dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-wordads/build/dashboard/jp-wordads-dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-wordads/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-wordads/jest.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-render-embed-reversal-endpoint.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-render-embed-reversal-endpoint.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-render-endpoint.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-render-endpoint.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-render-shortcode-endpoint.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-render-shortcode-endpoint.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/carousel/jetpack-carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/carousel/jetpack-carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/cloudflare-analytics/cloudflare-analytics.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/cloudflare-analytics/cloudflare-analytics.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/comment-likes.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/comment-likes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/custom-post-types/comics.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/custom-post-types/comics.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/google-analytics/classes/wp-google-analytics-legacy.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/google-analytics/classes/wp-google-analytics-legacy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/google-analytics/classes/wp-google-analytics-universal.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/google-analytics/classes/wp-google-analytics-universal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/infinite-scroll/infinity.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/infinite-scroll/infinity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/likes.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/likes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/masterbar/admin-menu/class-wpcom-admin-menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/masterbar/admin-menu/class-wpcom-admin-menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/related-posts/jetpack-related-posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/related-posts/jetpack-related-posts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/related-posts/related-posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/related-posts/related-posts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/sharedaddy/recaptcha.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/sharedaddy/recaptcha.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/archiveorg-book.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/archiveorg-book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/archiveorg.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/archiveorg.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/bandcamp.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/bandcamp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/brightcove.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/brightcove.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/class.filter-embedded-html-objects.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/class.filter-embedded-html-objects.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/crowdsignal.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/crowdsignal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/dailymotion.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/dailymotion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/descript.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/descript.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/flickr.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/flickr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/getty.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/getty.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/gist.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/gist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/googleapps.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/googleapps.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/googlemaps.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/googlemaps.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/instagram.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/instagram.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/kickstarter.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/kickstarter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/mailchimp.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/mailchimp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/pinterest.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/pinterest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/quiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/quiz.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/recipe.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/recipe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/scribd.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/scribd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/slideshare.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/slideshare.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/slideshow.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/slideshow.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/soundcloud.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/soundcloud.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/spotify.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/spotify.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/ted.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/ted.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/twitchtv.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/twitchtv.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/untappd-menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/untappd-menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/ustream.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/ustream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/vimeo.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/vimeo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/vine.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/vine.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/vr.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/vr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/wufoo.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/wufoo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/youtube.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/shortcodes/youtube.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/stats.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/stats.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/theme-tools/content-options/featured-images-fallback.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/theme-tools/content-options/featured-images-fallback.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/videopress/class.videopress-edit-attachment.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/videopress/class.videopress-edit-attachment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/videopress/class.videopress-gutenberg.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/videopress/class.videopress-gutenberg.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/videopress/class.videopress-player.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/videopress/class.videopress-player.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/videopress/shortcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/videopress/shortcode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/videopress/utility-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/videopress/utility-functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/widgets/contact-info.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/widgets/contact-info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/widgets/customizer-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/widgets/customizer-utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/widgets/flickr.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/widgets/flickr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/widgets/gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/widgets/gallery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/widgets/internet-defense-league.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/widgets/internet-defense-league.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/widgets/my-community.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/widgets/my-community.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/widgets/rsslinks-widget.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/widgets/rsslinks-widget.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/widgets/simple-payments/customizer.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/widgets/simple-payments/customizer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/widgets/top-posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/widgets/top-posts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/wordads/class-wordads.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/modules/wordads/class-wordads.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/jetpack/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/00/00d1b378089ca422405f5641853969e771168227df858c45e738c0964de7b6b9.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/00/00d1b378089ca422405f5641853969e771168227df858c45e738c0964de7b6b9.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/11/11d3f6de05938fc53f6b51a30553350ab288ef245cc1007bdfbcde41b50bd1cf.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/11/11d3f6de05938fc53f6b51a30553350ab288ef245cc1007bdfbcde41b50bd1cf.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/41/41f593b5950f5566c2f812739ee4eec37e04c996b05f4f14e2594389b41da844.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/41/41f593b5950f5566c2f812739ee4eec37e04c996b05f4f14e2594389b41da844.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/43/436304f209b4b72b182569c99045e5af9a1cc94a37e1c397de44e855d3c38482.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/43/436304f209b4b72b182569c99045e5af9a1cc94a37e1c397de44e855d3c38482.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/54/54f5a605d72e1c2fc7e0115347268a5ea818c4a5cffcd836ecf9e4ec7e757532.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/54/54f5a605d72e1c2fc7e0115347268a5ea818c4a5cffcd836ecf9e4ec7e757532.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/5d/5d0a911176e50085fa0f645dafa33f6bb54942f4cc0c7d027b1f8e108f984df4.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/5d/5d0a911176e50085fa0f645dafa33f6bb54942f4cc0c7d027b1f8e108f984df4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/8f/8fc5b488d2f812af1c773a86a1f11d30ddc2fde255a0a3daab3140279a6af938.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/8f/8fc5b488d2f812af1c773a86a1f11d30ddc2fde255a0a3daab3140279a6af938.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/91/913f6ca4300467f6fd09d861ee890924457d9e09271943404d3c4d1401d0dca3.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/91/913f6ca4300467f6fd09d861ee890924457d9e09271943404d3c4d1401d0dca3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/92/92d76237f1444f3d491acc2fa93c23a2b30f5839481c340f22d42e47e21efdde.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/92/92d76237f1444f3d491acc2fa93c23a2b30f5839481c340f22d42e47e21efdde.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/9f/9ff8fd4f40d7dc959e5fef6de966b7e97814e0739eeda834477a6d79ad437363.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/9f/9ff8fd4f40d7dc959e5fef6de966b7e97814e0739eeda834477a6d79ad437363.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/b4/b44ecd1ee4d002dfe642d9c7d0f9ccf58523c2e079f829449cf5461a31c16816.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/b4/b44ecd1ee4d002dfe642d9c7d0f9ccf58523c2e079f829449cf5461a31c16816.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/c0/c07695360681a8dd988e325f673dc697f2ebd4f2e9e3e6f599ef32179de1515b.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/c0/c07695360681a8dd988e325f673dc697f2ebd4f2e9e3e6f599ef32179de1515b.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/ca/ca5a7e42df0d01c148169fecd518a925eacdb7d44e4fe0ef8e99093aaa660b19.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/ca/ca5a7e42df0d01c148169fecd518a925eacdb7d44e4fe0ef8e99093aaa660b19.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/cd/cdb5565567a319e02b72910759a810df34c2acf69cad53b1a829ee9532d3d455.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/generated/twig/cd/cdb5565567a319e02b72910759a810df34c2acf69cad53b1a829ee9532d3d455.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/AppWelcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/AppWelcome.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Avocado.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Avocado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/BuddhistTemple.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/BuddhistTemple.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Charity.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Charity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/CityLocalNews.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/CityLocalNews.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Coffee.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Coffee.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/College.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/College.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/ConfirmInterestBeforeDeactivation.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/ConfirmInterestBeforeDeactivation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Drone.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Drone.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Faith.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Faith.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/FarmersMarket.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/FarmersMarket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/FashionBlog.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/FashionBlog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/JazzClub.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/JazzClub.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/ModularStyleStories.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/ModularStyleStories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Mosque.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Mosque.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Music.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Music.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/NewsDay.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/NewsDay.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/NewsletterBlank121Column.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/NewsletterBlank121Column.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/NewsletterBlank1Column.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/NewsletterBlank1Column.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/NewspaperTraditional.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/NewspaperTraditional.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/NotSoMedium.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/NotSoMedium.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Painter.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Painter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Phone.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Phone.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/PostNotificationsBlank1Column.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/PostNotificationsBlank1Column.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Retro.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Retro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/ScienceWeekly.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/ScienceWeekly.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Shoes.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Config/PopulatorData/Templates/Shoes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Form/AssetsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Form/AssetsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Form/FormHtmlSanitizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Form/FormHtmlSanitizer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Form/Renderer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Form/Renderer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Form/Util/Export.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Form/Util/Export.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Newsletter/Editor/PostContentManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Newsletter/Editor/PostContentManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Newsletter/Editor/PostTransformerContentsExtractor.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Newsletter/Editor/PostTransformerContentsExtractor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Newsletter/Editor/StructureTransformer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Newsletter/Editor/StructureTransformer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Newsletter/Renderer/Blocks/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Newsletter/Renderer/Blocks/Image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Newsletter/Renderer/Blocks/Social.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Newsletter/Renderer/Blocks/Social.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Newsletter/Renderer/Columns/Renderer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Newsletter/Renderer/Columns/Renderer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Newsletter/Renderer/PostProcess/OpenTracking.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Newsletter/Renderer/PostProcess/OpenTracking.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Newsletter/Renderer/Renderer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Newsletter/Renderer/Renderer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Twig/Assets.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/lib/Twig/Assets.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/vendor-prefixed/symfony/validator/Command/DebugCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/vendor-prefixed/symfony/validator/Command/DebugCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/mailpoet/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/client/admin/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/client/admin/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/client/admin/experimental/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/client/admin/experimental/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/client/admin/wp-admin-scripts/payment-method-promotions.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/client/admin/wp-admin-scripts/payment-method-promotions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/admin/meta-boxes-product.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/admin/meta-boxes-product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/admin/meta-boxes-product.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/admin/meta-boxes-product.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/admin/product-ordering.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/admin/product-ordering.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/admin/product-ordering.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/admin/product-ordering.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/admin/term-ordering.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/admin/term-ordering.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/admin/term-ordering.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/admin/term-ordering.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/prettyPhoto/jquery.prettyPhoto.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/prettyPhoto/jquery.prettyPhoto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-payment-gateway.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-payment-gateway.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-settings-api.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-settings-api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/legacy/api/v1/class-wc-api-products.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/legacy/api/v1/class-wc-api-products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/legacy/api/v2/class-wc-api-products.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/legacy/api/v2/class-wc-api-products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/legacy/api/v3/class-wc-api-products.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/legacy/api/v3/class-wc-api-products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version1/class-wc-rest-product-categories-v1-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version1/class-wc-rest-product-categories-v1-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version2/class-wc-rest-product-categories-v2-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version2/class-wc-rest-product-categories-v2-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version2/class-wc-rest-product-variations-v2-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version2/class-wc-rest-product-variations-v2-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version2/class-wc-rest-products-v2-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version2/class-wc-rest-products-v2-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version3/class-wc-rest-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version3/class-wc-rest-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version3/class-wc-rest-product-categories-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version3/class-wc-rest-product-categories-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version3/class-wc-rest-products-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version3/class-wc-rest-products-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/theme-support/class-wc-twenty-seventeen.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/theme-support/class-wc-twenty-seventeen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/theme-support/class-wc-twenty-twenty-one.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/theme-support/class-wc-twenty-twenty-one.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/theme-support/class-wc-twenty-twenty-two.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/theme-support/class-wc-twenty-twenty-two.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/theme-support/class-wc-twenty-twenty.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/theme-support/class-wc-twenty-twenty.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/tracks/class-wc-tracks-footer-pixel.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/tracks/class-wc-tracks-footer-pixel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/wc-product-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/wc-product-functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/wc-template-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/includes/wc-template-functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/legacy/js/admin/meta-boxes-product.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/legacy/js/admin/meta-boxes-product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/legacy/js/admin/product-ordering.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/legacy/js/admin/product-ordering.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/legacy/js/admin/term-ordering.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/legacy/js/admin/term-ordering.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/legacy/js/frontend/add-to-cart-variation.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/legacy/js/frontend/add-to-cart-variation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/legacy/js/jquery-blockui/jquery.blockUI.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/legacy/js/jquery-blockui/jquery.blockUI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/legacy/js/prettyPhoto/jquery.prettyPhoto.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/legacy/js/prettyPhoto/jquery.prettyPhoto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/legacy/js/zoom/jquery.zoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/legacy/js/zoom/jquery.zoom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/utils/test/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/utils/test/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/cart-frontend.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/cart-frontend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/checkout-frontend.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/checkout-frontend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/mini-cart-component-frontend.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/mini-cart-component-frontend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/single-product-frontend.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/single-product-frontend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/AssetsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/AssetsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/BlockTypes/FeaturedItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/BlockTypes/FeaturedItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/BlockTypes/MiniCart.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/BlockTypes/MiniCart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Domain/Services/GoogleAnalytics.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Domain/Services/GoogleAnalytics.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/StoreApi/Schemas/V1/ImageAttachmentSchema.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/StoreApi/Schemas/V1/ImageAttachmentSchema.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/vendor/composer/jetpack_autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/vendor/composer/jetpack_autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/vendor/composer/jetpack_autoload_filemap.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/vendor/composer/jetpack_autoload_filemap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/vendor/composer/jetpack_autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/packages/woocommerce-blocks/vendor/composer/jetpack_autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/src/Internal/Admin/FeaturePlugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/src/Internal/Admin/FeaturePlugin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/src/Internal/Utilities/HtmlSanitizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/src/Internal/Utilities/HtmlSanitizer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/templates/emails/email-header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/templates/emails/email-header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_filemap.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_filemap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/SimplePie/Enclosure.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/SimplePie/Enclosure.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/SimplePie/Parser.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/SimplePie/Parser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/SimplePie/Sanitize.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/SimplePie/Sanitize.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/admin-bar.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/admin-bar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/atomlib.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/atomlib.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/author-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/author-template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/blocks.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/blocks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/bookmark-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/bookmark-template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/class-snoopy.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/class-snoopy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/class-walker-category.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/class-walker-category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/class-wp-customize-manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/class-wp-customize-manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/class-wp-editor.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/class-wp-editor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/class-wp-embed.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/class-wp-embed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/class-wp-oembed.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/class-wp-oembed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/class.wp-scripts.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/class.wp-scripts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/default-constants.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/default-constants.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/deprecated.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/deprecated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/embed.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/embed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/formatting.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/formatting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/general-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/general-template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/js/dist/blocks.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/js/dist/blocks.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/js/media-audiovideo.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/js/media-audiovideo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/js/plupload/moxie.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/js/plupload/moxie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/js/plupload/moxie.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/js/plupload/moxie.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/js/tinymce/plugins/media/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/js/tinymce/plugins/media/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/js/tinymce/plugins/paste/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/js/tinymce/plugins/paste/plugin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/js/tinymce/plugins/wordpress/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/js/tinymce/plugins/wordpress/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/js/tinymce/plugins/wordpress/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/js/tinymce/plugins/wordpress/plugin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/js/tinymce/plugins/wpgallery/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/js/tinymce/plugins/wpgallery/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/js/tinymce/plugins/wpgallery/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/js/tinymce/plugins/wpgallery/plugin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/js/tinymce/tiny_mce_popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/js/tinymce/tiny_mce_popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/js/tinymce/tinymce.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/js/tinymce/tinymce.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/js/tinymce/wp-tinymce.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/js/tinymce/wp-tinymce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/js/twemoji.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/js/twemoji.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/js/twemoji.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/js/twemoji.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/pluggable.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/pluggable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/post-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/post-template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/sodium_compat/autoload-php7.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/sodium_compat/autoload-php7.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/theme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/widgets/class-wp-widget-media-image.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/widgets/class-wp-widget-media-image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/widgets/class-wp-widget-rss.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/widgets/class-wp-widget-rss.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp/wp-includes/widgets/class-wp-widget-text.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp/wp-includes/widgets/class-wp-widget-text.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +350,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="2AzUKEg0giqVD5nb05IKILbeLfr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -51,26 +363,27 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/components" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="C:\OpenServer\domains\ingustos\src\img" />
+      <recent name="C:\OpenServer\domains\ingustos\favicon" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OpenServer\domains\ingustos\dist\src" />
       <recent name="$PROJECT_DIR$/layout/router" />
       <recent name="$PROJECT_DIR$/layout/src/img" />
       <recent name="$PROJECT_DIR$/layout/src" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\ingustos\src\img" />
-      <recent name="C:\OpenServer\domains\ingustos\favicon" />
-      <recent name="C:\OpenServer\domains\ingustos\src\img\icons" />
-      <recent name="C:\OpenServer\domains\ingustos\src\scss" />
-      <recent name="C:\OpenServer\domains\ingustos\dist\src\fonts" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -89,6 +402,7 @@
       <workItem from="1657917142523" duration="206000" />
       <workItem from="1657917886903" duration="89053000" />
       <workItem from="1659383215004" duration="439000" />
+      <workItem from="1660000294255" duration="39000" />
     </task>
     <servers />
   </component>
@@ -107,6 +421,12 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/app" />
+      <path value="$PROJECT_DIR$/recipes" />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
     <state x="632" y="263" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1658014044546">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -117,9 +437,22 @@
       <screen x="0" y="25" width="1440" height="787" />
     </state>
     <state x="469" y="277" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.25.1440.787@0.25.1440.787" timestamp="1656538391162" />
-    <state x="323" y="156" key="Vcs.Push.Dialog.v2" timestamp="1658357552688">
-      <screen x="0" y="25" width="1440" height="791" />
+    <state width="215" height="413" key="Git.Branch.Popup" timestamp="1659999816541">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="215" height="413" key="Git.Branch.Popup/0.0.1440.900@0.0.1440.900" timestamp="1659999816541" />
+    <state x="144" y="76" key="MergeDialog" timestamp="1659994020177">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="144" y="76" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1659994020177" />
+    <state x="229" y="86" key="SettingsEditor" timestamp="1660000312611">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1660000312611" />
+    <state x="323" y="149" key="Vcs.Push.Dialog.v2" timestamp="1659389976922">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="323" y="149" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1659389976922" />
     <state x="431" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1657989464496" />
     <state x="323" y="155" key="Vcs.Push.Dialog.v2/0.25.1440.787@0.25.1440.787" timestamp="1657753316958" />
     <state x="323" y="156" key="Vcs.Push.Dialog.v2/0.25.1440.791@0.25.1440.791" timestamp="1658357552688" />
@@ -131,6 +464,14 @@
     <state x="507" y="222" width="862" height="548" key="find.popup/0.25.1440.787@0.25.1440.787" timestamp="1657653635124" />
     <state x="507" y="222" width="862" height="549" key="find.popup/0.25.1440.788@0.25.1440.788" timestamp="1658346221853" />
     <state x="507" y="223" width="862" height="551" key="find.popup/0.25.1440.791@0.25.1440.791" timestamp="1657745332158" />
+    <state x="480" y="167" key="git4idea.branch.GitSmartOperationDialog" timestamp="1659993988169">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="480" y="167" key="git4idea.branch.GitSmartOperationDialog/0.0.1440.900@0.0.1440.900" timestamp="1659993988169" />
+    <state x="527" y="323" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1660000284244">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="527" y="323" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1440.900@0.0.1440.900" timestamp="1660000284244" />
     <state x="513" y="215" key="run.anything.popup" timestamp="1658105379192">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

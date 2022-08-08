@@ -604,7 +604,7 @@ class Jetpack_Comic {
 					? sanitize_file_name( wp_unslash( $_FILES['image_0']['name'] ) )
 					: '';
 				$post_content = sprintf(
-					'<a href="%1$s"><img src="%1$s?w=%2$d" alt="%3$s" class="size-full wp-image alignnone" id="%4$s" data-filename="%3$s"/></a>',
+					'<a href="%1$s"><img assets="%1$s?w=%2$d" alt="%3$s" class="size-full wp-image alignnone" id="%4$s" data-filename="%3$s"/></a>',
 					esc_url( $image_src ),
 					esc_attr( $image_width ),
 					esc_attr( $image_name ),

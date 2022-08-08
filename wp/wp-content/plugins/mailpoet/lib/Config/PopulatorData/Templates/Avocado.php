@@ -39,7 +39,7 @@ class Avocado {
           'orientation' => 'vertical',
           'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
           'styles' =>
@@ -57,7 +57,7 @@ class Avocado {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -75,7 +75,7 @@ class Avocado {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -103,7 +103,7 @@ class Avocado {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Avocado-Logo-2.png',
+                                  'assets' => $this->template_image_url . '/Avocado-Logo-2.png',
                                   'alt' => 'Avocado-Logo-2',
                                   'fullWidth' => false,
                                   'width' => '212px',
@@ -124,7 +124,7 @@ class Avocado {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -163,7 +163,7 @@ class Avocado {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -181,7 +181,7 @@ class Avocado {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -216,7 +216,7 @@ class Avocado {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Avocado-Header-1.jpg',
+                                  'assets' => $this->template_image_url . '/Avocado-Header-1.jpg',
                                   'alt' => 'Avocado-Header-1',
                                   'fullWidth' => true,
                                   'width' => '1280px',
@@ -239,7 +239,7 @@ class Avocado {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -257,7 +257,7 @@ class Avocado {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -273,7 +273,7 @@ class Avocado {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Avocado-Recipe.jpg',
+                                  'assets' => $this->template_image_url . '/Avocado-Recipe.jpg',
                                   'alt' => 'Avocado-Recipe',
                                   'fullWidth' => true,
                                   'width' => '600px',
@@ -294,7 +294,7 @@ class Avocado {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -358,7 +358,7 @@ class Avocado {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -376,7 +376,7 @@ class Avocado {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -404,7 +404,7 @@ class Avocado {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -422,7 +422,7 @@ class Avocado {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -456,7 +456,7 @@ class Avocado {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Avocado-Coupon.jpg',
+                                  'assets' => $this->template_image_url . '/Avocado-Coupon.jpg',
                                   'alt' => 'Avocado-Coupon',
                                   'fullWidth' => true,
                                   'width' => '1280px',
@@ -479,7 +479,7 @@ class Avocado {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -497,7 +497,7 @@ class Avocado {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -560,7 +560,7 @@ class Avocado {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -578,7 +578,7 @@ class Avocado {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>

@@ -163,7 +163,7 @@ function soundcloud_shortcode( $atts, $content = null ) {
 	);
 
 	return sprintf(
-		'<iframe width="%1$s" height="%2$d" scrolling="no" frameborder="no" src="%3$s"></iframe>',
+		'<iframe width="%1$s" height="%2$d" scrolling="no" frameborder="no" assets="%3$s"></iframe>',
 		esc_attr( $width ),
 		esc_attr( $height ),
 		$url
@@ -213,8 +213,8 @@ function jetpack_soundcloud_embed_reversal( $content ) {
 
 	$regexes = array();
 
-	$regexes[] = '#<iframe[^>]+?src="((?:https?:)?//w\.soundcloud\.com/player/[^"\']++)"[^>]*+>\s*?</iframe>#i';
-	$regexes[] = '#&lt;iframe(?:[^&]|&(?!gt;))+?src="((?:https?:)?//w\.soundcloud\.com/player/[^"\']++)"(?:[^&]|&(?!gt;))*+&gt;\s*?&lt;/iframe&gt;#i';
+	$regexes[] = '#<iframe[^>]+?assets="((?:https?:)?//w\.soundcloud\.com/player/[^"\']++)"[^>]*+>\s*?</iframe>#i';
+	$regexes[] = '#&lt;iframe(?:[^&]|&(?!gt;))+?assets="((?:https?:)?//w\.soundcloud\.com/player/[^"\']++)"(?:[^&]|&(?!gt;))*+&gt;\s*?&lt;/iframe&gt;#i';
 
 	foreach ( $regexes as $regex ) {
 		if ( ! preg_match_all( $regex, $content, $matches, PREG_SET_ORDER ) ) {

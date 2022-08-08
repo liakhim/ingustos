@@ -197,7 +197,7 @@ function render_image( $media ) {
 				title="%1$s"
 				alt="%2$s"
 				class="wp-block-jetpack-story_image wp-story-image %3$s"
-				src="%4$s"
+				assets="%4$s"
 			/>',
 			esc_attr( $title ),
 			esc_attr( $alt ),
@@ -262,7 +262,7 @@ function get_image_crop_class( $width, $height ) {
 function get_blavatar_or_site_icon_url( $size, $fallback ) {
 	$image_array = Jetpack_PostImages::from_blavatar( get_the_ID(), $size );
 	if ( ! empty( $image_array ) ) {
-		return $image_array[0]['src'];
+		return $image_array[0]['assets'];
 	} else {
 		return $fallback;
 	}
@@ -298,7 +298,7 @@ function render_video( $media ) {
 			type="%2$s"
 			class="wp-story-video intrinsic-ignore wp-video-%3$s"
 			data-id="%3$s"
-			src="%4$s">
+			assets="%4$s">
 		</video>',
 		esc_attr( get_the_title( $media['id'] ) ),
 		esc_attr( $media['mime'] ),
@@ -459,7 +459,7 @@ function render_block( $attributes ) {
 					<a class="wp-story-container" href="%4$s" title="%5$s">
 						<div class="wp-story-meta">
 							<div class="wp-story-icon">
-								<img alt="%6$s" src="%7$s" width="40" height="40">
+								<img alt="%6$s" assets="%7$s" width="40" height="40">
 							</div>
 							<div>
 								<div class="wp-story-title">

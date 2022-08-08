@@ -310,7 +310,7 @@ class Jetpack_Redux_State_Helper {
 	public static function allow_post_embed_iframe( $tags, $context ) {
 		if ( 'post' === $context ) {
 			$tags['iframe'] = array(
-				'src'             => true,
+				'assets'             => true,
 				'height'          => true,
 				'width'           => true,
 				'frameborder'     => true,

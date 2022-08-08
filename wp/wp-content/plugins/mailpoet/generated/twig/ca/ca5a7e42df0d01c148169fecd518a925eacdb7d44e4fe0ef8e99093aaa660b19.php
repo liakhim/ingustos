@@ -64,7 +64,7 @@ class __TwigTemplate_2bbd0548d5462e9781dcc2649091521a405c5b3b1847f123d5fb51dce2e
             </tr>
             <tr>
               <td class=\"mailpoet_image mailpoet_padded_vertical mailpoet_padded_side\" align=\"center\" valign=\"top\" style=\"border-collapse:collapse;padding-bottom:20px;padding-left:20px;padding-right:20px\">
-                <img src=\"";
+                <img assets=\"";
         // line 18
         echo $this->extensions['MailPoet\Twig\Assets']->generateCdnUrl("logo-orange-400x122.png");
         echo "\" width=\"80\" alt=\"new_logo_orange\" style=\"height:auto;max-width:100%;-ms-interpolation-mode:bicubic;border:0;display:block;outline:none;text-align:center\" />

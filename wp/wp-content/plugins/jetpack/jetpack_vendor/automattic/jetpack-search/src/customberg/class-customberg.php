@@ -106,7 +106,7 @@ class Customberg {
 		Assets::register_script(
 			'jp-search-configure',
 			'build/customberg/jp-search-configure.js',
-			$package_base_path . '/src', // A full path to a file or a directory inside a plugin.
+			$package_base_path . '/assets', // A full path to a file or a directory inside a plugin.
 			array(
 				'css_dependencies' => array(
 					'wp-components',

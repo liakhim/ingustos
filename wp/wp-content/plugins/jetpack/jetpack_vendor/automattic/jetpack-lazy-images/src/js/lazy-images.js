@@ -147,7 +147,7 @@ const jetpackLazyImagesModule = function () {
 		// Remove lazy attributes.
 		image.removeAttribute( 'data-lazy-srcset' );
 		image.removeAttribute( 'data-lazy-sizes' );
-		image.removeAttribute( 'data-lazy-src' );
+		image.removeAttribute( 'data-lazy-assets' );
 
 		// Add the attributes we want.
 		image.classList.add( 'jetpack-lazy-image--handled' );

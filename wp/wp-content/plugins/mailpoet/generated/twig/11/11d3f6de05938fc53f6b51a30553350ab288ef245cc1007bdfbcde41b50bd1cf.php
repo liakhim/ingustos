@@ -1705,7 +1705,7 @@ class __TwigTemplate_aa06caf4713b6d5ac2d6909b4a0a21f60afeea73e802e676faab4d7dcfd
         },
         container: {
           image: {
-            src: null,
+            assets: null,
             display: 'scale',
           },
           styles: {
@@ -1752,7 +1752,7 @@ class __TwigTemplate_aa06caf4713b6d5ac2d6909b4a0a21f60afeea73e802e676faab4d7dcfd
         },
         image: {
           link: '',
-          src: '',
+          assets: '',
           alt: '";
         // line 1356
         echo \MailPoetVendor\twig_escape_filter($this->env, \MailPoetVendor\twig_escape_filter($this->env, $this->extensions['MailPoet\Twig\I18n']->translate("An image of..."), "js"), "html", null, true);

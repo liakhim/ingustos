@@ -207,7 +207,7 @@ class Jetpack_Comment_Likes {
 		$wrapper = sprintf( 'like-comment-wrapper-%1$d-%2$d-%3$s', $this->blog_id, $comment_id, $uniqid );
 
 		$html  = '';
-		$html .= "<div class='jetpack-comment-likes-widget-wrapper jetpack-likes-widget-unloaded' id='$wrapper' data-src='$src' data-name='$name'>";
+		$html .= "<div class='jetpack-comment-likes-widget-wrapper jetpack-likes-widget-unloaded' id='$wrapper' data-assets='$src' data-name='$name'>";
 		$html .= "<div class='likes-widget-placeholder comment-likes-widget-placeholder comment-likes'><span class='loading'>" . esc_html__( 'Loading...', 'jetpack' ) . '</span></div>';
 		$html .= "<div class='comment-likes-widget jetpack-likes-widget comment-likes'><span class='comment-like-feedback'></span>";
 		$html .= "<span class='sd-text-color'></span><a class='sd-link-color'></a>";

@@ -584,14 +584,14 @@ class Jetpack_About_Page extends Jetpack_Admin_Page {
 		);
 		$output = '';
 		foreach ( $hashes as $hash ) {
-			$output .= '<li><img src="' . esc_url( $hash ) . '?s=150"></li>' . "\n";
+			$output .= '<li><img assets="' . esc_url( $hash ) . '?s=150"></li>' . "\n";
 		}
 		echo wp_kses(
 			$output,
 			array(
 				'li'  => true,
 				'img' => array(
-					'src' => true,
+					'assets' => true,
 				),
 			)
 		);

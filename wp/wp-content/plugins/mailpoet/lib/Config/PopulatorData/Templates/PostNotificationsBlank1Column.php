@@ -113,7 +113,7 @@ class PostNotificationsBlank1Column {
                   [
                     "type" => "image",
                     "link" => "",
-                    "src" => $this->template_image_url . "/fake-logo.png",
+                    "assets" => $this->template_image_url . "/fake-logo.png",
                     "alt" => "fake-logo",
                     "fullWidth" => false,
                     "width" => "598px",

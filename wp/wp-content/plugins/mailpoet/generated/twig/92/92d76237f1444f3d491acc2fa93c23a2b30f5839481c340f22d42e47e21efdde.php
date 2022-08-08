@@ -124,7 +124,7 @@ class __TwigTemplate_53b89d2127c3e3553aef87a0684de61c60938709506258cd8a7cd55ed96
         alt=\"close\"
         width=20
         height=20
-        src='";
+        assets='";
             // line 36
             echo $this->extensions['MailPoet\Twig\Assets']->generateImageUrl((("form_close_icon/" . ($context["close_button_icon"] ?? null)) . ".svg"));
             echo "'

@@ -201,7 +201,7 @@ class Jetpack_RelatedPosts {
 			$this->action_frontend_init_ajax( $excludes );
 		} else {
 			if ( isset( $_GET['relatedposts_hit'], $_GET['relatedposts_origin'], $_GET['relatedposts_position'] ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- checking if fields are set to setup tracking, nothing is changing on the site.
-				$this->previous_post_id = (int) $_GET['relatedposts_origin']; // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- fetching a previous post ID for tracking, nothing is changing on the site. 
+				$this->previous_post_id = (int) $_GET['relatedposts_origin']; // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- fetching a previous post ID for tracking, nothing is changing on the site.
 				$this->log_click( $this->previous_post_id, get_the_ID(), sanitize_text_field( wp_unslash( $_GET['relatedposts_position'] ) ) ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- logging the click for tracking, nothing is changing on the site.
 			}
 
@@ -371,12 +371,12 @@ EOT;
 			( ! empty( $related_post['rel'] ) ? 'rel="' . esc_attr( $related_post['rel'] ) . '"' : '' )
 		);
 
-		if ( ! empty( $block_attributes['show_thumbnails'] ) && ! empty( $related_post['img']['src'] ) ) {
+		if ( ! empty( $block_attributes['show_thumbnails'] ) && ! empty( $related_post['img']['assets'] ) ) {
 			$img_link = sprintf(
-				'<li class="jp-related-posts-i2__post-img-link"><a href="%1$s" %2$s><img src="%3$s" width="%4$s" height="%5$s" alt="%6$s" loading="lazy" /></a></li>',
+				'<li class="jp-related-posts-i2__post-img-link"><a href="%1$s" %2$s><img assets="%3$s" width="%4$s" height="%5$s" alt="%6$s" loading="lazy" /></a></li>',
 				esc_url( $related_post['url'] ),
 				( ! empty( $related_post['rel'] ) ? 'rel="' . esc_attr( $related_post['rel'] ) . '"' : '' ),
-				esc_url( $related_post['img']['src'] ),
+				esc_url( $related_post['img']['assets'] ),
 				esc_attr( $related_post['img']['width'] ),
 				esc_attr( $related_post['img']['height'] ),
 				esc_attr( $related_post['img']['alt_text'] )
@@ -754,7 +754,7 @@ EOT;
 <div class="jp-relatedposts-items jp-relatedposts-items-visual">
 	<div class="jp-relatedposts-post jp-relatedposts-post0 jp-relatedposts-post-thumbs" data-post-id="0" data-post-format="image">
 		<a $href_params>
-			<img class="jp-relatedposts-post-img" src="https://jetpackme.files.wordpress.com/2019/03/cat-blog.png" width="350" alt="Big iPhone/iPad Update Now Available" scale="0">
+			<img class="jp-relatedposts-post-img" assets="https://jetpackme.files.wordpress.com/2019/03/cat-blog.png" width="350" alt="Big iPhone/iPad Update Now Available" scale="0">
 		</a>
 		<h4 class="jp-relatedposts-post-title">
 			<a $href_params>Big iPhone/iPad Update Now Available</a>
@@ -764,7 +764,7 @@ EOT;
 	</div>
 	<div class="jp-relatedposts-post jp-relatedposts-post1 jp-relatedposts-post-thumbs" data-post-id="0" data-post-format="image">
 		<a $href_params>
-			<img class="jp-relatedposts-post-img" src="https://jetpackme.files.wordpress.com/2019/03/devices.jpg" width="350" alt="The WordPress for Android App Gets a Big Facelift" scale="0">
+			<img class="jp-relatedposts-post-img" assets="https://jetpackme.files.wordpress.com/2019/03/devices.jpg" width="350" alt="The WordPress for Android App Gets a Big Facelift" scale="0">
 		</a>
 		<h4 class="jp-relatedposts-post-title">
 			<a $href_params>The WordPress for Android App Gets a Big Facelift</a>
@@ -774,7 +774,7 @@ EOT;
 	</div>
 	<div class="jp-relatedposts-post jp-relatedposts-post2 jp-relatedposts-post-thumbs" data-post-id="0" data-post-format="image">
 		<a $href_params>
-			<img class="jp-relatedposts-post-img" src="https://jetpackme.files.wordpress.com/2019/03/mobile-wedding.jpg" width="350" alt="Upgrade Focus: VideoPress For Weddings" scale="0">
+			<img class="jp-relatedposts-post-img" assets="https://jetpackme.files.wordpress.com/2019/03/mobile-wedding.jpg" width="350" alt="Upgrade Focus: VideoPress For Weddings" scale="0">
 		</a>
 		<h4 class="jp-relatedposts-post-title">
 			<a $href_params>Upgrade Focus: VideoPress For Weddings</a>
@@ -1155,7 +1155,7 @@ EOT;
 					'rel'      => 'nofollow',
 					'context'  => esc_html__( 'In "Mobile"', 'jetpack' ),
 					'img'      => array(
-						'src'    => 'https://jetpackme.files.wordpress.com/2019/03/cat-blog.png',
+						'assets'    => 'https://jetpackme.files.wordpress.com/2019/03/cat-blog.png',
 						'width'  => 350,
 						'height' => 200,
 					),
@@ -1175,7 +1175,7 @@ EOT;
 					'rel'      => 'nofollow',
 					'context'  => esc_html__( 'In "Mobile"', 'jetpack' ),
 					'img'      => array(
-						'src'    => 'https://jetpackme.files.wordpress.com/2019/03/devices.jpg',
+						'assets'    => 'https://jetpackme.files.wordpress.com/2019/03/devices.jpg',
 						'width'  => 350,
 						'height' => 200,
 					),
@@ -1195,7 +1195,7 @@ EOT;
 					'rel'      => 'nofollow',
 					'context'  => esc_html__( 'In "Mobile"', 'jetpack' ),
 					'img'      => array(
-						'src'    => 'https://jetpackme.files.wordpress.com/2019/03/mobile-wedding.jpg',
+						'assets'    => 'https://jetpackme.files.wordpress.com/2019/03/mobile-wedding.jpg',
 						'width'  => 350,
 						'height' => 200,
 					),
@@ -1409,7 +1409,7 @@ EOT;
 	protected function generate_related_post_image_params( $post_id ) {
 		$image_params = array(
 			'alt_text' => '',
-			'src'      => '',
+			'assets'      => '',
 			'width'    => 0,
 			'height'   => 0,
 		);
@@ -1446,7 +1446,7 @@ EOT;
 			);
 
 			if ( is_array( $post_image ) ) {
-				$img_url = $post_image['src'];
+				$img_url = $post_image['assets'];
 			} elseif ( class_exists( 'Jetpack_Media_Summary' ) ) {
 				$media = Jetpack_Media_Summary::get( $post_id );
 
@@ -1463,7 +1463,7 @@ EOT;
 				}
 				$image_params['width']  = $thumbnail_size['width'];
 				$image_params['height'] = $thumbnail_size['height'];
-				$image_params['src']    = Jetpack_PostImages::fit_image_url(
+				$image_params['assets']    = Jetpack_PostImages::fit_image_url(
 					$img_url,
 					$thumbnail_size['width'],
 					$thumbnail_size['height']

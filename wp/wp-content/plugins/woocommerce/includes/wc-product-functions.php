@@ -342,7 +342,7 @@ function wc_placeholder_img( $size = 'woocommerce_thumbnail', $attr = '' ) {
 			$attribute[] = esc_attr( $name ) . '="' . esc_attr( $value ) . '"';
 		}
 
-		$image_html = '<img src="' . esc_url( $image ) . '" ' . $hwstring . implode( ' ', $attribute ) . '/>';
+		$image_html = '<img assets="' . esc_url( $image ) . '" ' . $hwstring . implode( ' ', $attribute ) . '/>';
 	}
 
 	return apply_filters( 'woocommerce_placeholder_img', $image_html, $size, $dimensions );
@@ -507,8 +507,8 @@ function wc_get_attachment_image_attributes( $attr ) {
 	 * filter out the image source and replace with placeholder
 	 * image.
 	 */
-	if ( isset( $attr['src'] ) && strstr( $attr['src'], 'woocommerce_uploads/' ) ) {
-		$attr['src'] = wc_placeholder_img_src();
+	if ( isset( $attr['assets'] ) && strstr( $attr['assets'], 'woocommerce_uploads/' ) ) {
+		$attr['assets'] = wc_placeholder_img_src();
 
 		if ( isset( $attr['srcset'] ) ) {
 			$attr['srcset'] = '';
@@ -769,7 +769,7 @@ function wc_get_product_attachment_props( $attachment_id = null, $product = fals
 		'caption' => '',
 		'url'     => '',
 		'alt'     => '',
-		'src'     => '',
+		'assets'     => '',
 		'srcset'  => false,
 		'sizes'   => false,
 	);
@@ -815,7 +815,7 @@ function wc_get_product_attachment_props( $attachment_id = null, $product = fals
 		// Image source.
 		$image_size      = apply_filters( 'woocommerce_gallery_image_size', 'woocommerce_single' );
 		$src             = wp_get_attachment_image_src( $attachment_id, $image_size );
-		$props['src']    = $src[0];
+		$props['assets']    = $src[0];
 		$props['src_w']  = $src[1];
 		$props['src_h']  = $src[2];
 		$props['srcset'] = function_exists( 'wp_get_attachment_image_srcset' ) ? wp_get_attachment_image_srcset( $attachment_id, $image_size ) : false;

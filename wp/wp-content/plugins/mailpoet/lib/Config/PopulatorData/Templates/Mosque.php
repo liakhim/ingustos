@@ -40,7 +40,7 @@ class Mosque {
         'orientation' => 'vertical',
         'image' =>
          [
-          'src' => null,
+          'assets' => null,
           'display' => 'scale',
          ],
         'styles' =>
@@ -59,7 +59,7 @@ class Mosque {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -78,7 +78,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -113,7 +113,7 @@ class Mosque {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -132,7 +132,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -179,7 +179,7 @@ class Mosque {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => $this->template_image_url . '/Mosque-Header.jpg',
+              'assets' => $this->template_image_url . '/Mosque-Header.jpg',
               'display' => 'scale',
              ],
             'styles' =>
@@ -198,7 +198,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -226,7 +226,7 @@ class Mosque {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Mosque-Logo.png',
+                    'assets' => $this->template_image_url . '/Mosque-Logo.png',
                     'alt' => 'Mosque-Logo',
                     'fullWidth' => false,
                     'width' => '182px',
@@ -269,7 +269,7 @@ class Mosque {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -288,7 +288,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -328,7 +328,7 @@ class Mosque {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -347,7 +347,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -363,7 +363,7 @@ class Mosque {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Mosque-Images-1.jpg',
+                    'assets' => $this->template_image_url . '/Mosque-Images-1.jpg',
                     'alt' => 'Mosque-Images-1',
                     'fullWidth' => false,
                     'width' => '800px',
@@ -385,7 +385,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -416,7 +416,7 @@ class Mosque {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -435,7 +435,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -451,7 +451,7 @@ class Mosque {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Mosque-Images-2.jpg',
+                    'assets' => $this->template_image_url . '/Mosque-Images-2.jpg',
                     'alt' => 'Mosque-Images-2',
                     'fullWidth' => false,
                     'width' => '800px',
@@ -473,7 +473,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -504,7 +504,7 @@ class Mosque {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -523,7 +523,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -539,7 +539,7 @@ class Mosque {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Mosque-Images-3.jpg',
+                    'assets' => $this->template_image_url . '/Mosque-Images-3.jpg',
                     'alt' => 'Mosque-Images-3',
                     'fullWidth' => false,
                     'width' => '800px',
@@ -561,7 +561,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -592,7 +592,7 @@ class Mosque {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -611,7 +611,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -646,7 +646,7 @@ class Mosque {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -665,7 +665,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -703,7 +703,7 @@ class Mosque {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -722,7 +722,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -762,7 +762,7 @@ class Mosque {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -781,7 +781,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -831,7 +831,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -881,7 +881,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -933,7 +933,7 @@ class Mosque {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -952,7 +952,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -987,7 +987,7 @@ class Mosque {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -1006,7 +1006,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -1056,7 +1056,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -1106,7 +1106,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -1158,7 +1158,7 @@ class Mosque {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -1177,7 +1177,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -1193,7 +1193,7 @@ class Mosque {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/bg-2.jpg',
+                    'assets' => $this->template_image_url . '/bg-2.jpg',
                     'alt' => 'bg-2',
                     'fullWidth' => false,
                     'width' => '1200px',
@@ -1217,7 +1217,7 @@ class Mosque {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -1236,7 +1236,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -1264,7 +1264,7 @@ class Mosque {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/Mosque-Logo.png',
+                    'assets' => $this->template_image_url . '/Mosque-Logo.png',
                     'alt' => 'Mosque-Logo',
                     'fullWidth' => false,
                     'width' => '144px',
@@ -1288,7 +1288,7 @@ class Mosque {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -1307,7 +1307,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -1385,7 +1385,7 @@ class Mosque {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>

@@ -11,11 +11,11 @@ use MailPoet\WP\Functions as WPFunctions;
 
 class Image {
   public function render($element, $columnBaseWidth) {
-    if (empty($element['src'])) {
+    if (empty($element['assets'])) {
       return '';
     }
-    if (substr($element['src'], 0, 1) == '/' && substr($element['src'], 1, 1) != '/') {
-      $element['src'] = WPFunctions::get()->getOption('siteurl') . $element['src'];
+    if (substr($element['assets'], 0, 1) == '/' && substr($element['assets'], 1, 1) != '/') {
+      $element['assets'] = WPFunctions::get()->getOption('siteurl') . $element['assets'];
     }
 
     $element['width'] = str_replace('px', '', $element['width']);
@@ -35,7 +35,7 @@ class Image {
     }
 
     $imageTemplate = '
-      <img src="' . EHelper::escapeHtmlLinkAttr($element['src']) . '" width="' . EHelper::escapeHtmlAttr($element['width']) . '" alt="' . EHelper::escapeHtmlAttr($element['alt']) . '"' . $style . '/>
+      <img assets="' . EHelper::escapeHtmlLinkAttr($element['assets']) . '" width="' . EHelper::escapeHtmlAttr($element['width']) . '" alt="' . EHelper::escapeHtmlAttr($element['alt']) . '"' . $style . '/>
       ';
     if (!empty($element['link'])) {
       $imageTemplate = '<a href="' . EHelper::escapeHtmlLinkAttr($element['link']) . '">' . trim($imageTemplate) . '</a>';

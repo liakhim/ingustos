@@ -235,7 +235,7 @@ function shortcode_handler_bandcamp( $atts ) {
 		$extra_attrs = '';
 	}
 
-	$iframe = '<iframe width="%s" height="%s" style="position: relative; display: block; width: %s; height: %s;" src="%s" allowtransparency="true" frameborder="0"%s></iframe>';
+	$iframe = '<iframe width="%s" height="%s" style="position: relative; display: block; width: %s; height: %s;" assets="%s" allowtransparency="true" frameborder="0"%s></iframe>';
 	$iframe = sprintf( $iframe, esc_attr( $width ), esc_attr( $height ), esc_attr( $csswidth ), esc_attr( $cssheight ), esc_url( $url ), $extra_attrs );
 
 	return $iframe;

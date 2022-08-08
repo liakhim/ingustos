@@ -446,7 +446,7 @@ abstract class WC_REST_Controller extends WP_REST_Controller {
 			array_merge(
 				array(
 					'iframe' => array(
-						'src'   => true,
+						'assets'   => true,
 						'style' => true,
 						'id'    => true,
 						'class' => true,

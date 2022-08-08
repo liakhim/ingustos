@@ -283,7 +283,7 @@ class Jetpack_Gallery_Widget extends WP_Widget {
 			$caption = wptexturize( wp_strip_all_tags( $attachment->post_excerpt ) );
 
 			$gallery[] = (object) array(
-				'src'     => (string) esc_url_raw( $attachment_image_src ),
+				'assets'     => (string) esc_url_raw( $attachment_image_src ),
 				'id'      => (string) $attachment->ID,
 				'caption' => (string) $caption,
 			);

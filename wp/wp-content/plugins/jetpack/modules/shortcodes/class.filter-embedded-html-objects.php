@@ -240,8 +240,8 @@ class Filter_Embedded_HTML_Objects {
 		}
 		$html  = preg_replace( '%&#0*58;//%', '://', $matches[0] );
 		$attrs = self::get_attrs( $html );
-		if ( isset( $attrs['src'] ) ) {
-			$src = $attrs['src'];
+		if ( isset( $attrs['assets'] ) ) {
+			$src = $attrs['assets'];
 		} elseif ( isset( $attrs['movie'] ) ) {
 			$src = $attrs['movie'];
 		} else {
@@ -305,7 +305,7 @@ class Filter_Embedded_HTML_Objects {
 		// but return the original content to give others a chance too.
 		self::$failed_embeds[] = array(
 			'match' => $orig_html,
-			'src'   => esc_url( $src ),
+			'assets'   => esc_url( $src ),
 		);
 
 		return $orig_html;
@@ -324,7 +324,7 @@ class Filter_Embedded_HTML_Objects {
 		}
 
 		foreach ( self::$failed_embeds as $entry ) {
-			$html = sprintf( '<a href="%s">%s</a>', esc_url( $entry['src'] ), esc_url( $entry['src'] ) );
+			$html = sprintf( '<a href="%s">%s</a>', esc_url( $entry['assets'] ), esc_url( $entry['assets'] ) );
 			// Check if the string doesn't contain iframe, before replace.
 			if ( ! preg_match( '/<iframe /', $string ) ) {
 				$string = str_replace( $entry['match'], $html, $string );

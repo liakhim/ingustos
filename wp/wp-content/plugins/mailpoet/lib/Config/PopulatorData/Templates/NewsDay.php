@@ -35,7 +35,7 @@ class NewsDay {
           'orientation' => 'vertical',
           'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
           'styles' =>
@@ -53,7 +53,7 @@ class NewsDay {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -71,7 +71,7 @@ class NewsDay {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -99,7 +99,7 @@ class NewsDay {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/News-Outlet-Title-2.jpg',
+                                  'assets' => $this->template_image_url . '/News-Outlet-Title-2.jpg',
                                   'alt' => 'News-Outlet-Title-2',
                                   'fullWidth' => true,
                                   'width' => '1280px',
@@ -122,7 +122,7 @@ class NewsDay {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -140,7 +140,7 @@ class NewsDay {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -174,7 +174,7 @@ class NewsDay {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -192,7 +192,7 @@ class NewsDay {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -218,7 +218,7 @@ class NewsDay {
                                  [
                                   'type' => 'image',
                                   'link' => 'http://mailpoet.info/plasma-jet-engines-that-could-take-you-from-the-ground-to-space/',
-                                  'src' => $this->template_image_url . '/plasma-stingray111-800x533.jpg',
+                                  'assets' => $this->template_image_url . '/plasma-stingray111-800x533.jpg',
                                   'alt' => 'Plasma jet engines that could take you from the ground to space',
                                   'fullWidth' => false,
                                   'width' => '413.28125px',
@@ -290,7 +290,7 @@ class NewsDay {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -308,7 +308,7 @@ class NewsDay {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -379,7 +379,7 @@ class NewsDay {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -452,7 +452,7 @@ class NewsDay {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -470,7 +470,7 @@ class NewsDay {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -528,7 +528,7 @@ class NewsDay {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -546,7 +546,7 @@ class NewsDay {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -592,7 +592,7 @@ class NewsDay {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -696,7 +696,7 @@ class NewsDay {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -714,7 +714,7 @@ class NewsDay {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>

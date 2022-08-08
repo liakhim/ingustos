@@ -441,7 +441,7 @@ class WC_API_Products extends WC_API_Resource {
 				'id'         => (int) $attachment_id,
 				'created_at' => $this->server->format_datetime( $attachment_post->post_date_gmt ),
 				'updated_at' => $this->server->format_datetime( $attachment_post->post_modified_gmt ),
-				'src'        => current( $attachment ),
+				'assets'        => current( $attachment ),
 				'title'      => get_the_title( $attachment_id ),
 				'alt'        => get_post_meta( $attachment_id, '_wp_attachment_image_alt', true ),
 				'position'   => $position,
@@ -455,7 +455,7 @@ class WC_API_Products extends WC_API_Resource {
 				'id'         => 0,
 				'created_at' => $this->server->format_datetime( time() ), // default to now
 				'updated_at' => $this->server->format_datetime( time() ),
-				'src'        => wc_placeholder_img_src(),
+				'assets'        => wc_placeholder_img_src(),
 				'title'      => __( 'Placeholder', 'woocommerce' ),
 				'alt'        => __( 'Placeholder', 'woocommerce' ),
 				'position'   => 0,

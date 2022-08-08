@@ -109,6 +109,6 @@ class GoogleAnalytics {
 		if ( did_action( 'woocommerce_gtag_snippet' ) ) {
 			return '';
 		}
-		return str_replace( '<script src', '<script async src', $tag );
+		return str_replace( '<script assets', '<script async assets', $tag );
 	}
 }

@@ -1602,7 +1602,7 @@ class WC_API_Products extends WC_API_Resource {
 				'id'         => (int) $attachment_id,
 				'created_at' => $this->server->format_datetime( $attachment_post->post_date_gmt ),
 				'updated_at' => $this->server->format_datetime( $attachment_post->post_modified_gmt ),
-				'src'        => current( $attachment ),
+				'assets'        => current( $attachment ),
 				'title'      => get_the_title( $attachment_id ),
 				'alt'        => get_post_meta( $attachment_id, '_wp_attachment_image_alt', true ),
 				'position'   => (int) $position,
@@ -1616,7 +1616,7 @@ class WC_API_Products extends WC_API_Resource {
 				'id'         => 0,
 				'created_at' => $this->server->format_datetime( time() ), // Default to now.
 				'updated_at' => $this->server->format_datetime( time() ),
-				'src'        => wc_placeholder_img_src(),
+				'assets'        => wc_placeholder_img_src(),
 				'title'      => __( 'Placeholder', 'woocommerce' ),
 				'alt'        => __( 'Placeholder', 'woocommerce' ),
 				'position'   => 0,
@@ -1645,8 +1645,8 @@ class WC_API_Products extends WC_API_Resource {
 				if ( isset( $image['position'] ) && 0 == $image['position'] ) {
 					$attachment_id = isset( $image['id'] ) ? absint( $image['id'] ) : 0;
 
-					if ( 0 === $attachment_id && isset( $image['src'] ) ) {
-						$upload = $this->upload_product_image( esc_url_raw( $image['src'] ) );
+					if ( 0 === $attachment_id && isset( $image['assets'] ) ) {
+						$upload = $this->upload_product_image( esc_url_raw( $image['assets'] ) );
 
 						if ( is_wp_error( $upload ) ) {
 							throw new WC_API_Exception( 'woocommerce_api_cannot_upload_product_image', $upload->get_error_message(), 400 );
@@ -1659,8 +1659,8 @@ class WC_API_Products extends WC_API_Resource {
 				} else {
 					$attachment_id = isset( $image['id'] ) ? absint( $image['id'] ) : 0;
 
-					if ( 0 === $attachment_id && isset( $image['src'] ) ) {
-						$upload = $this->upload_product_image( esc_url_raw( $image['src'] ) );
+					if ( 0 === $attachment_id && isset( $image['assets'] ) ) {
+						$upload = $this->upload_product_image( esc_url_raw( $image['assets'] ) );
 
 						if ( is_wp_error( $upload ) ) {
 							throw new WC_API_Exception( 'woocommerce_api_cannot_upload_product_image', $upload->get_error_message(), 400 );

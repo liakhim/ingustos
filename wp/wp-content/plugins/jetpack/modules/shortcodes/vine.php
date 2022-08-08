@@ -54,7 +54,7 @@ function vine_embed_video( $matches, $attr, $url, $rawattr ) {
 
 	$url       = 'https://vine.co/v/' . $matches[1] . '/embed/' . $type;
 	$vine_html = sprintf(
-		'<span class="embed-vine" style="display: block;"><iframe class="vine-embed" src="%1$s" width="%2$d" height="%3$d" frameborder="0"></iframe></span>',
+		'<span class="embed-vine" style="display: block;"><iframe class="vine-embed" assets="%1$s" width="%2$d" height="%3$d" frameborder="0"></iframe></span>',
 		esc_url( $url ),
 		(int) $vine_size,
 		(int) $vine_size

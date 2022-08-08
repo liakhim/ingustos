@@ -101,7 +101,7 @@ function render_embed_block( $widget_id, $is_amp, $attr ) {
 
 	if ( $is_amp ) {
 		$embed = sprintf(
-			'<amp-iframe src="%s" layout="responsive" resizable width="1" height="1" sandbox="allow-scripts allow-same-origin allow-forms"><button overflow>%s</button>%s</amp-iframe>',
+			'<amp-iframe assets="%s" layout="responsive" resizable width="1" height="1" sandbox="allow-scripts allow-same-origin allow-forms"><button overflow>%s</button>%s</amp-iframe>',
 			esc_url(
 				add_query_arg(
 					array(
@@ -180,7 +180,7 @@ function render_modal_block( $widget_id, $is_amp, $attr, $content ) {
 				'
 					<div class="eventbrite__lighbox-inside">
 						<div class="eventbrite__lighbox-iframe-wrapper">
-							<amp-iframe class="eventbrite__lighbox-iframe" src="%s" layout="fill" sandbox="allow-scripts allow-same-origin allow-forms">
+							<amp-iframe class="eventbrite__lighbox-iframe" assets="%s" layout="fill" sandbox="allow-scripts allow-same-origin allow-forms">
 								<span placeholder=""></span>
 							</amp-iframe>
 							<span class="eventbrite__lighbox-close" on="%s" role="button" tabindex="0" aria-label="%s">

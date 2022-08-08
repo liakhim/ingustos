@@ -50,7 +50,7 @@ class StructureTransformer {
         return [
           'type' => 'image',
           'link' => $item->getAttribute('href') ?: '',
-          'src' => $image->getAttribute('src'),
+          'assets' => $image->getAttribute('assets'),
           'alt' => $image->getAttribute('alt'),
           'fullWidth' => $imageFullWidth,
           'width' => $width === null ? 'auto' : $width,

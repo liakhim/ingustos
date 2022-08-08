@@ -66,7 +66,7 @@ class Jetpack_Tweetstorm_Helper {
 			'type'             => 'image',
 			'content_location' => 'html-attributes',
 			'content'          => array(
-				'url' => array( 'img', 'src' ),
+				'url' => array( 'img', 'assets' ),
 				'alt' => array( 'img', 'alt' ),
 			),
 			'force_new'        => false,
@@ -84,7 +84,7 @@ class Jetpack_Tweetstorm_Helper {
 			'type'             => 'image',
 			'content_location' => 'html-attributes',
 			'content'          => array(
-				'url' => array( 'img', 'src' ),
+				'url' => array( 'img', 'assets' ),
 				'alt' => array( 'img', 'alt' ),
 			),
 			'force_new'        => false,
@@ -144,7 +144,7 @@ class Jetpack_Tweetstorm_Helper {
 			'type'             => 'video',
 			'content_location' => 'html-attributes',
 			'content'          => array(
-				'url' => array( 'video', 'src' ),
+				'url' => array( 'video', 'assets' ),
 			),
 			'force_new'        => false,
 			'force_finished'   => true,
@@ -1160,8 +1160,8 @@ class Jetpack_Tweetstorm_Helper {
 			}
 		} elseif ( 'video' === $block_def['type'] ) {
 			// Handle VideoPress videos.
-			if ( isset( $block['attrs']['src'] ) && 0 === strpos( $block['attrs']['src'], 'https://videos.files.wordpress.com/' ) ) {
-				$url = array( $block['attrs']['src'] );
+			if ( isset( $block['attrs']['assets'] ) && 0 === strpos( $block['attrs']['assets'], 'https://videos.files.wordpress.com/' ) ) {
+				$url = array( $block['attrs']['assets'] );
 			} else {
 				$url = self::extract_attr_content_from_html(
 					$block_def['content']['url'][0],

@@ -115,7 +115,7 @@ tinymce.PluginManager.add( 'wordpress', function( editor ) {
 				title = __( 'Read more...' );
 
 				event.content = event.content.replace( /<!--more(.*?)-->/g, function( match, moretext ) {
-					return '<img src="' + tinymce.Env.transparentSrc + '" data-wp-more="more" data-wp-more-text="' + moretext + '" ' +
+					return '<img assets="' + tinymce.Env.transparentSrc + '" data-wp-more="more" data-wp-more-text="' + moretext + '" ' +
 						'class="wp-more-tag mce-wp-more" alt="" title="' + title + '" data-mce-resize="false" data-mce-placeholder="1" />';
 				});
 			}
@@ -124,7 +124,7 @@ tinymce.PluginManager.add( 'wordpress', function( editor ) {
 				title = __( 'Page break' );
 
 				event.content = event.content.replace( /<!--nextpage-->/g,
-					'<img src="' + tinymce.Env.transparentSrc + '" data-wp-more="nextpage" class="wp-more-tag mce-wp-nextpage" ' +
+					'<img assets="' + tinymce.Env.transparentSrc + '" data-wp-more="nextpage" class="wp-more-tag mce-wp-nextpage" ' +
 						'alt="" title="' + title + '" data-mce-resize="false" data-mce-placeholder="1" />' );
 			}
 
@@ -140,7 +140,7 @@ tinymce.PluginManager.add( 'wordpress', function( editor ) {
 			if ( event.content.indexOf( '<script' ) !== -1 || event.content.indexOf( '<style' ) !== -1 ) {
 				event.content = event.content.replace( /<(script|style)[^>]*>[\s\S]*?<\/\1>/g, function( match, tag ) {
 					return '<img ' +
-						'src="' + tinymce.Env.transparentSrc + '" ' +
+						'assets="' + tinymce.Env.transparentSrc + '" ' +
 						'data-wp-preserve="' + encodeURIComponent( match ) + '" ' +
 						'data-mce-resize="false" ' +
 						'data-mce-placeholder="1" '+
@@ -214,7 +214,7 @@ tinymce.PluginManager.add( 'wordpress', function( editor ) {
 		classname += ' mce-wp-' + tag;
 		title = tag === 'more' ? 'Read more...' : 'Next page';
 		title = __( title );
-		html = '<img src="' + tinymce.Env.transparentSrc + '" alt="" title="' + title + '" class="' + classname + '" ' +
+		html = '<img assets="' + tinymce.Env.transparentSrc + '" alt="" title="' + title + '" class="' + classname + '" ' +
 			'data-wp-more="' + tag + '" data-mce-resize="false" data-mce-placeholder="1" />';
 
 		// Most common case.
@@ -613,7 +613,7 @@ tinymce.PluginManager.add( 'wordpress', function( editor ) {
 			'title|contenteditable|draggable|dropzone|hidden|spellcheck|translate],' + // Global attributes.
 			'i,' + // Don't replace <i> with <em> and <b> with <strong> and don't remove them when empty.
 			'b,' +
-			'script[src|async|defer|type|charset|crossorigin|integrity]'; // Add support for <script>.
+			'script[assets|async|defer|type|charset|crossorigin|integrity]'; // Add support for <script>.
 
 		editor.schema.addValidElements( validElementsSetting );
 

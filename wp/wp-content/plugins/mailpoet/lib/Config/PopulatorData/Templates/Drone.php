@@ -39,7 +39,7 @@ class Drone {
           'orientation' => 'vertical',
           'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
           'styles' =>
@@ -57,7 +57,7 @@ class Drone {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -75,7 +75,7 @@ class Drone {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -109,7 +109,7 @@ class Drone {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -127,7 +127,7 @@ class Drone {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -143,7 +143,7 @@ class Drone {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Drone-Logo.png',
+                                  'assets' => $this->template_image_url . '/Drone-Logo.png',
                                   'alt' => 'Drone-Logo',
                                   'fullWidth' => false,
                                   'width' => '138px',
@@ -183,7 +183,7 @@ class Drone {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Drone-Header.jpg',
+                                  'assets' => $this->template_image_url . '/Drone-Header.jpg',
                                   'alt' => 'Drone-Header',
                                   'fullWidth' => false,
                                   'width' => '470px',
@@ -206,7 +206,7 @@ class Drone {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -224,7 +224,7 @@ class Drone {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -276,7 +276,7 @@ class Drone {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -294,7 +294,7 @@ class Drone {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -310,7 +310,7 @@ class Drone {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Drone-Image-1.jpg',
+                                  'assets' => $this->template_image_url . '/Drone-Image-1.jpg',
                                   'alt' => 'Drone-Image-1',
                                   'fullWidth' => true,
                                   'width' => '400px',
@@ -331,7 +331,7 @@ class Drone {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -395,7 +395,7 @@ class Drone {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -413,7 +413,7 @@ class Drone {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -447,7 +447,7 @@ class Drone {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -465,7 +465,7 @@ class Drone {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -498,7 +498,7 @@ class Drone {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Drone-Video.jpg',
+                                  'assets' => $this->template_image_url . '/Drone-Video.jpg',
                                   'alt' => 'Drone-Video',
                                   'fullWidth' => true,
                                   'width' => '1280px',
@@ -598,7 +598,7 @@ class Drone {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -616,7 +616,7 @@ class Drone {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -650,7 +650,7 @@ class Drone {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -668,7 +668,7 @@ class Drone {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -700,7 +700,7 @@ class Drone {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -716,7 +716,7 @@ class Drone {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Drone-Logo-Light-1.png',
+                                  'assets' => $this->template_image_url . '/Drone-Logo-Light-1.png',
                                   'alt' => 'Drone-Logo-Light',
                                   'fullWidth' => false,
                                   'width' => '120px',
@@ -737,7 +737,7 @@ class Drone {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -771,7 +771,7 @@ class Drone {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -789,7 +789,7 @@ class Drone {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>

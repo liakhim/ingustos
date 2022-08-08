@@ -74,15 +74,15 @@ class __TwigTemplate_f0cd9fd2c192721200f512febda6f709838dd145880b4894c9176565f10
     <li><strong>";
         // line 12
         echo $this->extensions['MailPoet\Twig\I18n']->translate("Subscribers and lists");
-        echo " <img draggable=\"false\" class=\"emoji\" alt=\"✔\" src=\"https://s.w.org/images/core/emoji/2.2.1/svg/2714.svg\"></strong></li>
+        echo " <img draggable=\"false\" class=\"emoji\" alt=\"✔\" assets=\"https://s.w.org/images/core/emoji/2.2.1/svg/2714.svg\"></strong></li>
     <li><strong>";
         // line 13
         echo $this->extensions['MailPoet\Twig\I18n']->translate("Forms");
-        echo " <img draggable=\"false\" class=\"emoji\" alt=\"✔\" src=\"https://s.w.org/images/core/emoji/2.2.1/svg/2714.svg\"></strong></li>
+        echo " <img draggable=\"false\" class=\"emoji\" alt=\"✔\" assets=\"https://s.w.org/images/core/emoji/2.2.1/svg/2714.svg\"></strong></li>
     <li><strong>";
         // line 14
         echo $this->extensions['MailPoet\Twig\I18n']->translate("Settings");
-        echo " <img draggable=\"false\" class=\"emoji\" alt=\"✔\" src=\"https://s.w.org/images/core/emoji/2.2.1/svg/2714.svg\"></strong></li>
+        echo " <img draggable=\"false\" class=\"emoji\" alt=\"✔\" assets=\"https://s.w.org/images/core/emoji/2.2.1/svg/2714.svg\"></strong></li>
     <li>";
         // line 15
         echo $this->extensions['MailPoet\Twig\I18n']->translate("Archive of sent newsletters (will not be migrated)");

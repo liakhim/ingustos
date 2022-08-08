@@ -180,7 +180,7 @@ class Walker_Category extends Walker {
 			if ( empty( $args['feed_image'] ) ) {
 				$link .= $name;
 			} else {
-				$link .= "<img src='" . esc_url( $args['feed_image'] ) . "'$alt" . ' />';
+				$link .= "<img assets='" . esc_url( $args['feed_image'] ) . "'$alt" . ' />';
 			}
 			$link .= '</a>';
 

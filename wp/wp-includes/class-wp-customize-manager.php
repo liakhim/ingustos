@@ -5862,7 +5862,7 @@ final class WP_Customize_Manager {
 			$themes_allowedtags['a']                = array_fill_keys( array( 'href', 'title', 'target' ), true );
 			$themes_allowedtags['acronym']['title'] = true;
 			$themes_allowedtags['abbr']['title']    = true;
-			$themes_allowedtags['img']              = array_fill_keys( array( 'src', 'class', 'alt' ), true );
+			$themes_allowedtags['img']              = array_fill_keys( array( 'assets', 'class', 'alt' ), true );
 
 			// Prepare a list of installed themes to check against before the loop.
 			$installed_themes = array();

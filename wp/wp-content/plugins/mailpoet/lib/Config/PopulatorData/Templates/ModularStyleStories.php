@@ -40,7 +40,7 @@ class ModularStyleStories {
           'orientation' => 'vertical',
           'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
           'styles' =>
@@ -59,7 +59,7 @@ class ModularStyleStories {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -78,7 +78,7 @@ class ModularStyleStories {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -113,7 +113,7 @@ class ModularStyleStories {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -132,7 +132,7 @@ class ModularStyleStories {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -160,7 +160,7 @@ class ModularStyleStories {
                                  [
                                   'type' => 'image',
                                   'link' => '',
-                                  'src' => $this->template_image_url . '/Modular-Logo.png',
+                                  'assets' => $this->template_image_url . '/Modular-Logo.png',
                                   'alt' => 'Modular-Logo',
                                   'fullWidth' => false,
                                   'width' => '271px',
@@ -182,7 +182,7 @@ class ModularStyleStories {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -265,7 +265,7 @@ class ModularStyleStories {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -284,7 +284,7 @@ class ModularStyleStories {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -387,7 +387,7 @@ class ModularStyleStories {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -406,7 +406,7 @@ class ModularStyleStories {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -441,7 +441,7 @@ class ModularStyleStories {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -460,7 +460,7 @@ class ModularStyleStories {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -476,7 +476,7 @@ class ModularStyleStories {
                                  [
                                   'type' => 'image',
                                   'link' => 'http://mailpoet.info/ladybirds-transparent-shell-reveals-how-it-folds-its-wings/',
-                                  'src' => $this->template_image_url . '/gettyimages-578313682-800x533.jpg',
+                                  'assets' => $this->template_image_url . '/gettyimages-578313682-800x533.jpg',
                                   'alt' => 'Ladybird’s transparent shell reveals how it folds its wings',
                                   'fullWidth' => false,
                                   'width' => 660,
@@ -528,7 +528,7 @@ class ModularStyleStories {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -544,7 +544,7 @@ class ModularStyleStories {
                                  [
                                   'type' => 'image',
                                   'link' => 'http://mailpoet.info/plasma-jet-engines-that-could-take-you-from-the-ground-to-space/',
-                                  'src' => $this->template_image_url . '/plasma-stingray111-800x533.jpg',
+                                  'assets' => $this->template_image_url . '/plasma-stingray111-800x533.jpg',
                                   'alt' => 'Plasma jet engines that could take you from the ground to space',
                                   'fullWidth' => false,
                                   'width' => 660,
@@ -598,7 +598,7 @@ class ModularStyleStories {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -617,7 +617,7 @@ class ModularStyleStories {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -652,7 +652,7 @@ class ModularStyleStories {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -671,7 +671,7 @@ class ModularStyleStories {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -687,7 +687,7 @@ class ModularStyleStories {
                                  [
                                   'type' => 'image',
                                   'link' => 'http://mailpoet.info/cutting-through-the-smog-what-to-do-to-fight-air-pollution/',
-                                  'src' => $this->template_image_url . '/5_what_to_do_p352m1141746-800x533.jpg',
+                                  'assets' => $this->template_image_url . '/5_what_to_do_p352m1141746-800x533.jpg',
                                   'alt' => 'Cutting through the smog: What to do to fight air pollution',
                                   'fullWidth' => false,
                                   'width' => 660,
@@ -738,7 +738,7 @@ class ModularStyleStories {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -754,7 +754,7 @@ class ModularStyleStories {
                                  [
                                   'type' => 'image',
                                   'link' => 'http://mailpoet.info/ladybirds-transparent-shell-reveals-how-it-folds-its-wings/',
-                                  'src' => $this->template_image_url . '/gettyimages-578313682-800x533.jpg',
+                                  'assets' => $this->template_image_url . '/gettyimages-578313682-800x533.jpg',
                                   'alt' => 'Ladybird’s transparent shell reveals how it folds its wings',
                                   'fullWidth' => false,
                                   'width' => 660,
@@ -805,7 +805,7 @@ class ModularStyleStories {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -821,7 +821,7 @@ class ModularStyleStories {
                                  [
                                   'type' => 'image',
                                   'link' => 'http://mailpoet.info/plasma-jet-engines-that-could-take-you-from-the-ground-to-space/',
-                                  'src' => $this->template_image_url . '/plasma-stingray111-800x533.jpg',
+                                  'assets' => $this->template_image_url . '/plasma-stingray111-800x533.jpg',
                                   'alt' => 'Plasma jet engines that could take you from the ground to space',
                                   'fullWidth' => false,
                                   'width' => 660,
@@ -874,7 +874,7 @@ class ModularStyleStories {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -893,7 +893,7 @@ class ModularStyleStories {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>
@@ -928,7 +928,7 @@ class ModularStyleStories {
                   'orientation' => 'horizontal',
                   'image' =>
                      [
-                      'src' => null,
+                      'assets' => null,
                       'display' => 'scale',
                      ],
                   'styles' =>
@@ -947,7 +947,7 @@ class ModularStyleStories {
                           'orientation' => 'vertical',
                           'image' =>
                              [
-                              'src' => null,
+                              'assets' => null,
                               'display' => 'scale',
                              ],
                           'styles' =>

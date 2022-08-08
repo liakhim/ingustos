@@ -829,7 +829,7 @@ HTML;
 
 		return <<<HTML
 		<iframe
-			src="https://s0.wp.com/wp-content/blog-plugins/wordads/house/html5/$unit/index.html"
+			assets="https://s0.wp.com/wp-content/blog-plugins/wordads/house/html5/$unit/index.html"
 			width="$width"
 			height="$height"
 			frameborder="0"

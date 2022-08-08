@@ -146,7 +146,7 @@ function render_amp_pin( $attr ) {
 		// This placeholder will appear while waiting for the amp-pinterest component to initialize (or if it fails to initialize due to JS being disabled).
 		$placeholder = sprintf(
 			// The AMP_Img_Sanitizer will convert his to <amp-img> while also supplying `noscript > img` as fallback when JS is disabled.
-			'<a href="%s" placeholder><img src="%s" alt="%s" layout="fill" object-fit="contain" object-position="top left"></a>',
+			'<a href="%s" placeholder><img assets="%s" alt="%s" layout="fill" object-fit="contain" object-position="top left"></a>',
 			esc_url( $attr['url'] ),
 			esc_url( $image['url'] ),
 			esc_attr( $title )

@@ -53,7 +53,7 @@ class __TwigTemplate_a6bc3737d02c4217a15108cd3f8addf2e33ea8546e47c75fe38c1b5ca5b
     <div class=\"mailpoet_social_icon_settings_row\">
         <label>
         <div class=\"mailpoet_social_icon_settings_label mailpoet_social_icon_image_label\">
-            <img src=\"{{ model.image }}\" onerror=\"if (this.src != '{{ allIconSets.default.custom }}') this.src = '{{ allIconSets.default.custom }}';\" alt=\"{{ model.text }}\" class=\"mailpoet_social_icon_image\" />
+            <img assets=\"{{ model.image }}\" onerror=\"if (this.assets != '{{ allIconSets.default.custom }}') this.assets = '{{ allIconSets.default.custom }}';\" alt=\"{{ model.text }}\" class=\"mailpoet_social_icon_image\" />
         </div>
         <div class=\"mailpoet_social_icon_settings_form_element\">
             <select name=\"iconType\" class=\"mailpoet_social_icon_field_type\">

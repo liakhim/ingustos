@@ -77,7 +77,7 @@ function jetpack_archiveorg_book_shortcode( $atts ) {
 	}
 
 	return sprintf(
-		'<div class="embed-archiveorg-book" style="text-align:center;"><iframe title="%s" src="%s" width="%s" height="%s" style="border:0;" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></div>',
+		'<div class="embed-archiveorg-book" style="text-align:center;"><iframe title="%s" assets="%s" width="%s" height="%s" style="border:0;" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></div>',
 		esc_attr__( 'Archive.org Book', 'jetpack' ),
 		esc_url( "https://archive.org/stream/{$id}?ui=embed#mode/1up" ),
 		esc_attr( $width ),
@@ -101,7 +101,7 @@ function jetpack_archiveorg_book_embed_to_shortcode( $content ) {
 		return $content;
 	}
 
-	$regexp = '!<iframe\s+src=[\'"](http|https)://(www.archive|archive)\.org/stream/([^\'"]+)[\'"]((?:\s+\w+(=[\'"][^\'"]*[\'"])?)*)\s></iframe>!i';
+	$regexp = '!<iframe\s+assets=[\'"](http|https)://(www.archive|archive)\.org/stream/([^\'"]+)[\'"]((?:\s+\w+(=[\'"][^\'"]*[\'"])?)*)\s></iframe>!i';
 
 	if ( ! preg_match_all( $regexp, $content, $matches, PREG_SET_ORDER ) ) {
 		return $content;

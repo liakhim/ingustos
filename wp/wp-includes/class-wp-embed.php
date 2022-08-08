@@ -195,8 +195,8 @@ class WP_Embed {
 	public function shortcode( $attr, $url = '' ) {
 		$post = get_post();
 
-		if ( empty( $url ) && ! empty( $attr['src'] ) ) {
-			$url = $attr['src'];
+		if ( empty( $url ) && ! empty( $attr['assets'] ) ) {
+			$url = $attr['assets'];
 		}
 
 		$this->last_url = $url;

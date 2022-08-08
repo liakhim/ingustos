@@ -31,7 +31,7 @@ class ImageAttachmentSchema extends AbstractSchema {
 				'type'        => 'integer',
 				'context'     => [ 'view', 'edit' ],
 			],
-			'src'       => [
+			'assets'       => [
 				'description' => __( 'Full size image URL.', 'woocommerce' ),
 				'type'        => 'string',
 				'format'      => 'uri',
@@ -87,7 +87,7 @@ class ImageAttachmentSchema extends AbstractSchema {
 
 		return [
 			'id'        => (int) $attachment_id,
-			'src'       => current( $attachment ),
+			'assets'       => current( $attachment ),
 			'thumbnail' => current( $thumbnail ),
 			'srcset'    => (string) wp_get_attachment_image_srcset( $attachment_id, 'full' ),
 			'sizes'     => (string) wp_get_attachment_image_sizes( $attachment_id, 'full' ),

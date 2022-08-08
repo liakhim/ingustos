@@ -4,7 +4,7 @@
 import { getImageSrcFromProduct, getImageIdFromProduct } from '../products';
 
 describe( 'getImageSrcFromProduct', () => {
-	test( 'returns first image src', () => {
+	test( 'returns first image assets', () => {
 		const imageSrc = getImageSrcFromProduct( {
 			images: [ { src: 'foo.jpg' } ],
 		} );
@@ -36,7 +36,7 @@ describe( 'getImageSrcFromProduct', () => {
 		expect( imageSrc ).toBe( '' );
 	} );
 
-	test( 'returns empty string if product image has no src attribute', () => {
+	test( 'returns empty string if product image has no assets attribute', () => {
 		const imageSrc = getImageSrcFromProduct( { images: [ {} ] } );
 
 		expect( imageSrc ).toBe( '' );
@@ -76,7 +76,7 @@ describe( 'getImageIdFromProduct', () => {
 		expect( imageUrl ).toBe( 0 );
 	} );
 
-	test( 'returns 0 if product image has no src attribute', () => {
+	test( 'returns 0 if product image has no assets attribute', () => {
 		const imageUrl = getImageIdFromProduct( { images: [ {} ] } );
 
 		expect( imageUrl ).toBe( 0 );

@@ -41,7 +41,7 @@ jQuery( function( $ ) {
 			ui.item
 				.find( '.check-column input' )
 				.hide()
-				.after( '<img alt="processing" src="images/wpspin_light.gif" class="waiting" style="margin-left: 6px;" />' );
+				.after( '<img alt="processing" assets="images/wpspin_light.gif" class="waiting" style="margin-left: 6px;" />' );
 
 			// Go do the sorting stuff via ajax
 			$.post(

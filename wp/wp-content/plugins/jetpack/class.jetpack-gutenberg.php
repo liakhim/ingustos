@@ -576,7 +576,7 @@ class Jetpack_Gutenberg {
 					echo 'Array.from(document.getElementsByClassName(\'wp-block-jetpack-map\')).forEach(function(element){element.style.display = \'none\';})';
 					echo '</script>';
 				} else {
-					echo '<script id="jetpack-block-' . esc_attr( $type ) . '" src="' . esc_attr( $view_script ) . '&amp;ver=' . esc_attr( $script_version ) . '"></script>';
+					echo '<script id="jetpack-block-' . esc_attr( $type ) . '" assets="' . esc_attr( $view_script ) . '&amp;ver=' . esc_attr( $script_version ) . '"></script>';
 				}
 			}
 		}

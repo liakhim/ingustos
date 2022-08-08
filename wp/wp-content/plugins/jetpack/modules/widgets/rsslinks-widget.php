@@ -295,7 +295,7 @@ class Jetpack_RSS_Links_Widget extends WP_Widget {
 		);
 
 		return sprintf(
-			'<img src="%1$s" alt="%2$s" />',
+			'<img assets="%1$s" alt="%2$s" />',
 			esc_url( $image ),
 			esc_attr__( 'RSS feed', 'jetpack' )
 		);

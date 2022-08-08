@@ -37,11 +37,11 @@ class __TwigTemplate_c5b2baad656ba71f0ebbe0b70ca8d928767c64a4ecddb4ec13dcabe4bec
     {
         $macros = $this->macros;
         // line 1
-        echo "{{#if model.image.src}}
+        echo "{{#if model.image.assets}}
     <style type=\"text/css\">
         .mailpoet_editor_view_{{ viewCid }} {
             background-color: {{#ifCond model.styles.block.backgroundColor '!=' 'transparent'}}{{  model.styles.block.backgroundColor }}{{else}}#ffffff{{/ifCond}} !important;
-            background-image: url({{ model.image.src }});
+            background-image: url({{ model.image.assets }});
             background-position: center;
             background-repeat: {{#ifCond model.image.display '==' 'tile'}}repeat{{else}}no-repeat{{/ifCond}};
             background-size: {{#ifCond model.image.display '==' 'scale'}}cover{{else}}contain{{/ifCond}};

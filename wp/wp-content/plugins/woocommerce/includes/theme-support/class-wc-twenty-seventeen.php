@@ -49,7 +49,7 @@ class WC_Twenty_Seventeen {
 		unset( $styles['woocommerce-general'] );
 
 		$styles['woocommerce-general'] = array(
-			'src'     => str_replace( array( 'http:', 'https:' ), '', WC()->plugin_url() ) . '/assets/css/twenty-seventeen.css',
+			'assets'     => str_replace( array( 'http:', 'https:' ), '', WC()->plugin_url() ) . '/assets/css/twenty-seventeen.css',
 			'deps'    => '',
 			'version' => Constants::get_constant( 'WC_VERSION' ),
 			'media'   => 'all',

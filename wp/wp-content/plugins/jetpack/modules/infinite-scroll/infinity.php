@@ -1200,7 +1200,7 @@ class The_Neverending_Home_Page {
 					}
 
 					// Full script source with version info
-					$script_data['src'] = add_query_arg( 'ver', $ver, $src );
+					$script_data['assets'] = add_query_arg( 'ver', $ver, $src );
 
 					// Add script to data that will be returned to IS JS
 					array_push( $results['scripts'], $script_data );
@@ -1284,7 +1284,7 @@ class The_Neverending_Home_Page {
 					}
 
 					// Full stylesheet source with version info
-					$style_data['src'] = add_query_arg( 'ver', $ver, $src );
+					$style_data['assets'] = add_query_arg( 'ver', $ver, $src );
 
 					// Parse stylesheet's conditional comments if present, converting to logic executable in JS
 					if ( isset( $wp_styles->registered[ $handle ]->extra['conditional'] ) && $wp_styles->registered[ $handle ]->extra['conditional'] ) {

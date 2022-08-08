@@ -240,9 +240,9 @@ class SimplePie_Sanitize
 				'form' => 'action',
 				'img' => array(
 					'longdesc',
-					'src'
+					'assets'
 				),
-				'input' => 'src',
+				'input' => 'assets',
 				'ins' => 'cite',
 				'q' => 'cite'
 			);
@@ -403,25 +403,25 @@ class SimplePie_Sanitize
 					$images = $document->getElementsByTagName('img');
 					foreach ($images as $img)
 					{
-						if ($img->hasAttribute('src'))
+						if ($img->hasAttribute('assets'))
 						{
-							$image_url = call_user_func($this->cache_name_function, $img->getAttribute('src'));
+							$image_url = call_user_func($this->cache_name_function, $img->getAttribute('assets'));
 							$cache = $this->registry->call('Cache', 'get_handler', array($this->cache_location, $image_url, 'spi'));
 
 							if ($cache->load())
 							{
-								$img->setAttribute('src', $this->image_handler . $image_url);
+								$img->setAttribute('assets', $this->image_handler . $image_url);
 							}
 							else
 							{
-								$file = $this->registry->create('File', array($img->getAttribute('src'), $this->timeout, 5, array('X-FORWARDED-FOR' => $_SERVER['REMOTE_ADDR']), $this->useragent, $this->force_fsockopen));
+								$file = $this->registry->create('File', array($img->getAttribute('assets'), $this->timeout, 5, array('X-FORWARDED-FOR' => $_SERVER['REMOTE_ADDR']), $this->useragent, $this->force_fsockopen));
 								$headers = $file->headers;
 
 								if ($file->success && ($file->method & SIMPLEPIE_FILE_SOURCE_REMOTE === 0 || ($file->status_code === 200 || $file->status_code > 206 && $file->status_code < 300)))
 								{
 									if ($cache->save(array('headers' => $file->headers, 'body' => $file->body)))
 									{
-										$img->setAttribute('src', $this->image_handler . $image_url);
+										$img->setAttribute('assets', $this->image_handler . $image_url);
 									}
 									else
 									{

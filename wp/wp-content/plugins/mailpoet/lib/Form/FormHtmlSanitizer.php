@@ -32,7 +32,7 @@ class FormHtmlSanitizer {
     'img' => [
       'class' => true,
       'style' => true,
-      'src' => true,
+      'assets' => true,
       'alt' => true,
     ],
     'kbd' => [],

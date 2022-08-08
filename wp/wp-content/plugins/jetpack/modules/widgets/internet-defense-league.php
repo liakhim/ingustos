@@ -130,7 +130,7 @@ class Jetpack_Internet_Defense_League_Widget extends WP_Widget {
 			$photon_badge_url = jetpack_photon_url( $badge_url );
 			$alt_text         = esc_html__( 'Member of The Internet Defense League', 'jetpack' );
 			echo $args['before_widget']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-			echo '<p><a href="https://www.internetdefenseleague.org/"><img src="' . esc_url( $photon_badge_url ) . '" alt="' . esc_attr( $alt_text ) . '" style="max-width: 100%; height: auto;" /></a></p>';
+			echo '<p><a href="https://www.internetdefenseleague.org/"><img assets="' . esc_url( $photon_badge_url ) . '" alt="' . esc_attr( $alt_text ) . '" style="max-width: 100%; height: auto;" /></a></p>';
 			echo $args['after_widget']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 

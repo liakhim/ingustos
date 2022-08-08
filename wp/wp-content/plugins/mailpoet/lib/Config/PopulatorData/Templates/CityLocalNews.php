@@ -40,7 +40,7 @@ class CityLocalNews {
         'orientation' => 'vertical',
         'image' =>
          [
-          'src' => null,
+          'assets' => null,
           'display' => 'scale',
          ],
         'styles' =>
@@ -59,7 +59,7 @@ class CityLocalNews {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -78,7 +78,7 @@ class CityLocalNews {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -137,7 +137,7 @@ class CityLocalNews {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => $this->template_image_url . '/CityNews-Header.jpg',
+              'assets' => $this->template_image_url . '/CityNews-Header.jpg',
               'display' => 'scale',
              ],
             'styles' =>
@@ -156,7 +156,7 @@ class CityLocalNews {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -184,7 +184,7 @@ class CityLocalNews {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/CityNews-Logo.png',
+                    'assets' => $this->template_image_url . '/CityNews-Logo.png',
                     'alt' => 'CityNews-Logo',
                     'fullWidth' => false,
                     'width' => '150px',
@@ -274,7 +274,7 @@ class CityLocalNews {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -293,7 +293,7 @@ class CityLocalNews {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -328,7 +328,7 @@ class CityLocalNews {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -347,7 +347,7 @@ class CityLocalNews {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -389,7 +389,7 @@ class CityLocalNews {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -405,7 +405,7 @@ class CityLocalNews {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/CityNews-Images-1.jpg',
+                    'assets' => $this->template_image_url . '/CityNews-Images-1.jpg',
                     'alt' => 'CityNews-Images-1',
                     'fullWidth' => true,
                     'width' => '600px',
@@ -429,7 +429,7 @@ class CityLocalNews {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -448,7 +448,7 @@ class CityLocalNews {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -483,7 +483,7 @@ class CityLocalNews {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -502,7 +502,7 @@ class CityLocalNews {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -530,7 +530,7 @@ class CityLocalNews {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/CityNews-ThinImages-1.jpg',
+                    'assets' => $this->template_image_url . '/CityNews-ThinImages-1.jpg',
                     'alt' => 'CityNews-ThinImages-1',
                     'fullWidth' => false,
                     'width' => '600px',
@@ -559,7 +559,7 @@ class CityLocalNews {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -587,7 +587,7 @@ class CityLocalNews {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/CityNews-ThinImages-2.jpg',
+                    'assets' => $this->template_image_url . '/CityNews-ThinImages-2.jpg',
                     'alt' => 'CityNews-ThinImages-2',
                     'fullWidth' => false,
                     'width' => '600px',
@@ -618,7 +618,7 @@ class CityLocalNews {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -637,7 +637,7 @@ class CityLocalNews {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -665,7 +665,7 @@ class CityLocalNews {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/CityNews-ThinImages-3.jpg',
+                    'assets' => $this->template_image_url . '/CityNews-ThinImages-3.jpg',
                     'alt' => 'CityNews-ThinImages-3',
                     'fullWidth' => false,
                     'width' => '600px',
@@ -706,7 +706,7 @@ class CityLocalNews {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -734,7 +734,7 @@ class CityLocalNews {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/CityNews-ThinImages-4.jpg',
+                    'assets' => $this->template_image_url . '/CityNews-ThinImages-4.jpg',
                     'alt' => 'CityNews-ThinImages-4',
                     'fullWidth' => false,
                     'width' => '600px',
@@ -777,7 +777,7 @@ class CityLocalNews {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -796,7 +796,7 @@ class CityLocalNews {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -831,7 +831,7 @@ class CityLocalNews {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -850,7 +850,7 @@ class CityLocalNews {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -866,7 +866,7 @@ class CityLocalNews {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/CityNews-Phone.png',
+                    'assets' => $this->template_image_url . '/CityNews-Phone.png',
                     'alt' => 'CityNews-Phone',
                     'fullWidth' => false,
                     'width' => '162px',
@@ -888,7 +888,7 @@ class CityLocalNews {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -922,7 +922,7 @@ class CityLocalNews {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/CityNews-GoogleDownload.png',
+                    'assets' => $this->template_image_url . '/CityNews-GoogleDownload.png',
                     'alt' => 'CityNews-GoogleDownload',
                     'fullWidth' => false,
                     'width' => '150px',
@@ -939,7 +939,7 @@ class CityLocalNews {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/CityNews-AppleDownload.png',
+                    'assets' => $this->template_image_url . '/CityNews-AppleDownload.png',
                     'alt' => 'CityNews-AppleDownload',
                     'fullWidth' => false,
                     'width' => '150px',
@@ -963,7 +963,7 @@ class CityLocalNews {
             'orientation' => 'horizontal',
             'image' =>
              [
-              'src' => null,
+              'assets' => null,
               'display' => 'scale',
              ],
             'styles' =>
@@ -982,7 +982,7 @@ class CityLocalNews {
                 'orientation' => 'vertical',
                 'image' =>
                  [
-                  'src' => null,
+                  'assets' => null,
                   'display' => 'scale',
                  ],
                 'styles' =>
@@ -1025,7 +1025,7 @@ class CityLocalNews {
                    [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/CityNews-Logo.png',
+                    'assets' => $this->template_image_url . '/CityNews-Logo.png',
                     'alt' => 'CityNews-Logo',
                     'fullWidth' => false,
                     'width' => '122px',

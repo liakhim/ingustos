@@ -60,7 +60,7 @@ function jetpack_spotify_shortcode( $atts = array(), $content = '' ) {
 			);
 		} elseif ( A8C\Display_Context\READER === $context ) {
 			return sprintf(
-				'<iframe src="%1$s" height="%2$s" width="%3$s"></iframe>',
+				'<iframe assets="%1$s" height="%2$s" width="%3$s"></iframe>',
 				esc_url( $embed_url ),
 				esc_attr( $atts['height'] ),
 				esc_attr( $atts['width'] )
@@ -68,7 +68,7 @@ function jetpack_spotify_shortcode( $atts = array(), $content = '' ) {
 		}
 	}
 
-	return '<iframe src="' . esc_url( $embed_url ) . '" style="display:block; margin:0 auto; width:' . esc_attr( $atts['width'] ) . 'px; height:' . esc_attr( $atts['height'] ) . 'px;" frameborder="0" allowtransparency="true" loading="lazy"></iframe>';
+	return '<iframe assets="' . esc_url( $embed_url ) . '" style="display:block; margin:0 auto; width:' . esc_attr( $atts['width'] ) . 'px; height:' . esc_attr( $atts['height'] ) . 'px;" frameborder="0" allowtransparency="true" loading="lazy"></iframe>';
 }
 
 /**

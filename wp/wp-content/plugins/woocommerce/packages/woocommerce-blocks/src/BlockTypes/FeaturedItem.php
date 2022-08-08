@@ -226,7 +226,7 @@ abstract class FeaturedItem extends AbstractDynamicBlock {
 
 		if ( ! empty( $image_url ) ) {
 			return sprintf(
-				'<img alt="%1$s" class="wc-block-%2$s__background-image" src="%3$s" style="%4$s" />',
+				'<img alt="%1$s" class="wc-block-%2$s__background-image" assets="%3$s" style="%4$s" />',
 				wp_kses_post( $attributes['alt'] ?: $this->get_item_title( $item ) ),
 				$this->block_name,
 				$image_url,

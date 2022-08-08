@@ -248,7 +248,7 @@
 			widgetForm.find( '.jetpack-simple-payments-form-image-id' ).val(),
 			10
 		);
-		var newImageSrc = widgetForm.find( '.jetpack-simple-payments-form-image-src' ).val();
+		var newImageSrc = widgetForm.find( '.jetpack-simple-payments-form-image-assets' ).val();
 
 		var placeholder = widgetForm.find( '.jetpack-simple-payments-image-fieldset .placeholder' );
 		var image = widgetForm.find( '.jetpack-simple-payments-image > img' );

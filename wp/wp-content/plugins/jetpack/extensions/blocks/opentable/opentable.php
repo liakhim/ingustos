@@ -78,7 +78,7 @@ function load_assets( $attributes ) {
 
 		// Note an iframe is similarly constructed in the block edit function.
 		$content .= sprintf(
-			'<amp-iframe src="%s" layout="fill" sandbox="allow-scripts allow-forms allow-same-origin allow-popups">%s</amp-iframe>',
+			'<amp-iframe assets="%s" layout="fill" sandbox="allow-scripts allow-forms allow-same-origin allow-popups">%s</amp-iframe>',
 			esc_url( $src ),
 			sprintf(
 				'<a placeholder href="%s">%s</a>',
@@ -97,7 +97,7 @@ function load_assets( $attributes ) {
 		// The OpenTable script uses multiple `rid` paramters,
 		// so we can't use WordPress to output it, as WordPress attempts to validate it and removes them.
 		// phpcs:ignore WordPress.WP.EnqueuedResources.NonEnqueuedScript
-		$content .= '<script src="' . esc_url( $script_url ) . '"></script>';
+		$content .= '<script assets="' . esc_url( $script_url ) . '"></script>';
 	}
 
 	$content .= '</div>';

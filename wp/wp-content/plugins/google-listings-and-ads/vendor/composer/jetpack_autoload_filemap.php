@@ -8,7 +8,7 @@ $baseDir   = dirname($vendorDir);
 return array(
 	'7b11c4dc42b3b3023073cb14e519683c' => array(
 		'version' => '3.0.3.0',
-		'path'    => $vendorDir . '/ralouphie/getallheaders/src/getallheaders.php'
+		'path'    => $vendorDir . '/ralouphie/getallheaders/assets/getallheaders.php'
 	),
 	'6e3fae29631ef280660b3cdad06f25a8' => array(
 		'version' => '2.5.1.0',
@@ -40,7 +40,7 @@ return array(
 	),
 	'a8d3953fd9959404dd22d3dfcd0a79f0' => array(
 		'version' => '2.12.6.0',
-		'path'    => $vendorDir . '/google/apiclient/src/aliases.php'
+		'path'    => $vendorDir . '/google/apiclient/assets/aliases.php'
 	),
 	'56823cacd97af379eceaf82ad00b928f' => array(
 		'version' => '2.0.1.0',
@@ -48,10 +48,10 @@ return array(
 	),
 	'a66af3295a2671f868924c6f4a9afc6c' => array(
 		'version' => 'dev-release/1.13.6',
-		'path'    => $vendorDir . '/guzzlehttp/guzzle/src/functions_include.php'
+		'path'    => $vendorDir . '/guzzlehttp/guzzle/assets/functions_include.php'
 	),
 	'7fd7393568b2f049bdce22a915a0972c' => array(
 		'version' => 'dev-release/1.13.6',
-		'path'    => $vendorDir . '/guzzlehttp/promises/src/functions_include.php'
+		'path'    => $vendorDir . '/guzzlehttp/promises/assets/functions_include.php'
 	),
 );

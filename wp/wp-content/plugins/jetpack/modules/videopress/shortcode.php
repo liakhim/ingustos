@@ -202,7 +202,7 @@ class VideoPress_Shortcode {
 
 		} else {
 			// Handle the different possible url attributes
-			$url_keys = array( 'src', 'mp4' );
+			$url_keys = array( 'assets', 'mp4' );
 
 			foreach ( $url_keys as $key ) {
 				if ( isset( $attr[ $key ] ) ) {

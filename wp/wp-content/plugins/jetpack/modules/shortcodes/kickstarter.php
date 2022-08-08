@@ -50,7 +50,7 @@ function jetpack_kickstarter_embed_to_shortcode( $content ) {
 		return $content;
 	}
 
-	$regexp     = '!<iframe((?:\s+\w+=[\'"][^\'"]*[\'"])*)\s+src=[\'"](http://www\.kickstarter\.com/projects/[^/]+/[^/]+)/[^\'"]+[\'"]((?:\s+\w+=[\'"][^\'"]*[\'"])*)>[\s]*</iframe>!i';
+	$regexp     = '!<iframe((?:\s+\w+=[\'"][^\'"]*[\'"])*)\s+assets=[\'"](http://www\.kickstarter\.com/projects/[^/]+/[^/]+)/[^\'"]+[\'"]((?:\s+\w+=[\'"][^\'"]*[\'"])*)>[\s]*</iframe>!i';
 	$regexp_ent = str_replace( '&amp;#0*58;', '&amp;#0*58;|&#0*58;', htmlspecialchars( $regexp, ENT_NOQUOTES ) ); // phpcs:ignore
 
 	foreach ( array( 'regexp', 'regexp_ent' ) as $reg ) {

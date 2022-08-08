@@ -58,7 +58,7 @@ function load_assets( $attr ) {
 		);
 
 		$iframe = sprintf(
-			'<amp-iframe src="%1$s" frameborder="0" scrolling="no" height="%2$d" layout="fixed-height" sandbox="%3$s">%4$s%5$s</amp-iframe>',
+			'<amp-iframe assets="%1$s" frameborder="0" scrolling="no" height="%2$d" layout="fixed-height" sandbox="%3$s">%4$s%5$s</amp-iframe>',
 			esc_url( $url ),
 			absint( $height ),
 			esc_attr( $sandbox ),
@@ -68,14 +68,14 @@ function load_assets( $attr ) {
 				esc_html__( 'Google Calendar', 'jetpack' )
 			),
 			sprintf(
-				'<noscript><iframe src="%1$s" frameborder="0" scrolling="no" sandbox="%2$s"></iframe></noscript>',
+				'<noscript><iframe assets="%1$s" frameborder="0" scrolling="no" sandbox="%2$s"></iframe></noscript>',
 				esc_url( $noscript_src ),
 				esc_attr( $sandbox )
 			)
 		);
 	} else {
 		$iframe = sprintf(
-			'<iframe src="%1$s" frameborder="0" style="border:0" scrolling="no" height="%2$d" width="100%%" sandbox="%3$s"></iframe>',
+			'<iframe assets="%1$s" frameborder="0" style="border:0" scrolling="no" height="%2$d" width="100%%" sandbox="%3$s"></iframe>',
 			esc_url( $url ),
 			absint( $height ),
 			esc_attr( $sandbox )

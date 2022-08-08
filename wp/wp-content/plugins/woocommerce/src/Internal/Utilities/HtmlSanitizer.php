@@ -19,7 +19,7 @@ class HtmlSanitizer {
 			'img'  => array(
 				'alt'   => true,
 				'class' => true,
-				'src'   => true,
+				'assets'   => true,
 				'title' => true,
 			),
 			'p'    => array(

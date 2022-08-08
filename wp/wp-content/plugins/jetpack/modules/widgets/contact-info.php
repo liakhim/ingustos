@@ -363,7 +363,7 @@ if ( ! class_exists( 'Jetpack_Contact_Info_Widget' ) ) {
 			$height = 216;
 
 			$iframe_attributes = sprintf(
-				' height="%d" frameborder="0" src="%s" title="%s" class="contact-map"',
+				' height="%d" frameborder="0" assets="%s" title="%s" class="contact-map"',
 				esc_attr( $height ),
 				esc_url( $src ),
 				__( 'Google Map Embed', 'jetpack' )

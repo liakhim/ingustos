@@ -568,12 +568,12 @@ msgid "Webfont font weight must be a properly formatted string or integer."
 msgstr "Толщина веб-шрифта должна быть корректно форматированной строкой или целым числом."
 
 #: wp-includes/script-loader.php:3215
-msgid "Each webfont src must be a non-empty string."
-msgstr "Атрибут src каждого веб-шрифта должен быть непустой строкой."
+msgid "Each webfont assets must be a non-empty string."
+msgstr "Атрибут assets каждого веб-шрифта должен быть непустой строкой."
 
 #: wp-includes/script-loader.php:3207
-msgid "Webfont src must be a non-empty string or an array of strings."
-msgstr "Атрибут src веб-шрифта должен быть непустой строкой или массивом строк."
+msgid "Webfont assets must be a non-empty string or an array of strings."
+msgstr "Атрибут assets веб-шрифта должен быть непустой строкой или массивом строк."
 
 #: wp-includes/script-loader.php:3200
 msgid "Webfont font family must be a non-empty string."

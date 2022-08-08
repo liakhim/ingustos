@@ -99,7 +99,7 @@ class AppWelcome {
                   [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/App-Signup-Logo-1.png',
+                    'assets' => $this->template_image_url . '/App-Signup-Logo-1.png',
                     'alt' => 'App-Signup-Logo',
                     'fullWidth' => false,
                     'width' => '80px',
@@ -118,7 +118,7 @@ class AppWelcome {
                   [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/App-Signup-Header.png',
+                    'assets' => $this->template_image_url . '/App-Signup-Header.png',
                     'alt' => 'App-Signup-Header',
                     'fullWidth' => false,
                     'width' => '1280px',
@@ -257,7 +257,7 @@ class AppWelcome {
                   [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/App-Signup-Team.jpg',
+                    'assets' => $this->template_image_url . '/App-Signup-Team.jpg',
                     'alt' => 'App-Signup-Team',
                     'fullWidth' => true,
                     'width' => '1280px',
@@ -302,7 +302,7 @@ class AppWelcome {
                   [
                     'type' => 'image',
                     'link' => '',
-                    'src' => $this->template_image_url . '/App-Signup-Logo-Footer.png',
+                    'assets' => $this->template_image_url . '/App-Signup-Logo-Footer.png',
                     'alt' => 'App-Signup-Logo-Footer',
                     'fullWidth' => false,
                     'width' => '50px',
